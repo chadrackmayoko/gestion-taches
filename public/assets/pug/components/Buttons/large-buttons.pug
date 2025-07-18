@@ -1,0 +1,59 @@
+// Large Buttons Start
+//-// Large Buttons Data
+-
+    var LARGE_BUTTONS =[
+        {
+            title: 'Primary Button',
+            BtnColor: 'btn-primary',
+            tooltip: 'btn btn-primary btn-lg',
+        },
+        {
+            title: 'Secondary Button',
+            BtnColor: 'btn-secondary',
+            tooltip: 'btn btn-secondary btn-lg',
+        },
+        {
+            title: 'Tertiary Button',
+            BtnColor: 'btn-tertiary',
+            tooltip: 'btn btn-tertiary btn-lg',
+        },
+        {
+            title: 'Success Button',
+            BtnColor: 'btn-success',
+            tooltip: 'btn btn-success btn-lg',
+        },
+        {
+            title: 'Info Button',
+            BtnColor: 'btn-info',
+            tooltip: 'btn btn-info btn-lg',
+        },
+        {
+            title: 'Warning Button',
+            BtnColor: 'btn-warning',
+            tooltip: 'btn btn-warning btn-lg',
+        },
+        {
+            title: 'Danger Button',
+            BtnColor: 'btn-danger',
+            tooltip: 'btn btn-danger btn-lg',
+        },
+        {
+            title: 'Light Button',
+            BtnColor: 'font-dark btn-light',
+            tooltip: 'btn btn-light btn-lg',
+        },
+        {
+            title: 'Dark Button',
+            BtnColor: 'btn-dark',
+            tooltip: 'btn btn-dark btn-lg',
+        },
+    ] 
+//- Large Buttons Mixin   
+mixin LargeButtons(items)
+    each item in items
+        .text-center.col-12.col-sm-6.col-md-12
+            button.btn.m-1.btn-lg(type='button' data-bs-toggle='tooltip' class=item.BtnColor title=item.tooltip)=item.title
+// Large Buttons Menu            
+.btn-showcase.row
+    +LargeButtons(LARGE_BUTTONS)
+// Large Buttons End      

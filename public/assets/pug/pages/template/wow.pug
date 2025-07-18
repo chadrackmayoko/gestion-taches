@@ -1,0 +1,31 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+-var animate = true;
+-var photoswipe = true;
+-var photoswipe_custom = true;
+-var wow = true;
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    include ../../components/loader
+    main#pageWrapper.page-wrapper.compact-wrapper
+        include ../../components/header/header
+        .page-body-wrapper
+          include ../../components/sidebar
+          .page-body
+            .container-fluid
+              +breadcrumb(['Animation','Wow Animation'],'Wow Animation')
+            // Container-fluid starts
+            .container-fluid
+              .row
+                .col-sm-12
+                  include ../../components/animation/wow-component
+                .col-sm-12
+                  include ../../components/animation/wow-steps
+            // Container-fluid ends
+          include ../../components/footer
+    include ../../components/footer-files

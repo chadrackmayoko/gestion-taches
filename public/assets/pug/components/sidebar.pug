@@ -1,0 +1,852 @@
+// Page sidebar start
+.overlay
+aside.page-sidebar(data-sidebar-layout='stroke-svg')
+    .left-arrow#left-arrow
+        +FeatherSprite('arrow-left', 'feather')
+    #sidebar-menu
+        ul.sidebar-menu#simple-bar
+            li.pin-title.sidebar-list.p-0
+                h5.sidebar-main-title Pinned
+            li.line.pin-line
+            li.sidebar-main-title General
+            li.sidebar-list 
+                +IconlySprite('Pin', 'pinned-icon') 
+                a.sidebar-link(href="javascript:void(0)")
+                    +IconlySprite('Home','stroke-icon')
+                    span Dashboard
+                    .badge.badge-primary.rounded-pill 3
+                    +FeatherSprite('chevron-right', 'feather') 
+                ul.sidebar-submenu 
+                    li
+                        a(href="index.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Default
+                    li
+                        a(href="dashboard-02.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Ecommerce
+                    li
+                        a(href="dashboard-03.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Project
+            li.sidebar-list 
+                +IconlySprite('Pin', 'pinned-icon') 
+                a.sidebar-link(href="javascript:void(0)")
+                    +IconlySprite('Pie', 'stroke-icon')
+                    span Widgets
+                    +FeatherSprite('chevron-right', 'feather') 
+                ul.sidebar-submenu 
+                    li
+                        a(href="general-widget.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | General
+                    li
+                        a(href="chart-widget.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Chart
+            li.sidebar-list 
+                +IconlySprite('Pin', 'pinned-icon') 
+                a.sidebar-link(href="javascript:void(0)")
+                    +IconlySprite('Document','stroke-icon')
+                    span Page Layout
+                    +FeatherSprite('chevron-right', 'feather') 
+                ul.sidebar-submenu 
+                    li
+                        a(href="box-layout.html")
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Box Layout
+                        a(href="layout-rtl.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | RTL
+                        a(href="layout-dark.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Dark
+            li.line 
+            li.sidebar-main-title Applications
+            li.sidebar-list 
+                +IconlySprite('Pin', 'pinned-icon') 
+                a.sidebar-link(href="javascript:void(0)")
+                    +IconlySprite('Info-circle','stroke-icon') 
+                    span Project
+                    +FeatherSprite('chevron-right', 'feather') 
+                ul.sidebar-submenu 
+                    li
+                        a(href="project-list.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Project List
+                    li 
+                        a(href="projectcreate.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Create New
+            li.sidebar-list 
+                +IconlySprite('Pin', 'pinned-icon') 
+                a.sidebar-link(href="file-manager.html")
+                    +IconlySprite('Paper','stroke-icon')
+                    span File Manager
+            li.sidebar-list 
+                +IconlySprite('Pin', 'pinned-icon') 
+                a.sidebar-link(href="kanban-board.html")
+                    +IconlySprite('Wallet','stroke-icon') 
+                    span Kanban Board
+            li.sidebar-list 
+                +IconlySprite('Pin', 'pinned-icon') 
+                a.sidebar-link(href="javascript:void(0)")
+                    +IconlySprite('Bag','stroke-icon')
+                    span Ecommerce
+                    +FeatherSprite('chevron-right', 'feather') 
+                ul.sidebar-submenu 
+                    li
+                        a(href="product.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Product
+                    li
+                        a(href="product-page.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Product Page 
+                    li
+                        a(href="add-products.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Add Product 
+                    li
+                        a(href="list-products.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Product List
+                    li
+                        a(href="payment-details.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Payment Details 
+                    li
+                        a(href="order-history.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Order History 
+                    li
+                        a.submenu-title(href="javascript:void(0)") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Invoice 
+                            +FeatherSprite('chevron-right', 'feather') 
+                        ul.according-submenu
+                            li
+                                a(href="invoice-1.html") 
+                                    | Invoice-1
+                            li
+                                a(href="invoice-2.html") 
+                                    | Invoice-2
+                            li
+                                a(href="invoice-3.html") 
+                                    | Invoice-3
+                            li
+                                a(href="invoice-4.html") 
+                                    | Invoice-4
+                            li
+                                a(href="invoice-5.html") 
+                                    | Invoice-5
+                            li
+                                a(href="invoice-template.html") 
+                                    | Invoice-6
+                    li
+                        a(href="cart.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Cart 
+                    li
+                        a(href="list-wish.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Wishlist 
+                    li
+                        a(href="checkout.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Checkout 
+                    li
+                        a(href="pricing.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Pricing
+            li.sidebar-list 
+                +IconlySprite('Pin', 'pinned-icon') 
+                a.sidebar-link(href="letter-box.html")
+                    +IconlySprite('Message','stroke-icon')
+                    span Letter Box
+            li.sidebar-list 
+                +IconlySprite('Pin', 'pinned-icon') 
+                a.sidebar-link(href="javascript:void(0)")
+                    +IconlySprite('Chat','stroke-icon')
+                    span Chat
+                    +FeatherSprite('chevron-right', 'feather') 
+                ul.sidebar-submenu 
+                    li
+                        a(href="private-chat.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Private Chat
+                    li
+                        a(href="group-chat.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Group Chat
+            li.sidebar-list 
+                +IconlySprite('Pin', 'pinned-icon') 
+                a.sidebar-link(href="javascript:void(0)")
+                    +IconlySprite('Profile','stroke-icon')
+                    span Users
+                    +FeatherSprite('chevron-right', 'feather') 
+                ul.sidebar-submenu 
+                    li
+                        a(href="user-profile.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | User Profile
+                    li
+                        a(href="edit-profile.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | User Edit
+                    li
+                        a(href="user-cards.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | User Cards
+            li.sidebar-list 
+                +IconlySprite('Pin', 'pinned-icon') 
+                a.sidebar-link(href="bookmark.html")
+                    +IconlySprite('Bookmark','stroke-icon')
+                    span Bookmarks
+            li.sidebar-list 
+                +IconlySprite('Pin', 'pinned-icon') 
+                a.sidebar-link(href="contacts.html")
+                    +IconlySprite('Contacts','stroke-icon')
+                    span Contacts
+            li.sidebar-list 
+                +IconlySprite('Pin', 'pinned-icon') 
+                a.sidebar-link(href="task.html")
+                    +IconlySprite('Tick-square','stroke-icon')
+                    span Tasks 
+            li.sidebar-list 
+                +IconlySprite('Pin', 'pinned-icon') 
+                a.sidebar-link(href="calendar-basic.html")
+                    +IconlySprite('Calendar','stroke-icon')
+                    span Calendar
+            li.sidebar-list 
+                +IconlySprite('Pin', 'pinned-icon') 
+                a.sidebar-link(href="social-app.html")
+                    +IconlySprite('Camera','stroke-icon')
+                    span Social App 
+            li.sidebar-list 
+                +IconlySprite('Pin', 'pinned-icon') 
+                a.sidebar-link(href="to-do.html")
+                    +IconlySprite('Edit','stroke-icon')
+                    span To-Do 
+            li.sidebar-list 
+                +IconlySprite('Pin', 'pinned-icon') 
+                a.sidebar-link(href="search.html")
+                    +IconlySprite('Search','stroke-icon')
+                    span Search Result
+            li.line
+            li.sidebar-main-title Components
+            li.sidebar-list 
+                +IconlySprite('Pin', 'pinned-icon') 
+                a.sidebar-link(href="buttons.html")
+                    +IconlySprite('More-box' , 'stroke-icon')
+                    span Buttons  
+            li.sidebar-list 
+                +IconlySprite('Pin', 'pinned-icon') 
+                a.sidebar-link(href="javascript:void(0)")
+                    +IconlySprite('Folder','stroke-icon')
+                    span Ui Kits
+                    +FeatherSprite('chevron-right', 'feather') 
+                ul.sidebar-submenu 
+                    li
+                        a(href="typography.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Typography
+                    li
+                        a(href="avatars.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Avatars
+                    li
+                        a(href="grid.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Grid
+                    li
+                        a(href="helper-classes.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Helper Classes
+                    li
+                        a(href="tag-pills.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Tag & Pills
+                    li
+                        a(href="progress.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Progress
+                    li
+                        a(href="popover.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Popover
+                    li
+                        a(href="tooltip.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Tooltip
+                    li
+                        a(href="alert.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Alert
+                    li
+                        a(href="modal.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Modal
+                    li
+                        a(href="dropdown.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Dropdown
+                    li
+                        a(href="according.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Accordion
+                    li
+                        a(href="bootstrap-tabs.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Tabs
+                    li
+                        a(href="list.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Lists
+            li.sidebar-list 
+                +IconlySprite('Pin', 'pinned-icon') 
+                a.sidebar-link(href="javascript:void(0)")
+                    +IconlySprite('Ticket-star','stroke-icon')
+                    span Bonus Ui
+                    +FeatherSprite('chevron-right', 'feather') 
+                ul.sidebar-submenu 
+                    li
+                        a(href="scrollable.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Scrollable 
+                    li
+                        a(href="breadcrumbs.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Breadcrumb
+                    li
+                        a(href="pagination.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Pagination
+                    li
+                        a(href="ribbons.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Ribbons
+                    li
+                        a(href="tree.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Tree View
+                    li
+                        a(href="toasts.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Toast
+                    li
+                        a(href="rating.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Rating
+                    li
+                        a(href="dropzone.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Dropzone
+                    li
+                        a(href="tour.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Tour
+                    li
+                        a(href="sweetalert.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Sweetalert2
+                    li
+                        a(href="modal-animated.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Animated Modal
+                    li
+                        a(href="slider.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Slider
+                    li
+                        a(href="range-slider.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Range Slider
+                    li
+                        a(href="image-cropper.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Image Cropper
+                    li
+                        a(href="basic-card.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Basic Card
+                    li
+                        a(href="creative-card.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Creative Card
+                    li
+                        a(href="dragabble.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Draggable Card
+                    li
+                        a(href="timeline.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Timeline
+            li.sidebar-list 
+                +IconlySprite('Pin', 'pinned-icon') 
+                a.sidebar-link(href="javascript:void(0)")
+                    +IconlySprite('Category','stroke-icon')
+                    span Animation
+                    +FeatherSprite('chevron-right', 'feather') 
+                ul.sidebar-submenu 
+                    li
+                        a(href="wow.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Wow Animation
+                    li
+                        a(href="aos.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | AOS Animation
+            li.sidebar-list 
+                +IconlySprite('Pin', 'pinned-icon') 
+                a.sidebar-link(href="javascript:void(0)")
+                    +IconlySprite('Activity','stroke-icon')
+                    span Icons
+                    +FeatherSprite('chevron-right', 'feather') 
+                ul.sidebar-submenu 
+                    li
+                        a(href="flag-icon.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Flag Icon
+                    li
+                        a(href="font-awesome.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Fontawesome Icon
+                    li
+                        a(href="feather-icon.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Feather Icon
+                    li
+                        a(href="iconly-icon.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Iconly Icon
+                    li
+                        a(href="ico-icon.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Ico Icon
+                    li
+                        a(href="themify-icon.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Themify icon
+                    li
+                        a(href="whether-icon.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Whether Icon
+            li.sidebar-list 
+                +IconlySprite('Pin', 'pinned-icon') 
+                a.sidebar-link(href="javascript:void(0)")
+                    +IconlySprite('Chart','stroke-icon')
+                    span Charts
+                    +FeatherSprite('chevron-right', 'feather') 
+                ul.sidebar-submenu 
+                    li
+                        a(href="apexchart.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Apexchart
+                    li
+                        a(href="chartist.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Chartist
+                    li
+                        a(href="chartjs.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Chartjs
+            li.line
+            li.sidebar-main-title Forms & table
+            li.sidebar-list 
+                +IconlySprite('Pin', 'pinned-icon') 
+                a.sidebar-link(href="javascript:void(0)")
+                    +IconlySprite('Filter', 'stroke-icon')
+                    span Form Controls
+                    +FeatherSprite('chevron-right', 'feather')
+                ul.sidebar-submenu 
+                    li
+                        a(href="base_input.html")
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Base Input
+                    li
+                        a(href="radio-checkbox-control.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Check & Radio Box
+                    li
+                        a(href="input-group.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Input Groups
+                    li
+                        a(href="megaoptions.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Mega Options
+                    li
+                        a(href="form-validation.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Form validation
+            li.sidebar-list 
+                +IconlySprite('Pin', 'pinned-icon') 
+                a.sidebar-link(href="javascript:void(0)")
+                    +IconlySprite('Scan','stroke-icon')
+                    span Form Widgets
+                    +FeatherSprite('chevron-right', 'feather') 
+                ul.sidebar-submenu 
+                    li
+                        a(href="datepicker.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Date picker 
+                    li
+                        a(href="touchspin.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Touchspin
+                    li
+                        a(href="select2.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | select 2
+                    li
+                        a(href="switch.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Switch
+                    li
+                        a(href="typeahead.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Typeahead
+                    li
+                        a(href="clipboard.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Clipboard
+            li.sidebar-list 
+                +IconlySprite('Pin', 'pinned-icon') 
+                a.sidebar-link(href="javascript:void(0)")
+                    +IconlySprite('Icon-plus','stroke-icon')
+                    span Form Layout
+                    +FeatherSprite('chevron-right', 'feather') 
+                ul.sidebar-submenu 
+                    li
+                        a(href="form-wizard.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Form wizard 1
+                    li
+                        a(href="form-wizard-two.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Form wizard 2
+                    li
+                        a(href="two-factor.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Two Factor
+            li.sidebar-list 
+                +IconlySprite('Pin', 'pinned-icon') 
+                a.sidebar-link(href="javascript:void(0)")
+                    +IconlySprite('Edit-line','stroke-icon')
+                    span Tables
+                    +FeatherSprite('chevron-right', 'feather')
+                ul.sidebar-submenu 
+                    li
+                        a.submenu-title(href="javascript:void(0)") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Bootstrap Table
+                            +FeatherSprite('chevron-right', 'feather')
+                        ul.according-submenu
+                            li
+                                a(href="basic-table.html") 
+                                    | Basic Tables
+                            li
+                                a(href="table_components.html") 
+                                    | Table Components
+                    li
+                        a.submenu-title(href="javascript:void(0)") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Data Tables
+                            +FeatherSprite('chevron-right', 'feather')
+                        ul.according-submenu
+                            li
+                                a(href="datatable-basic-init.html") 
+                                    | Basic Init
+                            li
+                                a(href="datatable-advance.html") 
+                                    | Advance Init
+                            li
+                                a(href="datatable-API.html") 
+                                    | API
+                            li
+                                a(href="datatable-data-source.html") 
+                                    | Data Sources
+                    li
+                        a(href="datatable-ext-autofill.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Ex. Data Tables
+                    li
+                        a(href="jsgrid-table.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Js Grid Table
+            li.line 
+            li.sidebar-main-title Pages
+            li.sidebar-list 
+                +IconlySprite('Pin', 'pinned-icon') 
+                a.sidebar-link(href="landing-page.html")
+                    +IconlySprite('Wallet', 'stroke-icon')
+                    span Landing Page
+            li.sidebar-list 
+                +IconlySprite('Pin', 'pinned-icon') 
+                a.sidebar-link(href="sample-page.html")
+                    +IconlySprite('Paper-plus', 'stroke-icon')
+                    span Sample Page
+            li.sidebar-list 
+                +IconlySprite('Pin', 'pinned-icon') 
+                a.sidebar-link(href="translate.html")
+                    +IconlySprite('Play', 'stroke-icon') 
+                    span Translate
+            li.sidebar-list 
+                +IconlySprite('Pin', 'pinned-icon') 
+                a.sidebar-link(href="../starter-kit/index.html" target="_blank")
+                    +IconlySprite('Star', 'stroke-icon')
+                    span Starter kit
+            li.sidebar-list 
+                +IconlySprite('Pin', 'pinned-icon') 
+                a.sidebar-link(href="javascript:void(0)")
+                    +IconlySprite('Password', 'stroke-icon')
+                    span Others
+                    +FeatherSprite('chevron-right', 'feather') 
+                ul.sidebar-submenu 
+                    li
+                        a.submenu-title(href="javascript:void(0)") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Error Page
+                            +FeatherSprite('chevron-right', 'feather') 
+                        ul.according-submenu
+                            li
+                                a(href="error-page1.html") 
+                                    | Error Page 1
+                            li
+                                a(href="error-page2.html") 
+                                    | Error Page 2
+                            li
+                                a(href="error-page3.html") 
+                                    | Error Page 3
+                            li
+                                a(href="error-page4.html") 
+                                    | Error Page 4
+                            li
+                                a(href="error-page5.html") 
+                                    | Error Page 5
+                            li
+                                a(href="error-page6.html") 
+                                    | Error Page 6
+                    li
+                        a.submenu-title(href="javascript:void(0)") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Authentication
+                            +FeatherSprite('chevron-right', 'feather') 
+                        ul.according-submenu
+                            li
+                                a(href="login.html") 
+                                    | Login simple
+                            li
+                                a(href="login_one.html") 
+                                    | Login With Bg Image
+                            li
+                                a(href="login_two.html") 
+                                    | Login With Image Two
+                            li
+                                a(href="login-bs-validation.html") 
+                                    | Login With Validation
+                            li
+                                a(href="login-bs-tt-validation.html") 
+                                    | Login With Tooltip
+                            li
+                                a(href="login-sa-validation.html") 
+                                    | Login With Sweetalert
+                            li
+                                a(href="sign-up.html") 
+                                    | Register Simple
+                            li
+                                a(href="sign-up-one.html") 
+                                    | Register With Bg Image
+                            li
+                                a(href="sign-up-two.html") 
+                                    | Register With Image Two
+                            li
+                                a(href="sign-up-wizard.html") 
+                                    | Register Wizard
+                            li
+                                a(href="unlock.html") 
+                                    | Unlock User
+                            li
+                                a(href="forget-password.html") 
+                                    | Forget Password
+                            li
+                                a(href="reset-password.html") 
+                                    | Reset Password
+                            li
+                                a(href="maintenance.html") 
+                                    | Maintenance
+                    li
+                        a.submenu-title(href="javascript:void(0)") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Coming Soon
+                            +FeatherSprite('chevron-right', 'feather') 
+                        ul.according-submenu
+                            li
+                                a(href="comingsoon.html") 
+                                    | Coming Simple
+                            li
+                                a(href="comingsoon-bg-video.html") 
+                                    | Coming With Bg Video
+                            li
+                                a(href="comingsoon-bg-img.html") 
+                                    | Coming With Bg Image
+                    li
+                        a.submenu-title(href="javascript:void(0)") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Email Template
+                            +FeatherSprite('chevron-right', 'feather') 
+                        ul.according-submenu
+                            li
+                                a(href="basic-template.html") 
+                                    | Basic Email
+                            li
+                                a(href="email-header.html") 
+                                    | Basic With Header
+                            li
+                                a(href="template-email.html") 
+                                    | Ecomerce Template
+                            li
+                                a(href="template-email-2.html") 
+                                    | Email Template 2
+                            li
+                                a(href="ecommerce-templates.html") 
+                                    | Ecommerce Email
+                            li
+                                a(href="email-order-success.html") 
+                                    | Order Success 
+            li.line 
+            li.sidebar-main-title MISCELLANEOUS
+            li.sidebar-list 
+                +IconlySprite('Pin', 'pinned-icon') 
+                a.sidebar-link(href="javascript:void(0)")
+                    +IconlySprite('Gallery', 'stroke-icon')
+                    span Gallery
+                    +FeatherSprite('chevron-right', 'feather')
+                ul.sidebar-submenu 
+                    li
+                        a(href="gallery.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Gallery Grid
+                    li
+                        a(href="gallery-with-description.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Gallery Grid Desc
+                    li
+                        a(href="gallery-masonry.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Masonry Gallery
+                    li
+                        a(href="masonry-gallery-with-disc.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Masonry With Desc
+                    li
+                        a(href="gallery-hover.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Hover Effects
+            li.sidebar-list 
+                +IconlySprite('Pin', 'pinned-icon') 
+                a.sidebar-link(href="javascript:void(0)")
+                    +IconlySprite('Game', 'stroke-icon')
+                    span Blog
+                    +FeatherSprite('chevron-right', 'feather')
+                ul.sidebar-submenu 
+                    li
+                        a(href="blog.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Blog Details
+                    li
+                        a(href="blog-single.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Blog Single
+                    li
+                        a(href="add-post.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Add Post
+            li.sidebar-list 
+                +IconlySprite('Pin', 'pinned-icon') 
+                a.sidebar-link(href="faq.html")
+                    +IconlySprite('Danger', 'stroke-icon')
+                    span FAQ
+            li.sidebar-list 
+                +IconlySprite('Pin', 'pinned-icon') 
+                a.sidebar-link(href="javascript:void(0)")
+                    +IconlySprite('Filter-2', 'stroke-icon')
+                    span Job Search
+                    +FeatherSprite('chevron-right', 'feather')
+                ul.sidebar-submenu 
+                    li
+                        a(href="job-cards-view.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Cards View
+                    li
+                        a(href="job-list-view.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | List View
+                    li
+                        a(href="job-details.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Job Details
+                    li
+                        a(href="job-apply.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Apply
+            li.sidebar-list 
+                +IconlySprite('Pin', 'pinned-icon') 
+                a.sidebar-link(href="javascript:void(0)")
+                    +IconlySprite('Work', 'stroke-icon')
+                    span Learning
+                    +FeatherSprite('chevron-right', 'feather')
+                ul.sidebar-submenu 
+                    li
+                        a(href="learning-list-view.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Learning List
+                    li
+                        a(href="learning-detailed.html")
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Detailed Course
+            li.sidebar-list 
+                +IconlySprite('Pin', 'pinned-icon') 
+                a.sidebar-link(href="javascript:void(0)")
+                    +IconlySprite('Pin', 'pinned-icon')
+                    +IconlySprite('Discovery', 'stroke-icon')
+                    span Maps
+                    +FeatherSprite('chevron-right', 'feather')
+                ul.sidebar-submenu 
+                    li
+                        a(href="data-map.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Data Maps
+                    li
+                        a(href="vector-map.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Vector Maps
+            li.sidebar-list 
+                +IconlySprite('Pin', 'pinned-icon') 
+                a.sidebar-link(href="javascript:void(0)")
+                    +IconlySprite('Shield', 'stroke-icon')
+                    span Editors
+                    +FeatherSprite('chevron-right', 'feather')
+                ul.sidebar-submenu
+                    li 
+                        a(href="quilleditor.html")
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | Quilljs Editor
+                    li
+                        a(href="ace-code-editor.html") 
+                            +IconlySprite('right-3' , 'svg-menu')
+                            | ACE Code Editor
+            li.sidebar-list 
+                +IconlySprite('Pin', 'pinned-icon') 
+                a.sidebar-link(href="knowledgebase.html")
+                    +IconlySprite('Setting', 'stroke-icon')
+                    span Knowledgebase
+            li.sidebar-list 
+                +IconlySprite('Pin', 'pinned-icon') 
+                a.sidebar-link(href="support-ticket.html")
+                    +IconlySprite('Ticket', 'stroke-icon')
+                    span Support Ticket
+    .right-arrow#right-arrow
+        +FeatherSprite('arrow-right', 'feather') 
+// Page sidebar end

@@ -1,0 +1,38 @@
+// Badge Heading Card
+.card 
+    .card-header.pb-0
+        +card-header('Badges as part buttons', 'dote','','All html button,', '.btn , .badge', 'are available.')
+    .card-body.button-badge
+        .badge-spacing.flex-column.align-items-start
+            button.btn.btn-primary.d-flex.align-items-center(type='button')
+                | Messages 
+                span.badge.rounded-circle.btn-p-space.badge-light.text-dark.ms-2
+                    +FeatherSprite('mail', 'feather')
+            button.btn.btn-secondary.d-flex.align-items-center(type='button')
+                | Notifications 
+                span.badge.rounded-circle.btn-p-space.badge-light.text-dark.ms-2
+                    +FeatherSprite('bell', 'feather')
+            button.btn.btn-tertiary.d-flex.align-items-center(type='button')
+                | Update available 
+                span.badge.rounded-circle.btn-p-space.badge-light.text-dark.ms-2
+                    +FeatherSprite('settings', 'feather')
+            button.btn.btn-success.d-flex.align-items-center(type='button')
+                | Playing Now 
+                span.badge.rounded-circle.btn-p-space.badge-light.text-dark.ms-2
+                    +FeatherSprite('music', 'feather')
+            button.btn.btn-info.d-flex.align-items-center(type='button')
+                | 1.2 GB Used 
+                span.badge.rounded-circle.btn-p-space.badge-light.text-dark.ms-2
+                    +FeatherSprite('alert-triangle', 'feather')
+        .code-box-copy
+            button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#example-head' title='Copy')
+                i.icofont.icofont-copy
+            pre
+                code.language-html#badge-as-part-btn
+                    | &lt;!--You can use badge-* class with any icons used.(badge-icons/headings).--&gt;
+                    | &lt;div class="badge-spacing flex-column align-items-start"&gt;
+                    | &lt;button class="btn btn-primary d-flex align-items-center" type="button"&gt;Messages &lt;span class="badge rounded-circle btn-p-space badge-light text-dark ms-2"&gt;&lt;i data-feather="mail"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/button&gt;
+                    | &lt;button class="btn btn-secondary d-flex align-items-center" type="button"&gt;Notifications &lt;span class="badge rounded-circle btn-p-space badge-light text-dark ms-2"&gt;&lt;i data-feather="bell"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/button&gt;
+                    | &lt;button class="btn btn-success d-flex align-items-center" type="button"&gt;Update available &lt;span class="badge rounded-circle btn-p-space badge-light text-dark ms-2"&gt;&lt;i data-feather="settings"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/button&gt;
+                    | &lt;button class="btn btn-info d-flex align-items-center" type="button"&gt;Playing Now &lt;span class="badge rounded-circle btn-p-space badge-light text-dark ms-2"&gt;&lt;i data-feather="music"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/button&gt;
+                    | &lt;button class="btn btn-warning text-dark d-flex align-items-center" type="button"&gt;1.2 GB Used &lt;span class="badge rounded-circle btn-p-space badge-light text-dark ms-2"&gt;&lt;i data-feather="alert-triangle"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/button&gt;

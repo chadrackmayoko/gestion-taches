@@ -1,0 +1,77 @@
+//-// Order delivery
+-
+    var TOTAL_SALE =[
+        {
+            name: 'Total Sale',
+            badge: 'd-flex badge-light-danger',
+            price: '$ 12,463',
+            priceDetail: '20% since Last Month',
+            id: 'sale-chart',
+            stroke: 'feather me-1 pt-0 stroke-danger',
+            percentage: '3.4%',
+            fill: 'svg-w-23 fill-primary',
+            bgColor: 'bg-light-primary',
+            arrowId: 'arrow-up-right',
+            iconId: 'Product-discount',
+        },
+    ]
+    var NEW_ORDER =[
+         {
+            name: 'New Orders',
+            badge: 'd-flex badge-light-success',
+            percentage: '4.5%',
+            iconId: 'order-product',
+            price: '$ 51,325',
+            priceDetail: '14% since Last Month',
+            fill: 'svg-w-30 fill-secondary',
+            bgColor: 'bg-light-secondary',
+            arrowId: 'arrow-down-right',
+            id: 'order-chart',
+            stroke: 'feather me-1 pt-0 stroke-success',
+        },
+    ]
+    var ORDER_DELIVERY =[
+         {
+            iconId: 'delivery-van',
+            name: 'Order Delivery',
+            percentage: '2.3%',
+            badge: 'd-flex badge-light-danger',
+            id: 'delivery-chart',
+            stroke: 'feather me-1 pt-0 stroke-danger',
+            price: '$ 32,587',
+            priceDetail: '10% since Last Month',
+            fill: 'svg-w-31 fill-tertiary',
+            bgColor: 'bg-light-tertiary',
+            arrowId: 'arrow-up-right',
+        }
+    ]     
+//-// mixin
+mixin OrderDeliveryContent(items)
+    each item in items 
+        .card-header.pb-0
+            .d-flex.justify-content-between
+                div
+                    div.d-flex.gap-2
+                        h5.f-18.font-light=item.name
+                        .badge.align-items-center(class=item.badge)
+                            +FeatherSprite(item.arrowId , item.stroke)
+                            span.f-w-500=item.percentage
+                    h3.f-26.f-w-600.mt-3=item.price
+                .flex-shrink-0(class=item.bgColor)
+                    +IconlySprite(item.iconId, item.fill) 
+        .card-body.progress-card.pt-0
+            div
+                p.f-w-500=item.priceDetail
+            .order-chart
+                .chart(id=item.id)
+
+// Order Delivery
+.col-md-4
+    .card.progress-items 
+        +OrderDeliveryContent(TOTAL_SALE)
+.col-md-4
+    .card.progress-items 
+        +OrderDeliveryContent(NEW_ORDER)
+.col-md-4 
+    .card.progress-items 
+        +OrderDeliveryContent(ORDER_DELIVERY)

@@ -1,0 +1,46 @@
+// Pills tabs
+.card
+    .card-header.pb-0
+        +card-header('Pills tabs', '','','Use the', 'data-bs-toggle/="pill"','to tabs pill shape. And mandatory for .active class.')
+    .card-body
+        ul#pills-tab.nav.nav-pills.nav-primary(role='tablist')
+            li.nav-item
+                a#pills-aboutus-tab.nav-link(data-bs-toggle='pill' href='#pills-aboutus' role='tab' aria-controls='pills-aboutus' aria-selected='false') About us
+            li.nav-item
+                a#pills-contactus-tab.nav-link(data-bs-toggle='pill' href='#pills-contactus' role='tab' aria-controls='pills-contactus' aria-selected='false') Contact us
+            li.nav-item
+                a#pills-blog-tab.nav-link.active(data-bs-toggle='pill' href='#pills-blog' role='tab' aria-controls='pills-blog' aria-selected='true') Blog 
+        #pills-tabContent.tab-content
+            #pills-aboutus.tab-pane.fade(role='tabpanel' aria-labelledby='pills-aboutus-tab')
+                p.pt-3
+                    | The ultimate goal of every web design is to create a site that will reach its audience and be useful to them. In order to achieve that, it is necessary to befriend Google&apos;s mechanisms and algorithms. There is no use of a pretty website, if it&apos;s displayed on a 10th page of search results, because this way no one will ever find it. That brings us to the topic of Google&apos;s Website Ranking.Generally speaking, it&apos;s a list of pages and their keywords, sorted in the order of search results. The higher your place in the ranking is, the more people are likely to see your page.
+            #pills-contactus.tab-pane.fade(role='tabpanel' aria-labelledby='pills-contactus-tab')
+                ul.d-flex.flex-column.gap-1.pt-3
+                    li
+                        | Create professional web page design. Responsive, fully customizable with easy Drag-n-Drop Nicepage editor. Adjust colors, fonts, header and footer, layout and other design elements, as well as content and images.
+                    li
+                        strong Visit Us: 
+                        |  4 Marigold Close, Glenmore Park, New South Wales, 2745 Australia- 2745
+                    li
+                        strong Mail Us:
+                        |  SamuelMario@armyspy.com
+                    li
+                        strong Contact Number: 
+                        |  (02) 4733 6337
+            #pills-blog.tab-pane.fade.active.show(role='tabpanel' aria-labelledby='pills-blog-tab')
+                .pt-3.d-flex.align-items-center.gap-3.pills-blogger
+                    .blog-wrapper.d-flex.bg-light-primary
+                        .flex-shrink-0.border-primary
+                            img(src="../assets/images/dashboard2/product/1.png", alt="")
+                    .blog-content
+                        p  
+                            em.font-primary.fw-bold Macbook
+                            |   &mdash; iMac is a family of all-in-one Mac desktop computers designed and built by Apple Inc. It has been the primary part of Apple's consumer desktop offerings since its debut in August 1998, and has evolved through seven distinct forms.
+                .pt-3.d-flex.align-items-center.gap-3.pills-blogger
+                    .blog-wrapper.d-flex.bg-light-secondary
+                        .flex-shrink-0.border-secondary
+                            img(src="../assets/images/dashboard2/product/2.png", alt="")
+                    .blog-content
+                        p  
+                            em.font-secondary.fw-bold Microwave
+                            |   &mdash; Microwave is a form of electromagnetic radiation with wavelengths ranging from about one meter to one millimeter corresponding to frequencies between 300 MHz and 300 GHz respectively. Different sources define different frequency ranges as microwaves.

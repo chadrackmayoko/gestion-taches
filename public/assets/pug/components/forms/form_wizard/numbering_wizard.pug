@@ -1,0 +1,122 @@
+.card
+  .card-header.pb-0
+    +card-header('Numbering wizard', '','', '', '', 'Fill up your details and proceed next steps.')
+  .card-body.basic-wizard.important-validation
+    #stepper1.stepper-horizontal
+      .stepper-one.stepper.step.editing.active
+        .step-circle
+          span 1
+        .step-title Basic Info
+        .step-bar-left
+        .step-bar-right
+      .stepper-two.step
+        .step-circle
+          span 2
+        .step-title Cart Info
+        .step-bar-left
+        .step-bar-right
+      .stepper-three.step
+        .step-circle
+          span 3
+        .step-title Feedback
+        .step-bar-left
+        .step-bar-right
+      .stepper-four.step
+        .step-circle
+          span 4
+        .step-title Finish
+        .step-bar-left
+        .step-bar-right
+    #msform
+      //- .custom-input used as dark mode 
+      form.stepper-one.row.g-3.needs-validation.custom-input(novalidate='')
+        .col-sm-6
+          label.form-label(for='email-basic-wizard') Email
+            span.font-danger *
+          input#email-basic-wizard.form-control(type='email' required='' placeholder='edmin@gmail.com')
+        .col-sm-6
+          label.form-label(for='firstnamewizard') First Name
+            span.font-danger *
+          input#firstnamewizard.form-control(type='text' required='' placeholder='Enter your name')
+        .col-12
+          label.col-sm-12.form-label(for='passwordwizard') Password
+            span.font-danger *
+          input#passwordwizard.form-control(type='password' placeholder='Enter password' required='')      
+        .col-12
+          label.col-sm-12.form-label(for='confirmpasswordwizard') Confirm Password
+            span.font-danger *
+          input#confirmpasswordwizard.form-control(type='password' placeholder='Enter confirm password' required='')         
+        .col-12
+          .form-check.checkbox-checked.form-check-inline
+            input#invalidCheck-3.form-check-input(type='checkbox' value='' required='')
+            label.form-check-label(for='invalidCheck-3')
+              | Agree to terms and conditions
+      form.stepper-two.row.g-3.needs-validation.custom-input(novalidate='')
+        .col-md-12 
+          label.form-label(for='placeholdername1') Placeholder Name 
+          input#placeholdername1.form-control(type="text" required='' placeholder='Placeholder name')
+        .col-xxl-4.col-sm-6
+          label.form-label(for='cardNumber01') Card Number
+          input#cardNumber01.form-control(type='text' required='' placeholder='xxxx xxxx xxxx xxxx')
+        .col-xxl-4.col-sm-6
+          label.form-label(for='expirationDates01') Expiration(MM/YY)
+          input#expirationDates01.form-control(type='number' required='' placeholder='xx/xx')
+        .col-xxl-4
+          label.form-label(for='cvvNumber-a') CVV Number
+          input#cvvNumber-a.form-control(type='text' required='')
+        .col-12 
+          label.form-label(for='formFileDocument') Upload Documentation
+          input#formFileDocument.form-control(type='file' aria-label='file example' required='')
+        .col-12
+          .form-check
+            input#invalidCheck-4.form-check-input(type='checkbox' value='' required='')
+            label.form-check-label(for='invalidCheck-4')
+              | All the above information is correct
+      form.stepper-three.row.g-3.needs-validation.custom-input(novalidate='')
+        .col-sm-6
+          label.form-label(for='email-basic') LinkedIn
+            span.font-danger *
+          input#email-basic.form-control(type='url' required='' placeholder='https://linkedIn.com/edmin')
+          .invalid-feedback
+            | Please enter your valid link
+          .valid-feedback 
+            | Looks's Good!
+        .col-sm-6
+          label.form-label(for='validationCustom996') Github
+            span.font-danger *
+          input#validationCustom996.form-control(type='url' required='' placeholder='https://github.com/edmin')
+          .invalid-feedback
+            | Please enter your valid link
+          .valid-feedback 
+            | Looks's Good!     
+        .col-12 
+          label.form-label(for='validationCustom09') Select State
+            span.font-danger *
+          select#validationCustom09.form-select(required='')
+            option(selected='' disabled='' value='') Choose...
+            option U.K 
+            option U.S 
+            option India
+          .invalid-feedback
+            | Please select a valid state.
+        .col-12 
+          label.form-label(for='givefeedback') Give Feedback
+          textarea#givefeedback.form-control(required='')
+          .invalid-feedback
+            | Please enter a message in the textarea.
+        .col-12
+          .form-check
+            input#invalidCheck5.form-check-input(type='checkbox' value='' required='')
+            label.form-check-label.mb-0(for='invalidCheck5')
+              | Agree to terms and conditions
+            .invalid-feedback
+              | You must agree before submitting.
+      form.stepper-four.row.g-3.needs-validation(novalidate='')
+        .col-12.m-0
+          .successful-form
+            img.img-fluid(src="../assets/images/gif/successful.gif", alt="successful")
+            h6 Congratulations 
+            p Well done! You have successfully completed. 
+    .wizard-footer.d-flex.gap-2.justify-content-end
+      button#backbtn.btn.alert-light-primary(onclick='backStep()')  Back
+      button#nextbtn.btn.btn-primary(onclick='nextStep()') Next

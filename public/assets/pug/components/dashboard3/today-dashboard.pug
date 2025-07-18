@@ -1,0 +1,70 @@
+//-// tiemline 
+-
+    var FIRST_TIMELINE =[
+        {
+            borderColor: 'b-t-primary',
+            timelineHeader: 'Design meeting',
+            src1: '../assets/images/user/13.jpg',
+            src2: '../assets/images/user/6.jpg',
+            src3: '../assets/images/user/3.jpg',
+            peopleName: '+4'
+        },
+    ]
+    var SECOND_TIMELINE=[
+        {
+            borderColor: 'b-t-secondary',
+            timelineHeader: 'Weekly scurm Meeting',
+            src1: '../assets/images/user/14.jpg',
+            src2: '../assets/images/user/9.jpg',
+            src3: '../assets/images/user/11.jpg',
+            peopleName: '+2'
+        }
+    ]
+
+//-// Mixin
+mixin TimelineContent(items)
+    each item in items
+        .timeline-box.d-flex.align-items-center.b-w-39(class=item.borderColor)
+            .flex-grow-1 
+                h6.f-15.f-w-600.mb-1=item.timelineHeader
+                .font-light   
+                    +FeatherSprite('clock', 'feather') 
+                    span.font-light.f-w-400.f-14 2 hours
+            .team-member.text-end 
+                .customers.d-inline-block.avatar-group
+                    ul
+                        li.d-inline-block
+                            img.img-38.b-r-8(src=item.src1, alt='#')
+                        li.d-inline-block
+                            img.img-38.b-r-8(src=item.src2, alt='#')
+                        li.d-inline-block
+                            img.img-38.b-r-8(src=item.src3, alt='#')
+                        li.d-inline-block
+                            span.b-r-10=item.peopleName
+// timeline mixin
+.card.calendar-box
+    .card-header.border-dash-bottom
+        h4 Today
+        span UI/UX designer
+        .card-icon
+            a(href="calendar-basic.html").btn.btn-primary Add Task
+    .card-body
+        #calendar.border-dash-bottom
+        .row.align-items-center
+            .col-2
+                ul.d-flex.flex-column.gap-4
+                    li 
+                        span.font-light 10:00                    
+                    li 
+                        span.font-light 11:00
+                    li 
+                        span.font-light 12:00
+                    li 
+                        span.font-light 13:00
+                    li 
+                        span.font-light 14:00
+            .col-10.timeline-items 
+                +TimelineContent(FIRST_TIMELINE)
+                hr.my-4
+                +TimelineContent(SECOND_TIMELINE)  
+        

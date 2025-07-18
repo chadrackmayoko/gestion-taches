@@ -1,0 +1,60 @@
+//-// Cart items 
+-
+    var CART_ITEMS =[
+        {
+            bClass: 'border-primary',
+            bgClass: 'bg-light-primary',
+            productname: 'Apple Computers',
+            price: '$2600.00',
+            url: '../assets/images/dashboard2/product/1.png',
+            badge: '2',
+        },
+        {
+            bClass: 'border-secondary',
+            bgClass: 'bg-light-secondary',
+            productname: 'Microwave',
+            price: '$1450.45',
+            url: '../assets/images/dashboard2/product/2.png',
+            badge: '2'
+        },
+        {
+            bClass: 'border-tertiary',
+            bgClass: 'bg-light-tertiary',
+            productname: 'Mackup Kit',
+            price: '$300.45',
+            url: '../assets/images/dashboard2/product/3.png',
+            badge: '2'
+        },
+    ]
+//-// Mixin
+mixin CartContent(items)
+
+    each item in items
+        li.cartbox.d-flex(class=item.bgClass)
+            .flex-shrink-0(class=item.bClass)
+                img(src=item.url alt="")
+            .touchpin-details
+                a(href="cart.html")
+                    h5=item.productname
+                span=item.price
+                .touchspin-wrapper
+                  button.decrement-touchspin.btn-touchspin
+                    +IconlySprite('minus', 'svg-color')
+                  input.form-control.input-touchspin(type='number' value='5' class=item.bgClass)
+                  button.increment-touchspin.btn-touchspin
+                    +IconlySprite('plus', 'svg-color')
+                button.btn.btn-close
+            
+// Cart menu
+li.custom-dropdown
+    a(href="javascript:void(0)")
+        +IconlySprite('Bag', 'svg-color')
+    .custom-menu.cart-dropdown.py-0.overflow-hidden
+        h5.title.bg-primary-light Cart
+            span Total : 
+                span.font-primary 4350.9
+        ul
+            +CartContent(CART_ITEMS)
+            li.mt-3.p-0.d-flex.justify-content-center
+                div
+                    a.btn.btn-secondary(href="checkout.html") Checkout

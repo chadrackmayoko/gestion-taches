@@ -1,0 +1,41 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    include ../../components/loader
+    main#pageWrapper.page-wrapper.compact-wrapper
+      include ../../components/header/header
+      .page-body-wrapper
+        include ../../components/sidebar
+        .page-body
+          .container-fluid
+            +breadcrumb(['Form Controls','Mega Options'],'Mega Options')
+          // Container-fluid starts
+          .container-fluid.mega-option
+            .row 
+              .col-12
+                include ../../components/forms/mega-options/variation
+              .col-sm-12
+                include ../../components/forms/mega-options/variation-checkbox
+              .col-sm-12.col-xxl-6.box-col-6
+                include ../../components/forms/mega-options/default-mega
+              .col-sm-12.col-xxl-6.box-col-6
+                include ../../components/forms/mega-options/without-borders
+              .col-sm-12.col-xxl-6.box-col-6
+                include ../../components/forms/mega-options/solid-border
+              .col-sm-12.col-xxl-6.box-col-6
+                include ../../components/forms/mega-options/offer-style
+              .col-sm-12
+                include ../../components/forms/mega-options/inline-style
+              .col-sm-12.col-xxl-6.box-col-12
+                include ../../components/forms/mega-options/vertical-style
+              .col-sm-12.col-xxl-6.box-col-12
+                include ../../components/forms/mega-options/horizontal-style
+          // Container-fluid ends
+        include ../../components/footer
+    include ../../components/footer-files

@@ -1,0 +1,14 @@
+.card
+   .card-header.pb-0
+     +card-header('RTL Support', '','', '', '', 'Dataset shows in Right Side.')
+   .card-body
+     #rtl-support
+      form.theme-form
+        div
+          select#rtl.form-control(name='rtl' dir='rtl')
+            option(value='') Choose a city
+            option(value='Leeds') Leeds
+            option(value='Manchester') Manchester
+            option(value='London') London
+            option(value='Sheffield') Sheffield
+            option(value='Newcastle') Newcastle

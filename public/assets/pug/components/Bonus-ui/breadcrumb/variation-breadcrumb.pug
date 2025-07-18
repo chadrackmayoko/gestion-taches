@@ -1,0 +1,18 @@
+// variation breadcrumb start
+
+.card 
+    .card-header.pb-0
+        +card-header('Variation Of Breadcrumb', '','', 'You can set breadcrumb using', ' .breadcrumb ', 'class through any icons sets.')
+    .card-body.breadcrumb-space
+        nav.breadcrumb.breadcrumb-no-divider.mb-3.gap-2
+            a.breadcrumb-item.mb-1.mb-xl-0(href="javascript:void(0)") Home
+            a.breadcrumb-item.ps-0.mb-1.mb-xl-0(href="javascript:void(0)") Chat
+            span.breadcrumb-item.active.ps-0 Video Chat
+        ol.breadcrumb.bg-white.p-l-0
+            li.breadcrumb-item
+                a(href="javascript:void(0)")
+                    +IconlySprite('Home' , 'home-icon') 
+            li.breadcrumb-item Blog
+            li.breadcrumb-item.active Blog Details
+
+// variation breadcrumb End

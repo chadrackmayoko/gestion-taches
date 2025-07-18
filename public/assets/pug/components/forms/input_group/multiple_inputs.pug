@@ -1,0 +1,17 @@
+.card
+    .card-header.pb-0
+        +card-header('Multiple inputs', '','', 'While multiple <input>s are supported visually, validation styles are only available for input groups with a single ', '<input>', '')
+    .card-body.card-wrapper.input-group-wrapper
+        form.theme-form.row.g-3
+            .input-group
+                span.input-group-text First and last name
+                input.form-control(type='text' aria-label='First name')
+                input.form-control(type='text' aria-label='Last name')
+            .input-group
+                span.input-group-text $
+                span.input-group-text 0.00
+                input.form-control(type='text' aria-label='Dollar amount (with dot and two decimal places)')
+            .input-group
+                input.form-control(type='text' aria-label='Dollar amount (with dot and two decimal places)')
+                span.input-group-text $
+                span.input-group-text 0.00

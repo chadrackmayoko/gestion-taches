@@ -1,0 +1,111 @@
+.card
+  .card-header.pb-0
+    +card-header('Timeline', '','', '', '', 'This is a Edmin timeline chart.')
+  .card-body
+    // cd-timeline Start
+    section#cd-timeline.cd-container
+      .cd-timeline-block
+        .cd-timeline-img.cd-picture.bg-primary
+          i.icon-pencil-alt
+        .cd-timeline-content
+          .timeline-wrapper
+            .badge.bg-warning app-ideas
+          h5.f-w-600.m-0
+            | Established new the app-ideas repository.
+          p.mb-0   
+            | developers who are just beginning their learning process. those who often concentrate on developing programmes with a user interface.
+          .time-content.pt-2
+            i.icon-github
+            h6.f-w-600 View it on Github      
+          span.cd-date
+            | February 02 2022
+      .cd-timeline-block
+        .cd-timeline-img.bg-danger 
+          i.icon-youtube
+        .cd-timeline-content
+          .timeline-wrapper
+            .badge.bg-danger Blog
+          h5.f-w-600.m-0
+            | Implemented the program for weekly code challenges.
+          p.mb-0   
+            | Challenges 
+            em.font-danger help you build problem-solving skills, better understand the programming. 
+            | If you want to improve your skills in programming.           
+          .ratio.ratio-21x9.m-t-20
+            iframe(src='https://www.youtube.com/embed/zpOULjyy-n8?rel=0', allowfullscreen='')
+          span.cd-date
+            | March 12 2022
+      .cd-timeline-block
+        .cd-timeline-img.cd-picture.bg-success
+          i.icon-image
+        .cd-timeline-content
+          .timeline-wrapper
+            .badge.bg-info Designer
+          h5.f-w-600.m-0
+            | Research about most recent design trends.
+          p.mb-0   
+            | Spend some time looking up current design trend.         
+          #carouselExampleIndicators.carousel.slide(data-bs-ride='true')
+            .carousel-indicators
+              button.active(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
+              button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='1' aria-label='Slide 2')
+              button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='2' aria-label='Slide 3')
+            .carousel-inner
+              .carousel-item.active
+                img.d-block.w-100(src='../assets/images/banner/2.jpg' alt='office-work')
+              .carousel-item
+                img.d-block.w-100(src='../assets/images/banner/1.jpg' alt='office-work')
+              .carousel-item
+                img.d-block.w-100(src='../assets/images/banner/3.jpg' alt='office-work')
+            button.carousel-control-prev(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide='prev')
+              span.carousel-control-prev-icon(aria-hidden='true')
+              span.visually-hidden Previous
+            button.carousel-control-next(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide='next')
+              span.carousel-control-next-icon(aria-hidden='true')
+              span.visually-hidden Next
+          span.cd-date
+            | April 23 2022
+      .cd-timeline-block
+        .cd-timeline-img.cd-location.bg-info
+          i.icon-pulse
+        .cd-timeline-content
+          .timeline-wrapper
+            .badge.bg-primary Audio testing
+          h5.f-w-600.m-0
+            | Musical trends and predictability
+          p.mb-0   
+            | So, the next time you listen to music, you might or might not consider how it's actively altering your mood.
+          audio(controls='')
+            source(src='../assets/audio/horse.ogg', type='audio/ogg')
+          span.cd-date
+            | June 12 2022
+      .cd-timeline-block
+        .cd-timeline-img.cd-location.bg-secondary
+          i.icon-pin-alt
+        .cd-timeline-content
+          .timeline-wrapper
+            .badge.bg-success Meet-up
+          h5.f-w-600.m-0
+            | Web-designer's meet-up
+          p.mb-0   
+            | Find nearby web designers to network with! A Web Design Meetup is a place where you can discuss tools.                        
+          .time-content.pt-2
+            i.icon-android
+            h6.f-w-600 Please! Meet-up
+          span.cd-date
+            | November 04 2022
+      .cd-timeline-block
+        .cd-timeline-img.cd-movie.bg-danger
+          i.icon-agenda
+        .cd-timeline-content
+          .timeline-wrapper
+            .badge.bg-warning Resolutions
+          h5.f-w-600.m-0
+            | My Resolutions for 2024
+          p.mb-0   
+            | I'm determined to streamline, organism, systematism, realign, and embrace life in 2024.                          
+          .time-content.pt-2
+            i.icon-write
+            h6.f-w-600 My Resolutions    
+          span.cd-date
+            | December 31 2022

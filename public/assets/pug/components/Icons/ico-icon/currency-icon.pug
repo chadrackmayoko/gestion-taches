@@ -1,0 +1,130 @@
+//-// Currency Icon
+-
+    var ICO_ITEM14 =[
+
+        { id:'icofont-bat' }
+        , { id:'icofont-bear-face' }
+        , { id:'icofont-bear-tracks' }
+        , { id:'icofont-bear' }
+        , { id:'icofont-bird-alt' }
+        , { id:'icofont-bird-flying' }
+        , { id:'icofont-bird' }
+        , { id:'icofont-birds' }
+        , { id:'icofont-bone' }
+        , { id:'icofont-bull' }
+        , { id:'icofont-butterfly-alt' }
+        , { id:'icofont-butterfly' }
+        , { id:'icofont-camel-alt' }
+        , { id:'icofont-camel-head' }
+        , { id:'icofont-camel' }
+        , { id:'icofont-cat-alt-1' }
+        , { id:'icofont-cat-alt-2' }
+        , { id:'icofont-cat-alt-3' }
+        , { id:'icofont-cat-dog' }
+        , { id:'icofont-cat-face' }
+        , { id:'icofont-cat' }
+        , { id:'icofont-cow-head' }
+        , { id:'icofont-cow' }
+        , { id:'icofont-crab' }
+        , { id:'icofont-crocodile' }
+        , { id:'icofont-deer-head' }
+        , { id:'icofont-dog-alt' }
+        , { id:'icofont-dog-barking' }
+        , { id:'icofont-dog' }
+        , { id:'icofont-dolphin' }
+        , { id:'icofont-duck-tracks' }
+        , { id:'icofont-eagle-head' }
+        , { id:'icofont-eaten-fish' }
+        , { id:'icofont-elephant-alt' }
+        , { id:'icofont-elephant-head-alt' }
+        , { id:'icofont-elephant-head' }
+        , { id:'icofont-elephant' }
+        , { id:'icofont-elk' }
+        , { id:'icofont-fish-1' }
+        , { id:'icofont-fish-2' }
+        , { id:'icofont-fish-3' }
+        , { id:'icofont-fish-4' }
+        , { id:'icofont-fish-5' }
+        , { id:'icofont-fish' }
+        , { id:'icofont-fox-alt' }
+        , { id:'icofont-fox' }
+        , { id:'icofont-frog-tracks' }
+        , { id:'icofont-frog' }
+        , { id:'icofont-froggy' }
+        , { id:'icofont-giraffe-head-1' }
+        , { id:'icofont-giraffe-head-2' }
+        , { id:'icofont-giraffe-head' }
+        , { id:'icofont-giraffe' }
+        , { id:'icofont-goat-head' }
+        , { id:'icofont-gorilla' }
+        , { id:'icofont-hen-tracks' }
+        , { id:'icofont-horse-head-1' }
+        , { id:'icofont-horse-head-2' }
+        , { id:'icofont-horse-head' }
+        , { id:'icofont-horse-tracks' }
+        , { id:'icofont-jellyfish' }
+        , { id:'icofont-kangaroo' }
+        , { id:'icofont-lemur' }
+        , { id:'icofont-lion-head-1' }
+        , { id:'icofont-lion-head-2' }
+        , { id:'icofont-lion-head' }
+        , { id:'icofont-lion' }
+        , { id:'icofont-monkey-2' }
+        , { id:'icofont-monkey-3' }
+        , { id:'icofont-monkey-face' }
+        , { id:'icofont-monkey' }
+        , { id:'icofont-octopus-alt' }
+        , { id:'icofont-octopus' }
+        , { id:'icofont-owl' }
+        , { id:'icofont-panda-face' }
+        , { id:'icofont-panda' }
+        , { id:'icofont-panther' }
+        , { id:'icofont-parrot-lip' }
+        , { id:'icofont-parrot' }
+        , { id:'icofont-paw' }
+        , { id:'icofont-pelican' }
+        , { id:'icofont-penguin' }
+        , { id:'icofont-pig-face' }
+        , { id:'icofont-pig' }
+        , { id:'icofont-pigeon-1' }
+        , { id:'icofont-pigeon-2' }
+        , { id:'icofont-pigeon' }
+        , { id:'icofont-rabbit' }
+        , { id:'icofont-rat' }
+        , { id:'icofont-rhino-head' }
+        , { id:'icofont-rhino' }
+        , { id:'icofont-rooster' }
+        , { id:'icofont-seahorse' }
+        , { id:'icofont-seal' }
+        , { id:'icofont-shrimp-alt' }
+        , { id:'icofont-shrimp' }
+        , { id:'icofont-snail-1' }
+        , { id:'icofont-snail-2' }
+        , { id:'icofont-snail-3' }
+        , { id:'icofont-snail' }
+        , { id:'icofont-snake' }
+        , { id:'icofont-squid' }
+        , { id:'icofont-squirrel' }
+        , { id:'icofont-tiger-face' }
+        , { id:'icofont-tiger' }
+        , { id:'icofont-turtle' }
+        , { id:'icofont-whale' }
+        , { id:'icofont-woodpecker' }
+        , { id:'icofont-zebra' }
+        
+    ]
+//-// Ico icon mixin
+mixin IcoContent(items)
+    each item in items 
+        .col-xxl-2.col-lg-3.col-sm-4
+            .card.d-flex.align-items-center.flex-column.default-border
+                i.icofont(class=item.id)
+                .flex-grow-1
+                    h6=item.id
+// Ico icon
+.card
+    .card-header.pb-0.d-flex.justify-content-between.align-items-center
+        h4 Currency Icon
+    .card-body
+        .row.icon-event.iconly-icons.icon-lists
+            +IcoContent(ICO_ITEM14)

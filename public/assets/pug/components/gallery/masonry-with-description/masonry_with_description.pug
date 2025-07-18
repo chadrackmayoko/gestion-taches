@@ -1,0 +1,82 @@
+//-// masonary mixin
+-
+    var GALLERY_IMAGE =[
+        {
+            lightGallery: '../assets/images/masonry/1.jpg',
+            bigLight: '../assets/images/big-masonry/1.jpg',
+        }, 
+        {
+            lightGallery: '../assets/images/masonry/2.jpg',
+            bigLight: '../assets/images/big-masonry/2.jpg',
+        }, 
+        {
+            lightGallery: '../assets/images/masonry/3.jpg',
+            bigLight: '../assets/images/big-masonry/3.jpg',
+        }, 
+        {
+            lightGallery: '../assets/images/masonry/4.jpg',
+            bigLight: '../assets/images/big-masonry/4.jpg',
+        }, 
+        {
+            lightGallery: '../assets/images/masonry/5.jpg',
+            bigLight: '../assets/images/big-masonry/5.jpg',
+        },
+        {
+            lightGallery: '../assets/images/masonry/6.jpg',
+            bigLight: '../assets/images/big-masonry/6.jpg',
+        },
+        {
+            lightGallery: '../assets/images/masonry/8.jpg',
+            bigLight: '../assets/images/big-masonry/8.jpg',
+        },
+        {
+            lightGallery: '../assets/images/masonry/9.jpg',
+            bigLight: '../assets/images/big-masonry/9.jpg',
+        },
+        {
+            lightGallery: '../assets/images/masonry/10.jpg',
+            bigLight: '../assets/images/big-masonry/10.jpg',
+        }, 
+        {
+            lightGallery: '../assets/images/masonry/11.jpg',
+            bigLight: '../assets/images/big-masonry/11.jpg',
+        },
+        {
+            lightGallery: '../assets/images/masonry/12.jpg',
+            bigLight: '../assets/images/big-masonry/12.jpg',
+        },
+        {
+            lightGallery: '../assets/images/masonry/14.jpg',
+            bigLight: '../assets/images/big-masonry/14.jpg',
+        },
+        {
+            lightGallery: '../assets/images/masonry/15.jpg',
+            bigLight: '../assets/images/big-masonry/15.jpg',
+        },
+        {
+            lightGallery: '../assets/images/masonry/13.jpg',
+            bigLight: '../assets/images/big-masonry/13.jpg',
+        },
+    ]
+//- Masonry gallery Pug mixin
+mixin ImgGalleryWithDescription(items)
+  each item in items
+    figure.grid-item.col-xl-3.col-sm-6(itemprop='associatedMedia', itemscope='')
+      .my-gallery.pswp-gallery
+        .pswp-gallery__item
+          a(href=item.bigLight, data-pswp-width='1669', data-pswp-height='2500', target='_blank')
+            img.img-thumbnail(src=item.lightGallery, itemprop='thumbnail', alt='')
+            .caption
+              h4 Portfolio Title 1
+              p 
+                | Here is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+          .pswp-caption-content
+            h4 Portfolio Title
+            p 
+              | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+.card.gallery-grid
+  .card-header.pb-0
+    +card-header('Masonry Gallery With Description', '','', '', '', '')
+  .card-body
+    #aniimated-thumbnials.my-gallery.row.grid.gallery-with-description.mb-0(itemscope='')
+      +ImgGalleryWithDescription(GALLERY_IMAGE)

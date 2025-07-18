@@ -1,0 +1,54 @@
+.card
+  .card-header.pb-0
+    +card-header('Browser defaults', '','', '', '', 'Not interested in custom validation feedback messages or writing JavaScript to change form behaviors? Depending on your browser and OS,While these feedback styles cannot be styled with CSS, you can still customize the feedback text through JavaScript.')
+  .card-body.custom-input.checkbox-checked
+    form.theme-form
+      .mb-3 
+        label.form-label(for='first-name') First name
+        input#first-name.form-control(type='text' placeholder='First name' aria-label='First name')
+      .mb-3
+        label.form-label(for='exampleFormControlInput1') Email address
+        input#exampleFormControlInput1.form-control(type='email' placeholder='name@example.com')
+      .mb-3 
+        label.col-sm-12.col-form-label(for='inputPassword2') Password
+        input#inputPassword2.form-control(type='password')
+      .mb-3 
+        label.form-label(for='validationDefault04') State
+        select#validationDefault04.form-select(required='')
+          option(selected='' disabled='' value='') Choose...
+          option U.K 
+          option Thailand
+          option India 
+          option U.S
+      .mb-3 
+        label.form-label(for='formFile') Choose file
+        input#formFile.form-control(type='file')
+      .mb-3 
+        .card-wrapper.solid-border.rounded-3.checkbox-checked
+          h6.sub-title.fw-bold Select your payment method
+          .radio-form
+            .form-check
+              input#flexRadioDefault1.form-check-input(type='radio' name='flexRadioDefault')
+              label.form-check-label(for='flexRadioDefault1')
+                | Visa
+            .form-check
+              input#flexRadioDefault2.form-check-input(type='radio' name='flexRadioDefault' checked='')
+              label.form-check-label(for='flexRadioDefault2')
+                | MasterCard
+            .form-check
+              input#flexRadioDefault3.form-check-input(type='radio' name='flexRadioDefault' checked='')
+              label.form-check-label(for='flexRadioDefault3')
+                | Paypal
+      .mb-3 
+        label.form-label(for='exampleFormControlTextarea1') Description
+        textarea#exampleFormControlTextarea1.form-control(rows='3')
+      .mb-3.checkbox-checked.form-check-inline
+        input#flexCheckDefault.form-check-input(type='checkbox' value='')
+        label.form-check-label(for='flexCheckDefault')
+          | I agree to the policies
+      .mb-3 
+        .form-check.form-switch
+            input#flexSwitchCheckDefault.form-check-input(type='checkbox' role='switch' required='')
+            label.form-check-label(for='flexSwitchCheckDefault') Are you sure above information are true
+      .mb-3 
+        button.btn.btn-primary(type='submit') Submit

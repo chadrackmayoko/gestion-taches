@@ -1,0 +1,60 @@
+//-// Abstract Icon
+-
+    var ICO_ITEM1 =[
+        { id:'icofont-angry-monster' }
+        , { id:'icofont-bathtub' }
+        , { id:'icofont-bird-wings' }
+        , { id:'icofont-bow' }
+        , { id:'icofont-castle' }
+        , { id:'icofont-circuit' }
+        , { id:'icofont-crown-king' }
+        , { id:'icofont-crown-queen' }
+        , { id:'icofont-dart' }
+        , { id:'icofont-disability-race' }
+        , { id:'icofont-diving-goggle' }
+        , { id:'icofont-eye-open' }
+        , { id:'icofont-flora-flower' }
+        , { id:'icofont-flora' }
+        , { id:'icofont-gift-box' }
+        , { id:'icofont-halloween-pumpkin' }
+        , { id:'icofont-hand-power' }
+        , { id:'icofont-hand-thunder' }
+        , { id:'icofont-king-monster' }
+        , { id:'icofont-love' }
+        , { id:'icofont-magician-hat' }
+        , { id:'icofont-native-american' }
+        , { id:'icofont-owl-look' }
+        , { id:'icofont-phoenix' }
+        , { id:'icofont-robot-face' }
+        , { id:'icofont-sand-clock' }
+        , { id:'icofont-shield-alt' }
+        , { id:'icofont-ship-wheel' }
+        , { id:'icofont-skull-danger' }
+        , { id:'icofont-skull-face' }
+        , { id:'icofont-snowmobile' }
+        , { id:'icofont-space-shuttle' }
+        , { id:'icofont-star-shape' }
+        , { id:'icofont-swirl' }
+        , { id:'icofont-tattoo-wing' }
+        , { id:'icofont-throne' }
+        , { id:'icofont-tree-alt' }
+        , { id:'icofont-triangle' }
+        , { id:'icofont-unity-hand' }
+        , { id:'icofont-weed' }
+        , { id:'icofont-woman-bird' }
+    ]
+//-// Ico icon mixin
+mixin IcoContent(items)
+    each item in items 
+        .col-xxl-2.col-lg-3.col-sm-4
+            .card.d-flex.align-items-center.flex-column.default-border
+                i.icofont(class=item.id)
+                .flex-grow-1
+                    h6=item.id
+// Ico icon
+.card
+    .card-header.pb-0.d-flex.justify-content-between.align-items-center
+        h4 Abstract Icon
+    .card-body
+        .row.icon-event.iconly-icons.icon-lists
+            +IcoContent(ICO_ITEM1)

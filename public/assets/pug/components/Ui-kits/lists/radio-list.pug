@@ -1,0 +1,18 @@
+// Lists with radios
+.card
+    .card-header.pb-0
+        +card-header('Lists with radios', '','','Use the', '.form-check-input','to check your radio buttons.')
+    .card-body
+        ul.list-group
+            li.list-group-item
+                input#firstRadio.form-check-input.me-2.active.radio-primary(type='radio' name='listGroupRadio' value='' checked='')
+                label.form-check-label.mb-0.font-primary(for='firstRadio') Meditations
+            li.list-group-item
+                input#secondRadio.form-check-input.me-2.radio-secondary(type='radio' name='listGroupRadio' value='')
+                label.form-check-label.mb-0.font-secondary(for='secondRadio') Read a book
+            li.list-group-item
+                input#thirdRadio.form-check-input.me-2.radio-tertiary(type='radio' name='listGroupRadio' value='')
+                label.form-check-label.mb-0.font-tertiary(for='thirdRadio') Learn to code 
+            li.list-group-item
+                input#fourRadio.form-check-input.me-2.radio-info(type='radio' name='listGroupRadio' value='')
+                label.form-check-label.mb-0.font-info(for='fourRadio') Drink more water

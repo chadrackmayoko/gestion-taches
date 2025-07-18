@@ -1,0 +1,49 @@
+.md-sidebar 
+  a.btn.btn-primary.md-sidebar-toggle(href='javascript:void(0)') email filter
+  .md-sidebar-aside.job-left-aside.custom-scrollbar
+      .email-left-aside
+          .card
+              .card-body
+                  .email-app-sidebar
+                      button.btn.btn-primary.emailbox(type='button' data-bs-toggle='modal' data-bs-target='#compose_mail')
+                          i.fa.fa-plus
+                          | Compose Email
+                      ul#email-pills-tab.nav.nav-pills.main-menu.email-category(role='tablist')
+                          li.nav-item
+                              a#inbox-pill-tab.nav-link.active(data-bs-toggle='pill' href='#inbox-pill' role='tab' aria-controls='inbox-pill' aria-selected='false')
+                                  +FeatherSprite('inbox', 'feather stroke-icon')
+                                  div
+                                      | Inbox
+                                      span.badge 12
+                          li.nav-item
+                              a#sent-pill-tab.nav-link(data-bs-toggle='pill' href='#sent-pill' role='tab' aria-controls='sent-pill' aria-selected='false')
+                                  +FeatherSprite('gift', 'feather stroke-icon')
+                                  | Sent
+                          li.nav-item
+                              a#starred-pill-tab.nav-link(data-bs-toggle='pill' href='#starred-pill' role='tab' aria-controls='starred-pill' aria-selected='false')
+                                  +FeatherSprite('star', 'feather stroke-icon')
+                                  | Starred
+                          li.nav-item
+                              a#draft-pill-tab.nav-link(data-bs-toggle='pill' href='#draft-pill' role='tab' aria-controls='draft-pill' aria-selected='false')
+                                  +FeatherSprite('edit', 'feather stroke-icon')
+                                  | Draft
+                          li.nav-item
+                              a#trash-pill-tab.nav-link(data-bs-toggle='pill' href='#trash-pill' role='tab' aria-controls='trash-pill' aria-selected='false')
+                                  +FeatherSprite('trash', 'feather stroke-icon')
+                                  | Trash
+                          li.nav-item
+                              a#work-pill-tab.nav-link(data-bs-toggle='pill' href='#work-pill' role='tab' aria-controls='work-pill' aria-selected='false')
+                                  +FeatherSprite('briefcase', 'feather stroke-primary stroke-icon')
+                                  | Work
+                          li.nav-item
+                              a#private-pill-tab.nav-link(data-bs-toggle='pill' href='#private-pill' role='tab' aria-controls='private-pill' aria-selected='false')
+                                  +FeatherSprite('briefcase', 'feather stroke-warning stroke-icon')
+                                  | Private
+                          li.nav-item
+                              a#support-pill-tab.nav-link(data-bs-toggle='pill' href='#support-pill' role='tab' aria-controls='support-pill' aria-selected='false')
+                                  +FeatherSprite('briefcase', 'feather stroke-success stroke-icon')
+                                  | Support
+                          li.nav-item
+                              a.nav-link(data-bs-toggle='modal' data-bs-target='#label-pill' href="#!")
+                                  i.fa.fa-plus
+                                  | Add Label

@@ -1,0 +1,35 @@
+.card
+    .card-header.pb-0
+        +card-header('Custom forms', '','', 'Input groups include support for', ' custom selects and custom file inputs', 'Browser default versions of these are not supported.')
+
+    .card-body.card-wrapper.input-group-wrapper
+        form.theme-form.row.g-3
+            .input-group
+                label.input-group-text(for='inputGroupSelect01') Options
+                select#inputGroupSelect01.form-select
+                    option(selected='') Select Your Favorite Pixelstrap Template
+                    option(value='1') Edmin
+                    option(value='2') Tivo
+                    option(value='3') Roxo
+            .input-group
+                select#inputGroupSelect02.form-select
+                    option(selected='') Select Your Favorite Colors
+                    option(value='1') Yellow
+                    option(value='2') Red
+                    option(value='3') Orange
+                label.input-group-text(for='inputGroupSelect02') Options
+            .input-group
+                button.btn.btn-outline-secondary(type='button')
+                    i.icofont.icofont-credit-card
+                select#inputGroupSelect03.form-select(aria-label='Example select with button addon')
+                    option(selected='') Select Your Favorite Chocolates
+                    option(value='1') Dark Chocolates
+                    option(value='2') Dairy Milk
+                    option(value='3') Kitkat
+            .input-group
+                select#inputGroupSelect04.form-select(aria-label='Example select with button addon')
+                    option(selected='') Select Your Favorite Template
+                    option(value='1') Oslo
+                    option(value='2') Koho
+                    option(value='3') Voxo
+                button.btn.btn-outline-secondary(type='button') Submit

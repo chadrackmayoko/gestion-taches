@@ -1,0 +1,24 @@
+// Nesting Card
+.card
+    .card-header.pb-0
+        +card-header('Nesting', '','','To nest your content with the default grid, add a new.row and set of' , '.col-sm-*', 'columns within an existing column.') 
+    .card-body.grid-showcase
+        .row.g-3
+            .col-3
+                span.bg-light Level 1: .col-3
+            .col-9
+                .pb-0.bg-light.p-2
+                    .row.g-2
+                        .col-5
+                            span.default-border.border-1 Level 2: .col-5
+                        .col-7
+                            span.default-border.border-1 Level 2: .col-7
+            .col-8
+                .pb-0.bg-light.p-2
+                    .row.g-2
+                        .col-sm-2.col-4
+                            span.default-border.border-1 Level 1: .col-2
+                        .col-sm-10.col-8
+                            span.default-border.border-1 Level 1: .col-10
+            .col-4
+                span.bg-light Level 2: .col-4  

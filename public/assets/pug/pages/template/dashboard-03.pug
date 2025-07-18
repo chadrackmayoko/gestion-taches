@@ -1,0 +1,50 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+-var apexcharts = true;
+-var dashboard_3 = true;
+-var date_picker = true;
+//- -var timeline = true;
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    include ../../components/loader
+    main#pageWrapper.page-wrapper.compact-wrapper
+        include ../../components/header/header
+        .page-body-wrapper
+          include ../../components/sidebar
+          .page-body
+            .container-fluid
+              +breadcrumb(['Dashboard','Project Dashboard'],'Project Dashboard')
+            // Container-fluid starts
+            .container-fluid.project-dashboard
+              .row 
+                .col-sm-6.col-md-4
+                    include ../../components/dashboard3/total-project
+                .col-sm-6.col-md-4
+                    include ../../components/dashboard3/total-revenue
+                .col-md-4 
+                    include ../../components/dashboard3/total-clients
+                .col-lg-6.col-xl-4.col-xxl-5
+                    include ../../components/dashboard3/projects-overview
+                .col-lg-6.col-xl-8.col-xxl-7
+                    include ../../components/dashboard3/dashboard-task
+                .col-xl-8 
+                    .row 
+                        .col-md-6
+                            include ../../components/dashboard3/to-do-list
+                        .col-md-6
+                            include ../../components/dashboard3/activity-report
+                        .col-md-12.col-lg-6
+                            .row 
+                                include ../../components/dashboard3/home-esatae 
+                        .col-md-12.col-lg-6
+                            include ../../components/dashboard3/team-member
+                .col-lg-12.col-xl-4
+                    include ../../components/dashboard3/today-dashboard
+            // Container-fluid ends
+          include ../../components/footer
+    include ../../components/footer-files

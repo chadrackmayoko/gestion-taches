@@ -1,0 +1,42 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+-var animate                = true;
+-var notify_bootstrap       = true;
+-var icon_notify            = true;
+-var page_whether_icon     = true;
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    include ../../components/loader
+    main#pageWrapper.page-wrapper.compact-wrapper
+        include ../../components/header/header
+        .page-body-wrapper
+          include ../../components/sidebar
+          .page-body
+            .container-fluid
+              +breadcrumb(['Icons','Whether Icon'],'Whether Icon')
+            // Container-fluid starts
+            .container-fluid
+              .row
+                .col-sm-12
+                  include ../../components/Icons/whether-component
+            // Container-fluid ends
+          include ../../components/footer
+        .icon-hover-bottom.position-fixed.icons-show-div
+          .container-fluid
+            .row
+              .icon-popup
+                .close-icon
+                  i.icofont.icofont-close
+                .icon-first
+                .icon-last.icon-last
+                  label.icon-title Markup
+                  .form-inline
+                    .form-group.m-0
+                      input#input_copy.inp-val.form-control.m-r-10(type='text', value='', readonly='readonly')
+                      button.btn.btn-primary.notification(onclick='myFunction()') Copy text
+    include ../../components/footer-files

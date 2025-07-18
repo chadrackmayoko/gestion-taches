@@ -1,0 +1,37 @@
+.card
+  .profile-img-style
+    .row
+      .col-sm-8
+        .d-flex
+          img.img-thumbnail.rounded-circle.me-3(src='../assets/images/avatar/3.jpg', alt='Generic placeholder image')
+          .flex-grow-1.align-self-center
+            h5.mt-0.user-name JOHAN DIO
+      .col-sm-4.align-self-center
+        .float-sm-end
+          small.font-light 10 Hours ago
+    hr
+    p
+      | Dressing is a way of life. My customers are successful working women. I want people to be afraid of the women I dress. Age is something only in your head or a stereotype. Age means nothing when you are passionate about something.
+    #aniimated-thumbnials-2.row.mt-4.pictures.my-gallery.img-2(itemscope='')
+      figure.col-sm-6(itemprop='associatedMedia', itemscope='')
+        a(href='../assets/images/other-images/profile-style-img.png', data-pswp-width='1875', data-pswp-height='2500', target='_blank')
+          img.img-fluid.rounded(src='../assets/images/other-images/profile-style-img.png', itemprop='thumbnail', alt='gallery')
+        figcaption(itemprop='caption description') Image caption  1
+      figure.col-sm-6(itemprop='associatedMedia', itemscope='')
+        a(href='../assets/images/other-images/profile-style-img.png', data-pswp-width='1875', data-pswp-height='2500', target='_blank')
+          img.img-fluid.rounded(src='../assets/images/other-images/profile-style-img.png', itemprop='thumbnail', alt='gallery')
+        figcaption(itemprop='caption description') Image caption  2
+    .like-comment
+      ul.list-inline
+        li.list-inline-item.border-right.pe-3
+          label.m-0
+            a(href='#')
+              i.fa.fa-heart
+            |   Like
+          span.ms-2#count6.counter 2659
+        li.list-inline-item.ms-2
+          label.m-0
+            a(href='#')
+              i.fa.fa-comment
+            |   Comment
+          span.ms-2#count7.counter 569

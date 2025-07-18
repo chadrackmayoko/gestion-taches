@@ -1,0 +1,79 @@
+.card
+    .card-header.pb-0
+        +card-header('Vertical style', '','', 'vertical style in mega-options. Use the', '.mega-vertical', 'class through created vertical alignments.')
+    .card-body
+        form.mega-vertical
+            .row
+                .col-sm-12
+                    p.mega-title.m-b-5 Delivery Option
+                .col-sm-6
+                    .card
+                        .d-flex.p-20.pb-0
+                            label.d-block(for='radio23')
+                                input#radio23.radio.radio-border-primary.radio-primary(type='radio' name='radio5' value='option1')
+                                | COD
+                            .flex-grow-1
+                                span.badge.badge-primary.pull-right.digits 50 INR
+                        span.p-20.pt-0 Estimated 10 to 15 Day Shipping ( Duties end tax may be due delivery )
+                .col-sm-6
+                    .card
+                        .d-flex.p-20.pb-0
+                            label.d-block(for='radio24')
+                                input#radio24.radio.radio-border-secondary.radio-secondary(type='radio' name='radio5' value='option1')
+                                | Fast
+                            .flex-grow-1
+                                span.badge.badge-secondary.pull-right.digits 100 INR
+                        span.p-20.pt-0 Estimated 10 to 12 Day Shipping ( Duties end tax may be due delivery )
+                .col-sm-6
+                    .card
+                        .d-flex.p-20.pb-0
+                            label.d-block(for='radio25')
+                                input#radio25.radio.radio-border-success.radio-success(type='radio' name='radio5' value='option1')
+                                | STANDARD
+                            .flex-grow-1
+                                span.badge.badge-success.pull-right.digits 80 INR
+                        span.p-20.pt-0 Estimated 3 to 5 Day Shipping ( Duties end tax may be due delivery )
+                .col-sm-6
+                    .card
+                        .d-flex.p-20.pb-0
+                            label.d-block(for='radio5')
+                                input#radio5.radio.radio-border-info.radio-info(type='radio' name='radio5' value='option1')
+                                | LOCAL
+                            .flex-grow-1
+                                span.badge.badge-info.pull-right.digits Free
+                        span.p-20.pt-0 Estimated 3 to 5 Day Shipping ( Duties end taxes may be due upon delivery )
+                .col-sm-12
+                    p.mega-title.m-b-5 Buying Option
+                .col-sm-6
+                    .card
+                        .d-flex.p-20.pb-0
+                            label.d-block(for='radio26')
+                                input#radio26.radio.radio-border-warning.radio-warning(type='radio' name='radio7' value='option1' checked='')
+                                | Pixelstrap
+                            .flex-grow-1
+                                span.badge.badge-warning.pull-right.digits 250 INR
+                        span.p-20.pt-0.rating-star-wrapper
+                            i.icofont.icofont-star.font-warning
+                            i.icofont.icofont-star.font-warning
+                            i.icofont.icofont-star.font-warning
+                            i.icofont.icofont-star.font-warning
+                            i.icofont.icofont-star.font-warning.m-r-5
+                            | 5 start rating
+                .col-sm-6
+                    .card.mb-0
+                        .d-flex.p-20.pb-0
+                            label.d-block(for='radio27')
+                                input#radio27.radio.radio-border-danger.radio-danger(type='radio' name='radio7' value='option1')
+                                | Multikart
+                            .flex-grow-1
+                                span.badge.badge-danger.pull-right.digits 150 INR
+                        span.p-20.pt-0.rating-star-wrapper
+                            i.icofont.icofont-star.font-warning
+                            i.icofont.icofont-star.font-warning
+                            i.icofont.icofont-star
+                            i.icofont.icofont-star
+                            i.icofont.icofont-star.m-r-5
+                            | 2 start rating
+    .card-footer.text-end
+        button.btn.btn-primary.m-r-15(type='submit') Submit
+        button.btn.bg-light(type='submit') Cancel

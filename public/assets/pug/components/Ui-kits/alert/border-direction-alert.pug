@@ -1,0 +1,13 @@
+// Left border alert
+.card.height_equal
+    .card-header.pb-0
+        +card-header('Border direction alert', '','','Use the', '.b-l-*, b-t-*', 'for different color with direction border.')
+    .card-body.live-dark
+        .alert.alert-light-primary.alert-dismissible.b-l-primary(role='alert')
+            +FeatherSprite('help-circle', 'feather')
+            p.text-truncate You can check in on some of those fields below.
+            button.btn-close(type='button' data-bs-dismiss='alert' aria-label='Close')
+        .alert.alert-light-secondary.alert-dismissible.b-t-secondary.mb-0(role='alert')
+            +FeatherSprite('help-circle', 'feather')
+            p.text-truncate Well done! You successfully read this important message.
+            button.btn-close(type='button' data-bs-dismiss='alert' aria-label='Close')

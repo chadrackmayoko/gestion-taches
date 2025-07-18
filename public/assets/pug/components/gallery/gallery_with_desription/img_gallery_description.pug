@@ -1,0 +1,87 @@
+//-// img gallery mixin
+-
+    var GALLERY_IMAGE =[
+        {
+            lightGallery: '../assets/images/lightgallery/1.jpg',
+            bigLight: '../assets/images/big-lightgallery/1.jpg',
+            caption: 'Image caption  1',
+        }, 
+        {
+            lightGallery: '../assets/images/lightgallery/2.jpg',
+            bigLight: '../assets/images/big-lightgallery/2.jpg',
+            caption: 'Image caption  2',
+        }, 
+        {
+            lightGallery: '../assets/images/lightgallery/3.jpg',
+            bigLight: '../assets/images/big-lightgallery/3.jpg',
+            caption: 'Image caption  3',
+        }, 
+        {
+            lightGallery: '../assets/images/lightgallery/4.jpg',
+            bigLight: '../assets/images/big-lightgallery/4.jpg',
+            caption: 'Image caption  4',
+        }, 
+        {
+            lightGallery: '../assets/images/lightgallery/5.jpg',
+            bigLight: '../assets/images/big-lightgallery/5.jpg',
+            caption: 'Image caption  5',
+        },
+        {
+            lightGallery: '../assets/images/lightgallery/6.jpg',
+            bigLight: '../assets/images/big-lightgallery/6.jpg',
+            caption: 'Image caption  6',
+        },
+        {
+            lightGallery: '../assets/images/lightgallery/7.jpg',
+            bigLight: '../assets/images/big-lightgallery/7.jpg',
+            caption: 'Image caption  7',
+        },
+        {
+            lightGallery: '../assets/images/lightgallery/8.jpg',
+            bigLight: '../assets/images/big-lightgallery/8.jpg',
+            caption: 'Image caption  8',
+        },
+        {
+            lightGallery: '../assets/images/lightgallery/9.jpg',
+            bigLight: '../assets/images/big-lightgallery/9.jpg',
+            caption: 'Image caption  9',
+        },
+        {
+            lightGallery: '../assets/images/lightgallery/10.jpg',
+            bigLight: '../assets/images/big-lightgallery/10.jpg',
+            caption: 'Image caption  10',
+        }, 
+        {
+            lightGallery: '../assets/images/lightgallery/11.jpg',
+            bigLight: '../assets/images/big-lightgallery/11.jpg',
+            caption: 'Image caption  11',
+        },
+        {
+            lightGallery: '../assets/images/lightgallery/12.jpg',
+            bigLight: '../assets/images/big-lightgallery/12.jpg',
+            caption: 'Image caption  12',
+        },
+    ]
+//-//gallery mixin
+mixin ImgGallery(items)
+    each item in items
+      .col-xl-3.col-sm-6
+        .my-gallery.pswp-gallery
+          .pswp-gallery__item
+            a(href=item.bigLight, data-pswp-width='1669', data-pswp-height='2500', target='_blank')
+              img(src=item.lightGallery, alt='Demo image 1')
+              .caption
+                h4 Portfolio Title
+                p
+                  | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+            .pswp-caption-content
+              h4 Portfolio Title
+              p
+                | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+
+// gallery mixin
+.card.gallery-grid
+  .card-header.pb-0
+    +card-header('Image Gallery With Description', '','', '', '', '')
+  .my-gallery.card-body.row.gallery-with-description.mb-0(itemscope='')
+    +ImgGallery(GALLERY_IMAGE)

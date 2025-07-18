@@ -1,0 +1,39 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    include ../../components/loader
+    main#pageWrapper.page-wrapper.compact-wrapper
+        include ../../components/header/header
+        .page-body-wrapper
+          include ../../components/sidebar
+          .page-body
+            .container-fluid
+              +breadcrumb(['Bonus Ui','Basic Card'],'Basic Card')
+            // Container-fluid starts
+            .container-fluid
+              .row 
+                .col-xl-6
+                  include ../../components/Bonus-ui/basic-cards/default-card
+                .col-xl-6
+                  include ../../components/Bonus-ui/basic-cards/edge-card
+                .col-xl-6
+                  include ../../components/Bonus-ui/basic-cards/without-shadow-card
+                .col-xl-6
+                  include ../../components/Bonus-ui/basic-cards/icon-heading-card
+                .col-xl-12
+                  include ../../components/Bonus-ui/basic-cards/dark-color-card
+                .col-xl-4
+                  include ../../components/Bonus-ui/basic-cards/secondary-header
+                .col-xl-4
+                  include ../../components/Bonus-ui/basic-cards/secondary-body
+                .col-xl-4
+                  include ../../components/Bonus-ui/basic-cards/secondary-footer
+            // Container-fluid ends
+          include ../../components/footer
+    include ../../components/footer-files

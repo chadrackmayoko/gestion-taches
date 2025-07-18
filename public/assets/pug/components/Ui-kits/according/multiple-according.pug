@@ -1,0 +1,38 @@
+// Multiple collapse accordion
+.card
+    .card-header.pb-0
+        +card-header('Multiple collapse accordion', 'dote','','A', '<button>','can show and hide multiple elements by referencing them with a selector in its href or data-bs-target attribute.')
+    .card-body
+        .common-flex
+            a.btn.btn-primary.collapsed(data-bs-toggle='collapse' href='#multiCollapseExample1' role='button' aria-expanded='false' aria-controls='multiCollapseExample1') Toggle first element
+            button.btn.btn-secondary.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#multiCollapseExample2' aria-expanded='false' aria-controls='multiCollapseExample2') Toggle second element
+            button.btn.btn-tertiary.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='.multi-collapse' aria-expanded='false' aria-controls='multiCollapseExample1 multiCollapseExample2') Toggle both elements
+        .row
+            .col-xl-6
+                #multiCollapseExample1.multi-collapse.collapse(style='')
+                    .card.card-body.mt-3.mb-0.collapse-wrapper.accordion-light-primary
+                        | The collapse JavaScript plugin is used to show and hide content. Buttons or anchors are used as triggers that are mapped to specific elements you toggle. Collapsing an element will animate the height from it&apos;s current value to 0. Given how CSS handles animations, you cannot use padding on a .collapse element. Instead, use the class as an independent wrapping element.
+            .col-xl-6
+                #multiCollapseExample2.multi-collapse.collapse(style='')
+                    .card.card-body.mt-3.mb-0.collapse-wrapper.accordion-light-secondary
+                        | This is the first item&apos;s accordion body. It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables.
+        .code-box-copy
+            button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#tooltip', title='Copy')
+              i.icofont.icofont-copy
+            pre
+              code.language-html#multiple-according
+                | &lt;!--You can use .accordion-collapse with .show class then show accordions.--&gt;
+                | &lt;div class="common-flex"&gt;&lt;a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1"&gt;Toggle first element&lt;/a&gt;
+                | &lt;button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2"&gt;Toggle second element&lt;/button&gt;
+                | &lt;button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2"&gt;Toggle both elements&lt;/button&gt;
+                | &lt;/div&gt;
+                | &lt;div class="row d-flex"&gt;
+                | &lt;div class="col-xl-6"&gt;
+                | &lt;div class="collapse multi-collapse" id="multiCollapseExample1"&gt;
+                | &lt;div class="card card-body mt-3 mb-0 collapse-wrapper accordion-light-primary"&gt;The collapse JavaScript plugin is used to show and hide content. Buttons or anchors are used as triggers that are mapped to specific elements you toggle. Collapsing an element will animate the height from it's current value to 0. Given how CSS handles animations, you cannot use padding on a .collapse element. Instead, use the class as an independent wrapping element.&lt;/div&gt;
+                | &lt;/div&gt;
+                | &lt;/div&gt;
+                | &lt;div class="col-xl-6"&gt;
+                | &lt;div class="collapse multi-collapse" id="multiCollapseExample2"&gt;
+                | &lt;div class="card card-body mt-3 mb-0 collapse-wrapper accordion-light-warning"&gt;This is the first item's accordion body. It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables.&lt;/div&gt;
+                | &lt;/div&gt;

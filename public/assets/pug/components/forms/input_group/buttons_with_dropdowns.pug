@@ -1,0 +1,59 @@
+.card.input-dropdown
+    .card-header.pb-0
+        +card-header('Buttons with dropdowns', '','', 'Use the', ' .input-group & [aria-label=""] ', 'through buttons with dropdowns. ')
+    .card-body.card-wrapper.input-group-wrapper
+        form.theme-form.row.g-3
+            .input-group
+                button.btn.btn-outline-info.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false') Dropdown
+                ul.dropdown-menu.dropdown-block
+                    li
+                        a.dropdown-item(href='javascript:void(0)') Ecommerce
+                    li
+                        a.dropdown-item(href='javascript:void(0)') Email
+                    li
+                        a.dropdown-item(href='javascript:void(0)') Users
+                    li
+                        hr.dropdown-divider
+                    li
+                        a.dropdown-item(href='javascript:void(0)') Bookmarks
+                input.form-control(type='text' aria-label='Text input with dropdown button')
+            .input-group
+                input.form-control(type='text' aria-label='Text input with dropdown button')
+                button.btn.btn-outline-danger.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false') Dropdown
+                ul.dropdown-menu.dropdown-menu-end.dropdown-block
+                    li
+                        a.dropdown-item(href='javascript:void(0)') Starter kit
+                    li
+                        a.dropdown-item(href='javascript:void(0)') Gallery
+                    li
+                        a.dropdown-item(href='javascript:void(0)') Blog
+                    li
+                        hr.dropdown-divider
+                    li
+                        a.dropdown-item(href='javascript:void(0)') Maps
+            .input-group
+                button.btn.btn-secondary.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false') Dropdown
+                ul.dropdown-menu.dropdown-block
+                    li
+                        a.dropdown-item(href='javascript:void(0)') Widgets
+                    li
+                        a.dropdown-item(href='javascript:void(0)') Project
+                    li
+                        a.dropdown-item(href='javascript:void(0)') Contacts
+                    li
+                        hr.dropdown-divider
+                    li
+                        a.dropdown-item(href='javascript:void(0)') Tasks
+                input.form-control(type='text' aria-label='Text input with 2 dropdown buttons')
+                button.btn.btn-primary.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false') Dropdown
+                ul.dropdown-menu.dropdown-menu-end.dropdown-block
+                    li
+                        a.dropdown-item(href='javascript:void(0)') To-Do
+                    li
+                        a.dropdown-item(href='javascript:void(0)') FAQ
+                    li
+                        a.dropdown-item(href='javascript:void(0)') Knowledgebase
+                    li
+                        hr.dropdown-divider
+                    li
+                        a.dropdown-item(href='javascript:void(0)') Support Ticket

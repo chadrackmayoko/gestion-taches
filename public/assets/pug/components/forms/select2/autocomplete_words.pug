@@ -1,0 +1,10 @@
+.card
+    .card-header.pb-0
+      +card-header('Autocomplete words', '','', '', '', 'Enter any letter and display autocomplete words.')
+    .card-body 
+        form.international-num.row
+            .col-12
+                label(for="autokeyword") Search programming language 
+            .col-12
+                input#autokeyword(type='text' placeholder='Search..' onkeyup='getValue(this.value)') 
+                .results

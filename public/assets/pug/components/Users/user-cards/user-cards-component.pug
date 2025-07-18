@@ -1,0 +1,111 @@
+//-// user menu
+-
+    var USER_CARD =[
+        {
+            src: '../assets/images/avatar/1.jpg',
+            userName: 'Brooklyn Simmons',
+            emailId: '@brookly.simmons',
+            post: '1,908',
+            Followers: '34.0k',
+            Following: '897',
+        },        
+        {
+            src: '../assets/images/avatar/2.jpg',
+            userName: 'Mark Jecno',
+            emailId: '@mark.jeco',
+            post: '875',
+            Followers: '12.0k',
+            Following: '1400',
+        },        
+        {
+            src: '../assets/images/avatar/3.jpg',
+            userName: 'Dev John',
+            emailId: '@john.dev',
+            post: '1,274',
+            Followers: '15.0k',
+            Following: '1874',
+        },        
+        {
+            src: '../assets/images/avatar/4.jpg',
+            userName: 'Johan Deo',
+            emailId: '@deo.johan',
+            post: '500',
+            Followers: '8.0k',
+            Following: '570',
+        },        
+        {
+            src: '../assets/images/avatar/5.jpg',
+            userName: 'Douglas Reichel',
+            emailId: '@reichel.douglas',
+            post: '460',
+            Followers: '2k',
+            Following: '350',
+        },        
+        {
+            src: '../assets/images/avatar/6.jpg',
+            userName: 'Lisa lillian',
+            emailId: '@lisa.lillian',
+            post: '547',
+            Followers: '3.5k',
+            Following: '822',
+        },        
+        {
+            src: '../assets/images/avatar/7.jpg',
+            userName: 'Olivia rose',
+            emailId: '@rose.olivia',
+            post: '868',
+            Followers: '1k',
+            Following: '742',
+        },        
+        {
+            src: '../assets/images/avatar/8.jpg',
+            userName: 'Sarah Karen',
+            emailId: '@karen.sarah',
+            post: '972',
+            Followers: '2.5k',
+            Following: '864',
+        }, 
+    ]
+//-// user mixin
+mixin UserContent(items)
+    each item in items 
+        .col-xl-4.col-sm-6.col-xxl-3.col-ed-4.box-col-4
+            .card.social-profile
+                .card-body
+                    .social-img-wrap
+                        .social-img
+                            img(src=item.src, alt='profile')
+                        .edit-icon
+                            +FeatherSprite('check-circle', 'feather stroke-primary')
+                    .social-details
+                        h4.mb-1
+                            a.f-20(href="social-app.html")=item.userName
+                        span.font-light=item.emailId
+                        ul.card-social
+                            li
+                                a(href='https://www.facebook.com/' target="_blank")
+                                    i.fa-brands.fa-facebook-f.font-primary
+                            li
+                                a(href='https://accounts.google.com/' target="_blank")
+                                    i.fa-brands.fa-google-plus-g.font-primary
+                            li
+                                a(href='https://twitter.com/' target="_blank")
+                                    i.fa-brands.fa-twitter.font-primary
+                            li
+                                a(href='https://www.instagram.com/' target="_blank")
+                                    i.fa-brands.fa-instagram.font-primary
+                            li
+                                a(href='https://rss.app/' target="_blank")
+                                    i.fa.fa-rss.font-primary
+                        ul.social-follow
+                            li
+                                h5.mb-0=item.post
+                                span.font-light Posts
+                            li
+                                h5.mb-0=item.Followers
+                                span.font-light Followers
+                            li
+                                h5.mb-0=item.Following
+                                span.font-light Following
+// user
++UserContent(USER_CARD)

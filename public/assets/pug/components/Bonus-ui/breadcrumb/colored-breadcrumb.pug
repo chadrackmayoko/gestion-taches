@@ -1,0 +1,40 @@
+//-// Data menu
+-
+    var COLOR_BREADCRUMB =[
+        {
+            title: 'Home',
+            bgClass: 'bg-primary',
+            mainTitle: 'Bonus Ui',
+            subTitle: 'Breadcrumb'
+        },
+        {
+            title: 'Home',
+            bgClass: 'bg-secondary',
+            mainTitle: 'Icons',
+            subTitle: 'Flag-Icon'
+        },
+        {
+            title: 'Home',
+            bgClass: 'bg-tertiary',
+            mainTitle: 'Gallery',
+            subTitle: 'Gallery-Grid'
+        }
+    ]
+
+//- Color Breadcrumb Mixin
+
+mixin ColorBreadcrumb(items)
+    each item in items 
+        ol.breadcrumb.breadcrumb-colored.mb-4(class=item.bgClass)
+            li.breadcrumb-item
+                a(href="javascript:void(0)")=item.title
+            li.breadcrumb-item
+                a(href="javascript:void(0)")=item.mainTitle
+            li.breadcrumb-item.active=item.subTitle
+
+// Color menu
+.card 
+    .card-header.pb-0
+        +card-header('Colored Breadcrumb', '','', 'You can set breadcrumb using', ' .breadcrumb , .bg-* ', 'class and set background colors like ')
+    .card-body
+        +ColorBreadcrumb(COLOR_BREADCRUMB)

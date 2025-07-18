@@ -1,0 +1,52 @@
+.card
+  .card-header.pb-0
+    +card-header('Switch with Icons', '','', 'Use the', '.icon-state', 'class through visible icons in switches.')
+  .card-body.common-flex.switch-wrapper
+    .d-flex
+        label.col-form-label.m-r-10 Small Size
+        .flex-grow-1.text-end.switch-sm.icon-state
+          label.switch
+            input(type='checkbox', checked='')
+            span.switch-state
+    .d-flex
+      label.col-form-label.m-r-10 Small Size Unhecked
+      .flex-grow-1.text-end.switch-sm.icon-state
+        label.switch
+          input(type='checkbox')
+          span.switch-state
+    .d-flex
+        label.col-form-label.m-r-10 Normal Size
+        .flex-grow-1.text-end.icon-state
+          label.switch
+            input(type='checkbox', checked='')
+            span.switch-state
+    .d-flex
+      label.col-form-label.m-r-10 Normal Unhecked
+      .flex-grow-1.text-end.icon-state
+        label.switch
+          input(type='checkbox')
+          span.switch-state
+    .d-flex
+      label.col-form-label.m-r-10 Disabled With Icon
+      .flex-grow-1.text-end.icon-state
+        label.switch
+          input(type='checkbox', disabled='')
+          span.switch-state
+    .d-flex
+        label.col-form-label.m-r-10 Large Size
+        .flex-grow-1.text-end.switch-lg.icon-state
+          label.switch
+            input(type='checkbox', checked='')
+            span.switch-state
+    .d-flex
+      label.col-form-label.m-r-10 Large Unhecked
+      .flex-grow-1.text-end.switch-lg.icon-state
+        label.switch
+          input(type='checkbox')
+          span.switch-state
+    .d-flex
+      label.col-form-label.m-r-10 Disabled
+      .flex-grow-1.text-end.switch-lg.icon-state
+        label.switch
+          input(type='checkbox' disabled='')
+          span.switch-state

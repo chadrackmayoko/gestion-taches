@@ -1,0 +1,66 @@
+//-// Mathematical Icon
+-
+    var ICO_ITEM7 =[
+          { id:'icofont-abacus-alt' }
+        , { id:'icofont-abacus' }
+        , { id:'icofont-angle-180' }
+        , { id:'icofont-angle-45' }
+        , { id:'icofont-angle-90' }
+        , { id:'icofont-angle' }
+        , { id:'icofont-calculator-alt-1' }
+        , { id:'icofont-calculator-alt-2' }
+        , { id:'icofont-calculator' }
+        , { id:'icofont-circle-ruler-alt' }
+        , { id:'icofont-circle-ruler' }
+        , { id:'icofont-compass-alt-1' }
+        , { id:'icofont-compass-alt-2' }
+        , { id:'icofont-compass-alt-3' }
+        , { id:'icofont-compass-alt-4' }
+        , { id:'icofont-golden-ratio' }
+        , { id:'icofont-marker-alt-1' }
+        , { id:'icofont-marker-alt-2' }
+        , { id:'icofont-marker-alt-3' }
+        , { id:'icofont-marker' }
+        , { id:'icofont-math' }
+        , { id:'icofont-mathematical-alt-1' }
+        , { id:'icofont-mathematical-alt-2' }
+        , { id:'icofont-mathematical' }
+        , { id:'icofont-pen-alt-1' }
+        , { id:'icofont-pen-alt-2' }
+        , { id:'icofont-pen-alt-3' }
+        , { id:'icofont-pen-holder-alt-1' }
+        , { id:'icofont-pen-holder' }
+        , { id:'icofont-pen' }
+        , { id:'icofont-pencil-alt-1' }
+        , { id:'icofont-pencil-alt-2' }
+        , { id:'icofont-pencil-alt-3' }
+        , { id:'icofont-pencil-alt-4' }
+        , { id:'icofont-pencil' }
+        , { id:'icofont-ruler-alt-1' }
+        , { id:'icofont-ruler-alt-2' }
+        , { id:'icofont-ruler-compass-alt' }
+        , { id:'icofont-ruler-compass' }
+        , { id:'icofont-ruler-pencil-alt-1' }
+        , { id:'icofont-ruler-pencil-alt-2' }
+        , { id:'icofont-ruler-pencil' }
+        , { id:'icofont-ruler' }
+        , { id:'icofont-rulers-alt' }
+        , { id:'icofont-rulers' }
+        , { id:'icofont-square-root' }
+        , { id:'icofont-ui-calculator' }
+    ]
+//-// Ico icon mixin
+mixin IcoContent(items)
+    each item in items 
+        .col-xxl-2.col-lg-3.col-sm-4
+            .card.d-flex.align-items-center.flex-column.default-border
+                i.icofont(class=item.id)
+                .flex-grow-1
+                    h6=item.id
+// Ico icon
+.card
+    .card-header.pb-0.d-flex.justify-content-between.align-items-center
+        h4 Mathematical Icon
+    .card-body
+        .row.icon-event.iconly-icons.icon-lists
+            +IcoContent(ICO_ITEM7)

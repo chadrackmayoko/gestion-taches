@@ -1,0 +1,32 @@
+.card
+    .card-header.pb-0
+        +card-header('Default Radio', '', '', 'Use the', '.checkbox-solid-* ,.checkbox-* ', 'for bordered checkbox ')
+    .card-body.checkbox-checked
+        .row.g-3
+            .col-sm-6.col-xl-4
+                .card-wrapper.solid-border.rounded-3
+                    h6.sub-title.f-w-500 Custom Radios 
+                    .form-check
+                        input#flexRadioDefault1.form-check-input(type='radio' name='flexRadioDefault')
+                        label.form-check-label(for='flexRadioDefault1') Default radio
+                    .form-check
+                        input#flexRadioDefault2.form-check-input(type='radio' name='flexRadioDefault' checked='')
+                        label.form-check-label(for='flexRadioDefault2') Default checked radio
+            .col-sm-6.col-xl-4
+                .card-wrapper.solid-border.rounded-3
+                    h6.sub-title.f-w-500 Disabled Radios 
+                    .form-check
+                        input#flexRadioDisabled.form-check-input(type='radio' name='flexRadioDisabled' disabled='')
+                        label.form-check-label(for='flexRadioDisabled') Disabled radio
+                    .form-check
+                        input#flexRadioCheckedDisabled.form-check-input(type='radio' name='flexRadioDisabled' checked='' disabled='')
+                        label.form-check-label(for='flexRadioCheckedDisabled') Disabled checked radio
+            .col-sm-12.col-xl-4
+                .card-wrapper.solid-border.rounded-3
+                    h6.sub-title.f-w-500 Right Radios 
+                    .form-check.form-check-reverse
+                        input#flexRadioDefault3.form-check-input(type='radio' name='flexRadioDefault')
+                        label.form-check-label(for='flexRadioDefault3') Default radio
+                    .form-check.form-check-reverse
+                        input#flexRadioCheckedDisabled1.form-check-input(type='radio' name='flexRadioDisabled' checked='' disabled='')
+                        label.form-check-label(for='flexRadioCheckedDisabled1') Disabled checked radio

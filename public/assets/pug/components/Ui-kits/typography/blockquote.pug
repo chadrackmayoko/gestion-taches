@@ -1,0 +1,36 @@
+//-// Blockquote Card
+-
+    var BLOCKQUOTE =[
+        {
+            mainText: 'The only impossible journey is the one you never begin.',
+            subText: 'Tony Robbins',
+            textClass: 'text-start',
+            Class: 'mb-2 b-l-primary bg-light-primary',
+        },
+        {
+            mainText: 'In this life we cannot do great things. We can only do small things with great love.',
+            subText: 'Mother Teresa',
+            textClass: 'text-center',
+            Class: 'mb-2 bg-light-secondary',
+        },
+        {
+            mainText: 'Live in the sunshine, swim the sea, drink the wild air.',
+            subText: 'Ralph Waldo Emerson',
+            textClass: 'text-end',
+            Class: 'mb-0 b-r-tertiary bg-light-tertiary',
+        }
+    ]
+
+//-// Counter avatar mixin
+mixin Blockquotes(items)
+    each item in items 
+        .figure.d-block.dark-blockquote(class=item.textClass)
+            blockquote.blockquote(class=item.Class)
+                p.mb-0.f-16=item.mainText
+                span.blockquote-footer=item.subText
+// Blockquote Card
+.card 
+    .card-header.pb-0
+        +card-header('Blockquotes', '','','The, ', '<blockquote>', 'tag specifies a section that is quoted from another source.')
+    .card-body
+        +Blockquotes(BLOCKQUOTE)

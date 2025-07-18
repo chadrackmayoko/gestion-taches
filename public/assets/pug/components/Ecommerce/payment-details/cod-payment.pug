@@ -1,0 +1,21 @@
+.card
+  .card-header.pb-0
+    +card-header('COD', '','', '', '', '')
+  .card-body
+    form.theme-form.row
+      .mb-3.col-sm-6.p-r-0
+        input.form-control(type='text', placeholder='First Name')
+      .mb-3.col-sm-6
+        input.form-control(type='text', placeholder='Last name')
+      .mb-3.col-sm-6.p-r-0
+        input.form-control(type='text', placeholder='Pincode')
+      .mb-3.col-sm-6
+        input.form-control(type='number', placeholder='Enter mobile number')
+      .mb-3.col-sm-6.p-r-0
+        input.form-control(type='text', placeholder='State')
+      .mb-3.col-sm-6
+        input.form-control(type='text', placeholder='City')
+      .mb-3.col-12
+        textarea.form-control(rows='3', placeholder='Address')
+      .col-12
+        button.btn.btn-primary.btn-block(type='button', title='') Submit

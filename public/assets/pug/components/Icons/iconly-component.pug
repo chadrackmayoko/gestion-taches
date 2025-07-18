@@ -1,0 +1,283 @@
+//-// Iconly menu
+-
+    var ICONLY_ITEM =[
+        {
+            id: 'Search'
+        },
+        {
+            id: 'Folder'
+        },
+        {
+            id: 'Wallet'
+        },
+        {
+            id: 'Pie'
+        },
+        {
+            id: 'Bookmark'
+        },
+        {
+            id: 'Category'
+        },
+        {
+            id: 'Home'
+        },
+        {
+            id: 'Bell'
+        },
+        {
+            id: 'Chat'
+        },
+        {
+            id: 'Heart'
+        },
+        {
+            id: 'Paper'
+        },
+        {
+            id: 'Paper-plus'
+        },
+        {
+            id: 'Chat'
+        },
+        {
+            id: 'Send'
+        },
+        {
+            id: 'Password'
+        },
+        {
+            id: 'Swap'
+        },
+        {
+            id: 'Work'
+        },
+        {
+            id: 'Activity'
+        },
+        {
+            id: 'Calendar'
+        },
+        {
+            id: 'Message'
+        },
+        {
+            id: 'Moon'
+        },
+        {
+            id: 'Video'
+        },
+        {
+            id: 'Icon-plus'
+        },
+        {
+            id: 'Chart'
+        },
+        {
+            id: 'Game'
+        },
+        {
+            id: 'Bag'
+        },
+        {
+            id: 'Ticket-star'
+        },
+        {
+            id: 'Discount'
+        },
+        {
+            id: 'Buy'
+        },
+        {
+            id: 'Info-circle'
+        },
+        {
+            id: 'Close-square'
+        },
+        {
+            id: 'Tick-square'
+        },
+        {
+            id: 'Discovery'
+        },
+        {
+            id: 'Location'
+        },
+        {
+            id: 'Document'
+        },
+        {
+            id: 'Setting'
+        },
+        {
+            id: 'Time-square'
+        },
+        {
+            id: 'Time-circle'
+        },
+        {
+            id: 'Star'
+        },
+        {
+            id: 'Ticket'
+        },
+        {
+            id: 'Camera'
+        },
+        {
+            id: 'Profile'
+        },
+        {
+            id: 'Add-user'
+        },
+        {
+            id: 'Login'
+        },
+        {
+            id: 'Logout'
+        },
+        {
+            id: 'Download'
+        },
+        {
+            id: 'Upload'
+        },
+        {
+            id: 'Trash'
+        },
+        {
+            id: 'Edit-line'
+        },
+        {
+            id: 'Edit'
+        },
+        {
+            id: 'Play'
+        },
+        {
+            id: 'Show'
+        },
+        {
+            id: 'Hide'
+        },
+        {
+            id: 'Filter'
+        },
+        {
+            id: 'Gallery'
+        },
+        {
+            id: 'Contacts'
+        },
+        {
+            id: 'Lock'
+        },
+        {
+            id: 'Unlock'
+        },
+        {
+            id: 'Scan'
+        },
+        {
+            id: 'plus'
+        },
+        {
+            id: 'minus'
+        },
+        {
+            id: 'More-box'
+        },
+        {
+            id: 'Danger'
+        },
+        {
+            id: 'Shield'
+        },
+        {
+            id: 'Filter-2'
+        },
+        {
+            id: 'Pin'
+        },
+        {
+            id: 'right-3'
+        },
+        {
+            id: 'right-4'
+        },
+        {
+            id: 'Arrow-up-square'
+        },
+        {
+            id: 'Arrow-up-circle'
+        },
+        {
+            id: 'Arrow-up-3'
+        },
+        {
+            id: 'Arrow-up-2'
+        },
+        {
+            id: 'Arrow-up-1'
+        },
+        {
+            id: 'Arrow-right-square'
+        },
+        {
+            id: 'Arrow-right-circle'
+        },
+        {
+            id: 'Arrow-right-3'
+        },
+        {
+            id: 'Arrow-right-2'
+        },
+        {
+            id: 'Arrow-right-1'
+        },
+        {
+            id: 'Arrow-left-square'
+        },
+        {
+            id: 'Arrow-left-circle'
+        },
+        {
+            id: 'Arrow-left-3'
+        },
+        {
+            id: 'Arrow-left-2'
+        },
+        {
+            id: 'Arrow-left-1'
+        },
+        {
+            id: 'Arrow-down-square'
+        },
+        {
+            id: 'Arrow-down-circle'
+        },
+        {
+            id: 'Arrow-down-3'
+        },
+        {
+            id: 'Arrow-down-2'
+        },
+        {
+            id: 'Arrow-down-1'
+        }
+    ]
+//-// Iconly icon mixin
+mixin IconlyContent(items)
+    each item in items 
+        .col-xxl-2.col-lg-3.col-sm-4
+            .card.d-flex.align-items-center.flex-column.default-border
+                +IconlySprite(item.id, 'svg-menu')
+                .flex-grow-1
+                    h6=item.id
+// Iconly icon
+.card
+    .card-header.pb-0.d-flex.justify-content-between.align-items-center
+        h4 Iconly Icons
+    .card-body
+        .row.icon-event.iconly-icons.icon-lists
+            +IconlyContent(ICONLY_ITEM)

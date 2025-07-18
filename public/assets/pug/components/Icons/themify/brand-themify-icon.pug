@@ -1,0 +1,60 @@
+//-// Abstract Icon
+-
+    var THEMIFY_ITEM5 =[
+        { id:'icon-flickr' },
+        { id:'icon-flickr-alt' },
+        { id:'icon-instagram' },
+        { id:'icon-google' },
+        { id:'icon-github' },
+        { id:'icon-facebook' },
+        { id:'icon-dropbox' },
+        { id:'icon-dropbox-alt' },
+        { id:'icon-dribbble' },
+        { id:'icon-apple' },
+        { id:'icon-android' },
+        { id:'icon-yahoo' },
+        { id:'icon-trello' },
+        { id:'icon-stack-overflow' },
+        { id:'icon-soundcloud' },
+        { id:'icon-sharethis' },
+        { id:'icon-sharethis-alt' },
+        { id:'icon-reddit' },
+        { id:'icon-microsoft' },
+        { id:'icon-microsoft-alt' },
+        { id:'icon-linux' },
+        { id:'icon-jsfiddle' },
+        { id:'icon-joomla' },
+        { id:'icon-html5' },
+        { id:'icon-css3' },
+        { id:'icon-drupal' },
+        { id:'icon-wordpress' },
+        { id:'icon-tumblr' },
+        { id:'icon-tumblr-alt' },
+        { id:'icon-skype' },
+        { id:'icon-youtube' },
+        { id:'icon-vimeo' },
+        { id:'icon-vimeo-alt' },
+        { id:'icon-twitter' },
+        { id:'icon-twitter-alt' },
+        { id:'icon-linkedin' },
+        { id:'icon-pinterest' },
+        { id:'icon-pinterest-alt' },
+        { id:'icon-themify-logo' },
+        { id:'icon-themify-favicon' },
+        { id:'icon-themify-favicon-alt' }
+    ]
+//-// Themify mixin
+mixin IcoContent(items)
+    each item in items 
+        .col-xxl-2.col-xl-3
+            .card.d-flex.align-items-center.flex-column.default-border
+                i.icofont(class=item.id)
+                .flex-grow-1
+                    h6=item.id
+// Themify icon
+.card
+    .card-header.pb-0.d-flex.justify-content-between.align-items-center
+        h4 Control Icons
+    .card-body
+        .row.icon-event.iconly-icons.icon-lists
+            +IcoContent(THEMIFY_ITEM5)

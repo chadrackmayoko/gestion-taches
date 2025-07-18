@@ -1,0 +1,27 @@
+- var RECENT_DROPDOWN = ["Recent","Last 2 Days","Last 2 Week"];
+
+mixin dote-option(value)
+    .card-header-right
+      ul.list-unstyled.card-option
+        li
+          i.icon-more-alt
+        li
+          i.view-html.fa.fa-code
+        li
+          i.icofont.icofont-maximize.full-card
+        li
+          i.icofont.icofont-minus.minimize-card
+        li
+          i.icofont.icofont-refresh.reload-card
+        li
+          i.icofont.icofont-error.close-card
+
+//-// Mixin for card header title
+mixin card-header(title, dropdownType, DropDownValue ,subtitle1, codes , subtitle2)
+    h4= title
+    if(dropdownType === "dote") 
+        +dote-option(DropDownValue)
+    p.desc.mb-0.mt-1
+        span= subtitle1 
+        code= codes 
+        span= subtitle2

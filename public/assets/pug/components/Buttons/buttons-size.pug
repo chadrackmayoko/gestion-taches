@@ -1,0 +1,35 @@
+// Buttons Size Start
+.card
+  .card-header.pb-0 
+    h4 Buttons Size
+  .card-body  
+    .row
+      .col-lg-6.col-sm-12
+        #ver-pills-tab.nav.flex-column.nav-pills.nav-success.card-wrapper.bg-light-secondary.rounded-3(role='tablist' aria-orientation='vertical')
+          a#deafult-size-buttons-tab.nav-link.active(data-bs-toggle='pill' href='#deafult-size-buttons' role='tab' aria-controls='deafult-size-buttons' aria-selected='true') 
+            .circle-dot-secondary 
+              span
+            | Default Size 
+          a#large-buttons-tab.nav-link(data-bs-toggle='pill' href='#large-buttons' role='tab' aria-controls='large-buttons' aria-selected='false')
+            .circle-dot-secondary 
+              span
+            | Large Buttons
+          a#small-buttons-tab.nav-link(data-bs-toggle='pill' href='#small-buttons' role='tab' aria-controls='small-buttons' aria-selected='false') 
+            .circle-dot-secondary 
+              span
+            | Small Buttons
+          a#extra-small-buttons-tab.nav-link(data-bs-toggle='pill' href='#extra-small-buttons' role='tab' aria-controls='extra-small-buttons' aria-selected='false') 
+            .circle-dot-secondary 
+              span
+            | Extra Small 
+      .col-lg-6.col-sm-12
+        #ver-pills-tabContent.tab-content
+          #deafult-size-buttons.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='deafult-size-buttons-tab')
+              include ../../components/Buttons/default-buttons
+          #large-buttons.tab-pane.fade(role='tabpanel' aria-labelledby='large-buttons-tab')
+              include ../../components/Buttons/large-buttons
+          #small-buttons.tab-pane.fade(role='tabpanel' aria-labelledby='small-buttons-tab')
+              include ../../components/Buttons/small-buttons
+          #extra-small-buttons.tab-pane.fade(role='tabpanel' aria-labelledby='extra-small-buttons-tab')
+              include ../../components/Buttons/extra-small-buttons                           
+// Buttons Size End      

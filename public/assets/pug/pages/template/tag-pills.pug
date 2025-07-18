@@ -1,0 +1,50 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+-var prism                  = true;
+-var page_clipboard         = true;
+-var customcard             = true;
+-var height_equal           = true;
+-var Touchspin              = true;
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    include ../../components/loader
+    main#pageWrapper.page-wrapper.compact-wrapper
+        include ../../components/header/header
+        .page-body-wrapper
+          include ../../components/sidebar
+          .page-body
+            .container-fluid
+              +breadcrumb(['Ui Kits','Tag & Pills'],'Tag & Pills')
+            // Container-fluid starts
+            .container-fluid
+              .row 
+                .col-xl-6
+                  include ../../components/Ui-kits/tag-pills/context-badge
+                .col-xl-6
+                  include ../../components/Ui-kits/tag-pills/context-pill
+                .col-lg-6
+                  include ../../components/Ui-kits/tag-pills/number-badge
+                .col-lg-6
+                  include ../../components/Ui-kits/tag-pills/number-pill
+                .col-lg-6
+                  include ../../components/Ui-kits/tag-pills/icon-badge
+                .col-lg-6
+                  include ../../components/Ui-kits/tag-pills/icon-pill
+                .col-lg-4.col-md-6
+                  include ../../components/Ui-kits/tag-pills/unique-badge
+                .col-lg-4.col-md-6
+                  include ../../components/Ui-kits/tag-pills/animated-badge
+                .col-lg-4
+                  include ../../components/Ui-kits/tag-pills/center-badge
+                .col-lg-6
+                  include ../../components/Ui-kits/tag-pills/badge-heading
+                .col-lg-6
+                  include ../../components/Ui-kits/tag-pills/button-badge
+            // Container-fluid ends
+          include ../../components/footer
+    include ../../components/footer-files

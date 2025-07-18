@@ -1,0 +1,38 @@
+// Stacking Toasts
+.card
+    .card-header.pb-0
+        +card-header('Stacking Toasts', '','', 'You can stack toasts by wrapping them in a toast container, which will vertically add some spacing.', '[stroke-*] ', 'through change icons colors.')
+    .card-body.toast-rtl
+        .toast-container.position-static
+            .toast.show(role='alert' aria-live='assertive' aria-atomic='true')
+                .toast-header
+                    +FeatherSprite('bell', 'feather toast-icons stroke-primary') 
+                    strong.me-auto Edmin template
+                    small just now
+                    button.btn-close(type='button' data-bs-dismiss='toast' aria-label='Close')
+                .toast-body.toast-dark
+                    | Hello, I'm a web-designer.
+            .toast.show(role='alert' aria-live='assertive' aria-atomic='true')
+                .toast-header
+                    +FeatherSprite('bell', 'feather toast-icons stroke-warning') 
+                    strong.me-auto Roxo Template
+                    small.text-muted 2 sec ago
+                    button.btn-close(type='button' data-bs-dismiss='toast' aria-label='Close')
+                .toast-body.toast-dark
+                    | Hello, I'm a UX-designer.
+            .toast.show(role='alert' aria-live='assertive' aria-atomic='true')
+                .toast-header
+                    +FeatherSprite('bell', 'feather toast-icons stroke-danger') 
+                    strong.me-auto Zeta Template
+                    small.text-muted 6 min ago
+                    button.btn-close(type='button' data-bs-dismiss='toast' aria-label='Close')
+                .toast-body.toast-dark
+                    | Hello, I'm a Software developer.
+            .toast.show(role='alert' aria-live='assertive' aria-atomic='true')
+                .toast-header
+                    +FeatherSprite('bell', 'feather toast-icons stroke-success') 
+                    strong.me-auto Edmin Template
+                    small.text-muted 3 sec ago
+                    button.btn-close(type='button' data-bs-dismiss='toast' aria-label='Close')
+                .toast-body.toast-dark
+                    | Hello, I'm a professional web-designer.

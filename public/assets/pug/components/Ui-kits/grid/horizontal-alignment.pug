@@ -1,0 +1,32 @@
+// horizontal alignment Card
+.card
+    .card-header.pb-0
+        +card-header('Horizontal alignment', '','','You can use the' , 'align-items-*', 'class to set the vertical alignment.') 
+    .card-body.grid-showcase.mb-0
+        .grid-align
+            .row.justify-content-start.bg-light
+                .col-5
+                    span.bg-white One column
+                .col-5
+                    span.bg-white Two column
+            .row.justify-content-center.bg-light
+                .col-5
+                    span.bg-white One column
+                .col-5
+                    span.bg-white Two column
+            .row.justify-content-end.bg-light
+                .col-5
+                    span.bg-white One column
+                .col-5
+                    span.bg-white Two column
+    .card-footer
+        .table-responsive
+            table.w-100
+                tbody
+                    tr
+                        th  Class
+                        th Value of the class
+                    tr
+                        td
+                            code .justify-content-*
+                        td  start / center / end / around / between

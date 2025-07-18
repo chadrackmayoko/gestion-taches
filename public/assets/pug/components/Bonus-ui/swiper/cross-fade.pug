@@ -1,0 +1,20 @@
+.card
+  .card-header.pb-0
+    +card-header('Cross-Fade', '','', 'Add', '.carousel-fade', 'to your carousel to animate slides with a fade transition instead of a slide.you may want to add .bg-body or some custom CSS to the .carousel-items for proper cross-fading.')
+  .card-body
+    #carouselExampleFade.carousel.slide.carousel-fade(data-bs-ride='carousel')
+      .carousel-inner
+        .carousel-item.active
+          img.d-block.w-100(src='../assets/images/slider/1.jpg' alt='drawing-room')
+        .carousel-item
+          img.d-block.w-100(src='../assets/images/slider/11.jpg' alt='drawing-room')
+        .carousel-item
+          img.d-block.w-100(src='../assets/images/slider/7.jpg' alt='drawing-room')
+        .carousel-item
+          img.d-block.w-100(src='../assets/images/slider/10.jpg' alt='drawing-room')
+      button.carousel-control-prev(type='button' data-bs-target='#carouselExampleFade' data-bs-slide='prev')
+        span.carousel-control-prev-icon(aria-hidden='true')
+        span.visually-hidden Previous
+      button.carousel-control-next(type='button' data-bs-target='#carouselExampleFade' data-bs-slide='next')
+        span.carousel-control-next-icon(aria-hidden='true')
+        span.visually-hidden Next

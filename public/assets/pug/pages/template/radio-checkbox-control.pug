@@ -1,0 +1,49 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+-var height_equal = true;
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    include ../../components/loader
+    main#pageWrapper.page-wrapper.compact-wrapper
+        include ../../components/header/header
+        .page-body-wrapper
+          include ../../components/sidebar
+          .page-body
+            .container-fluid
+              +breadcrumb(['Ui Kits','Checkbox & Radio'],'Checkbox & Radio')
+            // Container-fluid starts
+            .container-fluid.radiocheckbox-page
+              .row
+                .col-xl-12
+                  include ../../components/forms/checkbox-radio/default-checkbox
+                .col-xl-12
+                  include ../../components/forms/checkbox-radio/custom-checkbox
+                .col-xl-12
+                  include ../../components/forms/checkbox-radio/default-radio
+                .col-12
+                  include ../../components/forms/checkbox-radio/images-checkbox
+                .col-12
+                  include ../../components/forms/checkbox-radio/images-radio
+                .col-12
+                  include ../../components/forms/checkbox-radio/custom-radio
+                .col-xl-12
+                  include ../../components/forms/checkbox-radio/default-switch
+                .col-xl-12
+                  include ../../components/forms/checkbox-radio/inline-input-type
+                .col-xl-6
+                  include ../../components/forms/checkbox-radio/animated-buttons
+                .col-xl-6
+                  include ../../components/forms/checkbox-radio/basic-radio-checkbox
+                .col-md-6
+                  include ../../components/forms/checkbox-radio/radio-toggle-buttons
+                .col-md-6
+                  include ../../components/forms/checkbox-radio/outlined-checkbox
+                
+            // Container-fluid ends
+          include ../../components/footer
+    include ../../components/footer-files

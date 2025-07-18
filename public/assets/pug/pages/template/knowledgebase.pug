@@ -1,0 +1,39 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+-var height_equal           = true;
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    include ../../components/loader
+    main#pageWrapper.page-wrapper.compact-wrapper
+        include ../../components/header/header
+        .page-body-wrapper
+          include ../../components/sidebar
+          .page-body
+            .container-fluid
+              +breadcrumb(['Knowledgebase','Knowledgebase'],'Knowledgebase')
+            // Container-fluid starts
+            .container-fluid.table-space
+              .row 
+                  .col-12.position-relative
+                    include ../../components/Knowledgebase/knowledge-banner
+                  .col-xl-4.col-sm-6
+                    include ../../components/Knowledgebase/articles-knowledge-components
+                  .col-xl-4.col-sm-6
+                    include ../../components/Knowledgebase/knowledge-knowledge-components
+                  .col-xl-4
+                    include ../../components/Knowledgebase/support-knowledge-components
+                  .col-sm-12
+                    include ../../components/Knowledgebase/articles-browser
+                  .col-lg-12
+                    include ../../components/Knowledgebase/featured-browser-knowledge
+                  .col-lg-12
+                    include ../../components/Knowledgebase/latest-articles-knowledge
+            // Container-fluid starts
+          include ../../components/footer
+    include ../../components/footer-files
+    

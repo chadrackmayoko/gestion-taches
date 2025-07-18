@@ -1,0 +1,47 @@
+.card.project-card
+    .card-header
+        h4 Project Overview
+        .dropdown.icon-dropdown
+          button#userdropdown7.btn.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+            i.icon-more-alt
+          .dropdown-menu.dropdown-menu-end(aria-labelledby='userdropdown7')
+            a.dropdown-item(href='#') Weekly
+            a.dropdown-item(href='#') Monthly
+            a.dropdown-item(href='#') Yearly
+    .card-body.pt-0
+        h4 56
+            span.ms-1 Project
+        .row.align-items-center
+            .col-5.custom-width
+                .progress.progress-striped-primary
+                    .progress-bar(style="width: 55%" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100")
+                .progress.progress-striped-secondary
+                    .progress-bar(style="width: 60%" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100")
+                .progress.progress-striped-tertiary
+                    .progress-bar(style="width: 45%" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100")
+            .col-7.d-sm-none.d-md-block
+                ul.overview-details 
+                    li.d-flex.align-items-center
+                        .circle-dot-primary
+                            span
+                        h5 15
+                            span.font-light.ms-1 Signed
+                    li.d-flex.align-items-center
+                        .circle-dot-secondary
+                            span
+                        h5 62
+                            span.font-light.ms-1 Manager Review
+                    li.d-flex.align-items-center
+                        .circle-dot-tertiary
+                            span
+                        h5 20
+                            span.font-light.ms-1 Client Review
+        button.view-btn.btn.bg-light.d-block.w-100.position-relative(type='button' data-bs-toggle='dropdown' aria-expanded='false') View project
+            +FeatherSprite('chevron-down', 'feather')
+            ul.dropdown-menu.dropdown-block(style='')
+                li
+                    a.dropdown-item(href='#') Project
+                li
+                    a.dropdown-item(href='#') Ecommerce
+                li
+                    a.dropdown-item(href='#') Crypto

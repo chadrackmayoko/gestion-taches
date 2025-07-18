@@ -1,0 +1,70 @@
+.card
+    .card-header
+      +card-header('Hoverable Rows With Horizontal Border', '','', 'Hoverable row use a class', 'table-hover-*.table-border-horizontal-*.border-solid-*', 'class.')
+    .table-responsive.signal-table
+      table.table.table-hover
+        thead
+          tr
+            th(scope='col') Id
+            th(scope='col') Status
+            th(scope='col') Signal Name	
+            th(scope='col') Security
+            th(scope='col') Stage
+            th(scope='col') Schedule
+            th(scope='col') Team Lead
+        tbody
+          tr
+            th(scope='row') 1
+            td.d-flex.align-items-center
+              .bg-light-success.font-success.me-3
+                +FeatherSprite('alert-triangle', 'feather')
+              span.font-success No Signal
+            td Astrid: NE Shared managed
+            td Medium
+            td Triaged
+            td 0.33	
+            td Chase Nguyen	
+          tr
+            th(scope='row') 2
+            td.d-flex.align-items-center
+              .bg-light-danger.font-danger.me-3  
+                +FeatherSprite('alert-triangle', 'feather')
+              span.font-danger Offline
+            td Cosmo: prod shared ares	
+            td Huge
+            td Triaged
+            td 0.39
+            td Brie Furman
+          tr
+            th(scope='row') 3
+            td.d-flex.align-items-center 
+              .bg-light-primary.font-primary.me-3
+                +FeatherSprite('alert-circle', 'feather')
+              span.font-primary Online
+            td Phoenix: prod shared lyra-lists	
+            td Minor
+            td No Triaged
+            td 3.12	
+            td Jeremy Lake
+          tr
+            th(scope='row') 4
+            td.d-flex.align-items-center 
+              .bg-light-success.font-success.me-3
+                +FeatherSprite('check-circle', 'feather')
+              span.font-success No Signal
+            td Astrid: NE Shared managed
+            td Negligible
+            td Triaged
+            td 13.18
+            td Angelica Howards
+          tr
+            th(scope='row') 5
+            td.d-flex.align-items-center 
+              i.bg-light-danger.font-danger.me-3
+                +FeatherSprite('check-circle', 'feather')
+              span.font-danger Online
+            td Astrid: NE Shared managed
+            td Medium
+            td No Triaged
+            td 5.33		
+            td Diane Okuma

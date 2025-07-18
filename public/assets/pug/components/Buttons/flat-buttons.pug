@@ -1,0 +1,59 @@
+// Flat Buttons Start
+//-// Flat Buttons Data
+-
+    var FLAT_BUTTONS =[
+        {
+            title: 'Primary Button',
+            BtnColor: 'btn-primary',
+            tooltip: 'btn flat-btn btn-primary',
+        },
+        {
+            title: 'Secondary Button',
+            BtnColor: 'btn-secondary',
+            tooltip: 'btn flat-btn btn-secondary',
+        },
+        {
+            title: 'Tertiary Button',
+            BtnColor: 'btn-tertiary',
+            tooltip: 'btn flat-btn btn-tertiary',
+        },
+        {
+            title: 'Success Button',
+            BtnColor: 'btn-success',
+            tooltip: 'btn flat-btn btn-success',
+        },
+        {
+            title: 'Info Button',
+            BtnColor: 'btn-info',
+            tooltip: 'btn flat-btn btn-info',
+        },
+        {
+            title: 'Warning Button',
+            BtnColor: 'btn-warning',
+            tooltip: 'btn flat-btn btn-warning',
+        },
+        {
+            title: 'Danger Button',
+            BtnColor: 'btn-danger',
+            tooltip: 'btn flat-btn btn-danger',
+        },
+        {
+            title: 'Light Button',
+            BtnColor: 'font-dark btn-light',
+            tooltip: 'btn flat-btn btn-light',
+        },
+        {
+            title: 'Dark Button',
+            BtnColor: 'btn-dark',
+            tooltip: 'btn flat-btn btn-dark',
+        },
+    ] 
+//- Flat Buttons Mixin   
+mixin FlatButtons(items)
+    each item in items
+        .text-center.col-12.col-sm-6.col-md-12
+            button.btn.m-1.flat-btn(type='button' data-bs-toggle='tooltip' class=item.BtnColor title=item.tooltip)=item.title
+// Flat Buttons Menu            
+.btn-showcase.row
+    +FlatButtons(FLAT_BUTTONS)
+// Flat Buttons End      

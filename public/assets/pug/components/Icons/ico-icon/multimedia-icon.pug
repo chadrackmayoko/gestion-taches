@@ -1,0 +1,55 @@
+//-// Multimedia Icon
+-
+    var ICO_ITEM8 =[
+        { id:'icofont-cassette-player' }
+        , { id:'icofont-cassette' }
+        , { id:'icofont-forward' }
+        , { id:'icofont-guiter' }
+        , { id:'icofont-movie' }
+        , { id:'icofont-multimedia' }
+        , { id:'icofont-music-alt' }
+        , { id:'icofont-music-disk' }
+        , { id:'icofont-music-note' }
+        , { id:'icofont-music-notes' }
+        , { id:'icofont-music' }
+        , { id:'icofont-mute-volume' }
+        , { id:'icofont-pause' }
+        , { id:'icofont-play-alt-1' }
+        , { id:'icofont-play-alt-2' }
+        , { id:'icofont-play-alt-3' }
+        , { id:'icofont-play-pause' }
+        , { id:'icofont-play' }
+        , { id:'icofont-record' }
+        , { id:'icofont-retro-music-disk' }
+        , { id:'icofont-rewind' }
+        , { id:'icofont-song-notes' }
+        , { id:'icofont-sound-wave-alt' }
+        , { id:'icofont-sound-wave' }
+        , { id:'icofont-stop' }
+        , { id:'icofont-video-alt' }
+        , { id:'icofont-video-cam' }
+        , { id:'icofont-video-clapper' }
+        , { id:'icofont-video' }
+        , { id:'icofont-volume-bar' }
+        , { id:'icofont-volume-down' }
+        , { id:'icofont-volume-mute' }
+        , { id:'icofont-volume-off' }
+        , { id:'icofont-volume-up' }
+        , { id:'icofont-youtube-play' }
+
+    ]
+//-// Ico icon mixin
+mixin IcoContent(items)
+    each item in items 
+        .col-xxl-2.col-lg-3.col-sm-4
+            .card.d-flex.align-items-center.flex-column.default-border
+                i.icofont(class=item.id)
+                .flex-grow-1
+                    h6=item.id
+// Ico icon
+.card
+    .card-header.pb-0.d-flex.justify-content-between.align-items-center
+        h4 Mathematical Icon
+    .card-body
+        .row.icon-event.iconly-icons.icon-lists
+            +IcoContent(ICO_ITEM8)

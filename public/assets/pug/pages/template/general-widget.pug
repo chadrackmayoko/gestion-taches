@@ -1,0 +1,45 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+-var apexcharts             = true;
+-var swiper                 = true;
+-var generalpage_js         = true;
+
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    include ../../components/loader
+    main#pageWrapper.page-wrapper.compact-wrapper
+      include ../../components/header/header
+      .page-body-wrapper
+        include ../../components/sidebar
+        .page-body
+          .container-fluid
+            +breadcrumb(['Widgets','General'],'General')
+          // Container-fluid starts
+          .container-fluid.general-widget
+            .row
+              .col-12
+                .row
+                  include ../../components/general-widget/order-delivery
+              .col-sm-6.col-xl-3
+                include ../../components/general-widget/product-offer
+              .col-sm-6.col-xl-3
+                include ../../components/general-widget/schedule
+              .col-sm-6
+                include ../../components/general-widget/sales-summary
+              .col-sm-6.col-xl-3
+                include ../../components/general-widget/invest
+              .col-sm-6.col-xl-5
+                .row 
+                  .col-xl-12
+                    include ../../components/general-widget/task-summary
+              .col-sm-6.col-xl-4
+                .row
+                  include ../../components/general-widget/progress-card 
+                
+        include ../../components/footer
+    include ../../components/footer-files

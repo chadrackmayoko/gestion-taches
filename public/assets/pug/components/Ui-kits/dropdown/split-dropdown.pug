@@ -1,0 +1,112 @@
+// Split dropdown
+.card
+    .card-header.pb-0
+        +card-header('Split dropdown', 'dote','','When the split the dropdown', '.dropdown-toggle-split')
+    .card-body.dropdown-basic.me-0
+        .common-flex
+            .btn-group
+                button.btn.btn-outline-primary(type='button') Widgets
+                .dropdown.separated-btn
+                    button.btn.btn-primary(type='button')
+                        +FeatherSprite('arrow-down', 'feather')
+                    .dropdown-content
+                        a(href='#') General
+                        a(href='#') Chart
+            .btn-group
+                button.btn.btn-outline-secondary(type='button') Animations
+                .dropdown.separated-btn
+                    button.btn.btn-secondary(type='button')
+                        +FeatherSprite('arrow-down', 'feather')
+                    .dropdown-content
+                        a(href='#') Animate 
+                        a(href='#') AOS animations
+            .btn-group
+                button.btn.btn-outline-tertiary(type='button') Blog
+                .dropdown.separated-btn
+                    button.btn.btn-tertiary(type='button')
+                        +FeatherSprite('arrow-down', 'feather')
+                    .dropdown-content
+                        a(href='#') Blog Details
+                        a(href='#') Blog Single
+            .btn-group
+                button.btn.btn-outline-success(type='button') Charts
+                .dropdown.separated-btn
+                    button.btn.btn-success(type='button')
+                        +FeatherSprite('arrow-down', 'feather')
+                    .dropdown-content
+                        a(href='#') Apex chart
+                        a(href='#') Chartist
+            .btn-group
+                button.btn.btn-outline-info(type='button') Email
+                .dropdown.separated-btn
+                    button.btn.btn-info(type='button')
+                        +FeatherSprite('arrow-down', 'feather')
+                    .dropdown-content
+                        a(href='#') Email app 
+                        a(href='#') Email compose
+            .btn-group
+                button.btn.btn-outline-warning(type='button') Icons
+                .dropdown.separated-btn
+                    button.btn.btn-warning(type='button')
+                        +FeatherSprite('arrow-down', 'feather')
+                    .dropdown-content
+                        a(href='#') Flag icons 
+                        a(href='#') Fontawesome icons  
+                        a(href='#') Ico icons
+                        a(href='#') Feather icons 
+            .btn-group
+                button.btn.btn-outline-danger(type='button') Learning
+                .dropdown.separated-btn
+                    button.btn.btn-danger(type='button')
+                        +FeatherSprite('arrow-down', 'feather')
+                    .dropdown-content
+                        a(href='#') Learning List
+                        a(href='#') Detailed Course
+        .code-box-copy
+            button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#tooltip', title='Copy')
+              i.icofont.icofont-copy
+            pre
+              code.language-html#split-dropdown
+                | &lt;!--You can use .dropdown-menu and inside added .dropdown-item.*(dropdown list)--&gt;  
+                | &lt;div class="btn-group"&gt;
+                | &lt;button class="btn btn-outline-primary" type="button"&gt;Widgets&lt;/button&gt;
+                | &lt;div class="dropdown separated-btn"&gt;
+                | &lt;button class="btn btn-primary" type="button"&gt;&lt;i class="icofont icofont-arrow-down"&gt;&lt;/i&gt;&lt;/button&gt;
+                | &lt;div class="dropdown-content"&gt;&lt;a href="#"&gt;General&lt;/a&gt;&lt;a href="#"&gt;Chart&lt;/a&gt;&lt;/div&gt;
+                | &lt;/div&gt;
+                | &lt;/div&gt;
+                | &lt;div class="btn-group"&gt;
+                | &lt;button class="btn btn-outline-secondary" type="button"&gt;Animations&lt;/button&gt;
+                | &lt;div class="dropdown separated-btn"&gt;
+                | &lt;button class="btn btn-secondary" type="button"&gt;&lt;i class="icofont icofont-arrow-down"&gt;&lt;/i&gt;&lt;/button&gt;
+                | &lt;div class="dropdown-content"&gt;&lt;a href="#"&gt;Animate &lt;/a&gt;&lt;a href="#"&gt;Scroll reveal &lt;/a&gt;&lt;a href="#"&gt;AOS animations&lt;/a&gt;&lt;/div&gt;
+                | &lt;/div&gt;
+                | &lt;/div&gt;
+                | &lt;div class="btn-group"&gt;
+                | &lt;button class="btn btn-outline-success" type="button"&gt;Charts&lt;/button&gt;
+                | &lt;div class="dropdown separated-btn"&gt;
+                | &lt;button class="btn btn-success" type="button"&gt;&lt;i class="icofont icofont-arrow-down"&gt;&lt;/i&gt;&lt;/button&gt;
+                | &lt;div class="dropdown-content"&gt;&lt;a href="#"&gt;Echarts&lt;/a&gt;&lt;a href="#"&gt;Apex chart&lt;/a&gt;&lt;a href="#"&gt;Google chart&lt;/a&gt;&lt;a href="#"&gt;Sparkline chart&lt;/a&gt;&lt;/div&gt;
+                | &lt;/div&gt;
+                | &lt;/div&gt;
+                | &lt;div class="btn-group"&gt;
+                | &lt;button class="btn btn-outline-info" type="button"&gt;Email&lt;/button&gt;
+                | &lt;div class="dropdown separated-btn"&gt;
+                | &lt;button class="btn btn-info" type="button"&gt;&lt;i class="icofont icofont-arrow-down"&gt;&lt;/i&gt;&lt;/button&gt;
+                | &lt;div class="dropdown-content"&gt;&lt;a href="#"&gt;Email app &lt;/a&gt;&lt;a href="#"&gt;Email compose&lt;/a&gt;&lt;/div&gt;
+                | &lt;/div&gt;
+                | &lt;/div&gt;
+                | &lt;div class="btn-group"&gt;
+                | &lt;button class="btn btn-outline-warning" type="button"&gt;Icons&lt;/button&gt;
+                | &lt;div class="dropdown separated-btn"&gt;
+                | &lt;button class="btn btn-warning" type="button"&gt;&lt;i class="icofont icofont-arrow-down"&gt;&lt;/i&gt;&lt;/button&gt;
+                | &lt;div class="dropdown-content"&gt;&lt;a href="#"&gt;Flag icons &lt;/a&gt;&lt;a href="#"&gt;Fontawesome icons &lt;/a&gt;&lt;a href="#"&gt;Ico icons&lt;/a&gt;&lt;a href="#"&gt;Feather icons &lt;/a&gt;&lt;/div&gt;
+                | &lt;/div&gt;
+                | &lt;/div&gt;
+                | &lt;div class="btn-group"&gt;
+                | &lt;button class="btn btn-outline-danger" type="button"&gt;Learning&lt;/button&gt;
+                | &lt;div class="dropdown separated-btn"&gt;
+                | &lt;button class="btn btn-danger" type="button"&gt;&lt;i class="icofont icofont-arrow-down"&gt;&lt;/i&gt;&lt;/button&gt;
+                | &lt;div class="dropdown-content"&gt;&lt;a href="#"&gt;Learning List&lt;/a&gt;&lt;a href="#"&gt;Detailed Course&lt;/a&gt;&lt;/div&gt;
+                | &lt;/div&gt;
+                | &lt;/div&gt;

@@ -1,0 +1,24 @@
+.card
+    .card-header.pb-0
+        +card-header('Bootstrap Calender', '','', 'Use the', '.form-control', 'class through set all css property.')
+    .card-body.card-wrapper
+      .mb-3.row
+        label.col-md-3.col-form-label Date and time
+        .col-md-9
+          input#example-datetime-local-input.form-control.digits(type='datetime-local', value='2024-05-03T18:45:00')
+      .mb-3.row
+        label.col-md-3.col-form-label Date
+        .col-md-9
+          input.form-control.digits(type='date', value='2024-05-01')
+      .mb-3.row
+        label.col-md-3.col-form-label Month
+        .col-md-9
+          input.form-control.digits(type='month', value='2024-01')
+      .mb-3.row
+        label.col-md-3.col-form-label Week
+        .col-md-9
+          input.form-control.digits(type='week', value='2024-W09')
+      .mb-3.row
+        label.col-md-3.col-form-label Time
+        .col-md-9
+          input.form-control.digits(type='time', value='21:45:00')

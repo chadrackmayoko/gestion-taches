@@ -1,0 +1,132 @@
+//-// Directional Icon
+-
+    var ICO_ITEM11 =[
+        { id:'icofont-arrow-down' }
+        , { id:'icofont-arrow-left' }
+        , { id:'icofont-arrow-right' }
+        , { id:'icofont-arrow-up' }
+        , { id:'icofont-block-down' }
+        , { id:'icofont-block-left' }
+        , { id:'icofont-block-right' }
+        , { id:'icofont-block-up' }
+        , { id:'icofont-bubble-down' }
+        , { id:'icofont-bubble-left' }
+        , { id:'icofont-bubble-right' }
+        , { id:'icofont-bubble-up' }
+        , { id:'icofont-caret-down' }
+        , { id:'icofont-caret-left' }
+        , { id:'icofont-caret-right' }
+        , { id:'icofont-caret-up' }
+        , { id:'icofont-circled-down' }
+        , { id:'icofont-circled-left' }
+        , { id:'icofont-circled-right' }
+        , { id:'icofont-circled-up' }
+        , { id:'icofont-collapse' }
+        , { id:'icofont-cursor-drag' }
+        , { id:'icofont-curved-double-left' }
+        , { id:'icofont-curved-double-right' }
+        , { id:'icofont-curved-down' }
+        , { id:'icofont-curved-left' }
+        , { id:'icofont-curved-right' }
+        , { id:'icofont-curved-up' }
+        , { id:'icofont-dotted-down' }
+        , { id:'icofont-dotted-left' }
+        , { id:'icofont-dotted-right' }
+        , { id:'icofont-dotted-up' }
+        , { id:'icofont-double-left' }
+        , { id:'icofont-double-right' }
+        , { id:'icofont-expand-alt' }
+        , { id:'icofont-hand-down' }
+        , { id:'icofont-hand-drag' }
+        , { id:'icofont-hand-drag1' }
+        , { id:'icofont-hand-drag2' }
+        , { id:'icofont-hand-drawn-alt-down' }
+        , { id:'icofont-hand-drawn-alt-left' }
+        , { id:'icofont-hand-drawn-alt-right' }
+        , { id:'icofont-hand-drawn-alt-up' }
+        , { id:'icofont-hand-drawn-down' }
+        , { id:'icofont-hand-drawn-left' }
+        , { id:'icofont-hand-drawn-right' }
+        , { id:'icofont-hand-drawn-up' }
+        , { id:'icofont-hand-grippers' }
+        , { id:'icofont-hand-left' }
+        , { id:'icofont-hand-right' }
+        , { id:'icofont-hand-up' }
+        , { id:'icofont-line-block-down' }
+        , { id:'icofont-line-block-left' }
+        , { id:'icofont-line-block-right' }
+        , { id:'icofont-line-block-up' }
+        , { id:'icofont-long-arrow-down' }
+        , { id:'icofont-long-arrow-left' }
+        , { id:'icofont-long-arrow-right' }
+        , { id:'icofont-long-arrow-up' }
+        , { id:'icofont-rounded-collapse' }
+        , { id:'icofont-rounded-double-left' }
+        , { id:'icofont-rounded-double-right' }
+        , { id:'icofont-rounded-down' }
+        , { id:'icofont-rounded-expand' }
+        , { id:'icofont-rounded-left-down' }
+        , { id:'icofont-rounded-left-up' }
+        , { id:'icofont-rounded-left' }
+        , { id:'icofont-rounded-right-down' }
+        , { id:'icofont-rounded-right-up' }
+        , { id:'icofont-rounded-right' }
+        , { id:'icofont-rounded-up' }
+        , { id:'icofont-scroll-bubble-down' }
+        , { id:'icofont-scroll-bubble-left' }
+        , { id:'icofont-scroll-bubble-right' }
+        , { id:'icofont-scroll-bubble-up' }
+        , { id:'icofont-scroll-double-down' }
+        , { id:'icofont-scroll-double-left' }
+        , { id:'icofont-scroll-double-right' }
+        , { id:'icofont-scroll-double-up' }
+        , { id:'icofont-scroll-down' }
+        , { id:'icofont-scroll-left' }
+        , { id:'icofont-scroll-long-down' }
+        , { id:'icofont-scroll-long-left' }
+        , { id:'icofont-scroll-long-right' }
+        , { id:'icofont-scroll-long-up' }
+        , { id:'icofont-scroll-right' }
+        , { id:'icofont-scroll-up' }
+        , { id:'icofont-simple-down' }
+        , { id:'icofont-simple-left-down' }
+        , { id:'icofont-simple-left-up' }
+        , { id:'icofont-simple-left' }
+        , { id:'icofont-simple-right-down' }
+        , { id:'icofont-simple-right-up' }
+        , { id:'icofont-simple-right' }
+        , { id:'icofont-simple-up' }
+        , { id:'icofont-square-down' }
+        , { id:'icofont-square-left' }
+        , { id:'icofont-square-right' }
+        , { id:'icofont-square-up' }
+        , { id:'icofont-stylish-down' }
+        , { id:'icofont-stylish-left' }
+        , { id:'icofont-stylish-right' }
+        , { id:'icofont-stylish-up' }
+        , { id:'icofont-swoosh-down' }
+        , { id:'icofont-swoosh-left' }
+        , { id:'icofont-swoosh-right' }
+        , { id:'icofont-swoosh-up' }
+        , { id:'icofont-thin-double-left' }
+        , { id:'icofont-thin-double-right' }
+        , { id:'icofont-thin-down' }
+        , { id:'icofont-thin-left' }
+        , { id:'icofont-thin-right' }
+        , { id:'icofont-thin-up' }
+    ]
+//-// Ico icon mixin
+mixin IcoContent(items)
+    each item in items 
+        .col-xxl-2.col-lg-3.col-sm-4
+            .card.d-flex.align-items-center.flex-column.default-border
+                i.icofont(class=item.id)
+                .flex-grow-1
+                    h6=item.id
+// Ico icon
+.card
+    .card-header.pb-0.d-flex.justify-content-between.align-items-center
+        h4 Directional Icon
+    .card-body
+        .row.icon-event.iconly-icons.icon-lists
+            +IcoContent(ICO_ITEM11)

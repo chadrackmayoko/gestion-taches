@@ -1,0 +1,59 @@
+// Small Buttons Start
+//-// Small Buttons Data
+-
+    var SMALL_BUTTONS =[
+        {
+            title: 'Primary Button',
+            BtnColor: 'btn-primary',
+            tooltip: 'btn btn-primary btn-sm',
+        },
+        {
+            title: 'Secondary Button',
+            BtnColor: 'btn-secondary',
+            tooltip: 'btn btn-secondary btn-sm',
+        },
+        {
+            title: 'Tertiary Button',
+            BtnColor: 'btn-tertiary',
+            tooltip: 'btn btn-tertiary btn-sm',
+        },
+        {
+            title: 'Success Button',
+            BtnColor: 'btn-success',
+            tooltip: 'btn btn-success btn-sm',
+        },
+        {
+            title: 'Info Button',
+            BtnColor: 'btn-info',
+            tooltip: 'btn btn-info btn-sm',
+        },
+        {
+            title: 'Warning Button',
+            BtnColor: 'btn-warning',
+            tooltip: 'btn btn-warning btn-sm',
+        },
+        {
+            title: 'Danger Button',
+            BtnColor: 'btn-danger',
+            tooltip: 'btn btn-danger btn-sm',
+        },
+        {
+            title: 'Light Button',
+            BtnColor: 'font-dark btn-light',
+            tooltip: 'btn btn-light btn-sm',
+        },
+        {
+            title: 'Dark Button',
+            BtnColor: 'btn-dark',
+            tooltip: 'btn btn-dark btn-sm',
+        },
+    ] 
+//- Small Buttons Mixin   
+mixin SmallButtons(items)
+    each item in items
+        .text-center.col-12.col-sm-6.col-md-12
+            button.btn.m-1.btn-sm(type='button' data-bs-toggle='tooltip' class=item.BtnColor title=item.tooltip)=item.title
+// Small Buttons Menu            
+.btn-showcase.row
+    +SmallButtons(SMALL_BUTTONS)
+// Small Buttons End      

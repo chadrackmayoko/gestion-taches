@@ -1,0 +1,22 @@
+.card
+  .card-header.pb-0
+    +card-header('With Controls', '','', 'Use the', '.active', 'class and images to prevent browser default image alignment.')
+  .card-body
+    #carouselExampleControls.carousel.slide(data-bs-ride='carousel')
+      .carousel-inner
+        .carousel-item.active
+          img.d-block.w-100(src='../assets/images/slider/6.jpg' alt='drawing-room')
+        .carousel-item
+          img.d-block.w-100(src='../assets/images/slider/7.jpg' alt='drawing-room')
+        .carousel-item
+          img.d-block.w-100(src='../assets/images/slider/10.jpg' alt='drawing-room')
+        .carousel-item
+          img.d-block.w-100(src='../assets/images/slider/4.jpg' alt='drawing-room')
+        .carousel-item
+          img.d-block.w-100(src='../assets/images/slider/1.jpg' alt='drawing-room')
+      button.carousel-control-prev(type='button' data-bs-target='#carouselExampleControls' data-bs-slide='prev')
+        span.carousel-control-prev-icon(aria-hidden='true')
+        span.visually-hidden Previous
+      button.carousel-control-next(type='button' data-bs-target='#carouselExampleControls' data-bs-slide='next')
+        span.carousel-control-next-icon(aria-hidden='true')
+        span.visually-hidden Next

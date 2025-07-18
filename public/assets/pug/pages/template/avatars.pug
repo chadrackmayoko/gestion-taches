@@ -1,0 +1,39 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+-var prism                  = true;
+-var page_clipboard         = true;
+-var customcard             = true;
+-var height_equal   = true;
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    include ../../components/loader
+    main#pageWrapper.page-wrapper.compact-wrapper
+        include ../../components/header/header
+        .page-body-wrapper
+          include ../../components/sidebar
+          .page-body
+            .container-fluid
+              +breadcrumb(['Ui Kits','Avatars'],'Avatars')
+            // Container-fluid starts
+            .container-fluid
+              .row 
+                .col-xl-4.col-md-6
+                  include ../../components/Ui-kits/avatars/size-avatar
+                .col-xl-4.col-md-6
+                  include ../../components/Ui-kits/avatars/status-avatar
+                .col-xl-4.col-md-12
+                  include ../../components/Ui-kits/avatars/shape-avatar
+                .col-xl-5.col-md-12
+                  include ../../components/Ui-kits/avatars/group-avatar
+                .col-xl-4.col-md-6
+                  include ../../components/Ui-kits/avatars/ratio-avatar
+                .col-xl-3.col-md-6
+                  include ../../components/Ui-kits/avatars/count-group
+            // Container-fluid ends            
+          include ../../components/footer
+    include ../../components/footer-files

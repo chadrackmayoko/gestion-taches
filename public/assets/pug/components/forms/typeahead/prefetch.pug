@@ -1,0 +1,9 @@
+.card
+  .card-header.pb-0
+    +card-header('config', '','', '', '', 'Options added via config with no search')
+  .card-body
+    #prefetch
+      form.theme-form
+        div
+          select#choices-single-no-search.form-control(name='choices-single-no-search')
+            option(value='0') Zero

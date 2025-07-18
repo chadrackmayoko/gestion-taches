@@ -1,0 +1,14 @@
+.card
+  .card-header.pb-0
+    +card-header('Basic typeahead', '','', '', '', 'This is the simple demo for Typeahead.')
+  .card-body
+    #the-basics
+      form.theme-form
+        div
+          select#cities.form-control(name='cities')
+            option(value='') Choose a city
+            option(value='Leeds') Leeds
+            option(value='Manchester') Manchester
+            option(value='London') London
+            option(value='Sheffield') Sheffield
+            option(value='Newcastle') Newcastle

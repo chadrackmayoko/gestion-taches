@@ -1,0 +1,178 @@
+//-// All Invoice menu
+-
+    var PRODUCTLIST_ITEM =[
+        {
+            url: '../assets/images/ecommerce/product-table-1.png',
+            productName: 'Black Shirt',
+            productDetail: 'Vida Loca - Gray Checks Fit Men\'s Casual Shirt.',
+            price: '$12',
+            bgClass: 'font-success',
+            title: 'In Stock',
+            date: '2022/05/21',
+        },        
+        {
+            url: '../assets/images/ecommerce/product-table-2.png',
+            productName: 'Yellow T-shirt',
+            productDetail: 'Wild West - Yellow Cotton Blend Regular Fit Men\'s Formal T-Shirt',
+            price: '$15',
+            bgClass: 'font-primary',
+            title: 'Low Stock',
+            date: '2022/08/15',
+        },       
+        {
+            url: '../assets/images/ecommerce/product-table-3.png',
+            productName: 'Blackish Top',
+            productDetail: 'aask - Black Polyester Blend Women\'s Fit & Flare T-shirt.',
+            price: '$20',
+            bgClass: 'font-danger',
+            title: 'Out of stock',
+            date: '2022/05/12',
+        },        
+        {
+            url: '../assets/images/ecommerce/product-table-4.png',
+            productName: 'Brown Casual Shirt',
+            productDetail: 'R L F - Brown Cotton Blend Men\'s A-Line Shirt',
+            price: '$14',
+            bgClass: 'font-primary',
+            title: 'Low Stock',
+            date: '2022/12/16',
+        },        
+        {
+            url: '../assets/images/ecommerce/product-table-5.png',
+            productName: 'Black & white Dress',
+            productDetail: 'Women\'s Black & White Collection Dress.',
+            price: '$25',
+            bgClass: 'font-success',
+            title: 'In Stock',
+            date: '2022/01/15',
+        },        
+        {
+            url: '../assets/images/ecommerce/product-table-6.png',
+            productName: 'Red Blazer For Winter',
+            productDetail: 'Womens\'s Red Winter Season Collection Blazer.',
+            price: '$10',
+            bgClass: 'font-primary',
+            title: 'Low Stock',
+            date: '2022/08/10',
+        },        
+        {
+            url: '../assets/images/ecommerce/product-table-1.png',
+            productName: 'Yellow Plain T-shirt',
+            productDetail: 'Wild West - Yellow Cotton Blend Regular Fit Men\'s Formal T-Shirt.',
+            price: '$12',
+            bgClass: 'font-success',
+            title: 'In Stock',
+            date: '2022/05/21',
+        },        
+        {
+            url: '../assets/images/ecommerce/product-table-2.png',
+            productName: 'Blackish Top',
+            productDetail: 'aask - Black Polyester Blend Women\'s Fit & Flare T-shirt.',
+            price: '$15',
+            bgClass: 'font-primary',
+            title: 'Low Stock',
+            date: '2022/08/15',
+        },        
+        {
+            url: '../assets/images/ecommerce/product-table-3.png',
+            productName: 'Women\'s T-shirt',
+            productDetail: 'Women\'s Black T-shirt',
+            price: '$20',
+            bgClass: 'font-danger',
+            title: 'Out of stock',
+            date: '2022/05/12',
+        },        
+        {
+            url: '../assets/images/ecommerce/product-table-4.png',
+            productName: 'Brown Shirt',
+            productDetail: 'Men\'s Brown Shirt',
+            price: '$14',
+            bgClass: 'font-primary',
+            title: 'Low Stock',
+            date: '2022/12/16',
+        },        
+        {
+            url: '../assets/images/ecommerce/product-table-4.png',
+            productName: 'Brown Casual Shirt',
+            productDetail: 'R L F - Brown Cotton Blend Men\'s A-Line Shirt',
+            price: '$14',
+            bgClass: 'font-primary',
+            title: 'Low Stock',
+            date: '2022/12/16',
+        },        
+        {
+            url: '../assets/images/ecommerce/product-table-5.png',
+            productName: 'Black & white Dress',
+            productDetail: 'Women\'s Black & White Collection Dress.',
+            price: '$25',
+            bgClass: 'font-success',
+            title: 'In Stock',
+            date: '2022/01/15',
+        },        
+        {
+            url: '../assets/images/ecommerce/product-table-6.png',
+            productName: 'Red Blazer For Winter',
+            productDetail: 'Womens\'s Red Winter Season Collection Blazer.',
+            price: '$10',
+            bgClass: 'font-primary',
+            title: 'Low Stock',
+            date: '2022/08/10',
+        },
+        {
+            url: '../assets/images/ecommerce/product-table-1.png',
+            productName: 'Black Shirt',
+            productDetail: 'Vida Loca - Gray Checks Fit Men\'s Casual Shirt.',
+            price: '$12',
+            bgClass: 'font-success',
+            title: 'In Stock',
+            date: '2022/05/21',
+        },
+        {
+            url: '../assets/images/ecommerce/product-table-2.png',
+            productName: 'Yellow T-shirt',
+            productDetail: 'Wild West - Yellow Cotton Blend Regular Fit Men\'s Formal T-Shirt',
+            price: '$15',
+            bgClass: 'font-primary',
+            title: 'Low Stock',
+            date: '2022/08/15',
+        },
+    ]
+//-// Invoice mixin
+mixin ProductContent(items)
+
+    each item in items 
+        tr
+            td
+                a(href="product-page.html")
+                    img(src=item.url, alt="")
+            td 
+                a(href="product-page.html")
+                    h6=item.productName
+                span=item.productDetail
+            td=item.price
+            td
+                span(class=item.bgClass)=item.title
+            td=item.date 
+            td
+                button.btn.btn-danger.btn-xs(type='button', data-original-title='btn btn-danger btn-xs', title='') Delete
+                button.btn.btn-primary.btn-xs(type='button', data-original-title='btn btn-danger btn-xs', title='') Edit
+
+// Invoice menu
+.card
+    .card-header.pb-0
+        h4 Individual column searching (text inputs)
+        span
+          | The searching functionality provided by DataTables is useful for quickly search through the information in the table - however the search is global, and you may wish to present controls that search on specific columns.
+    .card-body
+        .table-responsive.theme-scrollbar.product-table 
+            table#basic-3.display
+                thead 
+                    tr 
+                        th Image
+                        th Details
+                        th Amount
+                        th Stock
+                        th Start date
+                        th Action
+                tbody 
+                    +ProductContent(PRODUCTLIST_ITEM)

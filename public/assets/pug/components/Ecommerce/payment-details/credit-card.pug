@@ -1,0 +1,22 @@
+.card
+  .card-header.pb-0
+    +card-header('Credit card', '','', '', '', '')
+  .card-body
+    .row
+      .col-md-7
+        form.theme-form.mega-form
+          .mb-3
+            input.form-control(type='text', placeholder='Card number')
+          .mb-3
+            input.form-control(type='text', placeholder='First Name')
+          .mb-3
+            input.form-control(type='date')
+          .mb-3
+            input.form-control(type='text', placeholder='Name on card')
+          div
+            select.form-select(size='1')
+              option Select Type
+              option Master
+              option Visa
+      .col-md-5.text-center.card-order
+        img.img-fluid(src='../assets/images/ecommerce/card.png', alt='')

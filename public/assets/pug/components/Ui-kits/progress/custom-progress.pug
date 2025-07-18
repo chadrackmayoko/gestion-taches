@@ -1,0 +1,22 @@
+// Custom progress bars
+.card 
+    .card-header.pb-0
+        +card-header('Custom progress bars', '','','Use the', '.progress-bar-animated , .progress-bar-striped', 'to animate the stripes right to left.')
+    .card-body.progress-showcase
+        .row
+            .col
+                h5.mb-2.f-w-500 0% Getting Started 
+                .progress.mb-4
+                    .progress-bar-animated.progress-bar-striped.text-center(role='progressbar' aria-valuenow='0' aria-valuemin='0' aria-valuemax='100')  
+                h5.mb-2.f-w-500 30% Getting Uploading...
+                .progress.mb-4
+                    .progress-bar-animated.progress-bar-striped.bg-primary.text-center(role='progressbar' style='width: 30%' aria-valuenow='30' aria-valuemin='0' aria-valuemax='100') 30%
+                h5.mb-2.f-w-500 60% Getting Pause...
+                .progress.mb-4
+                    .progress-bar-animated.progress-bar-striped.bg-secondary.text-center(role='progressbar' style='width: 60%' aria-valuenow='60' aria-valuemin='0' aria-valuemax='100') 60%
+                h5.mb-2.f-w-500 70% Getting Uploading...
+                .progress.mb-4
+                    .progress-bar-animated.progress-bar-striped.bg-tertiary.text-center(role='progressbar' style='width: 70%' aria-valuenow='70' aria-valuemin='0' aria-valuemax='100') 70%
+                h5.mb-2.f-w-500 100% Completed
+                .progress
+                    .progress-bar-animated.progress-bar-striped.bg-success.text-center(role='progressbar' style='width: 100%' aria-valuenow='100' aria-valuemin='0' aria-valuemax='100') 100%

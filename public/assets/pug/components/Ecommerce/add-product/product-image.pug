@@ -1,0 +1,39 @@
+.card 
+  .card-body
+      .product-info
+          h4 Product Image
+          form#singleFileUpload.dropzone(action='/upload.php')
+              .dz-message.needsclick
+                  i.icon-cloud-up
+                  h6 Drop files here or click to upload.
+                  span.note.needsclick
+                  | (This is just a demo dropzone. Selected files are 
+                  strong not
+                  |  actually uploaded.)
+          h4.mt-4 Select Size
+          form
+              .product-group
+                  .row 
+                      .col-sm-6 
+                          .mb-3   
+                              label.form-label Size
+                              select.form-select
+                                  option S 
+                                  option M 
+                                  option L 
+                                  option XL 
+                                  option XXL
+                      .col-sm-6 
+                          .mb-3   
+                              label.form-label Date
+                              input.form-control(type="date")
+                  .row 
+                      .col-sm-12
+                          .mb-3   
+                              label.form-label Price
+                              input.form-control(type="number")
+      .mt-4
+          .row 
+              .col-sm-12.text-end
+                  a.btn.btn-primary.me-3(href="product.html") ADD 
+                  a.btn.btn-secondary Cancel

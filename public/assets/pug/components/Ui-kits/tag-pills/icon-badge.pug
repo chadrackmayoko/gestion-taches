@@ -1,0 +1,57 @@
+// Context-pill Card
+.card 
+    .card-header.pb-0
+        +card-header('Badge tags with icons', 'dote','','Use the', '.badge', ' utility class to make more icons.')
+    .card-body
+        .badge-spacing
+            a.badge.b-ln-height.badge-primary.p-2(href='#')
+                +FeatherSprite('activity', 'feather')
+            a.badge.b-ln-height.badge-secondary.p-2(href='#')
+                +FeatherSprite('headphones', 'feather')
+            a.badge.b-ln-height.badge-tertiary.p-2(href='#')
+                +FeatherSprite('link', 'feather')
+            a.badge.b-ln-height.badge-success.p-2(href='#')
+                +FeatherSprite('github', 'feather')
+            a.badge.b-ln-height.badge-info.p-2(href='#')
+                +FeatherSprite('award', 'feather')
+            a.badge.b-ln-height.badge-warning.p-2(href='#')
+                +FeatherSprite('dollar-sign', 'feather')
+            a.badge.b-ln-height.badge-danger.p-2(href='#')
+                +FeatherSprite('heart', 'feather')
+            a.badge.b-ln-height.badge-light.text-dark.p-2(href='#')
+                +FeatherSprite('mail', 'feather')
+            a.badge.b-ln-height.badge-dark.p-2(href='#')
+                +FeatherSprite('airplay', 'feather')
+        .code-box-copy
+            button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#example-head' title='Copy')
+                i.icofont.icofont-copy
+            pre
+                code.language-html#badge-icons
+                    | &lt;!--You can use data-feather icons through change the icons badges.--&gt;
+                    | &lt; a class="badge b-ln-height badge-primary p-2" href="#"&gt;
+                    | &lt; svg class="feather"&gt;
+                    | &lt; use href="../assets/svg/feather-icons/dist/feather-sprite.svg#activity"&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/a&gt;
+                    | &lt; a class="badge b-ln-height badge-secondary p-2" href="#"&gt;
+                    | &lt; svg class="feather"&gt;
+                    | &lt; use href="../assets/svg/feather-icons/dist/feather-sprite.svg#headphones"&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/a&gt;
+                    | &lt; a class="badge b-ln-height badge-tertiary p-2" href="#"&gt;
+                    | &lt; svg class="feather"&gt;
+                    | &lt; use href="../assets/svg/feather-icons/dist/feather-sprite.svg#link"&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/a&gt;
+                    | &lt; a class="badge b-ln-height badge-success p-2" href="#"&gt;
+                    | &lt; svg class="feather"&gt;
+                    | &lt; use href="../assets/svg/feather-icons/dist/feather-sprite.svg#github"&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/a&gt;
+                    | &lt; a class="badge b-ln-height badge-info p-2" href="#"&gt;
+                    | &lt; svg class="feather"&gt;
+                    | &lt; use href="../assets/svg/feather-icons/dist/feather-sprite.svg#award"&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/a&gt;
+                    | &lt; a class="badge b-ln-height badge-warning p-2" href="#"&gt;
+                    | &lt; svg class="feather"&gt;
+                    | &lt; use href="../assets/svg/feather-icons/dist/feather-sprite.svg#dollar-sign"&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/a&gt;
+                    | &lt; a class="badge b-ln-height badge-danger p-2" href="#"&gt;
+                    | &lt; svg class="feather"&gt;
+                    | &lt; use href="../assets/svg/feather-icons/dist/feather-sprite.svg#heart"&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/a&gt;
+                    | &lt; a class="badge b-ln-height badge-light text-dark p-2" href="#"&gt;
+                    | &lt; svg class="feather"&gt;
+                    | &lt; use href="../assets/svg/feather-icons/dist/feather-sprite.svg#mail"&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/a&gt;
+                    | &lt; a class="badge b-ln-height badge-dark p-2" href="#"&gt;
+                    | &lt; svg class="feather"&gt;
+                    | &lt; use href="../assets/svg/feather-icons/dist/feather-sprite.svg#airplay"&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/a&gt;

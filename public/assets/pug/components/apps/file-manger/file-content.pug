@@ -1,0 +1,124 @@
+.card
+  .card-header.d-md-block.d-none
+    .d-md-flex.d-sm-block.align-items-center
+      form.form-inline(action='#' method='get')
+        .form-group.d-flex.mb-0.align-items-center
+          i.fa.fa-search 
+          input.form-control-plaintext(type='text' placeholder='Search...')
+      .flex-grow-1.text-end
+        form.d-inline-flex
+          button.btn.btn-primary.plus-square
+            +FeatherSprite('plus-square', 'feather stroke-white ')
+            | Add New
+          div(style='height: 0px;width: 0px; overflow:hidden;')
+            input#upfile(type='file', onchange='sub(this)')
+          button.btn.btn-outline-primary.ms-2.upload 
+            +FeatherSprite('upload', 'feather stroke-primary')
+            | Upload
+  .card-body.file-manager   
+    h5.mb-2 Quick Access
+    ul.quick-file.d-flex.flex-row  
+      li
+        .quick-box
+          i.fa-brands.fa-youtube.fa-fw.font-danger
+        h6.mb-2 Videos
+      li
+        .quick-box
+          i.fa.fa-th.font-info
+        h6.mb-2 Apps
+      li
+        .quick-box
+          i.fa.fa-file-text.font-secondary
+        h6.mb-2 Document
+      li
+        .quick-box
+          i.fa.fa-music.font-warning
+        h6.mb-2 Music
+      li
+        .quick-box
+          i.fa.fa-download.font-primary
+        h6.mb-2 Download
+      li
+        .quick-box
+          i.fa.fa-folder.font-info
+        h6.mb-2 Folder
+      li
+        .quick-box
+          i.fa.fa-file-archive.font-secondary
+        h6.mb-2 Zip File
+      li
+        .quick-box
+          i.fa.fa-trash.font-danger
+        h6.mb-2 Trash
+    h5.mt-4.mb-2 Folders
+    ul.folder
+      li.folder-box
+        .d-block
+          i.f-44.fa.fa-file-archive.font-warning
+          i.fa.fa-ellipsis-v.me-0.f-14.ellips
+          .mt-3   
+            h6.mb-2 Tivo admin
+            p 20 file
+              span.pull-right 
+                i.fa.fa-clock  
+                |  2 Hour ago
+      li.folder-box
+        .d-block
+          i.f-44.fa.fa-folder.font-warning
+          i.fa.fa-ellipsis-v.me-0.f-14.ellips
+          .mt-3   
+            h6.mb-2 Viho admin
+            p 14 file
+              span.pull-right 
+                i.fa.fa-clock  
+                |  3 Hour ago
+      li.folder-box
+        .d-block
+          i.f-44.fa.fa-file-archive.font-warning
+          i.fa.fa-ellipsis-v.me-0.f-14.ellips
+          .mt-3   
+            h6.mb-2 Unice admin
+            p 15 file
+              span.pull-right 
+                i.fa.fa-clock  
+                |  3 Day ago
+      li.folder-box
+        .d-block
+          i.f-44.fa.fa-folder.font-warning
+          i.fa.fa-ellipsis-v.me-0.f-14.ellips
+          .mt-3   
+            h6.mb-2 Koho admin
+            p 10 file
+              span.pull-right 
+                i.fa.fa-clock  
+                |  1 Day ago
+    h5.mt-4.mb-2.mb-2.mb-2 Files 
+    ul.d-flex.flex-row.files-content
+      li.folder-box.d-flex.align-items-center
+        .d-flex.align-items-center.files-list
+          .flex-shrink-0.file-left
+            i.f-22.fa.fa-folder.font-info
+          .flex-grow-1.ms-3
+            h6.mb-2 Logo.psd
+            p 7 Hour ago, 2.0 MB
+      li.folder-box.d-flex.align-items-center
+        .d-flex.align-items-center.files-list
+          .flex-shrink-0.file-left
+            i.f-22.fa.fa-file-excel.font-success
+          .flex-grow-1.ms-3
+            h6.mb-2 Backend.xls
+            p 2 Day ago, 3.0 GB
+      li.folder-box.d-flex.align-items-center
+        .d-flex.align-items-center.files-list
+          .flex-shrink-0.file-left
+            i.f-22.fa.fa-file-archive.font-warning
+          .flex-grow-1.ms-3
+            h6.mb-2 Project.zip
+            p 1 Day ago, 1.9 GB
+      li.folder-box.d-flex.align-items-center
+        .d-flex.align-items-center.files-list
+          .flex-shrink-0.file-left
+            i.f-22.fa.fa-folder.font-primary
+          .flex-grow-1.ms-3
+            h6.mb-2 Report.font
+            p 1 Day ago, 0.9 KB 

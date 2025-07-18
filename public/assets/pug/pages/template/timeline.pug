@@ -1,0 +1,35 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+-var timeline_page = true;
+-var modernizr = true;
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    include ../../components/loader
+    main#pageWrapper.page-wrapper.compact-wrapper
+        include ../../components/header/header
+        .page-body-wrapper
+          include ../../components/sidebar
+          .page-body
+            .container-fluid
+              +breadcrumb(['Bonus Ui','Timeline'],'Timeline')
+            // Container-fluid starts
+            .container-fluid
+              .row 
+                .col-xl-6.box-col-6.notification.main-timeline
+                  include ../../components/Bonus-ui/timeline/basic-timeline
+                .col-xl-6
+                  include ../../components/Bonus-ui/timeline/hovering-timeline
+                .col-xxl-4.col-xl-5.notification.box-col-12
+                  include ../../components/Bonus-ui/timeline/variation-timeline
+                .col-xxl-8.col-xl-7.box-col-12
+                  include ../../components/Bonus-ui/timeline/horizontal-timeline
+                .col-sm-12.box-col-12
+                  include ../../components/Bonus-ui/timeline/chart-timeline
+            // Container-fluid ends
+          include ../../components/footer
+    include ../../components/footer-files

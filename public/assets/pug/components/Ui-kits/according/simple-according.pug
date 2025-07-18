@@ -1,0 +1,101 @@
+// Simple accordion
+.card
+    .card-header.pb-0
+        +card-header('Simple accordion', 'dote','','Use', '.accordion, accordion-light-*','click accordion below to expand/collapse accordion content, you can use different color.')
+    .card-body
+        #simpleaccordion.accordion
+            .accordion-item
+                h2#headingOne.accordion-header
+                    button.accordion-button.collapsed.accordion-light-primary.active(type='button' data-bs-toggle='collapse' data-bs-target='#collapseOne' aria-expanded='false' aria-controls='collapseOne')
+                        | What do web designers do ?
+                #collapseOne.accordion-collapse.collapse.show(aria-labelledby='headingOne' data-bs-parent='#simpleaccordion' style='')
+                    .accordion-body
+                        p.mb-0
+                            | Web design
+                            em.font-danger  identifies the goals
+                            |  of a website or webpage and promotes accessibility for all potential users. This process involves organizing content and images across a series of pages and integrating applications and other interactive elements.
+            .accordion-item
+                h2#headingTwo.accordion-header
+                    button.accordion-button.accordion-light-primary.active.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo')
+                        | What is the use of web design ?
+                #collapseTwo.accordion-collapse.collapse(aria-labelledby='headingTwo' data-bs-parent='#simpleaccordion' style='')
+                    .accordion-body
+                        p.mb-3
+                            strong  Search engine optimization: 
+                            |  Search engine optimization (SEO) is a method for improving the chances for a website to be found by search engines. Web design codes information in a way that search engines can read it. It can boost business because the site shows up on the top search result pages, helping people to find it.
+                        p.mb-3
+                            strong  Mobile responsiveness:
+                            |  Mobile responsiveness is the feature of a website that allows it to display on a mobile device and adapt its layout and proportions to be legible. Web design ensures sites are easy to view and navigate from mobile devices. When a website is well-designed and mobile-responsive, customers can reach the business with ease.
+                        p.mb-0
+                            strong  Improved sales:
+                            | Increasing the number of items sold or acquiring more active customers are objectives of a compelling website. As web design reaches targeted customers and search engines, it helps the business make conversions on their site and improve its sales.
+            .accordion-item
+                h2#headingThree.accordion-header
+                    button.accordion-button.collapsed.accordion-light-primary.active(type='button' data-bs-toggle='collapse' data-bs-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree')
+                        | What are the elements of web design ?
+                #collapseThree.accordion-collapse.collapse(aria-labelledby='headingThree' data-bs-parent='#simpleaccordion')
+                    .accordion-body
+                        p.mb-0
+                            | The web design process allows designers to adjust to any preferences and provide effective solutions. There are many standard components of every web design, including:
+                        ul.d-flex.flex-column.gap-2.accordions-content
+                            li 1. Layout
+                            li 2. Images
+                            li 3. Visual hierarchy
+                            li 4. Color scheme
+                            li 5. Typography
+                            li 6. Navigation
+                            li 7. Readability
+                            li 8. Content
+        .code-box-copy
+            button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#tooltip', title='Copy')
+              i.icofont.icofont-copy
+            pre
+              code.language-html#according
+                | &lt;!--You can use .accordion-collapse with .show class then show accordions.--&gt;
+                | &lt;div class="accordion dark-accordion" id="simpleaccordion"&gt;
+                | &lt;div class="accordion-item"&gt;
+                | &lt;h2 class="accordion-header" id="headingOne"&gt;
+                | &lt;button class="accordion-button collapsed accordion-light-primary font-primary active" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"&gt;What do web designers do?&lt;i class="svg-color" data-feather="chevron-down"&gt;&lt;/i&gt;&lt;/button&gt;
+                | &lt;/h2&gt;
+                | &lt;div class="accordion-collapse collapse show" id="collapseOne" aria-labelledby="headingOne" data-bs-parent="#simpleaccordion"&gt;
+                | &lt;div class="accordion-body"&gt;
+                | &lt;p&gt;
+                | Web design&lt;em class="txt-danger"&gt; identifies the goals&lt;/em&gt; of a website or webpage and promotes accessibility for all potential users. This process involves organizing content and images across a series of pages and integrating applications and other interactive elements.&lt;/p&gt;
+                | &lt;/div&gt;
+                | &lt;/div&gt;
+                | &lt;/div&gt;
+                | &lt;div class="accordion-item"&gt;
+                | &lt;h2 class="accordion-header" id="headingTwo"&gt;
+                | &lt;button class="accordion-button collapsed accordion-light-primary font-primary active" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"&gt;What is the use of web design?&lt;i class="svg-color" data-feather="chevron-down"&gt;&lt;/i&gt;&lt;/button&gt;
+                | &lt;/h2&gt;
+                | &lt;div class="accordion-collapse collapse" id="collapseTwo" aria-labelledby="headingTwo" data-bs-parent="#simpleaccordion"&gt;
+                | &lt;div class="accordion-body"&gt;
+                | &lt;p class="mb-3"&gt;&lt;strong&gt; Search engine optimization: &lt;/strong&gt; Search engine optimization (SEO) is a method for improving the chances for a website to be found by search engines. Web design codes information in a way that search engines can read it. It can boost business because the site shows up on the top search result pages, helping people to find it.&lt;/p&gt;
+                | &lt;p class="mb-3"&gt;&lt;strong&gt; Mobile responsiveness:&lt;/strong&gt; Mobile responsiveness is the feature of a website that allows it to display on a mobile device and adapt its layout and proportions to be legible. Web design ensures sites are easy to view and navigate from mobile devices. When a website is well-designed and mobile-responsive, customers can reach the business with ease.&lt;/p&gt;
+                | &lt;p&gt;&lt;strong&gt; Improved sales:&lt;/strong&gt;Increasing the number of items sold or acquiring more active customers are objectives of a compelling website. As web design reaches targeted customers and search engines, it helps the business make conversions on their site and improve its sales.&lt;/p&gt;
+                | &lt;/div&gt;
+                | &lt;/div&gt;
+                | &lt;/div&gt;
+                | &lt;div class="accordion-item"&gt;
+                | &lt;h2 class="accordion-header" id="headingThree"&gt;
+                | &lt;button class="accordion-button collapsed accordion-light-primary font-primary active" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"&gt;What are the elements of web design?&lt;i class="svg-color" data-feather="chevron-down"&gt;&lt;/i&gt;&lt;/button&gt;
+                | &lt;/h2&gt;
+                | &lt;div class="accordion-collapse collapse" id="collapseThree" aria-labelledby="headingThree" data-bs-parent="#simpleaccordion"&gt;
+                | &lt;div class="accordion-body"&gt;
+                | &lt;p&gt;
+                | The web design process allows designers to adjust to any preferences and provide effective solutions. There are many standard components of every web design, including:
+                | &lt;ul class="d-flex flex-column gap-2 accordions-content"&gt;
+                | &lt;li&gt;--&gt; Layout&lt;/li&gt;
+                | &lt;li&gt;--&gt; Images&lt;/li&gt;
+                | &lt;li&gt;--&gt; Visual hierarchy&lt;/li&gt;
+                | &lt;li&gt;--&gt; Color scheme&lt;/li&gt;
+                | &lt;li&gt;--&gt; Typography&lt;/li&gt;
+                | &lt;li&gt;--&gt; Navigation&lt;/li&gt;
+                | &lt;li&gt;--&gt; Readability&lt;/li&gt;
+                | &lt;li&gt;--&gt; Content&lt;/li&gt;
+                | &lt;/ul&gt;
+                | &lt;/p&gt;
+                | &lt;/div&gt;
+                | &lt;/div&gt;
+                | &lt;/div&gt;
+                | &lt;/div&gt;

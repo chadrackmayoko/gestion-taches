@@ -1,0 +1,27 @@
+// Offset Card
+.card
+    .card-header.pb-0
+        +card-header('Offset', '','','Using' , '.order', 'you can set the grid system.') 
+    .card-body.grid-showcase
+        .row.g-2
+            .col-sm-5.col-4.offset-sm-3.offset-2
+                span.bg-light col-5 offset-3
+            .col-sm-2.col-4.offset-sm-2.offset-1
+                span.bg-light col-2 offset-2
+            .col-sm-4.col-5.offset-2
+                span.bg-light col-4 offset-2
+            .col-sm-3.col-4.offset-sm-2.offset-1
+                span.bg-light col-3 offset-2
+    .card-footer
+        .table-responsive
+            table.w-100
+                tbody
+                    tr
+                        th  Class
+                        th Value of the class
+                    tr
+                        td
+                            code .offset-*
+                        td  1 / 2 / ... / 11 / 12
+
+

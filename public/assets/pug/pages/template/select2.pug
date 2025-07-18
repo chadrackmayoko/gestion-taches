@@ -1,0 +1,56 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+- var height_equal = true;
+- var page_select3  = true;
+- var custom_select2 = true;
+- var select2_options = true;
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    include ../../components/loader
+    main#pageWrapper.page-wrapper.compact-wrapper
+        include ../../components/header/header
+        .page-body-wrapper
+          include ../../components/sidebar
+          .page-body
+            .container-fluid
+              +breadcrumb(['Form Widgets','Select2'],'Select2')
+            // Container-fluid starts
+            .container-fluid
+              .row 
+                  .col-md-12
+                    include ../../components/forms/select2/single_value_select
+                  .col-sm-6
+                    include ../../components/forms/select2/default_select
+                  .col-sm-6
+                    include ../../components/forms/select2/random_suggestions
+                  .col-sm-6
+                    include ../../components/forms/select2/colors_options
+                  .col-sm-6
+                    include ../../components/forms/select2/flags_selection
+                  .col-md-4.col-md-6
+                    include ../../components/forms/select2/readonly_options
+                  .col-md-4.col-md-6
+                    include ../../components/forms/select2/read_write_options
+                  .col-md-4.col-md-6
+                    include ../../components/forms/select2/disabled_readonly
+                  .col-md-4.col-md-6
+                    include ../../components/forms/select2/customize_emails
+                  .col-md-4.col-md-6
+                    include ../../components/forms/select2/telephone_input         
+                  .col-md-4.col-md-6
+                    include ../../components/forms/select2/movie_suggestions            
+                  .col-md-6
+                    include ../../components/forms/select2/autocomplete_words      
+                  .col-md-6
+                    include ../../components/forms/select2/select_input_option     
+                  .col-md-12    
+                    include ../../components/forms/select2/render_suggestions    
+
+            // Container-fluid starts
+          include ../../components/footer
+    include ../../components/footer-files

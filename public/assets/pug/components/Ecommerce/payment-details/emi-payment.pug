@@ -1,0 +1,42 @@
+.card
+  .card-header.pb-0
+    +card-header('EMI', '','', '', '', '')
+  .card-body
+    form.theme-form.row
+      .mb-3.col-sm-6.p-r-0
+        input.form-control(type='text', placeholder='First Name')
+      .mb-3.col-sm-6
+        input.form-control(type='text', placeholder='Last name')
+      .mb-3.col-sm-6.p-r-0
+        input.form-control(type='text', placeholder='Pincode')
+      .mb-3.col-sm-6
+        select.form-select(size='1')
+          option Bank Name
+          option SBI
+          option ICICI
+          option KOTAK
+          option BOB
+      .mb-3.col-12
+        select.form-select(size='1')
+          option Select Card
+          option 2
+          option 3
+          option 4
+          option 5
+      .mb-3.col-12
+        select.form-select(size='1')
+          option Select Duration
+          option 2015-2016
+          option 2016-2017
+          option 2017-2021
+          option 2021-2022
+      .mb-3.col-12
+        ul.payment-opt
+          li
+            img(src='../assets/images/ecommerce/mastercard.png', alt='')
+          li
+            img(src='../assets/images/ecommerce/visa.png', alt='')
+          li
+            img(src='../assets/images/ecommerce/paypal.png', alt='')
+      .col-12
+        button.btn.btn-primary.btn-block(type='button', title='') Submit

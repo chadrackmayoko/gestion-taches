@@ -1,0 +1,39 @@
+//-// invest menu
+-
+    var INVEST_ITEM =[
+        {
+            title: 'Total',
+            price: '$ 34,4562',
+        },
+        {
+            title: 'Monthly',
+            price: '$ 12,463',
+        },
+        {
+            title: 'Daily',
+            price: '$ 5000',
+        }
+    ]
+
+//-// invest mixin
+mixin InvestContent(items)
+    each item in items 
+        li 
+            h5=item.title 
+            h6=item.price
+
+// invest menu
+.card.invest-card
+  .card-header
+    h4 Total Investment
+    .dropdown.icon-dropdown
+      button#userdropdown2.btn.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+        i.icon-more-alt
+      .dropdown-menu.dropdown-menu-end(aria-labelledby='userdropdown2')
+        a.dropdown-item(href='#') Weekly
+        a.dropdown-item(href='#') Monthly
+        a.dropdown-item(href='#') Yearly
+  .card-body.p-0
+    #investment.chart-invest
+    ul 
+      +InvestContent(INVEST_ITEM)

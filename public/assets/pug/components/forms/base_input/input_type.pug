@@ -1,0 +1,53 @@
+.card 
+    .card-header.pb-0
+        H4 Basic Input Type Control 
+    .card-body
+        form.theme-form.row.g-3
+            .col-sm-3
+                label.form-label Place holder
+            .col-sm-9
+                input.form-control(type='text' placeholder="This is for hint only ..!")
+            .col-sm-3
+                label.form-label Number
+            .col-sm-9
+                input.form-control(type='number' value="50")
+            .col-sm-3
+                label.form-label Phone Number
+            .col-sm-9
+                input.form-control(type="tel" value="91-(999)-999-999")
+            .col-sm-3
+                label.form-label URL
+            .col-sm-9
+                input.form-control(type="url" value="https://themeforest.net")
+            .col-sm-3
+                label.form-label Date and time
+            .col-sm-9
+                input.form-control(type='datetime-local' value='2024-05-01T00:00' min='2024-05-01T00:00')
+            .col-sm-3
+                label.form-label Date
+            .col-sm-9
+                input.form-control(type="date" value="2024-05-01")
+            .col-sm-3
+                label.form-label Time
+            .col-sm-9
+                input.form-control(type="time" value="00:00")
+            .col-sm-3
+                label.form-label File
+            .col-sm-9
+                input.form-control(type="file")
+            .col-sm-3
+                label.form-label Maximum Length
+            .col-sm-9
+                input.form-control(type="text" maxlength="6" value="Content must be in 6 characters" )
+            .col-sm-3
+                label.form-label Color
+            .col-sm-9
+                input.form-control.form-control-color(type='color' value="#43B9B2")
+            .col-sm-3
+                label.form-label Read only
+            .col-sm-9
+                input#staticEmail.form-control-plaintext(type='text' readonly='' value='email@example.com')
+            .col-sm-3
+                label.form-label Textarea
+            .col-sm-9
+                textarea.form-control(rows="5" cols="5" placeholder="Default textarea")

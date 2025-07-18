@@ -1,0 +1,40 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+-var height_equal           = true;
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    include ../../components/loader
+    main#pageWrapper.page-wrapper.compact-wrapper
+        include ../../components/header/header
+        .page-body-wrapper
+          include ../../components/sidebar
+          .page-body
+            .container-fluid
+              +breadcrumb(['Ui Kits','Bootstrap Tabs'],'Bootstrap Tabs')
+            // Container-Fluid Starts
+            .container-fluid
+              .row
+                .col-lg-6
+                  include ../../components/Ui-kits/bootstrap-tabs/simple-tab
+                .col-lg-6
+                  include ../../components/Ui-kits/bootstrap-tabs/icon-tabs
+                .col-lg-6
+                  include ../../components/Ui-kits/bootstrap-tabs/vertical-tabs
+                .col-lg-6
+                  include ../../components/Ui-kits/bootstrap-tabs/pills-tabs
+                .col-lg-6
+                  include ../../components/Ui-kits/bootstrap-tabs/justify-tabs
+                .col-lg-6
+                  include ../../components/Ui-kits/bootstrap-tabs/material-left-tab
+                .col-lg-6
+                  include ../../components/Ui-kits/bootstrap-tabs/material-style-tab
+                .col-lg-6
+                  include ../../components/Ui-kits/bootstrap-tabs/border-tab
+            // Container-Fluid Ends
+          include ../../components/footer
+    include ../../components/footer-files

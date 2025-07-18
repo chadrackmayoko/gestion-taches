@@ -1,0 +1,31 @@
+.card
+  .card-header.pb-0
+    +card-header('With Captions', '','', 'Add captions to your slides easily with the', '.carousel-caption', 'element within any .carousel-item.')
+  .card-body
+    #carouselExampleCaptions.carousel.slide(data-bs-ride='false')
+      .carousel-indicators
+        button.active(type='button' data-bs-target='#carouselExampleCaptions' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
+        button(type='button' data-bs-target='#carouselExampleCaptions' data-bs-slide-to='1' aria-label='Slide 2')
+        button(type='button' data-bs-target='#carouselExampleCaptions' data-bs-slide-to='2' aria-label='Slide 3')
+      .carousel-inner
+        .carousel-item.active
+          img.d-block.w-100(src='../assets/images/slider/9.jpg' alt='drawing-room')
+          .carousel-caption.d-none.d-md-block
+            h5 The area in the house that is most comfortable.
+            p  You can watch folks you wouldn't have in your house amuse you in your living room thanks to the development of television.
+        .carousel-item
+          img.d-block.w-100(src='../assets/images/slider/1.jpg' alt='drawing-room')
+          .carousel-caption.d-none.d-md-block
+            h5 Drawing Room
+            p Regardless of how big or tiny your home is, think about hiring an interior designer. They give you a calm living atmosphere in addition to decorating your home.
+        .carousel-item
+          img.d-block.w-100(src='../assets/images/slider/2.jpg' alt='drawing-room')
+          .carousel-caption.d-none.d-md-block
+            h5 House Interior
+            p If you want to alter your way of life, start with redesigning your house's interior.
+      button.carousel-control-prev(type='button' data-bs-target='#carouselExampleCaptions' data-bs-slide='prev')
+        span.carousel-control-prev-icon(aria-hidden='true')
+        span.visually-hidden Previous
+      button.carousel-control-next(type='button' data-bs-target='#carouselExampleCaptions' data-bs-slide='next')
+        span.carousel-control-next-icon(aria-hidden='true')
+        span.visually-hidden Next

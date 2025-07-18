@@ -1,0 +1,213 @@
+//-// New Order menu
+-
+    var NEW_ORDER =[
+        {
+            src: '../assets/images/ecommerce/product-table-6.png',
+            productName: 'Women Top',
+            btnName: 'Processing',
+            btnColor: 'btn-primary',
+        },
+        {
+            src: '../assets/images/ecommerce/product-table-5.png',
+            productName: 'Women Top',
+            btnName: 'Processing',
+            btnColor: 'btn-primary',
+        },       
+        {
+            src: '../assets/images/ecommerce/product-table-4.png',
+            productName: 'Women Top',
+            btnName: 'Processing',
+            btnColor: 'btn-primary',
+        },        
+        {
+            src: '../assets/images/ecommerce/product-table-3.png',
+            productName: 'Women Top',
+            btnName: 'Processing',
+            btnColor: 'btn-primary',
+        },        
+        {
+            src: '../assets/images/ecommerce/product-table-2.png',
+            productName: 'Women Top',
+            btnName: 'Processing',
+            btnColor: 'btn-primary',
+        },        
+        {
+            src: '../assets/images/ecommerce/product-table-1.png',
+            productName: 'Women Top',
+            btnName: 'Processing',
+            btnColor: 'btn-primary',
+        },        
+        {
+            src: '../assets/images/ecommerce/product-table-1.png',
+            productName: 'Women Top',
+            btnName: 'Processing',
+            btnColor: 'btn-primary',
+        },        
+        {
+            src: '../assets/images/ecommerce/product-table-6.png',
+            productName: 'Women Top',
+            btnName: 'Processing',
+            btnColor: 'btn-primary',
+        },        
+        {
+            src: '../assets/images/ecommerce/product-table-5.png',
+            productName: 'Women Top',
+            btnName: 'Processing',
+            btnColor: 'btn-primary',
+        },
+    ]
+    var SHIPPE_ORDER =[
+        {
+            src: '../assets/images/ecommerce/product-table-6.png',
+            productName: 'Women Top',
+            btnName: 'Shipped',
+            btnColor: 'btn-success',
+        },
+        {
+            src: '../assets/images/ecommerce/product-table-5.png',
+            productName: 'Women Top',
+            btnName: 'Shipped',
+            btnColor: 'btn-success',
+        },       
+        {
+            src: '../assets/images/ecommerce/product-table-4.png',
+            productName: 'Women Top',
+            btnName: 'Shipped',
+            btnColor: 'btn-success',
+        },        
+        {
+            src: '../assets/images/ecommerce/product-table-3.png',
+            productName: 'Women Top',
+            btnName: 'Shipped',
+            btnColor: 'btn-success',
+        },        
+        {
+            src: '../assets/images/ecommerce/product-table-2.png',
+            productName: 'Women Top',
+            btnName: 'Shipped',
+            btnColor: 'btn-success',
+        },        
+        {
+            src: '../assets/images/ecommerce/product-table-1.png',
+            productName: 'Women Top',
+            btnName: 'Shipped',
+            btnColor: 'btn-success',
+        },        
+        {
+            src: '../assets/images/ecommerce/product-table-1.png',
+            productName: 'Women Top',
+            btnName: 'Shipped',
+            btnColor: 'btn-success',
+        },        
+        {
+            src: '../assets/images/ecommerce/product-table-6.png',
+            productName: 'Women Top',
+            btnName: 'Shipped',
+            btnColor: 'btn-success',
+        },        
+        {
+            src: '../assets/images/ecommerce/product-table-5.png',
+            productName: 'Women Top',
+            btnName: 'Shipped',
+            btnColor: 'btn-success',
+        },
+    ]
+    var CANCLE_ORDER =[
+        {
+            src: '../assets/images/ecommerce/product-table-6.png',
+            productName: 'Women Top',
+            btnName: 'Processing',
+            btnColor: 'btn-danger',
+        },
+        {
+            src: '../assets/images/ecommerce/product-table-5.png',
+            productName: 'Women Top',
+            btnName: 'Cancelled',
+            btnColor: 'btn-danger',
+        },       
+        {
+            src: '../assets/images/ecommerce/product-table-4.png',
+            productName: 'Women Top',
+            btnName: 'Cancelled',
+            btnColor: 'btn-danger',
+        },        
+        {
+            src: '../assets/images/ecommerce/product-table-3.png',
+            productName: 'Women Top',
+            btnName: 'Cancelled',
+            btnColor: 'btn-danger',
+        },        
+        {
+            src: '../assets/images/ecommerce/product-table-2.png',
+            productName: 'Women Top',
+            btnName: 'Cancelled',
+            btnColor: 'btn-danger',
+        },        
+        {
+            src: '../assets/images/ecommerce/product-table-1.png',
+            productName: 'Women Top',
+            btnName: 'Cancelled',
+            btnColor: 'btn-danger',
+        },        
+        {
+            src: '../assets/images/ecommerce/product-table-1.png',
+            productName: 'Women Top',
+            btnName: 'Cancelled',
+            btnColor: 'btn-danger',
+        },        
+        {
+            src: '../assets/images/ecommerce/product-table-6.png',
+            productName: 'Women Top',
+            btnName: 'Cancelled',
+            btnColor: 'btn-danger',
+        },        
+        {
+            src: '../assets/images/ecommerce/product-table-5.png',
+            productName: 'Women Top',
+            btnName: 'Cancelled',
+            btnColor: 'btn-danger',
+        },
+    ]
+//-// New Order mixin
+mixin NewOrder(items)
+    each item in items 
+        .col-xxl-4.col-md-6
+          .prooduct-details-box 
+            .d-flex.gap-3
+              img.align-self-center.img-fluid.img-60(src=item.src, alt='')
+              .flex-grow-1
+                .product-name
+                  h6
+                    a(href='#')=item.productName
+                .rating
+                  i.fa.fa-star
+                  i.fa.fa-star
+                  i.fa.fa-star
+                  i.fa.fa-star
+                  i.fa.fa-star
+                .price 
+                  .text-muted.me-2 Price
+                  | : 210$
+                .avaiabilty 
+                  .text-success In stock
+                a.btn.btn-xs(href="#" class=item.btnColor)=item.btnName
+                +FeatherSprite('x', 'feather close')
+
+.card
+  .card-header
+    +card-header('New Orders', '','', '', '', '')
+  .card-body
+    .row.g-sm-4.g-3
+      +NewOrder(NEW_ORDER) 
+.card
+  .card-header
+    +card-header('Shipped Orders', '','', '', '', '')
+  .card-body
+    .row.g-sm-4.g-3
+      +NewOrder(SHIPPE_ORDER) 
+.card
+  .card-header
+    +card-header('Cancelled Orders', '','', '', '', '')
+  .card-body
+    .row.g-sm-4.g-3
+      +NewOrder(CANCLE_ORDER) 

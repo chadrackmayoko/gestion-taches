@@ -1,0 +1,50 @@
+.card
+    .card-header.pb-0
+        H4 Edges Style 
+    .card-body
+        form.form.theme-form.edges-form
+            .row
+                .col
+                    .mb-3
+                        label.form-label(for='edgesmail') Email address
+                        input#edgesmail.form-control(type='email' placeholder='name@example.com')
+            .row
+                .col
+                    .mb-3
+                        label.form-label(for='edgespwd') Password
+                        input#edgespwd.form-control(type='password' placeholder='Password')
+            .row
+                .col
+                    .mb-3
+                        label.form-label(for='edgesdisable') Disabled
+                        input#edgesdisable.form-control(type='text' disabled='' placeholder='Disabled')
+            .row
+                .col
+                    .mb-3
+                        label.form-label(for='edgesselect') Example select
+                        select#edgesselect.form-select
+                            option 1
+                            option 2
+                            option 3
+                            option 4
+                            option 5
+            .row
+                .col
+                    .mb-3
+                        label.form-label(for='edgesselectmulti') Example multiple select
+                        select#edgesselectmulti.form-select(multiple='')
+                            option 1
+                            option 2
+                            option 3
+                            option 4
+                            option 5
+            .row
+                .col
+                    div.mb-3
+                        label.form-label(for='edgestextarea') Example textarea
+                        textarea#edgestextarea.form-control(rows='3')
+            .row
+                .col
+                    .text-end
+                        button.btn.btn-primary.me-2(type='submit') Submit
+                        input.btn.btn-danger(type='reset' value='Cancel')

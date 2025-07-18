@@ -1,0 +1,18 @@
+.card
+  .card-header.pb-0
+    +card-header('Individual Carousel-Item Interval', '','', 'Add', 'data-bs-interval', 'to a .carousel-item to change the amount of time to delay between automatically cycling to the next item.')
+  .card-body
+    #carouselExampleInterval.carousel.slide(data-bs-ride='carousel')
+      .carousel-inner
+        .carousel-item.active(data-bs-interval='10000')
+          img.d-block.w-100(src='../assets/images/slider/5.jpg' alt='drawing-room')
+        .carousel-item(data-bs-interval='2000')
+          img.d-block.w-100(src='../assets/images/slider/2.jpg' alt='drawing-room')
+        .carousel-item
+          img.d-block.w-100(src='../assets/images/slider/10.jpg' alt='drawing-room')
+      button.carousel-control-prev(type='button' data-bs-target='#carouselExampleInterval' data-bs-slide='prev')
+        span.carousel-control-prev-icon(aria-hidden='true')
+        span.visually-hidden Previous
+      button.carousel-control-next(type='button' data-bs-target='#carouselExampleInterval' data-bs-slide='next')
+        span.carousel-control-next-icon(aria-hidden='true')
+        span.visually-hidden Next

@@ -1,0 +1,43 @@
+.card
+  .card-header.pb-0
+    +card-header('Variation Timeline', '','', 'Use the', '.activity-dot-primary', 'through rounded animations.')
+  .card-body.dark-timeline
+    ul 
+      li.d-flex
+        .activity-dot-primary
+        .w-100.ms-3
+          p.d-flex.justify-content-between.mb-2
+            span.date-content.bg-light-primary 8th March, 2022 
+            span 1 day ago
+          h6.f-w-600 Updated Product
+            span.dot-notification
+          p.font-light Quisque a consequat ante sit amet magna...
+      li.d-flex
+        .activity-dot-warning
+        .w-100.ms-3
+          p.d-flex.justify-content-between.mb-2
+            span.date-content.bg-light-primary 5th Feb, 2024 
+            span Today
+          h6.f-w-600 Added Bew Items
+            span.dot-notification
+          span.font-light Quisque a consequat ante sit amet magna...
+          .recent-images  
+            ul 
+              li 
+                .recent-img-wrap
+                  img.img-fluid(src="../assets/images/email-template/7.png", alt="chair")
+              li 
+                .recent-img-wrap
+                  img.img-fluid(src="../assets/images/email-template/8.png", alt="chair")
+              li 
+                .recent-img-wrap
+                  img.img-fluid(src="../assets/images/product/1.png", alt="men t-shirt")
+      li.d-flex.pb-0
+        .activity-dot-secondary
+        .w-100.ms-3
+          p.d-flex.justify-content-between.mb-2
+            span.date-content.bg-light-primary 20th Sep, 2022 
+            span 12:00 PM
+          h6.f-w-600 Tello just like your product
+            span.dot-notification
+          p Quisque a consequat ante sit amet magna...

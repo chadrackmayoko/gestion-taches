@@ -1,0 +1,20 @@
+// Filled Tooltip
+.card 
+    .card-header.pb-0
+        +card-header('Filled Tooltip', 'dote','','Tooltip in hover effect through fill dark color', '.[.btn-outline-*]', ' to button tag.')
+    .card-body.fill-tooltip
+        .common-flex
+            button.btn.btn-outline-primary.mb-0.me-0(type='button' data-bs-toggle='tooltip' data-bs-html='true' data-bs-placement='top' data-bs-title='Tooltip Primary' data-bs-original-title='' title='') Tooltip Primary
+            button.btn.btn-outline-secondary.mb-0.me-0(type='button' data-bs-toggle='tooltip' data-bs-placement='top' data-bs-html='true' data-bs-title='Tooltip Secondary' data-bs-original-title='' title='') Tooltip Secondary
+            button.btn.btn-outline-success.mb-0.me-0(type='button' data-bs-toggle='tooltip' data-bs-placement='top' data-bs-html='true' data-bs-title='Tooltip Success' data-bs-original-title='' title='') Tooltip Success
+            button.btn.btn-outline-warning.mb-0.me-0(type='button' data-bs-toggle='tooltip' data-bs-placement='top' data-bs-html='true' data-bs-title='Tooltip Warning' data-bs-original-title='' title='') Tooltip Warning
+        .code-box-copy
+            button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#tooltip', title='Copy')
+              i.icofont.icofont-copy
+            pre
+              code.language-html#filled-tooltip
+                | &lt;!--You can use attribute (data-bs-target='tooltip') to  used tooltips.--&gt;
+                | &lt;button class="btn btn-outline-primary mb-0 me-0" type="button" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="Tooltip Primary"&gt;Tooltip Primary&lt;/button&gt;
+                | &lt;button class="btn btn-outline-secondary mb-0 me-0" type="button" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" data-bs-title="Tooltip Secondary"&gt;Tooltip Secondary&lt;/button&gt;
+                | &lt;button class="btn btn-outline-success mb-0 me-0" type="button" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" data-bs-title="Tooltip Success"&gt;Tooltip Success&lt;/button&gt;
+                | &lt;button class="btn btn-outline-info mb-0 me-0" type="button" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" data-bs-title="Tooltip Info"&gt;Tooltip Info&lt;/button&gt;

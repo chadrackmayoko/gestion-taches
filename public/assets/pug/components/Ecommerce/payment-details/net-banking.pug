@@ -1,0 +1,24 @@
+.card
+  .card-header.pb-0
+    +card-header('Net Banking', '','', '', '', '')
+  .card-body
+    form.theme-form.row
+      .mb-3.col-12
+        input.form-control(type='text', placeholder='AC Holder name')
+      .mb-3.col-12
+        input.form-control(type='text', placeholder='Account number')
+      .mb-3.col-sm-6.p-r-0
+        select.form-select(size='1')
+          option Select Bank
+          option SBI
+          option ICICI
+          option KOTAK
+          option BOB
+      .mb-3.col-sm-6
+        input.form-control(type='text', placeholder='ICFC code')
+      .mb-3.col-12
+        input.form-control(type='number', placeholder='Enter mobile number')
+      .mb-3.col-12
+        input.form-control(type='text', placeholder='Other Details')
+      .col-12
+        button.btn.btn-primary.btn-block(type='button', title='') Submit

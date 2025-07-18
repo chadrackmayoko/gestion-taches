@@ -1,0 +1,44 @@
+// Outline Colored Breadcrumb Start
+
+//-// Data menu
+-
+    var OUTLINE_BREADCRUMB =[
+        {
+            title: 'Home',
+            bgOutline: 'bg-outline-primary',
+            mainTitle: 'Ui Kits',
+            subTitle: 'Avatars'
+        },
+        {
+            title: 'Home',
+            bgOutline: 'bg-outline-secondary',
+            mainTitle: 'Bonus Ui',
+            subTitle: 'Rating'
+        },
+        {
+            title: 'Home',
+            bgOutline: 'bg-outline-tertiary',
+            mainTitle: 'Buttons',
+            subTitle: 'Button Group'
+        }
+    ]
+
+//- Outline Breadcrumb Mixin
+
+mixin OutlineBreadcrumb(items)
+    each item in items 
+        ol.breadcrumb.breadcrumb-colored.mb-4(class=item.bgOutline)
+            li.breadcrumb-item
+                a(href="javascript:void(0)")=item.title
+            li.breadcrumb-item
+                a(href="javascript:void(0)")=item.mainTitle
+            li.breadcrumb-item.active=item.subTitle
+
+// Outline menu
+.card 
+    .card-header.pb-0
+        +card-header('Outline Breadcrumb', '','', 'You can set breadcrumb using', ' .breadcrumb, .bg-outline-primary', 'class and set background colors like ')
+    .card-body
+        +OutlineBreadcrumb(OUTLINE_BREADCRUMB)
+
+// Outline Colored Breadcrumb End

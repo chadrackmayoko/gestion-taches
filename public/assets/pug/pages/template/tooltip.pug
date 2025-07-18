@@ -1,0 +1,41 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+-var prism                  = true;
+-var page_clipboard         = true;
+-var customcard             = true;
+-var tooltip = true;
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    include ../../components/loader
+    main#pageWrapper.page-wrapper.compact-wrapper
+        include ../../components/header/header
+        .page-body-wrapper
+          include ../../components/sidebar
+          .page-body
+            .container-fluid
+              +breadcrumb(['Ui Kits','Tooltip'],'Tooltip')
+            // Container-fluid starts
+            .container-fluid
+                .row 
+                  .col-xl-12
+                    include ../../components/Ui-kits/tooltip/basic-tooltip
+                  .col-lg-6
+                    include ../../components/Ui-kits/tooltip/colored-tooltip
+                  .col-lg-6
+                    include ../../components/Ui-kits/tooltip/direction-tooltip
+                  .col-lg-6
+                    include ../../components/Ui-kits/tooltip/html-tooltip
+                  .col-lg-6
+                    include ../../components/Ui-kits/tooltip/filled-tooltip
+                  .col-xl-6.col-lg-7
+                    include ../../components/Ui-kits/tooltip/wonky-tooltip
+                  .col-xl-6.col-lg-5
+                    include ../../components/Ui-kits/tooltip/image-tooltip
+            // Container-fluid ends
+          include ../../components/footer
+    include ../../components/footer-files

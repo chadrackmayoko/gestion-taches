@@ -1,0 +1,19 @@
+.card
+    .card-header.pb-0
+        +card-header('Custom file input', '','', 'Input groups include support for custom selects and custom', ' file uploads. ', 'Browser default versions of these are not supported. ')
+
+    .card-body.card-wrapper.input-group-wrapper
+        form.theme-form.row.g-3
+            .input-group
+                label.input-group-text(for='inputGroupFile01') Upload
+                input#inputGroupFile01.form-control(type='file')
+            .input-group
+                input#inputGroupFile02.form-control(type='file')
+                label.input-group-text(for='inputGroupFile02') Verify
+            .input-group
+                button#inputGroupFileAddon03.btn.btn-outline-success(type='button')
+                    i.icofont.icofont-ui-copy
+                input#inputGroupFile03.form-control(type='file' aria-describedby='inputGroupFileAddon03' aria-label='Upload')
+            .input-group
+                input#inputGroupFile04.form-control(type='file' aria-describedby='inputGroupFileAddon04' aria-label='Upload')
+                button#inputGroupFileAddon04.btn.btn-outline-success(type='button') Submit

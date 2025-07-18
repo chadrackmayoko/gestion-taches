@@ -1,0 +1,41 @@
+// Center Badges
+.card
+    .card-header.pb-0
+        +card-header('Center Badges', 'dote','','Use the', '.badge, .badge-* , center-badge', 'for center mode badges.')
+    .card-body
+        ul.d-flex.center-badge
+            li.border-info
+                span.badge.badge-info New
+                +IconlySprite('Category', 'svg-w-24 stroke-info')
+            li.border-success
+                span.badge.badge-success Update
+                +IconlySprite('Chart', 'svg-w-24 stroke-success')
+            li.border-primary
+                span.badge.badge-primary Latest
+                +IconlySprite('Ticket-star', 'svg-w-24 stroke-primary')
+            li.border-danger
+                span.badge.badge-danger Error
+                +IconlySprite('Danger', 'svg-w-24 stroke-danger')
+        .code-box-copy
+            button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#example-head' title='Copy')
+                i.icofont.icofont-copy
+            pre
+                code.language-html#center-badge
+                    | &lt;!--You can use .badge, .badge-* , center-badge', 'for center mode badges.--&gt;
+                    | &lt;li class="border-info"&gt;
+                    | &lt;span class="badge badge-info"&gt;New&lt;/span&gt;
+                    | &lt;svg class="svg-w-24 stroke-info"&gt;
+                    | &lt;use href="../assets/svg/iconly-sprite.svg#Category"&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/li&gt;
+                    | &lt;li class="border-success"&gt;
+                    | &lt;span class="badge badge-success"&gt;Update&lt;/span&gt;
+                    | &lt;svg class="svg-w-24 stroke-success"&gt;
+                    | &lt;use href="../assets/svg/iconly-sprite.svg#Chart"&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/li&gt;
+                    | &lt;li class="border-primary"&gt;
+                    | &lt;span class="badge badge-primary"&gt;Latest&lt;/span&gt;
+                    | &lt;svg class="svg-w-24 stroke-primary"&gt;
+                    | &lt;use href="../assets/svg/iconly-sprite.svg#Ticket-star"&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/li&gt;
+                    | &lt;li class="border-danger"&gt;
+                    | &lt;span class="badge badge-danger"&gt;Error&lt;/span&gt;
+                    | &lt;svg class="svg-w-24 stroke-danger"&gt;
+                    | &lt;use href="../assets/svg/iconly-sprite.svg#Danger"&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/li&gt;
+            

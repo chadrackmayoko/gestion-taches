@@ -1,0 +1,18 @@
+// Horizontal accordion
+.card
+    .card-header.pb-0
+        +card-header('Horizontal accordion', 'dote','','Add', '.collapse-horizontal','modifier class to transition width, set a width on the next child element.')
+    .card-body
+        p.mb-2
+            button.btn.btn-success(type='button' data-bs-toggle='collapse' data-bs-target='#collapseWidthExample' aria-expanded='false' aria-controls='collapseWidthExample')
+                | Toggle width collapse
+        div
+            #collapseWidthExample.collapse.collapse-horizontal
+                .card.card-body.default-border.mb-0 
+                    | This is some placeholder content for a horizontal collapse. It&apos;s hidden by default and shown when triggered.
+        .code-box-copy
+            button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#tooltip', title='Copy')
+              i.icofont.icofont-copy
+            pre
+              code.language-html#horizontal-according
+                | &lt;button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample"&gt;Toggle width collapse&lt;/button&gt;

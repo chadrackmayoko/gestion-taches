@@ -1,0 +1,31 @@
+.card
+  .card-header.pb-0
+    +card-header('Variation of switches', '','', 'Use the', '.tgl-skewed/tgl-flip', 'class through created variations.')
+  .card-body.switch-wrapper
+    ul.tg-list.common-flex
+      li.tg-list-item
+        input#cb3.tgl.tgl-skewed(type = "checkbox")
+        label.tgl-btn(data-tg-off = "OFF", data-tg-on = "ON", for = "cb3")
+      li 
+        p  Skewed
+      li.tg-list-item
+        input#cb5.tgl.tgl-flip(type = "checkbox")
+        label.tgl-btn(data-tg-off = "Nope", data-tg-on = "Yeah!", for = "cb5")
+      li 
+        p Flip
+      li.tg-list-item
+        .d-flex
+          .flex-grow-1.text-end.icon-state
+            label.switch.mb-0.square-checked
+              input(type='checkbox', checked='')
+              span.switch-state.bg-warning.rounded-2
+      li 
+        p Checked
+      li.tg-list-item
+        .d-flex
+          .flex-grow-1.text-end
+            label.switch.square-checked.mb-0
+              input(type='checkbox', checked='')
+              span.switch-state.bg-success.rounded-2
+      li 
+        p Flat

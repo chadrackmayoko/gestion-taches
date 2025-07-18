@@ -1,0 +1,30 @@
+// Context-pill Card
+.card
+    .card-header.pb-0
+        +card-header('Number of badge', 'dote','','Use the', '.badge', ' utility class to make badges more rounded with a larger border-radius.')
+    .card-body
+        .badge-spacing
+            span.badge.badge-primary 1
+            span.badge.badge-secondary 2
+            span.badge.badge-tertiary 3
+            span.badge.badge-success 4
+            span.badge.badge-info 5
+            span.badge.badge-warning 6
+            span.badge.badge-danger 7
+            span.badge.badge-light.text-dark 8
+            span.badge.badge-dark.tag-pills-sm-mb 9
+        .code-box-copy
+            button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#example-head' title='Copy')
+                i.icofont.icofont-copy
+            pre
+                code.language-html#number-of-badge
+                    | &lt;!--You can use badge-* class through make badges (Numbered Badges).--&gt;
+                    | &lt; span class="badge badge-primary"&gt;1&lt;/span&gt;
+                    | &lt; span class="badge badge-secondary"&gt;2&lt;/span&gt;
+                    | &lt; span class="badge badge-tertiary"&gt;3&lt;/span&gt;
+                    | &lt; span class="badge badge-success"&gt;4&lt;/span&gt;
+                    | &lt; span class="badge badge-info"&gt;5&lt;/span&gt;
+                    | &lt; span class="badge badge-warning"&gt;6&lt;/span&gt;
+                    | &lt; span class="badge badge-danger"&gt;7&lt;/span&gt;
+                    | &lt; span class="badge badge-light text-dark"&gt;8&lt;/span&gt;
+                    | &lt; span class="badge badge-dark tag-pills-sm-mb"&gt;9&lt;/span&gt;

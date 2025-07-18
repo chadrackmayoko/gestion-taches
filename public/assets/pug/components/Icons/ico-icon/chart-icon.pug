@@ -1,0 +1,32 @@
+//-// Chart Icon
+-
+    var ICO_ITEM2 =[
+        { id:'icofont-chart-arrows-axis' }
+        , { id:'icofont-chart-bar-graph' }
+        , { id:'icofont-chart-flow-1' }
+        , { id:'icofont-chart-flow-2' }
+        , { id:'icofont-chart-flow' }
+        , { id:'icofont-chart-growth' }
+        , { id:'icofont-chart-histogram-alt' }
+        , { id:'icofont-chart-histogram' }
+        , { id:'icofont-chart-line-alt' }
+        , { id:'icofont-chart-line' }
+        , { id:'icofont-chart-pie-alt' }
+        , { id:'icofont-chart-pie' }
+        , { id:'icofont-chart-radar-graph' }
+    ]
+//-// Ico icon mixin
+mixin IcoContent(items)
+    each item in items 
+        .col-xxl-2.col-lg-3.col-sm-4
+            .card.d-flex.align-items-center.flex-column.default-border
+                i.icofont(class=item.id)
+                .flex-grow-1
+                    h6=item.id
+// Ico icon
+.card
+    .card-header.pb-0.d-flex.justify-content-between.align-items-center
+        h4 Chart Icon
+    .card-body
+        .row.icon-event.iconly-icons.icon-lists
+            +IcoContent(ICO_ITEM2)

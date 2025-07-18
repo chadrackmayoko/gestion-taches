@@ -1,0 +1,820 @@
+//-// Bookmark menu
+-
+    var FEATHER_ITEM =[
+        {
+            id: 'activity'
+        },
+        {
+            id: 'airplay'
+        },
+        {
+            id: 'alert-circle'
+        },
+        {
+            id: 'alert-octagon'
+        },
+        {
+            id: 'alert-triangle'
+        },
+        {
+            id: 'align-center'
+        },
+        {
+            id: 'align-justify'
+        },
+        {
+            id: 'align-left'
+        },
+        {
+            id: 'align-right'
+        },
+        {
+            id: 'anchor'
+        },
+        {
+            id: 'aperture'
+        },
+        {
+            id: 'archive'
+        },
+        {
+            id: 'arrow-down-circle'
+        },
+        {
+            id: 'arrow-down-left'
+        },
+        {
+            id: 'arrow-down-right'
+        },
+        {
+            id: 'arrow-down'
+        },
+        {
+            id: 'arrow-left-circle'
+        },
+        {
+            id: 'arrow-left'
+        },
+        {
+            id: 'arrow-right-circle'
+        },
+        {
+            id: 'arrow-right'
+        },
+        {
+            id: 'arrow-up-circle'
+        },
+        {
+            id: 'arrow-up-left'
+        },
+        {
+            id: 'arrow-up-right'
+        },
+        {
+            id: 'arrow-up'
+        },
+        {
+            id: 'at-sign'
+        },
+        {
+            id: 'award'
+        },
+        {
+            id: 'bar-chart-2'
+        },
+        {
+            id: 'bar-chart'
+        },
+        {
+            id: 'battery-charging'
+        },
+        {
+            id: 'battery'
+        },
+        {
+            id: 'bell-off'
+        },
+        {
+            id: 'bell'
+        },
+        {
+            id: 'bluetooth'
+        },
+        {
+            id: 'bold'
+        },
+        {
+            id: 'book-open'
+        },
+        {
+            id: 'book'
+        },
+        {
+            id: 'bookmark'
+        },
+        {
+            id: 'box'
+        },
+        {
+            id: 'briefcase'
+        },
+        {
+            id: 'calendar'
+        },
+        {
+            id: 'camera-off'
+        },
+        {
+            id: 'camera'
+        },
+        {
+            id: 'cast'
+        },
+        {
+            id: 'check-circle'
+        },
+        {
+            id: 'check-square'
+        },
+        {
+            id: 'check'
+        },
+        {
+            id: 'chevron-down'
+        },
+        {
+            id: 'chevron-left'
+        },
+        {
+            id: 'chevron-right'
+        },
+        {
+            id: 'chevron-up'
+        },
+        {
+            id: 'chevrons-down'
+        },
+        {
+            id: 'chevrons-left'
+        },
+        {
+            id: 'chevrons-right'
+        },
+        {
+            id: 'chevrons-up'
+        },
+        {
+            id: 'chrome'
+        },
+        {
+            id: 'circle'
+        },
+        {
+            id: 'clipboard'
+        },
+        {
+            id: 'clock'
+        },
+        {
+            id: 'cloud-drizzle'
+        },
+        {
+            id: 'cloud-lightning'
+        },
+        {
+            id: 'cloud-off'
+        },
+        {
+            id: 'cloud-rain'
+        },
+        {
+            id: 'cloud-snow'
+        },
+        {
+            id: 'cloud'
+        },
+        {
+            id: 'code'
+        },
+        {
+            id: 'codepen'
+        },
+        {
+            id: 'coffee'
+        },
+        {
+            id: 'command'
+        },
+        {
+            id: 'compass'
+        },
+        {
+            id: 'copy'
+        },
+        {
+            id: 'corner-down-left'
+        },
+        {
+            id: 'corner-down-right'
+        },
+        {
+            id: 'corner-left-down'
+        },
+        {
+            id: 'corner-left-up'
+        },
+        {
+            id: 'corner-right-down'
+        },
+        {
+            id: 'corner-right-up'
+        },
+        {
+            id: 'corner-up-left'
+        },
+        {
+            id: 'corner-up-right'
+        },
+        {
+            id: 'cpu'
+        },
+        {
+            id: 'credit-card'
+        },
+        {
+            id: 'crop'
+        },
+        {
+            id: 'crosshair'
+        },
+        {
+            id: 'database'
+        },
+        {
+            id: 'delete'
+        },
+        {
+            id: 'disc'
+        },
+        {
+            id: 'dollar-sign'
+        },
+        {
+            id: 'download-cloud'
+        },
+        {
+            id: 'download'
+        },
+        {
+            id: 'droplet'
+        },
+        {
+            id: 'edit-2'
+        },
+        {
+            id: 'edit-3'
+        },
+        {
+            id: 'edit'
+        },
+        {
+            id: 'external-link'
+        },
+        {
+            id: 'eye-off'
+        },
+        {
+            id: 'eye'
+        },
+        {
+            id: 'facebook'
+        },
+        {
+            id: 'fast-forward'
+        },
+        {
+            id: 'feather'
+        },
+        {
+            id: 'file-minus'
+        },
+        {
+            id: 'file-plus'
+        },
+        {
+            id: 'file-text'
+        },
+        {
+            id: 'file'
+        },
+        {
+            id: 'film'
+        },
+        {
+            id: 'filter'
+        },
+        {
+            id: 'flag'
+        },
+        {
+            id: 'folder-minus'
+        },
+        {
+            id: 'folder-plus'
+        },
+        {
+            id: 'folder'
+        },
+        {
+            id: 'gift'
+        },
+        {
+            id: 'git-branch'
+        },
+        {
+            id: 'git-commit'
+        },
+        {
+            id: 'git-merge'
+        },
+        {
+            id: 'git-pull-request'
+        },
+        {
+            id: 'github'
+        },
+        {
+            id: 'gitlab'
+        },
+        {
+            id: 'globe'
+        },
+        {
+            id: 'grid'
+        },
+        {
+            id: 'hard-drive'
+        },
+        {
+            id: 'hash'
+        },
+        {
+            id: 'headphones'
+        },
+        {
+            id: 'heart'
+        },
+        {
+            id: 'help-circle'
+        },
+        {
+            id: 'home'
+        },
+        {
+            id: 'image'
+        },
+        {
+            id: 'inbox'
+        },
+        {
+            id: 'info'
+        },
+        {
+            id: 'instagram'
+        },
+        {
+            id: 'italic'
+        },
+        {
+            id: 'layers'
+        },
+        {
+            id: 'layout'
+        },
+        {
+            id: 'life-buoy'
+        },
+        {
+            id: 'link-2'
+        },
+        {
+            id: 'link'
+        },
+        {
+            id: 'linkedin'
+        },
+        {
+            id: 'list'
+        },
+        {
+            id: 'loader'
+        },
+        {
+            id: 'lock'
+        },
+        {
+            id: 'log-in'
+        },
+        {
+            id: 'log-out'
+        },
+        {
+            id: 'mail'
+        },
+        {
+            id: 'map-pin'
+        },
+        {
+            id: 'map'
+        },
+        {
+            id: 'maximize-2'
+        },
+        {
+            id: 'maximize'
+        },
+        {
+            id: 'menu'
+        },
+        {
+            id: 'message-circle'
+        },
+        {
+            id: 'message-square'
+        },
+        {
+            id: 'mic-off'
+        },
+        {
+            id: 'mic'
+        },
+        {
+            id: 'minimize-2'
+        },
+        {
+            id: 'minimize'
+        },
+        {
+            id: 'minus-circle'
+        },
+        {
+            id: 'minus-square'
+        },
+        {
+            id: 'minus'
+        },
+        {
+            id: 'monitor'
+        },
+        {
+            id: 'moon'
+        },
+        {
+            id: 'more-horizontal'
+        },
+        {
+            id: 'more-vertical'
+        },
+        {
+            id: 'move'
+        },
+        {
+            id: 'music'
+        },
+        {
+            id: 'navigation-2'
+        },
+        {
+            id: 'navigation'
+        },
+        {
+            id: 'octagon'
+        },
+        {
+            id: 'package'
+        },
+        {
+            id: 'paperclip'
+        },
+        {
+            id: 'pause-circle'
+        },
+        {
+            id: 'pause'
+        },
+        {
+            id: 'percent'
+        },
+        {
+            id: 'phone-call'
+        },
+        {
+            id: 'phone-forwarded'
+        },
+        {
+            id: 'phone-incoming'
+        },
+        {
+            id: 'phone-missed'
+        },
+        {
+            id: 'phone-off'
+        },
+        {
+            id: 'phone-outgoing'
+        },
+        {
+            id: 'phone'
+        },
+        {
+            id: 'pie-chart'
+        },
+        {
+            id: 'play-circle'
+        },
+        {
+            id: 'play'
+        },
+        {
+            id: 'plus-circle'
+        },
+        {
+            id: 'plus-square'
+        },
+        {
+            id: 'plus'
+        },
+        {
+            id: 'pocket'
+        },
+        {
+            id: 'power'
+        },
+        {
+            id: 'printer'
+        },
+        {
+            id: 'radio'
+        },
+        {
+            id: 'refresh-ccw'
+        },
+        {
+            id: 'refresh-cw'
+        },
+        {
+            id: 'repeat'
+        },
+        {
+            id: 'rewind'
+        },
+        {
+            id: 'rotate-ccw'
+        },
+        {
+            id: 'rotate-cw'
+        },
+        {
+            id: 'rss'
+        },
+        {
+            id: 'save'
+        },
+        {
+            id: 'scissors'
+        },
+        {
+            id: 'search'
+        },
+        {
+            id: 'send'
+        },
+        {
+            id: 'server'
+        },
+        {
+            id: 'settings'
+        },
+        {
+            id: 'share-2'
+        },
+        {
+            id: 'share'
+        },
+        {
+            id: 'shield-off'
+        },
+        {
+            id: 'shield'
+        },
+        {
+            id: 'shopping-bag'
+        },
+        {
+            id: 'shopping-cart'
+        },
+        {
+            id: 'shuffle'
+        },
+        {
+            id: 'sidebar'
+        },
+        {
+            id: 'skip-back'
+        },
+        {
+            id: 'skip-forward'
+        },
+        {
+            id: 'slack'
+        },
+        {
+            id: 'slash'
+        },
+        {
+            id: 'sliders'
+        },
+        {
+            id: 'smartphone'
+        },
+        {
+            id: 'speaker'
+        },
+        {
+            id: 'square'
+        },
+        {
+            id: 'star'
+        },
+        {
+            id: 'stop-circle'
+        },
+        {
+            id: 'sun'
+        },
+        {
+            id: 'sunrise'
+        },
+        {
+            id: 'sunset'
+        },
+        {
+            id: 'tablet'
+        },
+        {
+            id: 'tag'
+        },
+        {
+            id: 'target'
+        },
+        {
+            id: 'terminal'
+        },
+        {
+            id: 'thermometer'
+        },
+        {
+            id: 'thumbs-down'
+        },
+        {
+            id: 'thumbs-up'
+        },
+        {
+            id: 'toggle-left'
+        },
+        {
+            id: 'toggle-right'
+        },
+        {
+            id: 'trash-2'
+        },
+        {
+            id: 'trash'
+        },
+        {
+            id: 'trending-down'
+        },
+        {
+            id: 'trending-up'
+        },
+        {
+            id: 'triangle'
+        },
+        {
+            id: 'truck'
+        },
+        {
+            id: 'tv'
+        },
+        {
+            id: 'twitter'
+        },
+        {
+            id: 'type'
+        },
+        {
+            id: 'umbrella'
+        },
+        {
+            id: 'underline'
+        },
+        {
+            id: 'unlock'
+        },
+        {
+            id: 'upload-cloud'
+        },
+        {
+            id: 'upload'
+        },
+        {
+            id: 'user-check'
+        },
+        {
+            id: 'user-minus'
+        },
+        {
+            id: 'user-plus'
+        },
+        {
+            id: 'user-x'
+        },
+        {
+            id: 'user'
+        },
+        {
+            id: 'users'
+        },
+        {
+            id: 'video-off'
+        },
+        {
+            id: 'video'
+        },
+        {
+            id: 'voicemail'
+        },
+        {
+            id: 'volume-1'
+        },
+        {
+            id: 'volume-2'
+        },
+        {
+            id: 'volume-x'
+        },
+        {
+            id: 'volume'
+        },
+        {
+            id: 'watch'
+        },
+        {
+            id: 'wifi-off'
+        },
+        {
+            id: 'wifi'
+        },
+        {
+            id: 'wind'
+        },
+        {
+            id: 'x-circle'
+        },
+        {
+            id: 'x-square'
+        },
+        {
+            id: 'x'
+        },
+        {
+            id: 'youtube'
+        },
+        {
+            id: 'zap-off'
+        },
+        {
+            id: 'zap'
+        },
+        {
+            id: 'zoom-in'
+        },
+        {
+            id: 'zoom-out'
+        }
+    ]
+//-// Feather icon mixin
+mixin FeatherContent(items)
+    each item in items 
+        .col-xxl-2.col-lg-3.col-sm-4
+            .card.d-flex.align-items-center.flex-column.default-border
+                +FeatherSprite(item.id, 'feather')
+                .flex-grow-1
+                    h6=item.id
+// Feather icon
+.card
+    .card-header.pb-0.d-flex.justify-content-between.align-items-center
+        h4 Feather Icons
+    .card-body
+        .row.icon-event.feather-icons.icon-lists
+            +FeatherContent(FEATHER_ITEM)

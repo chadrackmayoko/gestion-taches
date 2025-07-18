@@ -1,0 +1,112 @@
+//-// Mobile Ui Icon
+-
+    var ICO_ITEM15 =[
+
+        { id:'icofont-ui-add' }
+        , { id:'icofont-ui-alarm' }
+        , { id:'icofont-ui-battery' }
+        , { id:'icofont-ui-block' }
+        , { id:'icofont-ui-bluetooth' }
+        , { id:'icofont-ui-brightness' }
+        , { id:'icofont-ui-browser' }
+        , { id:'icofont-ui-calendar' }
+        , { id:'icofont-ui-call' }
+        , { id:'icofont-ui-camera' }
+        , { id:'icofont-ui-cart' }
+        , { id:'icofont-ui-cell-phone' }
+        , { id:'icofont-ui-chat' }
+        , { id:'icofont-ui-check' }
+        , { id:'icofont-ui-clip-board' }
+        , { id:'icofont-ui-clip' }
+        , { id:'icofont-ui-clock' }
+        , { id:'icofont-ui-close' }
+        , { id:'icofont-ui-contact-list' }
+        , { id:'icofont-ui-copy' }
+        , { id:'icofont-ui-cut' }
+        , { id:'icofont-ui-delete' }
+        , { id:'icofont-ui-dial-phone' }
+        , { id:'icofont-ui-edit' }
+        , { id:'icofont-ui-email' }
+        , { id:'icofont-ui-file' }
+        , { id:'icofont-ui-fire-wall' }
+        , { id:'icofont-ui-flash-light' }
+        , { id:'icofont-ui-flight' }
+        , { id:'icofont-ui-folder' }
+        , { id:'icofont-ui-game' }
+        , { id:'icofont-ui-handicapped' }
+        , { id:'icofont-ui-home' }
+        , { id:'icofont-ui-image' }
+        , { id:'icofont-ui-laoding' }
+        , { id:'icofont-ui-lock' }
+        , { id:'icofont-ui-love-add' }
+        , { id:'icofont-ui-love-broken' }
+        , { id:'icofont-ui-love-remove' }
+        , { id:'icofont-ui-love' }
+        , { id:'icofont-ui-map' }
+        , { id:'icofont-ui-message' }
+        , { id:'icofont-ui-messaging' }
+        , { id:'icofont-ui-movie' }
+        , { id:'icofont-ui-music-player' }
+        , { id:'icofont-ui-music' }
+        , { id:'icofont-ui-mute' }
+        , { id:'icofont-ui-network' }
+        , { id:'icofont-ui-next' }
+        , { id:'icofont-ui-note' }
+        , { id:'icofont-ui-office' }
+        , { id:'icofont-ui-password' }
+        , { id:'icofont-ui-pause' }
+        , { id:'icofont-ui-play-stop' }
+        , { id:'icofont-ui-play' }
+        , { id:'icofont-ui-pointer' }
+        , { id:'icofont-ui-power' }
+        , { id:'icofont-ui-press' }
+        , { id:'icofont-ui-previous' }
+        , { id:'icofont-ui-rate-add' }
+        , { id:'icofont-ui-rate-blank' }
+        , { id:'icofont-ui-rate-remove' }
+        , { id:'icofont-ui-rating' }
+        , { id:'icofont-ui-record' }
+        , { id:'icofont-ui-remove' }
+        , { id:'icofont-ui-reply' }
+        , { id:'icofont-ui-rotation' }
+        , { id:'icofont-ui-rss' }
+        , { id:'icofont-ui-search' }
+        , { id:'icofont-ui-settings' }
+        , { id:'icofont-ui-social-link' }
+        , { id:'icofont-ui-tag' }
+        , { id:'icofont-ui-text-chat' }
+        , { id:'icofont-ui-text-loading' }
+        , { id:'icofont-ui-theme' }
+        , { id:'icofont-ui-timer' }
+        , { id:'icofont-ui-touch-phone' }
+        , { id:'icofont-ui-travel' }
+        , { id:'icofont-ui-unlock' }
+        , { id:'icofont-ui-user-group' }
+        , { id:'icofont-ui-user' }
+        , { id:'icofont-ui-v-card' }
+        , { id:'icofont-ui-video-chat' }
+        , { id:'icofont-ui-video-message' }
+        , { id:'icofont-ui-video-play' }
+        , { id:'icofont-ui-video' }
+        , { id:'icofont-ui-volume' }
+        , { id:'icofont-ui-weather' }
+        , { id:'icofont-ui-wifi' }
+        , { id:'icofont-ui-zoom-in' }
+        , { id:'icofont-ui-zoom-out' }
+        
+    ]
+//-// Ico icon mixin
+mixin IcoContent(items)
+    each item in items 
+        .col-xxl-2.col-lg-3.col-sm-4
+            .card.d-flex.align-items-center.flex-column.default-border
+                i.icofont(class=item.id)
+                .flex-grow-1
+                    h6=item.id
+// Ico icon
+.card
+    .card-header.pb-0.d-flex.justify-content-between.align-items-center
+        h4 Mobile UI Icon
+    .card-body
+        .row.icon-event.iconly-icons.icon-lists
+            +IcoContent(ICO_ITEM15)

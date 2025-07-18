@@ -1,0 +1,33 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    include ../../components/loader
+    main#pageWrapper.page-wrapper.compact-wrapper
+        include ../../components/header/header
+        .page-body-wrapper
+          include ../../components/sidebar
+          .page-body
+            .container-fluid
+              +breadcrumb(['Ecommerce','Payment Details'],'Payment Details')
+            // Container-fluid starts
+            .container-fluid.credit-card.payment-details
+                .row 
+                  .col-xl-8.box-col-80 
+                    include ../../components/Ecommerce/payment-details/credit-card
+                  .col-xl-4.col-lg-6.box-col-33.debit-card 
+                    include ../../components/Ecommerce/payment-details/debit-card
+                  .col-xl-4.col-lg-6.box-col-33 
+                    include ../../components/Ecommerce/payment-details/cod-payment
+                  .col-xl-4.col-lg-6.box-col-33
+                    include ../../components/Ecommerce/payment-details/emi-payment
+                  .col-xl-4.col-lg-6.box-col-33
+                    include ../../components/Ecommerce/payment-details/net-banking
+            // Container-fluid ends
+          include ../../components/footer
+    include ../../components/footer-files

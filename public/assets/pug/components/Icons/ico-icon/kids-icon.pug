@@ -1,0 +1,38 @@
+//-// Kids Icon
+-
+    var ICO_ITEM26 =[
+        { id:'icofont-baby-backpack' }
+        , { id:'icofont-baby-cloth' }
+        , { id:'icofont-baby-milk-bottle' }
+        , { id:'icofont-baby-trolley' }
+        , { id:'icofont-baby' }
+        , { id:'icofont-candy' }
+        , { id:'icofont-holding-hands' }
+        , { id:'icofont-infant-nipple' }
+        , { id:'icofont-kids-scooter' }
+        , { id:'icofont-safety-pin' }
+        , { id:'icofont-teddy-bear' }
+        , { id:'icofont-toy-ball' }
+        , { id:'icofont-toy-cat' }
+        , { id:'icofont-toy-duck' }
+        , { id:'icofont-toy-elephant' }
+        , { id:'icofont-toy-hand' }
+        , { id:'icofont-toy-horse' }
+        , { id:'icofont-toy-lattu' }
+        , { id:'icofont-toy-train' }
+    ]
+//-// Ico icon mixin
+mixin IcoContent(items)
+    each item in items 
+        .col-xxl-2.col-lg-3.col-sm-4
+            .card.d-flex.align-items-center.flex-column.default-border
+                i.icofont(class=item.id)
+                .flex-grow-1
+                    h6=item.id
+// Ico icon
+.card
+    .card-header.pb-0.d-flex.justify-content-between.align-items-center
+        h4 Kids Icon
+    .card-body
+        .row.icon-event.iconly-icons.icon-lists
+            +IcoContent(ICO_ITEM26)

@@ -1,0 +1,14 @@
+.card
+    .card-header.pb-0
+        +card-header('Sizing', '','', 'Add the relative form sizing classes to the', '.input-group', 'itself and contents within will automatically resize—no need for repeating the form control size classes on each element.')
+    .card-body.card-wrapper.input-group-wrapper
+        form.theme-form.row.g-3
+            .input-group.input-group-sm
+                span#inputGroup-sizing-sm.input-group-text Small
+                input.form-control(type='text' aria-label='Sizing example input' aria-describedby='inputGroup-sizing-sm')
+            .input-group
+                span#inputGroup-sizing-default.input-group-text Default
+                input.form-control(type='text' aria-label='Sizing example input' aria-describedby='inputGroup-sizing-default')
+            .input-group.input-group-lg
+                span#inputGroup-sizing-lg.input-group-text Large
+                input.form-control(type='text' aria-label='Sizing example input' aria-describedby='inputGroup-sizing-lg')

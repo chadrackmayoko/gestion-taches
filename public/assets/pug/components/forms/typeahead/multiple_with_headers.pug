@@ -1,0 +1,33 @@
+.card
+  .card-header.pb-0
+    +card-header('Multiple sections with headers', '','', '', '', 'Two datasets that are prefetched, stored, and searched on the client. Highlighting is enabled.')
+  .card-body
+    #multiple-datasets
+      form.theme-form
+        div
+          select#choices-multiple-groups.form-control(name='choices-multiple-groups' multiple='')
+            option(value='') Choose a city
+            optgroup(label='UK')
+              option(value='London') London
+              option(value='Manchester') Manchester
+              option(value='Liverpool') Liverpool
+            optgroup(label='FR')
+              option(value='Paris') Paris
+              option(value='Lyon') Lyon
+              option(value='Marseille') Marseille
+            optgroup(label='DE' disabled='')
+              option(value='Hamburg') Hamburg
+              option(value='Munich') Munich
+              option(value='Berlin') Berlin
+            optgroup(label='US')
+              option(value='New York') New York
+              option(value='Washington' disabled='') Washington
+              option(value='Michigan') Michigan
+            optgroup(label='SP')
+              option(value='Madrid') Madrid
+              option(value='Barcelona') Barcelona
+              option(value='Malaga') Malaga
+            optgroup(label='CA')
+              option(value='Montreal') Montreal
+              option(value='Toronto') Toronto
+              option(value='Vancouver') Vancouver

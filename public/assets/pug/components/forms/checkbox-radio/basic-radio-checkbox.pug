@@ -1,0 +1,43 @@
+.card
+    .card-header.pb-0
+        +card-header('Basic Radio And Checkbox', '', '', 'Use the', '.form-check-inline', 'through display inline.')
+    .card-body
+        .row.g-3
+            .col-md-12
+                .card-wrapper.solid-border.rounded-3
+                    h6.sub-title.f-w-500 Simple Checkbox
+                    .form-check-size
+                        label.d-block
+                            input#chk-ani_11.checkbox-primary(type='checkbox')
+                            | Blog
+                        label.d-block
+                            input#chk-ani_12.checkbox-primary(type='checkbox')
+                            | Gallery
+                        label.d-block
+                            input#chk-ani_13.checkbox-primary(type='checkbox' checked='')
+                            | Faq
+                        label.d-block
+                            input#chk-ani_14.checkbox-primary(type='checkbox')
+                            | Email
+                        label.d-block
+                            input#chk-ani_15.checkbox-primary(type='checkbox')
+                            | Icons
+            .col-md-12
+                .card-wrapper.solid-border.rounded-3
+                    h6.sub-title.f-w-500 Simple Radios
+                    .form-check-size
+                        label.d-block
+                            input#radio-ani_3.radio-primary(type='radio' name='radio5' checked='')
+                            | Maps
+                        label.d-block
+                            input#radio-ani_4.radio-primary(type='radio' name='radio5' checked='')
+                            | Tasks
+                        label.d-block
+                            input#radio-ani_5.radio-primary(type='radio' name='radio5' checked='')
+                            | To-do
+                        label.d-block
+                            input#radio-ani_6.radio-primary(type='radio' name='radio5' checked='')
+                            | Forms
+                        label.d-block
+                            input#radio-ani_7.radio-primary(type='radio' name='radio5' checked='')
+                            | Login

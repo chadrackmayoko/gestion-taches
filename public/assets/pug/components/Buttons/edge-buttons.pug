@@ -1,0 +1,59 @@
+// Edge Buttons Start
+//-// Edge Buttons Data
+-
+    var EDGE_BUTTONS =[
+        {
+            title: 'Primary Button',
+            BtnColor: 'btn-primary',
+            tooltip: 'btn edge-btn btn-primary',
+        },
+        {
+            title: 'Secondary Button',
+            BtnColor: 'btn-secondary',
+            tooltip: 'btn edge-btn btn-secondary',
+        },
+        {
+            title: 'Tertiary Button',
+            BtnColor: 'btn-tertiary',
+            tooltip: 'btn edge-btn btn-tertiary',
+        },
+        {
+            title: 'Success Button',
+            BtnColor: 'btn-success',
+            tooltip: 'btn edge-btn btn-success',
+        },
+        {
+            title: 'Info Button',
+            BtnColor: 'btn-info',
+            tooltip: 'btn edge-btn btn-info',
+        },
+        {
+            title: 'Warning Button',
+            BtnColor: 'btn-warning',
+            tooltip: 'btn edge-btn btn-warning',
+        },
+        {
+            title: 'Danger Button',
+            BtnColor: 'btn-danger',
+            tooltip: 'btn edge-btn btn-danger',
+        },
+        {
+            title: 'Light Button',
+            BtnColor: 'font-dark btn-light',
+            tooltip: 'btn edge-btn btn-light',
+        },
+        {
+            title: 'Dark Button',
+            BtnColor: 'btn-dark',
+            tooltip: 'btn edge-btn btn-dark',
+        },
+    ] 
+//- Edge Buttons Mixin   
+mixin EdgeButtons(items)
+    each item in items
+        .text-center.col-12.col-sm-6.col-md-12
+            button.btn.m-1.edge-btn(type='button' data-bs-toggle='tooltip' class=item.BtnColor title=item.tooltip)=item.title
+// Edge Buttons Menu            
+.btn-showcase.row
+    +EdgeButtons(EDGE_BUTTONS)
+// Edge Buttons End      

@@ -1,0 +1,40 @@
+// Context-pill Card
+.card 
+    .card-header.pb-0
+        +card-header('Rounded pills with icons', 'dote','','Use the', '.badge', ' utility class to make more icons.')
+    .card-body
+        .badge-spacing
+            a.badge.b-ln-height.badge-primary.rounded-pill.p-2(href='#')
+                +FeatherSprite('activity', 'feather')
+            a.badge.b-ln-height.badge-secondary.rounded-pill.p-2(href='#')
+                +FeatherSprite('headphones', 'feather')
+            a.badge.b-ln-height.badge-tertiary.rounded-pill.p-2(href='#')
+                +FeatherSprite('link', 'feather')
+            a.badge.b-ln-height.badge-success.rounded-pill.p-2(href='#')
+                +FeatherSprite('github', 'feather')
+            a.badge.b-ln-height.badge-info.rounded-pill.p-2(href='#')
+                +FeatherSprite('award', 'feather')
+            a.badge.b-ln-height.badge-warning.rounded-pill.p-2(href='#')
+                +FeatherSprite('dollar-sign', 'feather')
+            a.badge.b-ln-height.badge-danger.rounded-pill.p-2(href='#')
+                +FeatherSprite('heart', 'feather')
+            a.badge.b-ln-height.badge-light.text-dark.rounded-pill.p-2(href='#')
+                +FeatherSprite('mail', 'feather')
+            a.badge.b-ln-height.badge-dark.rounded-pill.p-2(href='#')
+                +FeatherSprite('airplay', 'feather')
+        .code-box-copy
+            button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#example-head' title='Copy')
+                i.icofont.icofont-copy
+            pre
+                code.language-html#rounded-icons
+                    | &lt;!--You can use .rounded-circle class through change the icons badge.--&gt;
+                    | &lt; a class="badge b-ln-height badge-primary rounded-pill p-2" href="#"&gt;
+                    | &lt; svg class="feather"&gt;&lt; svg href="../assets/svg/feather-icons/dist/feather-sprite.svg#activity"&gt;&lt;/ use&gt;&lt;/svg&gt;&lt;/ a&gt;| &lt; a class="badge b-ln-height badge-secondary rounded-pill p-2" href="#"&gt;
+                    | &lt; svg class="feather"&gt;&lt; svg href="../assets/svg/feather-icons/dist/feather-sprite.svg#headphones"&gt;&lt;/ use&gt;&lt;/svg&gt;&lt;/ a&gt;| &lt; a class="badge b-ln-height badge-tertiary rounded-pill p-2" href="#"&gt;
+                    | &lt; svg class="feather"&gt;&lt; svg href="../assets/svg/feather-icons/dist/feather-sprite.svg#link"&gt;&lt;/ use&gt;&lt;/svg&gt;&lt;/ a&gt;| &lt; a class="badge b-ln-height badge-success rounded-pill p-2" href="#"&gt;
+                    | &lt; svg class="feather"&gt;&lt; svg href="../assets/svg/feather-icons/dist/feather-sprite.svg#github"&gt;&lt;/ use&gt;&lt;/svg&gt;&lt;/ a&gt;| &lt; a class="badge b-ln-height badge-info rounded-pill p-2" href="#"&gt;
+                    | &lt; svg class="feather"&gt;&lt; svg href="../assets/svg/feather-icons/dist/feather-sprite.svg#award"&gt;&lt;/ use&gt;&lt;/svg&gt;&lt;/ a&gt;| &lt; a class="badge b-ln-height badge-warning rounded-pill p-2" href="#"&gt;
+                    | &lt; svg class="feather"&gt;&lt; svg href="../assets/svg/feather-icons/dist/feather-sprite.svg#dollar-sign"&gt;&lt;/ use&gt;&lt;/svg&gt;&lt;/ a&gt;| &lt; a class="badge b-ln-height badge-danger rounded-pill p-2" href="#"&gt;
+                    | &lt; svg class="feather"&gt;&lt; svg href="../assets/svg/feather-icons/dist/feather-sprite.svg#heart"&gt;&lt;/ use&gt;&lt;/svg&gt;&lt;/ a&gt;| &lt; a class="badge b-ln-height badge-light text-dark rounded-pill p-2" href="#"&gt;
+                    | &lt; svg class="feather"&gt;&lt; svg href="../assets/svg/feather-icons/dist/feather-sprite.svg#mail"&gt;&lt;/ use&gt;&lt;/svg&gt;&lt;/ a&gt;| &lt; a class="badge b-ln-height badge-dark rounded-pill p-2" href="#"&gt;
+                    | &lt; svg class="feather"&gt;&lt; svg href="../assets/svg/feather-icons/dist/feather-sprite.svg#airplay"&gt;&lt;/ use&gt;&lt;/svg&gt;&lt;/ a&gt;

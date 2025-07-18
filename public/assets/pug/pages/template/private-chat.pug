@@ -1,0 +1,28 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+-var emoji_bar  = true;
+- var common_chat = true;
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    main#pageWrapper.page-wrapper.compact-wrapper
+        include ../../components/header/header
+        .page-body-wrapper
+          include ../../components/sidebar
+          .page-body
+            .container-fluid
+              +breadcrumb(['Chat','Private Chat'],'Private Chat')
+            // Container-fluid starts
+            .container-fluid
+              .row.g-0
+                .col-xxl-3.col-xl-4.col-md-5.box-col-5 
+                  include ../../components/chat/private-chat/private-chat-sidebar
+                .col-xxl-9.col-xl-8.col-md-7.box-col-7
+                  include ../../components/chat/private-chat/private-right-sidebar
+            // Container-fluid ends
+          include ../../components/footer
+    include ../../components/footer-files

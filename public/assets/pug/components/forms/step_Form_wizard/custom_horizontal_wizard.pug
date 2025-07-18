@@ -1,0 +1,183 @@
+.card
+  .card-header
+    +card-header('Custom horizontal wizard', '','', '', '', '')
+  .card-body
+    .horizontal-wizard-wrapper
+      .row.g-3
+        .col-12.main-horizontal-header
+          #horizontal-wizard-tab.nav.nav-pills.horizontal-options(role='tablist' aria-orientation='vertical')
+              a#wizard-info-tab.nav-link.active(data-bs-toggle='pill' href='#wizard-info' role='tab' aria-controls='wizard-info' aria-selected='true') 
+                .horizontal-wizard
+                  .stroke-icon-wizard
+                    i.fa.fa-user
+                  .horizontal-wizard-content 
+                    h6 Personal info
+              a#bank-wizard-tab.nav-link(data-bs-toggle='pill' href='#bank-wizard' role='tab' aria-controls='bank-wizard' aria-selected='false') 
+                .horizontal-wizard
+                  .stroke-icon-wizard
+                    i.fa.fa-chain-broken
+                  .horizontal-wizard-content 
+                    h6 Connect bank account
+              a#inquiry-wizard-tab.nav-link(data-bs-toggle='pill' href='#inquiry-wizard' role='tab' aria-controls='inquiry-wizard' aria-selected='false') 
+                .horizontal-wizard
+                  .stroke-icon-wizard
+                    i.fa-solid.fa-people-group
+                  .horizontal-wizard-content 
+                    h6 Inquiries
+              a#successful-wizard-tab.nav-link(data-bs-toggle='pill' href='#successful-wizard' role='tab' aria-controls='successful-wizard' aria-selected='false') 
+                .horizontal-wizard
+                  .stroke-icon-wizard
+                    i.fa-solid.fa-people-group
+                  .horizontal-wizard-content 
+                    h6 Completed 
+        .col-12 
+          #horizontal-wizard-tabContent.tab-content.dark-field
+            #wizard-info.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='wizard-info-tab')
+              form.row.g-3.needs-validation(novalidate='')
+                .col-xl-4.col-sm-6
+                  label.form-label(for='customFirstname') First Name
+                    span.font-danger *
+                  input#customFirstname.form-control(type='text' placeholder="Enter first name" required='')
+                  .valid-feedback
+                    | Looks good!
+                .col-xl-4.col-sm-6
+                  label.form-label(for='customLastname') Last Name
+                    span.font-danger *
+                  input#customLastname.form-control(type='text' placeholder='Enter last name' required='')
+                  .valid-feedback
+                    | Looks good!
+                .col-xl-4.col-12
+                  label.form-label(for='customEmail') Email
+                    span.font-danger *
+                  input#customEmail.form-control(type='email' required='' placeholder='edmin@example.com')
+                  .valid-feedback
+                    | Looks good!
+                .col-xl-5.col-sm-4.form
+                  label.form-label(for='customState-wizard') State
+                  select#customState-wizard.form-select(required='')
+                    option(selected='' disabled='' value='') Choose...
+                    option USA 
+                    option U.K 
+                    option U.S
+                  .invalid-feedback
+                    | Please select a valid state.
+                .col-xl-3.col-sm-4
+                  label.form-label(for='custom-zipcode') Zip Code
+                  input#custom-zipcode.form-control(type='text' required='')
+                  .invalid-feedback
+                    | Please provide a valid zip.
+                .col-sm-4
+                  label.form-label(for='customContact1') Contact Number
+                  input#customContact1.form-control(type='number' placeholder='Enter number' required='')
+                  .valid-feedback
+                    | Looks good!
+                .col-12
+                  .checkbox-checked.form-check-inline.form-check
+                    input#invalid-check-wizard.form-check-input(type='checkbox' value='' required='')
+                    label.form-check-label.mb-0(for='invalid-check-wizard')
+                      | Agree to terms and conditions
+                    .invalid-feedback
+                      | You must agree before submitting.
+                .col-12.text-end
+                  button.btn.btn-primary Continue
+            #bank-wizard.tab-pane.fade(role='tabpanel' aria-labelledby='bank-wizard-tab')
+              form.row.g-3.needs-validation(novalidate='')
+                .col-sm-6.bank-search
+                  label.form-label(for='aadharnumber-wizard') Aadhaar Number
+                    span.font-danger *
+                  input#aadharnumber-wizard.form-control(type='Search' placeholder="xxxx xxxx xxxx xxxx" required='')
+                  .valid-feedback
+                    | Looks good!
+                .col-sm-6.bank-search
+                  label.form-label(for='pan-wizard') PAN
+                    span.font-danger *
+                  input#pan-wizard.form-control(type='Search' placeholder="xxxxxxxxxx" required='')
+                  .valid-feedback
+                    | Looks good!
+                .col-12 
+                  h6 Choose from these popular banks
+                  .bank-selection
+                    .form-check.radio.ps-0
+                      ul.radio-wrapper
+                        li 
+                          input#radio-wizard-1.form-check-input(type='radio', name='radio2', value='option2')
+                          label.form-check-label(for='radio-wizard-1')
+                            img.img-fluid(src="../assets/images/forms/hdfc.png", alt="HDFC")
+                            span ABC BANK
+                        li 
+                          input#radio-wizard-2.form-check-input(type='radio', name='radio2', value='option2' checked='')
+                          label.form-check-label(for='radio-wizard-2')
+                            img.img-fluid(src="../assets/images/forms/Bank-of-Baroda.png", alt="Bank-of-Baroda")
+                            span XYZ BANK
+                        li 
+                          input#radio-wizard-3.form-check-input(type='radio', name='radio2', value='option2')
+                          label.form-check-label(for='radio-wizard-3')
+                            img.img-fluid(src="../assets/images/forms/idbi.png", alt="IDBI")
+                            span PQR BANK
+                        li 
+                          input#radio-wizard-4.form-check-input(type='radio', name='radio2', value='option2')
+                          label.form-check-label(for='radio-wizard-4')
+                            img.img-fluid(src="../assets/images/forms/rbl.png", alt="RBL")
+                            span DEF BANK
+                        li 
+                          input#radio-wizard-5.form-check-input(type='radio', name='radio2', value='option2')
+                          label.form-check-label(for='radio-wizard-5')
+                            img.img-fluid(src="../assets/images/forms/us-bank.png", alt="US")
+                            span MNO BANK
+                        li 
+                          input#radio-wizard-6.form-check-input(type='radio', name='radio2', value='option2')
+                          label.form-check-label(for='radio-wizard-6')
+                            img.img-fluid(src="../assets/images/forms/axis.png", alt="Axis")
+                            span WXY BANK
+                        li 
+                          input#radio-wizard-7.form-check-input(type='radio', name='radio2', value='option2')
+                          label.form-check-label(for='radio-wizard-7')
+                            img.img-fluid(src="../assets/images/forms/SCB.png", alt="SCB")
+                            span STD BANK
+                .col-12.text-end 
+                  button.btn.btn-primary Previous
+                  button.btn.btn-primary Continue
+            #inquiry-wizard.tab-pane.fade(role='tabpanel' aria-labelledby='inquiry-wizard-tab')
+              form.row.g-3.needs-validation(novalidate='')
+                .col-12.inquiries-form
+                  .row 
+                    .col-md-6
+                      p.f-w-500.mb-3 Select the option how you want to receive important notifications.
+                      .choose-option
+                        .form-check.form-check-inline.radio
+                            label.d-block(for='notification1')
+                                input#notification1.radio-primary.me-2(type='radio' name='radio5' value='option1')
+                                | Featured Items
+                        .form-check.form-check-inline.radio
+                            label.d-block(for='notification2')
+                                input#notification2.radio-primary.me-2(type='radio' name='radio5' value='option2')
+                                | Newsletters
+                        .form-check.form-check-inline.radio
+                            label.d-block(for='notification3')
+                                input#notification3.radio-primary.me-2(type='radio' name='radio5' value='option3')
+                                | Notifications
+                        .form-check.form-check-inline.radio
+                            label.d-block(for='notification4')
+                                input#notification4.radio-primary.me-2(type='radio' name='radio5' value='option4')
+                                | Blogs
+                    .col-md-6
+                      .row.g-3
+                        .col-12
+                          label.form-label Email
+                            span.font-danger *
+                          input.form-control(type='text', placeholder='org@support.com', required='required')
+                        .col-12
+                          label.form-label(for='customContact2') Contact Number
+                          input#customContact2.form-control(type='number' placeholder='Enter number' required='')
+                          .valid-feedback
+                            | Looks good!
+                .col-12 
+                  label.form-label.f-w-500(for='FormControlTextarea2') If no, could you please describe?
+                  textarea#FormControlTextarea2.form-control(rows='3')
+                .col-12.text-end 
+                  button.btn.btn-primary Previous
+                  button.btn.btn-primary Continue 
+            #successful-wizard.tab-pane.fade(role='tabpanel' aria-labelledby='successful-wizard-tab')
+              .form-completed
+                img(src="../assets/images/gif/successful.gif", alt="successful")
+                h6 Successfully Completed

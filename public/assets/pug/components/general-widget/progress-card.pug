@@ -1,0 +1,79 @@
+//-// Task items 
+-
+    var HOME_TASK =[
+        {
+            id: 'dash-home',
+            headerText: 'Home Estate',
+            designName: 'Web Design',
+            percentage: '50%',
+            progressColor: 'progress-striped-primary',
+            img1: '../assets/images/avatar/6.jpg',
+            img2: '../assets/images/user/8.jpg',
+            number: '+4',
+            bg: 'bg-primary',
+        },
+    ]
+    var DEVELOPMENT_TASK =[
+        {
+            id: 'dash-development',
+            headerText: 'Development',
+            designName: 'Coding',
+            percentage: '40%',
+            progressColor: 'progress-striped-secondary',
+            img1: '../assets/images/user/6.jpg',
+            img2: '../assets/images/user/9.jpg',
+            number: '+2',
+            bg: 'bg-secondary',
+        },
+    ]
+    var NFT_TASK =[
+        {
+            id: 'dash-vector',
+            headerText: 'NFT Design',
+            designName: 'Design',
+            percentage: '90%',
+            progressColor: 'progress-striped-tertiary',
+            img1: '../assets/images/avatar/11.jpg',
+            img2: '../assets/images/user/3.jpg',
+            number: '+3',
+            bg: 'bg-tertiary',
+        },
+    ]
+//-// Mixin
+mixin HomeContent(items)
+    each item in items
+        .esatae-body.d-flex.align-items-center.gap-4
+            .d-flex.gap-3.align-items-center
+                .flex-shrink-0(class=item.bg)
+                    +IconlySprite(item.id,'svg-w-24') 
+                .flex-grow-1
+                    h6.f-w-500=item.headerText 
+                    span.f-w-400.f-13=item.designName 
+            .flex-grow-1
+                .d-flex
+                    h6.f-w-500 Progress 
+                    span.f-w-500.f-14=item.percentage
+                .progress.mt-2(class=item.progressColor)
+                    .progress-bar(style='width: 55%' role='progressbar' aria-valuenow='10' aria-valuemin='0' aria-valuemax='100')
+            .customer.d-inline-block.avatar-group.text-end
+                ul
+                    li.d-inline-block
+                        img.img-40.b-r-10(src=item.img1, alt='')
+                    li.d-inline-block
+                        img.img-40.b-r-10(src=item.img2, alt='')
+                    li.d-inline-block
+                        span.b-r-10=item.number 
+            
+// Task menu
+.col-xl-12 
+    .card.esatae-card.card-hover
+        .card-body 
+            +HomeContent(HOME_TASK)
+.col-xl-12 
+    .card.esatae-card.card-hover
+        .card-body 
+            +HomeContent(DEVELOPMENT_TASK)
+.col-xl-12 
+    .card.esatae-card.card-hover
+        .card-body 
+            +HomeContent(NFT_TASK)

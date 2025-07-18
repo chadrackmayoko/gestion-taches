@@ -1,0 +1,36 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+-var height_equal           = true;
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    include ../../components/loader
+    main#pageWrapper.page-wrapper.compact-wrapper
+        include ../../components/header/header
+        .page-body-wrapper
+          include ../../components/sidebar
+          .page-body
+            .container-fluid
+              +breadcrumb(['FAQ','FAQ'],'FAQ')
+            // Container-fluid starts
+            .container-fluid
+              .row 
+                .col-xl-4.box-col-6
+                  include ../../components/Faq/faq/articles
+                .col-xl-4.col-sm-6.box-col-6
+                  include ../../components/Faq/faq/knowledgebase-components
+                .col-xl-4.col-sm-6.box-col-12
+                  include ../../components/Faq/faq/support
+                .col-lg-12
+                  include ../../components/Faq/faq/accordian-faq
+                .col-lg-12
+                  include ../../components/Faq/faq/tutorials-faq
+                .col-lg-12
+                  include ../../components/Faq/faq/lates-article-faq
+            // Container-fluid ends
+          include ../../components/footer
+    include ../../components/footer-files

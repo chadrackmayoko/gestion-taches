@@ -1,0 +1,20 @@
+// Direction Tooltip
+.card 
+    .card-header.pb-0
+        +card-header('Tooltip directions', 'dote','','Use the', 'data-bs-placement=*', 'to tooltip direction change.')
+    .card-body
+        .common-flex
+            button.btn.btn-primary.rounded-pill.mb-0.me-0(type='button' data-bs-toggle='tooltip' data-bs-placement='top' title='' data-bs-original-title='Tooltip on top') Tooltip on top
+            button.btn.btn-secondary.rounded-pill.mb-0.me-0(type='button' data-bs-toggle='tooltip' data-bs-placement='right' title='' data-bs-original-title='Tooltip on right') Tooltip on right
+            button.btn.btn-tertiary.rounded-pill.mb-0.me-0(type='button' data-bs-toggle='tooltip' data-bs-placement='bottom' title='' data-bs-original-title='Tooltip on bottom') Tooltip on bottom
+            button.btn.btn-info.rounded-pill.mb-0.me-0(type='button' data-bs-toggle='tooltip' data-bs-placement='left' title='' data-bs-original-title='Tooltip on left') Tooltip on left
+        .code-box-copy
+            button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#tooltip', title='Copy')
+              i.icofont.icofont-copy
+            pre
+              code.language-html#dark-tooltip
+                | &lt;!--You can use attribute (data-bs-target='tooltip') to  used tooltips.--&gt;
+                | &lt;button class="btn btn-primary mb-0 me-0" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top"&gt;Tooltip on top&lt;/button&gt;
+                | &lt;button class="btn btn-secondary mb-0 me-0" type="button" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip on right"&gt;Tooltip on right&lt;/button&gt;
+                | &lt;button class="btn btn-success mb-0 me-0" type="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip on bottom"&gt;Tooltip on bottom&lt;/button&gt;
+                | &lt;button class="btn btn-warning mb-0 me-0" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left"&gt;Tooltip on left&lt;/button&gt;

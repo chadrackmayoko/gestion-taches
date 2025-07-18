@@ -1,0 +1,35 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    include ../../components/loader
+    main#pageWrapper.page-wrapper.compact-wrapper
+        include ../../components/header/header
+        .page-body-wrapper
+          include ../../components/sidebar
+          .page-body
+            .container-fluid
+              +breadcrumb(['Bonus Ui','Pagination'],'Pagination')
+            // Container-fluid starts
+            .container-fluid.pagination-page
+                .row
+                    .col-md-6
+                        include ../../components/Bonus-ui/pagination/default-pagination
+                    .col-md-6
+                        include ../../components/Bonus-ui/pagination/active-pagination
+                    .col-md-6
+                        include ../../components/Bonus-ui/pagination/icon-pagination
+                    .col-md-6
+                        include ../../components/Bonus-ui/pagination/rounded-pagination
+                    .col-xxl-6
+                        include ../../components/Bonus-ui/pagination/alignment-pagination
+                    .col-xxl-6
+                        include ../../components/Bonus-ui/pagination/size-pagination
+            // Container-fluid ends
+          include ../../components/footer
+    include ../../components/footer-files

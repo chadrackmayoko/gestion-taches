@@ -1,0 +1,29 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+-var height_equal= true;
+-var two_factor= true;
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    include ../../components/loader
+    main#pageWrapper.page-wrapper.compact-wrapper
+        include ../../components/header/header
+        .page-body-wrapper
+          include ../../components/sidebar
+          .page-body
+            .container-fluid
+              +breadcrumb(['Form Layout','Two Factor'],'Two Factor')
+            // Container-fluid starts
+            .container-fluid
+              .row 
+                  .col-sm-12
+                        include ../../components/forms/two-factor/two-factor_authentication
+                  .col-sm-12
+                        include ../../components/forms/two-factor/email_verification
+            // Container-fluid ends
+          include ../../components/footer
+    include ../../components/footer-files

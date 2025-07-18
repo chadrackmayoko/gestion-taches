@@ -1,0 +1,94 @@
+// Material style tabs
+.card
+    .card-header.pb-0
+        +card-header('Material style tabs', '','','Use the', '.nav-link , .active','class through access new tabs. And icons of design for attractive webpage.')
+    .card-body
+        ul#topline-tab.nav.nav-tabs.border-tab.border-0.mb-0.nav-danger(role='tablist')
+            li.nav-item
+                a#topline-top-user-tab.nav-link.active.nav-border.pt-0.font-danger.nav-danger(data-bs-toggle='tab' href='#topline-top-user' role='tab' aria-controls='topline-top-user' aria-selected='true')
+                    i.fa-solid.fa-user.fa-fw
+                    | User
+            li.nav-item
+                a#topline-top-description-tab.nav-link.nav-border.font-danger.nav-danger(data-bs-toggle='tab' href='#topline-top-description' role='tab' aria-controls='topline-top-description' aria-selected='false')
+                    i.fa-solid.fa-file
+                    | Description
+            li.nav-item
+                a#topline-top-review-tab.nav-link.nav-border.font-danger.nav-danger(data-bs-toggle='tab' href='#topline-top-review' role='tab' aria-controls='topline-top-review' aria-selected='false')
+                    i.fa-regular.fa-star.fa-fw
+                    | Review
+        #topline-tabContent.tab-content
+            #topline-top-user.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='topline-top-user-tab')
+                .card-body.px-0.pb-0
+                    .user-header.pb-2
+                        h6.f-w-600 User Details:
+                    .user-content
+                        .table-responsive
+                            table.table.mb-0
+                                thead
+                                    tr
+                                        th(scope='col') #
+                                        th(scope='col') Name
+                                        th(scope='col') Country
+                                        th(scope='col') Contact No
+                                tbody
+                                    tr
+                                        th(scope='row') 1
+                                        td Neha
+                                        td India 
+                                        td 5698741236
+                                    tr
+                                        th.border-bottom-0(scope='row') 2
+                                        td Jacklin
+                                        td Thailand
+                                        td 7800030320
+            #topline-top-description.tab-pane.fade(role='tabpanel' aria-labelledby='topline-top-description-tab')
+                .card-body.px-0.pb-0
+                    .user-header.pb-2
+                        h6.f-w-600 Description:
+                    .user-content
+                        .table-responsive
+                            table.table.mb-0
+                                thead
+                                    tr
+                                        th(scope='col') Technology
+                                        th(scope='col') Interest 
+                                        th(scope='col') Salary Expected 
+                                tbody
+                                    tr
+                                        td Web Designer
+                                        td HTML,CSS,JS,SCSS
+                                        td 45000
+                                    tr
+                                        td UX Designer
+                                        td Figma,Photoshop,craft
+                                        td 20000
+            #topline-top-review.tab-pane.fade(role='tabpanel' aria-labelledby='topline-top-review-tab')
+                .card-body.px-0.pb-0
+                    .user-header.pb-2
+                        h6.f-w-600 Review:
+                    .user-content
+                        .table-responsive
+                            table.table.mb-0
+                                thead
+                                    tr
+                                        th(scope='col') #
+                                        th(scope='col') Name
+                                        th(scope='col') Country
+                                        th(scope='col') Rating 
+                                tbody
+                                    tr
+                                        th(scope='row') 1
+                                        td Neha
+                                        td India 
+                                        td.d-flex
+                                            +FeatherSprite('star', 'feather rating')
+                                            +FeatherSprite('star', 'feather rating')
+                                            +FeatherSprite('star', 'feather rating')
+                                            +FeatherSprite('star', 'feather rating')
+                                    tr
+                                        th.border-bottom-0(scope='row') 2
+                                        td Irfan
+                                        td India
+                                        td.d-flex
+                                            +FeatherSprite('star', 'feather rating')
+                                            +FeatherSprite('star', 'feather rating')

@@ -1,0 +1,40 @@
+// Animated Badges
+.card
+    .card-header.pb-0
+        +card-header('Animated Badges', 'dote','','Use the', '.bg-common-*, animated-badge, .dote-*', 'for add animation on badges.')
+    .card-body.animated-badge
+        ul.d-flex
+            li.bg-common-primary
+                span.dote-primary
+                +IconlySprite('Home', 'svg-w-20')
+            li.bg-common-secondary
+                span.dote-secondary
+                +IconlySprite('Star', 'svg-w-20')
+            li.bg-common-tertiary
+                span.dote-tertiary
+                +IconlySprite('Bag', 'svg-w-20')
+            li.bg-common-info
+                span.dote-info
+                +IconlySprite('Bell', 'svg-w-20')
+        .code-box-copy
+            button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#example-head' title='Copy')
+                i.icofont.icofont-copy
+            pre
+                code.language-html#animated-badge
+                    | &lt;!--You can use .bg-common-*, animated-badge, .dote-*', 'for add animation on badges.--&gt;
+                    | &lt;li class="bg-common-primary"&gt;
+                    | &lt;span class="dote-primary"&gt;&lt;/span&gt;
+                    | &lt;svgclass="svg-w-20"&gt;
+                    | &lt;use href="../assets/svg/iconly-sprite.svg#Home"&gt;&lt;/use&gt; &lt;/svg&gt;&lt;/li&gt;
+                    | &lt;li class="bg-common-secondary"&gt;
+                    | &lt;span class="dote-secondary"&gt;&lt;/span&gt;
+                    | &lt;svgclass="svg-w-20"&gt;
+                    | &lt;use href="../assets/svg/iconly-sprite.svg#Star"&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/li&gt;
+                    | &lt;li class="bg-common-tertiary"&gt;
+                    | &lt;span class="dote-tertiary"&gt;&lt;/span&gt;
+                    | &lt;svgclass="svg-w-20"&gt;
+                    | &lt;use href="../assets/svg/iconly-sprite.svg#Bag"&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/li&gt;
+                    | &lt;li class="bg-common-info"&gt;
+                    | &lt;span class="dote-info"&gt;&lt;/span&gt;
+                    | &lt;svgclass="svg-w-20"&gt;
+                    | &lt;use href="../assets/svg/iconly-sprite.svg#Bell"&gt;&lt;/use&gt; &lt;/svg&gt;&lt;/li&gt;

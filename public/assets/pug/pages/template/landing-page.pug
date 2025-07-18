@@ -1,0 +1,399 @@
+-var landing_font = true;
+-var animate      = true;
+-var wow          = true;
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/landing-header
+  body.landing-page
+    include ../../components/tap-top
+    // page-wrapper Start
+    .page-wrapper
+        // Page Body Start
+        // header start
+        header.landing-header
+          .container-fluid.fluid-space
+            .row
+              .col-12
+                nav#navbar-example2.navbar.navbar-light.p-0
+                    a.navbar-brand(href="javascript:void(0)") 
+                      img.img-fluid.logo-size(src="../assets/images/logo/landing-logo.png" alt="")
+                    ul.landing-menu.nav.nav-pills
+                      li.nav-item.menu-back
+                        | back
+                        i.fa.fa-angle-right
+                      li.nav-item
+                        a.nav-link(href='#home') Home
+                      li.nav-item
+                        a.nav-link(href='#page') Page
+                      li.nav-item
+                        a.nav-link(href='#frameworks') Frameworks
+                      li.nav-item
+                        a.nav-link(href='#feature') Feature
+                      li.nav-item
+                        a.nav-link(href='https://docs.pixelstrap.net/admin/edmin/document/' target="_blank") Documentation
+                      li.nav-item
+                        a.nav-link(href='https://docs.google.com/forms/d/e/1FAIpQLSe6hKUXw_By-pg7yabL0FxoTM02ZPTxoXy8PE3yboRuUCuyeA/viewform' target="_blank") Hire us
+                    .buy-block
+                      a.btn-landing.btn-primary(href="https://themeforest.net/user/pixelstrap/portfolio" target="_blank") Buy Now
+                      .toggle-menu
+                        i.fa.fa-bars
+        // header end
+        //home-section-start
+        section#home.landing-home
+            .container-fluid.fluid-space.h-100
+              .row.h-100
+                .col-12.col-lg-5.home-left.order-1.order-lg-0
+                    .landing-title.text-center.text-lg-start
+                        h5.sub-title.font-primary
+                          img.html-gif.img-fluid.img-32(src="../assets/images/landing/check.gif", alt="")
+                          | Kick Start Your Project using
+                        h2.header-title 
+                            |Edmin-Multipurpose Bootstrap Admin 
+                            span.gradient-1 Dashboard 
+                            | &nbsp;Template 
+                        p.mx-0 Edmin is Perfect Admin template for any business. it has all features and modules to create your amazing C-panel. this template for selling Default, Ecommerce etc......  
+                        .d-flex.gap-3.justify-content-center.justify-content-lg-start
+                          a.btn.btn-primary.doc-btn.d-flex.align-items-center(href="https://docs.pixelstrap.net/admin/edmin/document/" target="_blank")
+                            svg.svg-w-25.me-2
+                              use(href='../assets/svg/iconly-sprite.svg#Document-landing')
+                            | Documentation
+                          a.btn.btn-tertiary.html-btn(href='index.html' target="_blank")
+                            img.img-fluid(src='../assets/images/landing/html.png' alt='')
+                .col-12.col-lg-7.home-right
+                    .landing-image
+                        img.img-fluid.home-img(src="../assets/images/landing/home.png", alt="")
+                        ul.animate-img
+                          li.right-img
+                            img.img-fluid(src="../assets/images/landing/overview.png", alt="")
+                          li.left-img
+                            img.img-fluid(src="../assets/images/landing/product.png", alt="")
+                          li.left-gif
+                            img.img-fluid(src="../assets/images/landing/new.gif", alt="")
+                          li.sub-title
+                            span Fantastic
+                          li.arrow-decore
+                            img(src='../assets/images/landing/arrow.png' alt='')
+                          li.outline-text
+                            h2 3+ Dashboard
+        //home-section-end
+        //page-section-start
+        section#page.section-py-space.landing-page-design
+          .title-style-1.text-center.wow.pulse
+            h2.main-title Creative Layout
+            img(src="../assets/images/landing/shape-1.png", alt="")
+            p.description-title We comes up with most creative and useful main general purpose dashboard template
+          .container-fluid.fluid-space
+            .row.justify-content-center
+              .col-lg-4.col-sm-6.wow.pulse
+                .layout-box
+                  .img-wrraper
+                    .layout-img
+                      a(href='index.html' target='_blank')
+                        img.img-fluid(src='../assets/images/landing/layout/1.png' alt='')
+                  .layout-btn
+                    a(href="index.html").btn.btn-primary Default
+              .col-lg-4.col-sm-6.wow.pulse
+                .layout-box.mt-4.mt-sm-0
+                  .img-wrraper
+                    .layout-img
+                      a(href='dashboard-02.html' target='_blank')
+                        img.img-fluid(src='../assets/images/landing/layout/2.png' alt='')
+                  .layout-btn
+                    a(href="dashboard-02.html").btn.btn-primary Ecommerce
+              .col-lg-4.col-sm-6.wow.pulse
+                .layout-box.mt-4.mt-lg-0
+                  .img-wrraper
+                    .layout-img
+                      a(href='dashboard-03.html' target='_blank')
+                        img.img-fluid(src='../assets/images/landing/layout/3.png' alt='')
+                  .layout-btn
+                    a(href="dashboard-03.html").btn.btn-primary Project
+        //page-section-end
+        // frameworks-section-start
+        section#frameworks.section-py-space.framework-section
+            .container-fluid.fluid-space
+              .row 
+                .col-sm-12.wow.pulse
+                    .title-style-1.text-center
+                      h2.main-title Top Frameworks
+                      img(src="../assets/images/landing/shape-1.png", alt="")
+                      p.description-title We comes up with most creative and useful main general purpose dashboard template
+                .col-sm-12.framworks
+                  #myTabContent.tab-content
+                    #html.tab-pane.fade.show.active
+                      ul.framworks-list
+                        li.box.wow.fadeInUp
+                          div
+                            img(src='../assets/images/landing/framework/html/bootstrap.png' alt='')
+                          h5.mb-0.f-w-600 Bootstrap 5
+                        li.box.wow.fadeInUp
+                          div
+                            img(src='../assets/images/landing/framework/html/css.png' alt='')
+                          h5.mb-0.f-w-600 CSS
+                        li.box.wow.fadeInUp
+                          div
+                            img(src='../assets/images/landing/framework/html/sass.png' alt='')
+                          h5.mb-0.f-w-600 Sass
+                        li.box.wow.fadeInUp
+                          div
+                            img(src='../assets/images/landing/framework/html/npm.png' alt='')
+                          h5.mb-0.f-w-600 NPM
+                        li.box.wow.fadeInUp
+                          div
+                            img(src='../assets/images/landing/framework/html/chart.png' alt='')
+                          h5.mb-0.f-w-600 Charts
+                        li.box.wow.fadeInUp
+                          div
+                            img(src='../assets/images/landing/framework/html/starter-kit.png' alt='')
+                          h5.mb-0.f-w-600 Starter Kit
+                        li.box.wow.fadeInUp
+                          div
+                            img(src='../assets/images/landing/framework/html/ui-kits.png' alt='')
+                          h5.mb-0.f-w-600 40+ UI Kits
+                        li.box.wow.fadeInUp
+                          div
+                            img(src='../assets/images/landing/framework/html/builder.png' alt='')
+                          h5.mb-0.f-w-600 Builders
+                        li.box.wow.fadeInUp
+                          div
+                            img(src='../assets/images/landing/framework/html/11-icon.png' alt='')
+                          h5.mb-0.f-w-600 11 Icon Sets
+                        li.box.wow.fadeInUp 
+                          div
+                            img(src='../assets/images/landing/framework/html/forms.png' alt='')
+                          h5.mb-0.f-w-600 Forms
+                        li.box.wow.fadeInUp
+                          div
+                            img(src='../assets/images/landing/framework/html/table.png' alt='')
+                          h5.mb-0.f-w-600 Tables
+                        li.box.wow.fadeInUp 
+                          div
+                            img(src='../assets/images/landing/framework/html/app.png' alt='')
+                          h5.mb-0.f-w-600 17+ Apps
+        //frameworks-section-end
+        // application-section-start
+        section.section-py-space.application-section
+            .container-fluid.fluid-space
+              .row 
+                .col-sm-12.wow.pulse
+                    .title-style-1.text-center
+                      h2.main-title Usefull Application
+                      img(src="../assets/images/landing/shape-1.png", alt="")
+                      p.description-title Edmin admin template provides 3 workable application and designs of other applications.
+                .col-sm-12.application
+                  .row.application-block.g-5
+                    .col-lg-4.col-md-6.wow.pulse
+                      .demo-box
+                        .img-wrraper
+                          a(href='social-app.html' target="_blank")
+                            img.img-fluid(src='../assets/images/landing/application/1.png' alt='')
+                        .demo-detail
+                          a.btn.btn-primary.btn-outline-primary(href='social-app.html' target="_blank") Social App
+                    .col-lg-4.col-md-6.wow.pulse
+                      .demo-box
+                        .img-wrraper
+                          a(href='knowledgebase.html' target="_blank")
+                            img.img-fluid(src='../assets/images/landing/application/2.png' alt='')
+                        .demo-detail
+                          a.btn.btn-primary.btn-outline-primary(href='knowledgebase.html' target="_blank") Knowledgebase  
+                    .col-lg-4.col-md-6.wow.pulse
+                      .demo-box
+                        .img-wrraper
+                          a(href='support-ticket.html' target="_blank")
+                            img.img-fluid(src='../assets/images/landing/application/3.png' alt='')
+                        .demo-detail
+                          a.btn.btn-primary.btn-outline-primary(href='support-ticket.html' target="_blank") Support Ticket
+                    .col-lg-4.col-md-6.wow.pulse
+                      .demo-box
+                        .img-wrraper
+                          a(href='letter-box.html' target="_blank")
+                            img.img-fluid(src='../assets/images/landing/application/4.png' alt='')
+                        .demo-detail
+                          a.btn.btn-primary.btn-outline-primary(href='letter-box.html' target="_blank") Email Dashboard                           
+                    .col-lg-4.col-md-6.wow.pulse
+                      .demo-box
+                        .img-wrraper
+                          a(href='to-do.html' target="_blank")
+                            img.img-fluid(src='../assets/images/landing/application/5.png' alt='')
+                        .demo-detail
+                          a.btn.btn-primary.btn-outline-primary(href='to-do.html' target="_blank") To-Do
+                    .col-lg-4.col-md-6.wow.pulse
+                      .demo-box
+                        .img-wrraper
+                          a(href='job-cards-view.html' target="_blank")
+                            img.img-fluid(src='../assets/images/landing/application/6.png' alt='')
+                        .demo-detail
+                          a.btn.btn-primary.btn-outline-primary(href='job-cards-view.html' target="_blank") Job Search
+                    .col-lg-4.col-md-6.wow.pulse
+                      .demo-box
+                        .img-wrraper
+                          a(href='product-page.html' target="_blank")
+                            img.img-fluid(src='../assets/images/landing/application/7.png' alt='')
+                        .demo-detail
+                          a.btn.btn-primary.btn-outline-primary(href='product-page.html' target="_blank") Ecommerce                           
+                    .col-lg-4.col-md-6.wow.pulse
+                      .demo-box
+                        .img-wrraper
+                          a(href='kanban-board.html' target="_blank")
+                            img.img-fluid(src='../assets/images/landing/application/8.png' alt='')
+                        .demo-detail
+                          a.btn.btn-primary.btn-outline-primary(href='kanban-board.html' target="_blank") Kanban                           
+                    .col-lg-4.col-md-6.wow.pulse
+                      .demo-box
+                        .img-wrraper
+                          a(href='file-manager.html' target="_blank")
+                            img.img-fluid(src='../assets/images/landing/application/9.png' alt='')
+                        .demo-detail
+                          a.btn.btn-primary.btn-outline-primary(href='file-manager.html' target="_blank") File Manager                           
+                    .col-lg-4.col-md-6.wow.pulse
+                      .demo-box
+                        .img-wrraper
+                          a(href='project-list.html' target="_blank")
+                            img.img-fluid(src='../assets/images/landing/application/10.png' alt='')
+                        .demo-detail
+                          a.btn.btn-primary.btn-outline-primary(href='project-list.html' target="_blank") Project 
+                    .col-lg-4.col-md-6.wow.pulse
+                      .demo-box
+                        .img-wrraper
+                          a(href='contacts.html' target="_blank")
+                            img.img-fluid(src='../assets/images/landing/application/11.png' alt='')
+                        .demo-detail
+                          a.btn.btn-primary.btn-outline-primary(href='contacts.html' target="_blank") Contacts                           
+                    .col-lg-4.col-md-6.wow.pulse
+                      .demo-box
+                        .img-wrraper
+                          a(href='private-chat.html' target="_blank")
+                            img.img-fluid(src='../assets/images/landing/application/12.png' alt='')
+                        .demo-detail
+                          a.btn.btn-primary.btn-outline-primary(href='private-chat.html' target="_blank") Chat
+        // application-section-end
+        // features-section-start
+        section#feature.section-py-space.features-section
+          .container-fluid.fluid-space
+            .row 
+              .col-sm-12.wow.pulse
+                  .title-style-1.text-center
+                    h2.main-title Unique Features
+                    img(src="../assets/images/landing/shape-1.png", alt="")
+                    p.description-title We are using scss 7-1 tire folder structure for this admin template
+            .row.g-3.g-sm-5.feature-content 
+              .col-xxl-3.col-lg-4.col-sm-6.wow.flipInX
+                .feature-box
+                  div
+                    .icon-wrraper.bg-1
+                      +IconlySprite('landing-html', 'svg-w-25')
+                    h4.mb-1 Quality & Clean Code
+                    p All you need to know of using clean code as a manager to make your team and your software awesome.
+              .col-xxl-3.col-lg-4.col-sm-6.wow.flipInX
+                .feature-box
+                  div
+                    .icon-wrraper.bg-2
+                      +IconlySprite('landing-bootstrap', 'svg-w-25')
+                    h4.mb-1 Bootstrap v5.0
+                    p Bootstrap is built on designed to be responsive 12- column grids, it automatically adjusts the layout.
+              .col-xxl-3.col-lg-4.col-sm-6.wow.flipInX
+                .feature-box
+                  div
+                    .icon-wrraper.bg-3
+                      +IconlySprite('handmade-landing', 'svg-w-25')
+                    h4.mb-1 Handmade icons
+                    p let’s learn how to use our own svg icons in edmin admin template. icon system with svg sprites
+              .col-xxl-3.col-lg-4.col-sm-6.wow.flipInX
+                .feature-box
+                  div
+                    .icon-wrraper.bg-4
+                      +IconlySprite('landing-components', 'svg-w-25')
+                    h4.mb-1 Limitless components
+                    p The limitless laypout collection and ui kit library is the biggest collection of layout for web design
+              .col-xxl-3.col-lg-4.col-sm-6.wow.flipInX
+                .feature-box
+                  div
+                    .icon-wrraper.bg-5
+                      +IconlySprite('landing-customizer', 'svg-w-25')
+                    h4.mb-1 Easy Customizable
+                    p Easy step-by-step guide for beginners. customize your layout, settings and content
+              .col-xxl-3.col-lg-4.col-sm-6.wow.flipInX
+                .feature-box
+                  div
+                    .icon-wrraper.bg-6
+                      +IconlySprite('landing-responsive', 'svg-w-25')
+                    h4.mb-1 Responsive & user-Friendly
+                    p Use responsive design to connect with all device users start designing your website for mobile devices.
+              .col-xxl-3.col-lg-4.col-sm-6.wow.flipInX
+                .feature-box
+                  div
+                    .icon-wrraper.bg-7
+                      +IconlySprite('landing-support', 'svg-w-25')
+                    h4.mb-1 Premium support
+                    p Bwe are always be their for your support and you are facing some issues you can create ticket.
+              .col-xxl-3.col-lg-4.col-sm-6.wow.flipInX
+                .feature-box
+                  div
+                    .icon-wrraper.bg-8
+                      +IconlySprite('landing-colors', 'svg-w-25')
+                    h4.mb-1 Colors Options
+                    p edmin provide unlimited main color option.other colors can change easily using sass variables
+        // features-section-end
+        // support-section-start
+        section.section-py-space.support-section
+          .title-style-1.text-center.wow.pulse
+            h2.main-title Premium Support
+            img(src="../assets/images/landing/shape-1.png", alt="")
+            p.description-title “fast issue resolution, and dedicated experts for a seamless experience”
+          .container-fluid.fluid-space
+            .row.align-items-center
+              .col-lg-5.wow.bounceInLeft.order-1.order-lg-0
+                .landing-title.text-start
+                  h5.sub-title.font-primary.mb-2 Our License
+                  h2 we give it as we think that excellent support is needed
+                  p.mx-0
+                    | Check our reviews for fast and accurate support to ensure support. we offer premium assistance around-the-clock for any bugs you encounter. and we’ll do best to help you out with any future updates for free.
+                  a.btn.btn-primary.f-w-700.support-button(href='https://support.pixelstrap.com/' target='_blank') Support
+              .col-lg-7.support-img.wow.bounceInRight.text-center.text-lg-end
+                img.img-1(src="../assets/images/landing/support.png", alt="")
+                img.img-2(src="../assets/images/landing/arrow-2.png", alt="")
+        // support-section-end
+        // footer-section-start
+        section#footer.landing-footer.section-py-space
+          .triangle
+          ul.shape
+            li.shape1
+              img.img-fluid(src='../assets/images/landing/footer/shape1.png' alt='')
+            li.shape2
+              img.img-fluid(src='../assets/images/landing/footer/shape2.png' alt='')
+            li.shape3
+              img.img-fluid(src='../assets/images/landing/footer/shape3.png' alt='')
+            li.shape4
+              img.img-fluid(src='../assets/images/landing/footer/shape4.png' alt='')
+            li.shape5
+              img.img-fluid(src='../assets/images/landing/footer/shape5.png' alt='')
+            li.shape6
+              img.img-fluid(src='../assets/images/landing/footer/shape6.png' alt='')
+            li.shape7
+              img.img-fluid(src='../assets/images/landing/footer/shape1.png' alt='')
+            li.shape8
+              img.img-fluid(src='../assets/images/landing/footer/shape1.png' alt='')
+            li.shape9
+              img.img-fluid(src='../assets/images/landing/footer/shape7.png' alt='')
+            li.shape10
+              img.img-fluid(src='../assets/images/landing/footer/shape7.png' alt='')
+          a.footer-logo(href="index.html")
+            img.img-fluid(src='../assets/images/landing/logo/footer-logo.png' alt='logo')
+          ul.star-rate
+            li
+              i.fa.fa-star.font-warning
+            li
+              i.fa.fa-star.font-warning
+            li
+              i.fa.fa-star.font-warning
+            li
+              i.fa.fa-star.font-warning    
+            li
+              i.fa-regular.fa-star.font-warning 
+          h2 The Edmin Bootstrap Admin Template Trusted by Many Developers World Wide.
+          .btn-footer
+            a.btn.btn-lg.btn-primary(target='_blank' href='index.html' data-bs-original-title='' title='') Check Now
+            a.btn.btn-lg.btn-secondary(target='_blank' href='https://themeforest.net/user/pixelstrap/portfolio' data-bs-original-title='' title='') Buy Now
+        // footer-section-end
+    include ../../components/landing-footer-files

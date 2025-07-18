@@ -1,0 +1,44 @@
+.card
+  .card-header.pb-0
+    +card-header('Tooltip form validation', '','', 'If your form layout allows it, you can swap the', '.{valid|invalid}', '-tooltip classes to display validation feedback in a styled tooltip.')
+  .card-body
+    form.theme-form.row.g-3.needs-validation.custom-input(novalidate='')
+      .col-md-4.position-relative
+        label.form-label(for='validationTooltip01') First name
+        input#validationTooltip01.form-control(type='text' placeholder="Mark" required='')
+        .valid-tooltip
+          | Looks good!
+      .col-md-4.position-relative
+        label.form-label(for='validationTooltip02') Last name
+        input#validationTooltip02.form-control(type='text' placeholder="Otto" required='')
+        .valid-tooltip
+          | Looks good!
+      .col-md-4.position-relative
+        label.form-label(for='validationTooltipUsername') Username
+        .input-group.has-validation
+          span#validationTooltipUsernamePrepend.input-group-text @
+          input#validationTooltipUsername.form-control(type='text' aria-describedby='validationTooltipUsernamePrepend' required='')
+          .invalid-tooltip
+            | Please choose a unique and valid username.
+      .col-md-6.position-relative
+        label.form-label(for='validationTooltip03') City
+        input#validationTooltip03.form-control(type='text' required='')
+        .invalid-tooltip
+          | Please provide a valid city.
+      .col-md-3.position-relative
+        label.form-label(for='validationTooltip04') State
+        select#validationTooltip04.form-select(required='')
+          option(selected='' disabled='' value='') Choose...
+          option U.S 
+          option Thailand 
+          option India 
+          option U.K
+        .invalid-tooltip
+          | Please select a valid state.
+      .col-md-3.position-relative
+        label.form-label(for='validationTooltip05') Zip
+        input#validationTooltip05.form-control(type='text' required='')
+        .invalid-tooltip
+          | Please provide a valid zip.
+      .col-12
+        button.btn.btn-primary(type='submit') Submit form

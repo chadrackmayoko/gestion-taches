@@ -1,0 +1,45 @@
+// Horizontal accordion
+.card
+    .card-header.pb-0
+        +card-header('Simple Tabs', '','','Use the', 'nav-link , .show','class to jump particular tabs.')
+    .card-body
+        ul#myTab.simple-wrapper.nav.nav-tabs(role='tablist')
+            li.nav-item
+                a#home-tab.nav-link.font-primary(data-bs-toggle='tab' href='#home' role='tab' aria-controls='home' aria-selected='false') Home
+            li.nav-item
+                a#profile-tabs.nav-link.font-primary.active(data-bs-toggle='tab' href='#profile' role='tab' aria-controls='profile' aria-selected='true') Profile
+            li.nav-item
+                a#contact-tab.nav-link.font-primary(data-bs-toggle='tab' href='#contact' role='tab' aria-controls='contact' aria-selected='false') Contact
+        #myTabContent.tab-content
+            #home.tab-pane.fade(role='tabpanel' aria-labelledby='home-tab')
+                p.pt-3
+                    | Tabs have long been used to show alternative views of the same group of information tabs in software. Known as
+                    em.font-danger  &ldquo;module tabs&rdquo;
+                    | , these are still used today in web sites. For instance, airline companies such as Ryanair, easyJet and AirMalta use module tabs to enable the user to switch between bookings for flights, hotels and car hire.
+            #profile.tab-pane.fade.active.show(role='tabpanel' aria-labelledby='profile-tabs')
+                .pt-3.mb-0
+                    .flex-space.flex-wrap.align-items-center
+                        img.tab-img(src='../assets/images/avatar/1.jpg' alt='profile')
+                        ul.d-flex.flex-column.gap-1
+                            li
+                                strong Visit Us:
+                                | 26 Hollywood Blv,Florida, United States-33020
+                            li
+                                strong Mail Us:
+                                | Contact@us@gmail.com
+                            li
+                                strong Contact Number: 
+                                | (954) 357-7760
+            #contact.tab-pane.fade(role='tabpanel' aria-labelledby='contact-tab')
+                ul.pt-3.d-flex.flex-column.gap-1
+                    li.mb-1
+                        | Us Technology offers web &amp; mobile development solutions for all industry verticals.Include a short form using fields that&apos;ll help your business understand who&apos;s contacting them.
+                    li
+                        strong Visit Us: 
+                        |  2600 Hollywood Blvd,Florida, United States-&#x9;33020
+                    li
+                        strong Mail Us:
+                        |  contact@us@gmail.com
+                    li
+                        strong Contact Number: 
+                        |  (954) 357-7760

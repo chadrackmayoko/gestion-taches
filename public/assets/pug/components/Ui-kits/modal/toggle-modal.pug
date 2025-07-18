@@ -1,0 +1,33 @@
+.card
+  .card-header.pb-0 
+    +card-header('Toggle between modals ','','', 'Toggle between multiple modals with some clever placement of the','data-bs-target , data-bs-toggle',' attributes.')
+  .card-body 
+    #exampleModalToggle.modal.fade(aria-hidden='true' aria-labelledby='exampleModalToggle' tabindex='-1')
+      .modal-dialog.modal-dialog-centered
+        .modal-content
+          .modal-body
+            .modal-toggle-wrapper
+              ul.modal-img 
+                li
+                  img(src="../assets/images/gif/whatapp.gif", alt="whatsapp")
+                li 
+                  img(src="../assets/images/gif/instagram.gif", alt="instagram")
+                li 
+                  img(src="../assets/images/gif/facebook.gif", alt="facebook")
+              h6 Remove your complete account from your phone or tablet to sign out of the Gmail app.
+              button.btn.btn-dark.rounded-pill.w-100.mt-4(data-bs-target='#exampleModalToggle2' data-bs-toggle='modal') Connect new account
+              button.btn.rounded-pill.w-100.pb-0.dark-toggle-btn.mt-2(type='button', data-bs-dismiss='modal') Cancel
+    #exampleModalToggle2.modal.fade(aria-hidden='true' aria-labelledby='exampleModalToggle2' tabindex='-1')
+      .modal-dialog.modal-dialog-centered
+        .modal-content
+          .modal-body
+            .modal-toggle-wrapper
+              ul.modal-img 
+                li 
+                  img(src="../assets/images/gif/logout.gif", alt="logout")
+              h4.pt-3.text-center Already leaving??
+              p.text-center Are you sure want to logout this dashboard?
+              span.d-block.text-center.mb-4  Not a member?
+                a.ms-1(href="dashboard-02.html") Register
+              button.btn.btn-dark.d-flex.m-auto(type='button', data-bs-dismiss='modal') Yes, Log out
+    a.btn.btn-info(data-bs-toggle='modal' href='#exampleModalToggle' role='button') Open first modal

@@ -1,0 +1,30 @@
+// Order Card
+.card
+    .card-header.pb-0
+        +card-header('Order', '','','Using' , '.order', 'you can set the grid system.') 
+    .card-body.grid-showcase
+        .row.g-2
+            .col-3.order-3
+                span First Item (order-3)
+            .col-5.order-first
+                span Second Item (order-first)
+            .col-4.order-last
+                span Third Item (order-last)
+            .col-3.order-2
+                span Fourth Item (order-2)
+            .col-sm-2.col-4.order-5
+                span fifth Item (order-5)
+            .col-sm-6.col-4.order-4
+                span sixth Item (order-4)
+    .card-footer
+        .table-responsive
+            table.w-100
+                tbody
+                    tr
+                        th  Class
+                        th Value of the class
+                    tr
+                        td
+                            code .order-*
+                        td  first / 2 / 3 / 4 / 5 / last
+

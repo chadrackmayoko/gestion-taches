@@ -1,0 +1,304 @@
+.card 
+    .card-header.pb-0 
+        +card-header('Fullscreen modal', '','','Another override is the option to pop up a modal that covers the user viewport, available via modifier classes that are placed on a', '.modal-dialog','')
+    .card-body.badge-spacing
+        button.btn.btn-outline-secondary(type='button' data-bs-toggle='modal' data-bs-target='#exampleModalfullscreen')
+            | Fullscreen modal
+        // Full Screen Modal
+        #exampleModalfullscreen.modal.fade(tabindex='-1' aria-labelledby='fullScreenModalLabel' aria-hidden='true')
+            .modal-dialog.modal-fullscreen
+                .modal-content
+                    .modal-header
+                        h5#fullScreenModalLabel.modal-title Full screen modal
+                        button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                    .modal-body.dark-modal
+                        .large-modal-header
+                            +FeatherSprite('chevrons-right', 'feather stroke-primary')
+                            h6 Web design 
+                        p.modal-padding-space We build specialised websites for companies, list them on digital directories, and set up a sales funnel to boost ROI.
+                        div.modal-details
+                            div.web-content
+                                h6 Web designer
+                                .d-flex
+                                    .flex-shrink-0
+                                        +FeatherSprite('arrow-right-circle', 'feather stroke-primary')
+                                    .flex-grow-1.ms-2
+                                        p
+                                            | For a site to be successful, a designer must be able to communicate their ideas, chat with a firm about what they want, and inquire about the target audience.
+                                .d-flex
+                                    .flex-shrink-0
+                                        +FeatherSprite('arrow-right-circle', 'feather stroke-primary')
+                                    .flex-grow-1.ms-2
+                                        p
+                                            | As a web designer, you either prefer to work freelance for several different businesses at once or you may choose to work for just one. In either case, you'll need good time management skills to keep several projects moving forward.
+                                .d-flex
+                                    .flex-shrink-0
+                                        +FeatherSprite('arrow-right-circle', 'feather stroke-primary')
+                                    .flex-grow-1.ms-2
+                                        p
+                                            | Although a designer doesn't write the code that makes a site work, it doesn't hurt to have a basic understanding of HTML or CSS to make minor adjustments to a site. You'll find it simpler to edit templates, improve typefaces, or change item placements if you have a basic understanding of how things work.
+                                .d-flex
+                                    .flex-shrink-0
+                                        +FeatherSprite('arrow-right-circle', 'feather stroke-primary')
+                                    .flex-grow-1.ms-2
+                                        p 
+                                            | Most businesses employ a certain font or typography so that clients can quickly distinguish them from their rivals. Since designers now have access to a wider variety of fonts, firms may more easily and precisely communicate their brands through typography.
+                            div.web-content
+                                h6 UX designer 
+                                .d-flex
+                                    .flex-shrink-0
+                                        +FeatherSprite('arrow-right-circle', 'feather stroke-primary')
+                                    .flex-grow-1.ms-2
+                                        p
+                                            | User research, persona creation, building wireframes and interactive prototypes, and testing ideas are among the common tasks of a UX designer. These duties can differ greatly between organizations.
+                                .d-flex
+                                    .flex-shrink-0
+                                        +FeatherSprite('arrow-right-circle', 'feather stroke-primary')
+                                    .flex-grow-1.ms-2
+                                        p
+                                            | Create solutions that will be helpful for the issues and situations that exist right now, not for those that will. With the right materials, assist people in organizing their time, completing things more quickly, and optimizing it.
+                                .d-flex
+                                    .flex-shrink-0
+                                        +FeatherSprite('arrow-right-circle', 'feather stroke-primary')
+                                    .flex-grow-1.ms-2
+                                        p
+                                            | Based on the data received from users, improve them. Adapt existing solutions to the requirements, hopes, difficulties, and expectations of users.
+                                .d-flex
+                                    .flex-shrink-0
+                                        +FeatherSprite('arrow-right-circle', 'feather stroke-primary')
+                                    .flex-grow-1.ms-2
+                                        p
+                                            | Keep in mind that you are creating solutions to particular challenges for a particular population living in a particular habitat. Always remember to correctly contextualise your thoughts and determine whether they are actually appropriate for the situation. It's sometimes necessary to concede that a digital solution is not the most appropriate choice in a certain circumstance.
+                    .modal-footer
+                        button.btn.btn-secondary(type='button' data-bs-dismiss='modal') Close
+                        button.btn.btn-primary(type='button') Save 
+        button.btn.btn-outline-info(type='button' data-bs-toggle='modal' data-bs-target='#exampleModalfullscreensm')
+            | Fullscreen below sm
+        // Full screen below sm
+        #exampleModalfullscreensm.modal.fade(tabindex='-1' aria-labelledby='smModalLabel' aria-hidden='true')
+            .modal-dialog.modal-fullscreen-sm-down
+                .modal-content
+                    .modal-header
+                        h5#smModalLabel.modal-title Full screen below sm
+                        button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                    .modal-body.dark-modal
+                        .large-modal-header
+                            +FeatherSprite('chevrons-right', 'feather stroke-primary')
+                            h6 Web design 
+                        p.modal-padding-space We build specialised websites for companies, list them on digital directories, and set up a sales funnel to boost ROI.
+                        div.modal-details
+                            div.web-content
+                                h6 Wed designer
+                                .d-flex
+                                    .flex-shrink-0
+                                        +FeatherSprite('arrow-right-circle', 'feather stroke-primary')
+                                    .flex-grow-1.ms-2
+                                        p
+                                            | For a site to be successful, a designer must be able to communicate their ideas, chat with a firm about what they want, and inquire about the target audience.
+                                .d-flex
+                                    .flex-shrink-0
+                                        +FeatherSprite('arrow-right-circle', 'feather stroke-primary')
+                                    .flex-grow-1.ms-2
+                                        p
+                                            | Most businesses employ a certain font or typography so that clients can quickly distinguish them from their rivals. Since designers now have access to a wider variety of fonts, firms may more easily and precisely communicate their brands through typography.
+                            div.web-content
+                                h6 UX designer 
+                                .d-flex
+                                    .flex-shrink-0
+                                        +FeatherSprite('arrow-right-circle', 'feather stroke-primary')
+                                    .flex-grow-1.ms-2
+                                        p
+                                            | User research, persona creation, building wireframes and interactive prototypes, and testing ideas are among the common tasks of a UX designer. These duties can differ greatly between organizations.
+                                .d-flex
+                                    .flex-shrink-0
+                                        +FeatherSprite('arrow-right-circle', 'feather stroke-primary')
+                                    .flex-grow-1.ms-2
+                                        p
+                                            | Keep in mind that you are creating solutions to particular challenges for a particular population living in a particular habitat. Always remember to correctly contextualise your thoughts and determine whether they are actually appropriate for the situation. It's sometimes necessary to concede that a digital solution is not the most appropriate choice in a certain circumstance.
+                    .modal-footer
+                        button.btn.btn-secondary(type='button' data-bs-dismiss='modal') Close
+                        button.btn.btn-primary(type='button') Save changes              
+        button.btn.btn-outline-success(type='button' data-bs-toggle='modal' data-bs-target='#exampleModalfullscreen-md')
+            | Fullscreen below md
+        // Full screen below md
+        #exampleModalfullscreen-md.modal.fade(tabindex='-1' aria-labelledby='mdModalLabel' aria-hidden='true')
+            .modal-dialog.modal-fullscreen-md-down
+                .modal-content
+                    .modal-header
+                        h5#mdModalLabel.modal-title Full screen below md
+                        button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                    .modal-body.dark-modal
+                        .large-modal-header
+                            +FeatherSprite('chevrons-right', 'feather stroke-primary')
+                            h6 Web design 
+                        p.modal-padding-space We build specialised websites for companies, list them on digital directories, and set up a sales funnel to boost ROI.
+                        div.modal-details
+                            div.web-content
+                                h6 Wed designer
+                                .d-flex
+                                    .flex-shrink-0
+                                        +FeatherSprite('arrow-right-circle', 'feather stroke-primary')
+                                    .flex-grow-1.ms-2
+                                        p
+                                            | For a site to be successful, a designer must be able to communicate their ideas, chat with a firm about what they want, and inquire about the target audience.
+                                .d-flex
+                                    .flex-shrink-0
+                                        +FeatherSprite('arrow-right-circle', 'feather stroke-primary')
+                                    .flex-grow-1.ms-2
+                                        p
+                                            | Most businesses employ a certain font or typography so that clients can quickly distinguish them from their rivals. Since designers now have access to a wider variety of fonts, firms may more easily and precisely communicate their brands through typography.
+                            div.web-content
+                                h6 UX designer 
+                                .d-flex
+                                    .flex-shrink-0
+                                        +FeatherSprite('arrow-right-circle', 'feather stroke-primary')
+                                    .flex-grow-1.ms-2
+                                        p
+                                            | User research, persona creation, building wireframes and interactive prototypes, and testing ideas are among the common tasks of a UX designer. These duties can differ greatly between organizations.
+                                .d-flex
+                                    .flex-shrink-0
+                                        +FeatherSprite('arrow-right-circle', 'feather stroke-primary')
+                                    .flex-grow-1.ms-2
+                                        p
+                                            | Keep in mind that you are creating solutions to particular challenges for a particular population living in a particular habitat. Always remember to correctly contextualise your thoughts and determine whether they are actually appropriate for the situation. It's sometimes necessary to concede that a digital solution is not the most appropriate choice in a certain circumstance.
+                    .modal-footer
+                        button.btn.btn-secondary(type='button' data-bs-dismiss='modal') Close
+                        button.btn.btn-primary(type='button') Save changes              
+        button.btn.btn-outline-warning(type='button' data-bs-toggle='modal' data-bs-target='#exampleModalfullscreen-lg')
+            |Fullscreen below lg
+        // Full screen below lg
+        #exampleModalfullscreen-lg.modal.fade(tabindex='-1' aria-labelledby='lgModalLabel' aria-hidden='true')
+            .modal-dialog.modal-fullscreen-lg-down
+                .modal-content
+                    .modal-header
+                        h5#lgModalLabel.modal-title Full screen below lg
+                        button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                    .modal-body.dark-modal
+                        .large-modal-header
+                            +FeatherSprite('chevrons-right', 'feather stroke-primary')
+                            h6 Web design 
+                        p.modal-padding-space We build specialised websites for companies, list them on digital directories, and set up a sales funnel to boost ROI.
+                        div.modal-details
+                            div.web-content
+                                h6 Wed designer
+                                .d-flex
+                                    .flex-shrink-0
+                                        +FeatherSprite('arrow-right-circle', 'feather stroke-primary')
+                                    .flex-grow-1.ms-2
+                                        p
+                                            | For a site to be successful, a designer must be able to communicate their ideas, chat with a firm about what they want, and inquire about the target audience.
+                                .d-flex
+                                    .flex-shrink-0
+                                        +FeatherSprite('arrow-right-circle', 'feather stroke-primary')
+                                    .flex-grow-1.ms-2
+                                        p
+                                            | Most businesses employ a certain font or typography so that clients can quickly distinguish them from their rivals. Since designers now have access to a wider variety of fonts, firms may more easily and precisely communicate their brands through typography.
+                            div.web-content
+                                h6 UX Designer 
+                                .d-flex
+                                    .flex-shrink-0
+                                        +FeatherSprite('arrow-right-circle', 'feather stroke-primary')
+                                    .flex-grow-1.ms-2
+                                        p
+                                            | User research, persona creation, building wireframes and interactive prototypes, and testing ideas are among the common tasks of a UX designer. These duties can differ greatly between organizations.
+                                .d-flex
+                                    .flex-shrink-0
+                                        +FeatherSprite('arrow-right-circle', 'feather stroke-primary')
+                                    .flex-grow-1.ms-2
+                                        p
+                                            | Keep in mind that you are creating solutions to particular challenges for a particular population living in a particular habitat. Always remember to correctly contextualise your thoughts and determine whether they are actually appropriate for the situation. It's sometimes necessary to concede that a digital solution is not the most appropriate choice in a certain circumstance.
+                    .modal-footer
+                        button.btn.btn-secondary(type='button' data-bs-dismiss='modal') Close
+                        button.btn.btn-primary(type='button') Save changes 
+        button.btn.btn-outline-primary(type='button' data-bs-toggle='modal' data-bs-target='#exampleModalfullscreen-xl')
+            | Fullscreen below xl
+        // Full screen below xl
+        #exampleModalfullscreen-xl.modal.fade(tabindex='-1' aria-labelledby='xlModalLabel' aria-hidden='true')
+            .modal-dialog.modal-fullscreen-xl-down
+                .modal-content
+                    .modal-header
+                        h5#xlModalLabel.modal-title Full screen below xl
+                        button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                    .modal-body.dark-modal
+                        .large-modal-header
+                            +FeatherSprite('chevrons-right', 'feather stroke-primary')
+                            h6 Web design 
+                        p.modal-padding-space We build specialised websites for companies, list them on digital directories, and set up a sales funnel to boost ROI.
+                        div.modal-details
+                            div.web-content
+                                h6 Wed designer
+                                .d-flex
+                                    .flex-shrink-0
+                                        +FeatherSprite('arrow-right-circle', 'feather stroke-primary')
+                                    .flex-grow-1.ms-2
+                                        p
+                                            | For a site to be successful, a designer must be able to communicate their ideas, chat with a firm about what they want, and inquire about the target audience.
+                                .d-flex
+                                    .flex-shrink-0
+                                        +FeatherSprite('arrow-right-circle', 'feather stroke-primary')
+                                    .flex-grow-1.ms-2
+                                        p
+                                            | Most businesses employ a certain font or typography so that clients can quickly distinguish them from their rivals. Since designers now have access to a wider variety of fonts, firms may more easily and precisely communicate their brands through typography.
+                            div.web-content
+                                h6 UX designer 
+                                .d-flex
+                                    .flex-shrink-0
+                                        +FeatherSprite('arrow-right-circle', 'feather stroke-primary')
+                                    .flex-grow-1.ms-2
+                                        p
+                                            | User research, persona creation, building wireframes and interactive prototypes, and testing ideas are among the common tasks of a UX designer. These duties can differ greatly between organizations.
+                                .d-flex
+                                    .flex-shrink-0
+                                        +FeatherSprite('arrow-right-circle', 'feather stroke-primary')
+                                    .flex-grow-1.ms-2
+                                        p
+                                            | Keep in mind that you are creating solutions to particular challenges for a particular population living in a particular habitat. Always remember to correctly contextualise your thoughts and determine whether they are actually appropriate for the situation. It's sometimes necessary to concede that a digital solution is not the most appropriate choice in a certain circumstance.
+                    .modal-footer
+                        button.btn.btn-secondary(type='button' data-bs-dismiss='modal') Close
+                        button.btn.btn-primary(type='button') Save changes        
+        button.btn.btn-outline-danger(type='button' data-bs-toggle='modal' data-bs-target='#exampleModalfullscreen-xxl')
+            | Fullscreen below xxl
+        // Full screen below xxl
+        #exampleModalfullscreen-xxl.modal.fade(tabindex='-1' aria-labelledby='xxlModalLabel' aria-hidden='true')
+            .modal-dialog.modal-fullscreen-xxl-down
+                .modal-content
+                    .modal-header
+                        h5#xxlModalLabel.modal-title.fs-5 Full screen below xxl
+                        button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                    .modal-body.dark-modal
+                        .large-modal-header
+                            +FeatherSprite('chevrons-right', 'feather stroke-primary')
+                            h6 Web design 
+                        p.modal-padding-space We build specialised websites for companies, list them on digital directories, and set up a sales funnel to boost ROI.
+                        div.modal-details
+                            div.web-content
+                                h6 Wed designer
+                                .d-flex
+                                    .flex-shrink-0
+                                        +FeatherSprite('arrow-right-circle', 'feather stroke-primary')
+                                    .flex-grow-1.ms-2
+                                        p
+                                            | For a site to be successful, a designer must be able to communicate their ideas, chat with a firm about what they want, and inquire about the target audience.
+                                .d-flex
+                                    .flex-shrink-0
+                                        +FeatherSprite('arrow-right-circle', 'feather stroke-primary')
+                                    .flex-grow-1.ms-2
+                                        p
+                                            | Most businesses employ a certain font or typography so that clients can quickly distinguish them from their rivals. Since designers now have access to a wider variety of fonts, firms may more easily and precisely communicate their brands through typography.
+                            div.web-content
+                                h6 UX designer 
+                                .d-flex
+                                    .flex-shrink-0
+                                        +FeatherSprite('arrow-right-circle', 'feather stroke-primary')
+                                    .flex-grow-1.ms-2
+                                        p
+                                            | User research, persona creation, building wireframes and interactive prototypes, and testing ideas are among the common tasks of a UX designer. These duties can differ greatly between organizations.
+                                .d-flex
+                                    .flex-shrink-0
+                                        +FeatherSprite('arrow-right-circle', 'feather stroke-primary')
+                                    .flex-grow-1.ms-2
+                                        p
+                                            | Keep in mind that you are creating solutions to particular challenges for a particular population living in a particular habitat. Always remember to correctly contextualise your thoughts and determine whether they are actually appropriate for the situation. It's sometimes necessary to concede that a digital solution is not the most appropriate choice in a certain circumstance.
+                    .modal-footer
+                        button.btn.btn-secondary(type='button' data-bs-dismiss='modal') Close
+                        button.btn.btn-primary(type='button') Save changes                 

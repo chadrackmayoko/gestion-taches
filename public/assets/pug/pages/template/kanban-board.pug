@@ -1,0 +1,32 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+-var jkanban = true;
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    include ../../components/loader 
+    main#pageWrapper.page-wrapper.compact-wrapper
+        include ../../components/header/header
+        .page-body-wrapper
+          include ../../components/sidebar
+          .page-body
+            .container-fluid 
+              +breadcrumb(['Apps','Kanban-board'],'Kanban Board')
+            // Container-fluid starts 
+            .container-fluid.jkanban-container 
+                .row 
+                    .col-12
+                        include ../../components/apps/kanban-board/default-kanban.pug
+                    .col-12   
+                        include ../../components/apps/kanban-board/custom-board.pug
+                    .col-12
+                        include ../../components/apps/kanban-board/api-kanban.pug
+                    .col-12 
+                        include ../../components/apps/kanban-board/kanban-github.pug
+            // Container-fluid starts
+          include ../../components/footer
+    include ../../components/footer-files 

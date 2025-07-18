@@ -1,0 +1,36 @@
+.card.hovercard.text-center
+  .cardheader.socialheader
+  .user-image
+    .avatar
+      img(alt='', src='../assets/images/avatar/1.jpg')
+    .icon-wrapper
+      i.icofont.icofont-pencil-alt-5
+    ul.share-icons
+      li
+        a(href='#').social-icon.bg-primary
+          i(class='fa-regular fa-face-smile')
+      li
+        a(href='#').social-icon.bg-secondary
+          i(class='fa-brands fa-weixin')
+      li
+        a(href='#').social-icon.bg-warning
+          i(class='fa fa-share-alt')
+  .info.market-tabs.p-0
+    ul#top-tab.nav.nav-tabs.border-tab.tabs-scoial(role='tablist')
+      li.nav-item
+        a#top-timeline.nav-link.active(data-bs-toggle='tab', href='#timeline', role='tab', aria-controls='timeline', aria-selected='true')
+          | Timeline
+      li.nav-item
+        a#top-about.nav-link(data-bs-toggle='tab', href='#about', role='tab', aria-controls='about', aria-selected='false')
+          | About
+      li.nav-item
+        .user-designation
+        .title
+          a(target='_blank', href='') ElANA
+        .desc.mt-2 general manager
+      li.nav-item
+        a#top-friends.nav-link(data-bs-toggle='tab', href='#friends', role='tab', aria-controls='friends', aria-selected='false')
+          | Friends
+      li.nav-item
+        a#top-photos.nav-link(data-bs-toggle='tab', href='#photos', role='tab', aria-controls='photos', aria-selected='false')
+          | Photos

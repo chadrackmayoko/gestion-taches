@@ -1,0 +1,32 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+-var height_equal= true;
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    include ../../components/loader
+    main#pageWrapper.page-wrapper.compact-wrapper
+        include ../../components/header/header
+        .page-body-wrapper
+          include ../../components/sidebar
+          .page-body
+            .container-fluid
+              +breadcrumb(['Form Layout','Step Form Wizard'],'Step Form Wizard')
+            // Container-fluid starts
+            .container-fluid
+              .row 
+                  .col-sm-12
+                    include ../../components/forms/step_Form_wizard/custom_horizontal_wizard
+                  .col-sm-12
+                    include ../../components/forms/step_Form_wizard/business_vertical_wizard
+                  .col-sm-12
+                    include ../../components/forms/step_Form_wizard/custom_vertical_wizar
+                  .col-sm-12
+                    include ../../components/forms/step_Form_wizard/business_horizontal_wizard
+            // Container-fluid ends
+          include ../../components/footer
+    include ../../components/footer-files

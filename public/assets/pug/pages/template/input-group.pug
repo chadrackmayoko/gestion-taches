@@ -1,0 +1,46 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    include ../../components/loader
+    main#pageWrapper.page-wrapper.compact-wrapper
+        include ../../components/header/header
+        .page-body-wrapper
+          include ../../components/sidebar
+          .page-body
+            .container-fluid
+              +breadcrumb(['Form Control','Input Groups'],'Input Groups')
+            // Container-Fluid Starts
+            .container-fluid.input-group-page
+              .row
+                .col-md-6
+                  include ../../components/forms/input_group/button_addon.pug
+                .col-md-6 
+                  include ../../components/forms/input_group/custom_forms.pug
+                .col-xl-6 
+                  include ../../components/forms/input_group/custom_file_input.pug
+                .col-xl-6 
+                  include ../../components/forms/input_group/segmented_buttons.pug
+                .col-md-6 
+                  include ../../components/forms/input_group/buttons_with_dropdowns.pug
+                .col-md-6 
+                  include ../../components/forms/input_group/checkboxes_and_radios.pug
+                .col-md-6 
+                  include ../../components/forms/input_group/sizing.pug
+                .col-md-6 
+                  include ../../components/forms/input_group/multiple_inputs.pug
+                .col-xl-6 
+                  include ../../components/forms/input_group/basic_input_groups.pug
+                .col-xl-6 
+                  include ../../components/forms/input_group/variation_of_addons.pug
+
+                       
+
+            // Container-Fluid Ends
+          include ../../components/footer
+    include ../../components/footer-files

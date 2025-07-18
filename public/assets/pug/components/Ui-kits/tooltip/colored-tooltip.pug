@@ -1,0 +1,22 @@
+// Colored Tooltip
+.card 
+    .card-header.pb-0
+        +card-header('Colored Tooltip', 'dote','','Use the', 'btn- *', ' to change background color.')
+    .card-body
+        .common-flex.colored-tooltip
+            button.mb-0.me-0.btn.btn-primary(data-bs-toggle='tooltip' data-bs-placement='top' data-bs-custom-class="custom-tooltip" data-bs-title='Primary Color Tooltip' data-bs-original-title='' title='') Primary
+            button.mb-0.me-0.btn.btn-secondary(data-bs-toggle='tooltip' data-bs-placement='top' data-bs-custom-class="custom-tooltip" data-bs-title='Secondary Color Tooltip' data-bs-original-title='' title='') Secondary
+            button.mb-0.me-0.btn.btn-tertiary(data-bs-toggle='tooltip' data-bs-placement='top' data-bs-custom-class="custom-tooltip" data-bs-title='Tertiary Color Tooltip' data-bs-original-title='' title='') Tertiary
+            button.mb-0.me-0.btn.btn-success(data-bs-toggle='tooltip' data-bs-placement='top' data-bs-custom-class="custom-tooltip" data-bs-title='Success Color Tooltip' data-bs-original-title='' title='') Success
+            button.mb-0.me-0.btn.btn-danger(data-bs-toggle='tooltip' data-bs-placement='top' data-bs-custom-class="custom-tooltip" data-bs-title='Danger Color Tooltip' data-bs-original-title='' title='') Danger
+        .code-box-copy
+            button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#tooltip', title='Copy')
+              i.icofont.icofont-copy
+            pre
+              code.language-html#colored-tooltip
+                | &lt;!--You can use attribute (data-bs-target='tooltip') to  used tooltips.--&gt;
+                | &lt;button class="mb-0 me-0 btn btn-primary" type="button" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Primary"&gt;Primary&lt;/button&gt;
+                | &lt;button class="mb-0 me-0 btn btn-secondary" type=" button" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Secondary"&gt;Secondary&lt;/button&gt;
+                | &lt;button class="mb-0 me-0 btn btn-success" type="button" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Success"&gt;Success&lt;/button&gt;
+                | &lt;button class="mb-0 me-0 btn btn-warning text-black" type="button" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Warning"&gt;Warning&lt;/button&gt;
+                | &lt;button class="mb-0 me-0 btn btn-danger" type="button" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Danger"&gt;Danger&lt;/button&gt;

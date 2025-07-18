@@ -1,0 +1,30 @@
+// Context-pill Card
+.card
+    .card-header.pb-0
+        +card-header('Pills contextual variations', 'dote','','Use the', '.rounded-pill', ' utility class to make badges more rounded.')
+    .card-body
+        .badge-spacing
+            span.badge.badge-primary.rounded-pill Primary
+            span.badge.badge-secondary.rounded-pill Secondary
+            span.badge.badge-tertiary.rounded-pill Tertiary
+            span.badge.badge-success.rounded-pill Success
+            span.badge.badge-info.rounded-pill Info
+            span.badge.badge-warning.rounded-pill Warning
+            span.badge.badge-danger.rounded-pill Danger
+            span.badge.badge-light.text-dark.rounded-pill Light
+            span.badge.badge-dark.tag-pills-sm-mb.rounded-pill Dark
+        .code-box-copy
+            button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#example-head' title='Copy')
+                i.icofont.icofont-copy
+            pre
+                code.language-html#pills-variations
+                    | &lt;!--You can use .rounded-pill class through change the rounded badges (rounded-pill).--&gt;
+                    | &lt;span  class="badge badge-primary rounded-pill"&gt;Primary&lt;/span&gt;
+                    | &lt;span  class="badge badge-secondary rounded-pill"&gt;Secondary&lt;/span&gt;
+                    | &lt;span  class="badge badge-tertiary rounded-pill"&gt;Tertiary&lt;/span&gt;
+                    | &lt;span  class="badge badge-success rounded-pill"&gt;Success&lt;/span&gt;
+                    | &lt;span  class="badge badge-info rounded-pill"&gt;Info&lt;/span&gt;
+                    | &lt;span  class="badge badge-warning rounded-pill"&gt;Warning&lt;/span&gt;
+                    | &lt;span  class="badge badge-danger rounded-pill"&gt;Danger&lt;/span&gt;
+                    | &lt;span  class="badge badge-light text-dark rounded-pill"&gt;Light&lt;/span&gt;
+                    | &lt;span  class="badge badge-dark tag-pills-sm-mb rounded-pill"&gt;Dark&lt;/span&gt;

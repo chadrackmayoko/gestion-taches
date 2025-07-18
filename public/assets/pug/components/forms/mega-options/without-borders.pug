@@ -1,0 +1,27 @@
+.card
+    .card-header.pb-0
+        +card-header('Without borders style', '','', 'By adding', '.plain-style-*.mega-inline-*', 'You can archive this style')
+    .card-body
+        form.mega-inline.plain-style
+            .row
+                .col-sm-6
+                    .card
+                        .d-flex.p-20.pb-0
+                            label.d-block(for='checkbox11')
+                                input#checkbox11.checkbox.checkbox-border-warning.checkbox-warning(type='checkbox' checked='')
+                                | $39
+                            .flex-grow-1
+                                span.badge.badge-warning.pull-right.digits 100 MBPS
+                        span.p-20.pt-0 Plans for 2/4/6 months are offered to new clients.
+                .col-sm-6
+                    .card
+                        .d-flex.p-20.pb-0
+                            label.d-block(for='checkbox22')
+                                input#checkbox22.checkbox.checkbox-border-info.checkbox-info(type='checkbox')
+                                | $50
+                            .flex-grow-1
+                                span.badge.badge-info.pull-right.digits Hired
+                        span.p-20.pt-0 Plans for 2 years projects offered to new clients.
+    .card-footer.text-end
+        button.btn.btn-warning.m-r-15(type='submit') Submit
+        button.btn.bg-light(type='submit') Cancel

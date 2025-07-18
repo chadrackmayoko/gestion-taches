@@ -1,0 +1,22 @@
+.card
+    .card-header.pb-0
+        +card-header('Button addons', '','', 'Multiple add-ons are supported and can be mixed with buttons input versions.')
+
+    .card-body.card-wrapper.input-group-wrapper
+        form.theme-form.row.g-3
+            .input-group
+                button#button-addon1.btn.btn-outline-primary(type='button') $ 25
+                input.form-control(type='text' placeholder='' aria-label='Example text with button addon' aria-describedby='button-addon1')
+            .input-group
+                input.form-control(type='text' placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby='button-addon2')
+                button#button-addon2.btn.btn-outline-primary(type='button') Submit
+            .input-group
+                button.btn.btn-primary(type='button')
+                    span &euro; 
+                button.btn.btn-tertiary(type='button') 0.0114419
+                input.form-control(type='text' placeholder='' aria-label='Example text with two button addons')
+            .input-group
+                input.form-control(type='text' placeholder="Recipient's username" aria-label="Recipient's username with two button addons")
+                button.btn.btn-tertiary(type='button')
+                    span &#x20B9;
+                button.btn.btn-primary(type='button') 500

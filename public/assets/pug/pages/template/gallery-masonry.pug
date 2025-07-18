@@ -1,0 +1,27 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+-var photoswipe = true;
+-var masonry = true
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    include ../../components/loader
+    main#pageWrapper.page-wrapper.compact-wrapper
+      include ../../components/header/header
+      .page-body-wrapper
+        include ../../components/sidebar
+        .page-body
+          .container-fluid
+            +breadcrumb(['Gallery','Masonry Gallery'],'Masonry Gallery')
+          // Container-fluid starts
+          .container-fluid
+            .row 
+              .col-sm-12.box-col-12
+                include ../../components/gallery/masonry-gallery/masonry_gallery
+          // Container-fluid ends
+        include ../../components/footer
+    include ../../components/footer-files

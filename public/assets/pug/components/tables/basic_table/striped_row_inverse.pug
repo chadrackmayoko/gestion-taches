@@ -1,0 +1,33 @@
+.card
+    .card-header
+      +card-header('Striped Row with Inverse Table', '','', 'use a class', '.table-striped', ' to add zebra-striping to any table row within the This styling does not work in IE8 and below as :nth-child CSS selector is not supported.')
+    .card-block.row
+      .col-sm-12.col-lg-12.col-xl-12
+        .table-responsive
+          table.table.table-inverse.table-striped
+            thead
+              tr
+                th(scope='col') Id
+                th(scope='col') Dessert
+                th(scope='col') Calories
+                th(scope='col') Fat
+                th(scope='col') Price
+            tbody
+              tr
+                th(scope='row') 1
+                td KitKat
+                td 518
+                td 26
+                td 20
+              tr
+                th(scope='row') 2
+                td Donut
+                td 452
+                td 25
+                td 80
+              tr
+                th(scope='row') 3
+                td Eclair
+                td 262
+                td 16
+                td 10

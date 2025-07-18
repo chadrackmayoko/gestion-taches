@@ -1,0 +1,21 @@
+.card
+    .row
+      .col-md-6 
+        ul#top-tab.nav.nav-tabs.border-tab(role='tablist')
+          li.nav-item
+            a#top-home-tab.nav-link.active(data-bs-toggle='tab', href='#top-home', role='tab', aria-controls='top-home', aria-selected='true')
+              +FeatherSprite('target', 'feather')
+              | All
+          li.nav-item
+            a#profile-top-tab.nav-link(data-bs-toggle='tab', href='#top-profile', role='tab', aria-controls='top-profile', aria-selected='false')
+              +FeatherSprite('info', 'feather')
+              | Doing
+          li.nav-item
+            a#contact-top-tab.nav-link(data-bs-toggle='tab', href='#top-contact', role='tab', aria-controls='top-contact', aria-selected='false')
+              +FeatherSprite('check-circle', 'feather')
+              | Done
+      .col-md-6.d-md-block.d-none
+          .form-group.mb-0.me-0 
+          a.btn.btn-primary.d-flex.align-items-center(href="projectcreate.html") 
+            +FeatherSprite('plus-square', 'feather') 
+            | Create New Project 

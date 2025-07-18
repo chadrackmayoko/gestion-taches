@@ -1,0 +1,37 @@
+.card 
+    .card-header 
+        h4 Category Overview
+        .dropdown.icon-dropdown
+          button#userdropdown03.btn.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+            i.icon-more-alt
+          .dropdown-menu.dropdown-menu-end(aria-labelledby='userdropdown03')
+            a.dropdown-item(href='#') Weekly
+            a.dropdown-item(href='#') Monthly
+            a.dropdown-item(href='#') Yearly
+    .card-body.category
+        .row 
+            .col-xl-6.col-6
+                ul 
+                    li.d-flex.align-items-center.bg-light.card-hover
+                        .flex-shrink-0 
+                            .circle-dot-primary 
+                                span
+                        .flex-grow-1 
+                            h6.f-w-500 Men & Women  Fashion
+                            span.f-13.font-light 13.5k Products Sold
+                    li.d-flex.align-items-center.bg-light.card-hover
+                        .flex-shrink-0 
+                            .circle-dot-secondary 
+                                span
+                        .flex-grow-1 
+                            h6.f-w-500 Home Furniture
+                            span.f-13.font-light 10.3k Products Sold
+                    li.d-flex.align-items-center.bg-light.card-hover
+                        .flex-shrink-0 
+                            .circle-dot-tertiary 
+                                span
+                        .flex-grow-1 
+                            h6.f-w-500 Mobiles & Computers
+                            span.f-13.font-light 22.4k Products Sold
+            .col-xl-6.col-6 
+                #category.category-chart

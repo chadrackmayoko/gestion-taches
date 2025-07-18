@@ -1,0 +1,24 @@
+// Pagination With Icons Start
+.card
+    .card-header.pb-0
+        +card-header('Pagination With Icons', '','', 'Use an icon or symbol in place of text for some pagination links.', '', '')
+    .card-body
+        nav(aria-label='Page navigation example')
+            ul.pagination.pagination-secondary.pagination-border-secondary
+                li.page-item
+                    a.page-link(href='javascript:void(0)' aria-label='Previous')
+                        span(aria-hidden='true') «
+                li.page-item
+                    a.page-link(href='javascript:void(0)') 1
+                li.page-item
+                    a.page-link(href='javascript:void(0)') 2
+                li.page-item
+                    a.page-link(href='javascript:void(0)') 3
+                li.page-item
+                    a.page-link(href='javascript:void(0)') ...
+                li.page-item
+                    a.page-link(href='javascript:void(0)') 20
+                li.page-item
+                    a.page-link(href='javascript:void(0)' aria-label='Next')
+                        span(aria-hidden='true') »
+// Pagination With Icons End

@@ -1,0 +1,21 @@
+.card 
+    .card-body.discount-product
+        .row 
+            .col-6 
+                h4.discount-title Add Product
+                .main-box.border-primary.mx-auto
+                    +IconlySprite('shopping-bag' , 'svg-w-24 fill-primary')
+                hr
+                .d-flex.align-items-center.justify-content-between
+                    h4.discount-content.font-light.f-w-500 Create a new Product
+                    .bg-light-primary.rounded
+                        +FeatherSprite('plus', 'feather')
+            .col-6
+                h4.discount-title Add Discount
+                .main-box.border-secondary.mx-auto
+                    +IconlySprite('Product-discount' , 'svg-w-24 fill-secondary')
+                hr
+                .d-flex.align-items-center.justify-content-between
+                    h4.discount-content.font-light.f-w-500 Apply a new Discount
+                    .bg-light-secondary.rounded
+                        +FeatherSprite('plus', 'feather')

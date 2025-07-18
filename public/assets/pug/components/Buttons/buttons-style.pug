@@ -1,0 +1,47 @@
+// Buttons Style Start
+.card
+    .card-header.pb-0 
+        h4 Buttons Style
+    .card-body  
+        .row
+            .col-lg-6.col-sm-12
+                #ver-pills-tab1.nav.flex-column.nav-pills.nav-success.card-wrapper.bg-light-primary.rounded-3(role='tablist' aria-orientation='vertical')
+                    a#deafult-buttons-tab.nav-link.active(data-bs-toggle='pill' href='#deafult-buttons' role='tab' aria-controls='deafult-buttons' aria-selected='true') 
+                        .circle-dot-primary 
+                            span
+                        | Default Buttons
+                    a#flat-buttons-tab.nav-link(data-bs-toggle='pill' href='#flat-buttons' role='tab' aria-controls='flat-buttons' aria-selected='false') 
+                        .circle-dot-primary 
+                            span
+                        | Flat Buttons
+                    a#edge-buttons-tab.nav-link(data-bs-toggle='pill' href='#edge-buttons' role='tab' aria-controls='edge-buttons' aria-selected='false') 
+                        .circle-dot-primary 
+                            span
+                        | Edge Buttons
+                    a#raised-buttons-tab.nav-link(data-bs-toggle='pill' href='#raised-buttons' role='tab' aria-controls='raised-buttons' aria-selected='false') 
+                        .circle-dot-primary 
+                            span
+                        | Raised Buttons
+                    a#outline-buttons-tab.nav-link(data-bs-toggle='pill' href='#outline-buttons' role='tab' aria-controls='outline-buttons' aria-selected='false')
+                        .circle-dot-primary 
+                            span 
+                        | Outline Buttons
+                    a#gradient-buttons-tab.nav-link(data-bs-toggle='pill' href='#gradient-buttons' role='tab' aria-controls='gradient-buttons' aria-selected='false') 
+                        .circle-dot-primary 
+                            span
+                        | Gradient Buttons
+            .col-lg-6.col-sm-12
+                #ver-pills-tabContent1.tab-content
+                    #deafult-buttons.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='deafult-buttons-tab')
+                        include ../../components/Buttons/default-buttons
+                    #flat-buttons.tab-pane.fade(role='tabpanel' aria-labelledby='flat-buttons-tab')
+                        include ../../components/Buttons/flat-buttons
+                    #edge-buttons.tab-pane.fade(role='tabpanel' aria-labelledby='edge-buttons-tab')
+                        include ../../components/Buttons/edge-buttons
+                    #raised-buttons.tab-pane.fade(role='tabpanel' aria-labelledby='raised-buttons-tab')
+                        include ../../components/Buttons/raised-buttons  
+                    #outline-buttons.tab-pane.fade(role='tabpanel' aria-labelledby='outline-buttons-tab')
+                        include ../../components/Buttons/outline-buttons
+                    #gradient-buttons.tab-pane.fade(role='tabpanel' aria-labelledby='gradient-buttons-tab')
+                        include ../../components/Buttons/gradient-buttons                          
+// Buttons Style End      

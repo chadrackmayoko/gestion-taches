@@ -1,0 +1,54 @@
+// Color Heading Card
+.card 
+    .card-header.pb-0
+        +card-header('Colored Headings', '','','All HTML headings, ', 'H1 .. H6', 'are available.')
+    .card-body
+        .table-responsive 
+            table.table.mb-0.typography-table
+                thead
+                    tr
+                        th.pt-0 Code
+                        th.pt-0 Heading
+                tbody
+                    tr
+                        td
+                            code &lt;h1&gt;&lt;/h1&gt;
+                        td
+                            h1
+                                span.font-primary.me-1  Heading 1
+                                |  Sub Heading
+                    tr
+                        td
+                            code &lt;h2&gt;&lt;/h2&gt;
+                        td
+                            h2
+                                span.font-secondary.me-1  Heading 1
+                                |  Sub Heading
+                    tr
+                        td
+                            code &lt;h3&gt;&lt;/h3&gt;
+                        td
+                            h3
+                                span.font-tertiary.me-1  Heading 1
+                                |  Sub Heading
+                    tr
+                        td
+                            code &lt;h4&gt;&lt;/h4&gt;
+                        td
+                            h4
+                                span.font-info.me-1  Heading 1
+                                |  Sub Heading
+                    tr
+                        td
+                            code &lt;h5&gt;&lt;/h5&gt;
+                        td
+                            h5
+                                span.font-success.me-1  Heading 1
+                                |  Sub Heading
+                    tr
+                        td.pb-0
+                            code &lt;h6&gt;&lt;/h6&gt;
+                        td.pb-0
+                            h6
+                                span.font-danger.me-1  Heading 1
+                                |  Sub Heading

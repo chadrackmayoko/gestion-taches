@@ -1,0 +1,59 @@
+// Gradient Buttons Start
+//-// Gradient Buttons Data
+-
+    var GRADIENT_BUTTONS =[
+        {
+            title: 'Primary Button',
+            BtnColor: 'btn-primary btn-primary-gradien',
+            tooltip: 'btn btn-primary btn-primary-gradien',
+        },
+        {
+            title: 'Secondary Button',
+            BtnColor: 'btn-secondary btn-secondary-gradien',
+            tooltip: 'btn btn-secondary btn-secondary-gradien',
+        },
+        {
+            title: 'Tertiary Button',
+            BtnColor: 'btn-tertiary btn-tertiary-gradien',
+            tooltip: 'btn btn-tertiary btn-tertiary-gradien',
+        },
+        {
+            title: 'Success Button',
+            BtnColor: 'btn-success btn-success-gradien',
+            tooltip: 'btn btn-success btn-success-gradien',
+        },
+        {
+            title: 'Info Button',
+            BtnColor: 'btn-info btn-info-gradien',
+            tooltip: 'btn btn-info btn-info-gradien',
+        },
+        {
+            title: 'Warning Button',
+            BtnColor: 'btn-warning btn-warning-gradien',
+            tooltip: 'btn btn-warning btn-warning-gradien',
+        },
+        {
+            title: 'Danger Button',
+            BtnColor: 'btn-danger btn-danger-gradien',
+            tooltip: 'btn btn-danger btn-danger-gradien',
+        },
+        {
+            title: 'Light Button',
+            BtnColor: 'font-dark btn-light btn-light-gradien',
+            tooltip: 'btn btn-light btn-light-gradien',
+        },
+        {
+            title: 'Dark Button',
+            BtnColor: 'btn-dark btn-dark-gradien',
+            tooltip: 'btn btn-dark btn-dark-gradien',
+        },
+    ] 
+//- Gradient Buttons Mixin   
+mixin GradientButtons(items)
+    each item in items
+        .text-center.col-12.col-sm-6.col-md-12
+            button.btn.m-1(type='button' data-bs-toggle='tooltip' class=item.BtnColor title=item.tooltip)=item.title
+// Gradient Buttons Menu            
+.btn-showcase.row
+    +GradientButtons(GRADIENT_BUTTONS)
+// Gradient Buttons End      

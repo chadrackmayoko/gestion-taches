@@ -1,0 +1,29 @@
+.card
+    .card-header
+      +card-header('Table head options', '','', 'Similar to tables,use the modifier classes', '.table-[color]-*thead-*', 'appear in any color.')
+    .card-block.row
+      .col-sm-12.col-lg-12.col-xl-12
+        .table-responsive
+          table.table
+            thead.table-dark
+              tr
+                th(scope='col') Id
+                th(scope='col') First Name
+                th(scope='col') Last Name
+                th(scope='col') Username
+            tbody
+              tr
+                th(scope='row') 1
+                td Mark
+                td Otto
+                td @mdo
+              tr
+                th(scope='row') 2
+                td Jacob
+                td Thornton
+                td @fat
+              tr
+                th(scope='row') 3
+                td Larry
+                td the Bird
+                td @twitter

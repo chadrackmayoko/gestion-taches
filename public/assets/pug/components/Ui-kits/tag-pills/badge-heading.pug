@@ -1,0 +1,38 @@
+// Badge Heading Card
+.card 
+    .card-header.pb-0
+        +card-header('Badge headings example', 'dote','','All html headings,', '<h1> .. <h6>', 'are available in .badge tags.')
+    .card-body
+        h1.badge-heading
+            | Badge Heading 1
+            span.badge.badge-primary Latest
+        h2.badge-heading
+            | Badge Heading 2
+            span.badge.badge-secondary Trending
+        h3.badge-heading
+            | Badge Heading 3
+            span.badge.badge-tertiary Checkout
+        h4.badge-heading
+            | Badge Heading 4
+            span.badge.badge-success New
+        h5.badge-heading
+            | Badge Heading 5
+            span.badge.badge-warning Inbox
+        h6.badge-heading
+            | Badge Heading 6
+            span.badge.badge-danger Login
+        p.badge-heading.pb-0.mb-0
+            | Badge Paragraph
+            span.badge.badge-dark Logout
+        .code-box-copy
+            button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#example-head' title='Copy')
+                i.icofont.icofont-copy
+            pre
+                code.language-html#badge-headings
+                    | &lt;!--You can use headings with .badge class.--&gt;
+                    | &lt;h1 class="badge-heading"&gt;Badge Heading 1&lt;span class="badge badge-primary"&gt;Latest&lt;/span&gt;&lt;/h1&gt;
+                    | &lt;h2 class="badge-heading"&gt;Badge Heading 2&lt;span class="badge badge-secondary"&gt;Trending&lt;/span&gt;&lt;/h2&gt;
+                    | &lt;h3 class="badge-heading"&gt;Badge Heading 3&lt;span class="badge badge-success"&gt;Checkout&lt;/span&gt;&lt;/h3&gt;
+                    | &lt;h4 class="badge-heading"&gt;Badge Heading 4&lt;span class="badge badge-warning"&gt;Inbox&lt;/span&gt;&lt;/h4&gt;
+                    | &lt;h5 class="badge-heading"&gt;Badge Heading 5&lt;span class="badge badge-danger"&gt;Login&lt;/span&gt;&lt;/h5&gt;
+                    | &lt;h6 class="badge-heading pb-0"&gt;Badge Heading 6&lt;span class="badge badge-dark"&gt;Logout&lt;/span&gt;&lt;/h6&gt;

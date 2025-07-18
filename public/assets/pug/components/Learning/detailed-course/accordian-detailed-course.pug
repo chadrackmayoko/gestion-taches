@@ -1,0 +1,152 @@
+.md-sidebar
+  a.btn.btn-primary.email-aside-toggle.md-sidebar-toggle Learning filter
+  .md-sidebar-aside.job-sidebar.custom-scrollbar
+    #accordionoc.default-according.style-1.faq-accordion.job-accordion.accordion.accordion-flush
+      .row
+        .col-xl-12
+          .card
+            .card-header
+              h5.mb-0
+                button.accordion-button.btn.btn-link(data-bs-toggle='collapse', data-bs-target='#collapseicon', aria-expanded='true', aria-controls='collapseicon') Find Course
+            #collapseicon.collapse.show(aria-labelledby='collapseicon', data-bs-parent='#accordion')
+              .card-body.filter-cards-view.animate-chk
+                .job-filter
+                  .faq-form
+                    input.form-control(type='text', placeholder='Search..')
+                    i.fa-solid.fa-magnifying-glass.search-icon
+                .checkbox-animated
+                  .learning-header
+                    span.f-w-600 Categories
+                  label.d-block(for='chk-ani')
+                    input#chk-ani.checkbox-primary(type='checkbox')
+                    |                       Accounting
+                  label.d-block(for='chk-ani0')
+                    input#chk-ani0.checkbox-primary(type='checkbox')
+                    |                             Design
+                  label.d-block(for='chk-ani1')
+                    input#chk-ani1.checkbox-primary(type='checkbox')
+                    |                             Development
+                  label.d-block(for='chk-ani2')
+                    input#chk-ani2.checkbox-primary(type='checkbox')
+                    |                             Management
+                .checkbox-animated.mt-0
+                  .learning-header
+                    span.f-w-600 Duration
+                  label.d-block(for='chk-ani6')
+                    input#chk-ani6.checkbox-primary(type='checkbox')
+                    |                             0-50 hours
+                  label.d-block(for='chk-ani7')
+                    input#chk-ani7.checkbox-primary(type='checkbox')
+                    |                             50-100 hours
+                  label.d-block(for='chk-ani8')
+                    input#chk-ani8.checkbox-primary(type='checkbox')
+                    |                             100+ hours
+                .checkbox-animated.mt-0
+                  .learning-header
+                    span.f-w-600 Price
+                  label.d-block(for='edo-ani')
+                    input#edo-ani.radio-primary(type='radio', name='rdo-ani', checked='')
+                    |                             All Courses
+                  label.d-block(for='edo-ani1')
+                    input#edo-ani1.radio-primary(type='radio', name='rdo-ani', checked='')
+                    |                             Paid Courses
+                  label.d-block(for='edo-ani2')
+                    input#edo-ani2.radio-primary(type='radio', name='rdo-ani', checked='')
+                    |                             Free Courses
+                .checkbox-animated.mt-0
+                  .learning-header
+                    span.f-w-600 Status
+                  label.d-block(for='chk-ani3')
+                    input#chk-ani3.checkbox-primary(type='checkbox')
+                    |                             Registration
+                  label.d-block(for='chk-ani4')
+                    input#chk-ani4.checkbox-primary(type='checkbox')
+                    |                             Progress
+                  label.d-block(for='chk-ani5')
+                    input#chk-ani5.checkbox-primary(type='checkbox')
+                    |                             Completed
+                button.btn.btn-primary.text-center(type='button') Filter
+        .col-xl-12
+          .card
+            .card-header
+              h5.mb-0
+                button.accordion-button.btn.btn-link(data-bs-toggle='collapse', data-bs-target='#collapseicon1', aria-expanded='true', aria-controls='collapseicon1') Categories
+            #collapseicon1.collapse.card-body.px-0.show(aria-labelledby='collapseicon1', data-bs-parent='#accordion')
+              .categories
+                .learning-header
+                  span.f-w-600 Design
+                ul
+                  li
+                    a(href='#') UI Design 
+                    span.badge.badge-primary.pull-right 28
+                  li
+                    a(href='#') UX Design 
+                    span.badge.badge-primary.pull-right 35
+                  li
+                    a(href='#') Interface Design 
+                    span.badge.badge-primary.pull-right 17
+                  li
+                    a(href='#') User Experience 
+                    span.badge.badge-primary.pull-right 26
+              .categories.pt-0
+                .learning-header
+                  span.f-w-600 Development
+                ul
+                  li
+                    a(href='#') Frontend Development
+                    span.badge.badge-primary.pull-right 48
+                  li
+                    a(href='#') Backend Development
+                    span.badge.badge-primary.pull-right 19
+        .col-xl-12
+          .card
+            .card-header
+              h5.mb-0
+                button.accordion-button.btn.btn-link(data-bs-toggle='collapse', data-bs-target='#collapseicon2', aria-expanded='true', aria-controls='collapseicon2') Upcoming Courses
+            #collapseicon2.collapse.show(aria-labelledby='collapseicon2', data-bs-parent='#accordion')
+              .upcoming-course.card-body
+                .d-flex
+                  .flex-grow-1
+                    span.f-w-600 UX Development
+                    span.d-block
+                      | Course By 
+                      a.font-primary(href='#')  Development Team
+                    span.d-block
+                      i.fa.fa-star.font-warning
+                      i.fa.fa-star.font-warning
+                      i.fa.fa-star.font-warning
+                      i.fa.fa-star.font-warning
+                      i.fa.fa-star-half-o.font-warning
+                  div
+                    h5.mb-0.font-primary 18
+                    span.d-block Dec
+                .d-flex
+                  .flex-grow-1
+                    span.f-w-600 Business Analyst
+                    span.d-block
+                      | Course By 
+                      a.font-primary(href='#') Analyst Team.
+                    span.d-block
+                      i.fa.fa-star.font-warning
+                      i.fa.fa-star.font-warning
+                      i.fa.fa-star.font-warning
+                      i.fa.fa-star.font-warning
+                      i.fa.fa-star.font-warning
+                  div
+                    h5.mb-0.font-primary 28
+                    span.d-block Dec
+                .d-flex
+                  .flex-grow-1
+                    span.f-w-600 Web Development
+                    span.d-block
+                      | Course By 
+                      a.font-primary(href='#') Designer 
+                    span.d-block
+                      i.fa.fa-star.font-warning
+                      i.fa.fa-star.font-warning
+                      i.fa.fa-star.font-warning
+                      i.fa.fa-star.font-warning
+                      i.fa.fa-star-o.font-warning
+                  div
+                    h5.mb-0.font-primary 5
+                    span.d-block Jan

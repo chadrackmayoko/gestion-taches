@@ -1,0 +1,32 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+-var datamaps        = true;
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    include ../../components/loader
+    main#pageWrapper.page-wrapper.compact-wrapper
+        include ../../components/header/header
+        .page-body-wrapper
+          include ../../components/sidebar
+          .page-body
+            .container-fluid
+              +breadcrumb(['Maps','Data Map'],'Data Map')
+            // Container-fluid starts
+            .container-fluid
+              .row
+                .col-sm-6
+                  include ../../components/maps/datamap/basic-datamap
+                .col-sm-6
+                  include ../../components/maps/datamap/choropleth-datamap
+                .col-sm-12
+                  include ../../components/maps/datamap/bubble-map
+                .col-sm-12
+                  include ../../components/maps/datamap/world-map
+            // Container-fluid ends
+          include ../../components/footer
+    include ../../components/footer-files

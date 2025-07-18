@@ -1,0 +1,45 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+-var swiper = true;
+-var swiper_page = true;
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    include ../../components/loader
+    main#pageWrapper.page-wrapper.compact-wrapper
+        include ../../components/header/header
+        .page-body-wrapper
+          include ../../components/sidebar
+          .page-body
+            .container-fluid
+              +breadcrumb(['Bonus Ui','Slider'],'Slider')
+            // Container-fluid starts
+            .container-fluid
+              .row 
+                .col-xl-6.col-12
+                  include ../../components/Bonus-ui/swiper/default-slide
+                .col-xl-6.col-12
+                  include ../../components/Bonus-ui/swiper/with-controls
+                .col-xl-6.col-12
+                  include ../../components/Bonus-ui/swiper/auto-variant
+                .col-xl-6.col-12
+                  include ../../components/Bonus-ui/swiper/mouse-variant
+                .col-xl-6.col-12
+                  include ../../components/Bonus-ui/swiper/indicators-slide
+                .col-xl-6.col-12
+                  include ../../components/Bonus-ui/swiper/captions-slide
+                .col-xl-6.col-12
+                  include ../../components/Bonus-ui/swiper/cross-fade
+                .col-xl-6.col-12
+                  include ../../components/Bonus-ui/swiper/individual-slide
+                .col-xl-6.col-12
+                  include ../../components/Bonus-ui/swiper/disable-touch
+                .col-xl-6.col-12
+                  include ../../components/Bonus-ui/swiper/dark-variant
+            // Container-fluid ends
+          include ../../components/footer
+    include ../../components/footer-files

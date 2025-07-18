@@ -1,0 +1,72 @@
+.card
+  .card-header.pb-0
+    +card-header('Student validation form', '','', '', '', 'Please make sure fill all the filed before click on next button.')
+  //- .custom-input used as dark mode 
+  .card-body.custom-input
+    form#regForm.form-wizard(action='#', method='POST')
+      .tab.active
+        .row.g-3
+          .col-12
+            label(for='name') Name
+            input#name.form-control(type='text', placeholder='Enter your name', required='required')
+          .col-12
+            label.form-label(for='student-email-wizard') Email
+              span.font-danger *
+            input#student-email-wizard.form-control(type='email' required='' placeholder='edmin@gmail.com')
+          .col-12
+            label.col-sm-12.form-label(for='password-wizard') Password
+              span.font-danger *
+            input#password-wizard.form-control(type='password' placeholder='Enter password' required='')
+          .col-12
+            label.col-sm-12.form-label(for='confirmpassowrd') Confirm Password
+              span.font-danger *
+            input#confirmpassowrd.form-control(type='password' placeholder='Enter confirm password' required='')
+      .tab
+        .row.g-3.avatar-upload
+          .col-12
+            div
+              .avatar-edit
+                input#imageUpload(type="file" accept='.png, .jpg, .jpeg')
+                label(for='imageUpload')
+              .avatar-preview
+                #image
+            h6 Add Profile
+          .col-12
+            label.form-label(for='exampleFormControlInput1') Portfolio URL
+            input#exampleFormControlInput1.form-control(type='url' placeholder='https://edmin')
+          .col-12 
+            label.form-label(for='projectDescription') Project Description
+            textarea#projectDescription.form-control(rows='2')
+      .tab
+        h5.mb-2 Social Links 
+        .row.g-3
+          .col-sm-6
+            label.form-label(for='twitterControlInput') Twitter
+            input#twitterControlInput.form-control(type='url' placeholder='https://twitter.com')
+          .col-sm-6
+            label.form-label(for='githubControlInput') Github
+            input#githubControlInput.form-control(type='url' placeholder='https:/github.com')
+          .col-12 
+            .input-group
+              input#inputGroupFile04.form-control(type='file' aria-describedby='inputGroupFileAddon04' aria-label='Upload') 
+              button#inputGroupFileAddon04.btn.btn-outline-secondary(type='button') Submit
+          .col-12
+            select.form-select(aria-label='Default select example')
+              option(selected='') Positions
+              option(value='1') Web Designer
+              option(value='2') Software Engineer
+              option(value='3') UI/UX Designer 
+              option(value='3') Web Developer
+          .col-12 
+            label.form-label(for='quationsTextarea') Why do you want to take this position?
+            textarea#quationsTextarea.form-control(rows='2')
+      div
+        .text-end.pt-3
+          button#prevBtn.btn.btn-secondary(type='button', onclick='nextPrev(-1)') Previous
+          button#nextBtn.btn.btn-primary(type='button', onclick='nextPrev(1)') Next
+      // Circles which indicates the steps of the form:
+      .text-center
+        span.step
+        span.step
+        span.step
+        span.step

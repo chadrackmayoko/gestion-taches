@@ -1,0 +1,29 @@
+// Toast placement
+.card
+    .card-header.pb-0
+        +card-header('Toast Placement', '','', 'Use the', '.hide , .show', 'class through visible toast form-select through select any positions.')
+    .card-body.toast-rtl.toast-dark
+        form
+            .mb-3
+                select#selectToastPlacement.form-select.mt-2
+                    option(value='' selected='') Select a position...
+                    option(value='top-0 start-0') Top left
+                    option(value='top-0 start-50 translate-middle-x') Top center
+                    option(value='top-0 end-0') Top right
+                    option(value='top-50 start-0 translate-middle-y') Middle left
+                    option(value='top-50 start-50 translate-middle') Middle center
+                    option(value='top-50 end-0 translate-middle-y') Middle right
+                    option(value='bottom-0 start-0') Bottom left
+                    option(value='bottom-0 start-50 translate-middle-x') Bottom center
+                    option(value='bottom-0 end-0') Bottom right
+        .bg-light.position-relative.bd-example-toasts(aria-live='polite' aria-atomic='true')
+            #toastPlacement.toast-container.p-3.position-absolute
+                .toast.toast-fade.show
+                    .toast-header.toast-img
+                        img.rounded.me-2(src='../assets/images/avatar/1.jpg' alt='profile')
+                        strong.me-auto Edmin template
+                        small.d-sm-block.d-none 25 min ago
+                    .toast-body.toast-dark.font-dark
+                        p.toast-content
+                            em.font-danger Attackers
+                            |  on malicious activity may trick you into doing something dangrous like installing software or revealing your personal informations.

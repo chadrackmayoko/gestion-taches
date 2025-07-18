@@ -1,0 +1,31 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+-var height_equal= true;
+-var validation_form= true;
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    include ../../components/loader
+    main#pageWrapper.page-wrapper.compact-wrapper
+        include ../../components/header/header
+        .page-body-wrapper
+          include ../../components/sidebar
+          .page-body
+            .container-fluid
+              +breadcrumb(['Form Controls','Validation Forms'],'Validation Forms')
+            // Container-fluid starts
+            .container-fluid
+              .row 
+                  .col-sm-12
+                    include ../../components/forms/form-validation/tooltip-form-validation
+                  .col-xl-6 
+                    include ../../components/forms/form-validation/browser-defaults
+                  .col-xl-6 
+                    include ../../components/forms/form-validation/validation
+            // Container-fluid ends
+          include ../../components/footer
+    include ../../components/footer-files

@@ -1,0 +1,35 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+-var animate         = true;
+-var aos             = true;
+-var photoswipe = true;
+-var photoswipe_custom = true;  
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    include ../../components/loader
+    main#pageWrapper.page-wrapper.compact-wrapper
+        include ../../components/header/header
+        .page-body-wrapper
+          include ../../components/sidebar
+          .page-body
+            .container-fluid
+              +breadcrumb(['Animation','AOS Animation'],'AOS Animation')
+            // Container-fluid starts
+            .container-fluid
+              .row
+                .col-sm-12
+                  include ../../components/animation/aos-component
+                .col-sm-12
+                  include ../../components/animation/aos-steps
+                .col-sm-6
+                  include ../../components/animation/aos-step2
+                .col-sm-6
+                  include ../../components/animation/aos-step3
+            // Container-fluid ends
+          include ../../components/footer
+    include ../../components/footer-files

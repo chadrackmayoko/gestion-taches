@@ -1,0 +1,53 @@
+// Page header start 
+header.page-header.row
+    .logo-wrapper.d-flex.align-items-center.col-auto
+        a(href="index.html")
+            img.for-light(src="../assets/images/logo/logo.png" alt="logo")
+            img.for-dark(src="../assets/images/logo/dark-logo.png" alt="logo")
+        a.close-btn(href="javascript:void(0)")
+            .toggle-sidebar
+                .line
+                .line
+                .line
+    .page-main-header.col
+        .header-left.d-lg-block.d-none
+            form.search-form.mb-0
+                .input-group
+                    span.input-group-text.pe-0
+                        +IconlySprite('Search', 'search-bg svg-color')
+                    input.form-control(type='search' placeholder='Search anything...')
+        .nav-right
+            ul.header-right
+                li.modes.d-flex
+                    a.dark-mode
+                        +IconlySprite('Moon', 'svg-color')
+                li.serchinput.d-lg-none.d-flex
+                    a.search-mode
+                        +IconlySprite('Search', 'svg-color')
+                    .form-group.search-form
+                        input(type='text' placeholder='Search here...')
+                include ./header-starterkit/notification
+                include ./header-starterkit/bookmark
+                include ./header-starterkit/cart
+                include ./header-starterkit/message
+                li.profile-dropdown.custom-dropdown
+                    div.d-flex.align-items-center
+                        img(src="../assets/images/profile.png" alt="")
+                        .flex-grow-1 
+                            h5 Wade Warren
+                            span UI Designer
+                    .custom-menu.overflow-hidden
+                        ul 
+                            li.d-flex 
+                                +IconlySprite('Profile', 'svg-color')
+                                a.ms-2(href="../template/user-profile.html") Account
+                            li.d-flex 
+                                +IconlySprite('Message', 'svg-color')
+                                a.ms-2(href="../template/letter-box.html") Inbox
+                            li.d-flex 
+                                +IconlySprite('Document', 'svg-color')
+                                a.ms-2(href="../template/to-do.html") Task
+                            li.d-flex 
+                                +IconlySprite('Login', 'svg-color')
+                                a.ms-2(href="../template/login.html") Log Out
+// Page header end

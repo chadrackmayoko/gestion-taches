@@ -1,0 +1,53 @@
+.card
+    .card-header.pb-0
+        H4 Flat Style 
+    .card-body
+        form.form.theme-form.flat-form
+            .row
+                .col
+                    .mb-3
+                        label.form-label(for='email') Email address
+                        input#email.form-control(type='email' placeholder='name@example.com')
+            .row
+                .col
+                    .mb-3
+                        label.form-label(for='pwd') Password
+                        input#pwd.form-control.mb-3(type='password' placeholder='Password')
+                        input#pwdre.form-control(type='password' placeholder='Re Enter Password')
+                    
+            .row
+                .col
+                    .mb-3
+                        label.form-label(for='disable') Disabled
+                        input#disable.form-control(type='text' disabled='' placeholder='Disabled')
+            .row
+                .col
+                    .mb-3
+                        label.form-label(for='select') Example select
+                        select#select.form-select
+                            option 1
+                            option 2
+                            option 3
+                            option 4
+                            option 5
+            .row
+                .col
+                    .mb-3
+                        label.form-label(for='multiselect') Example multiple select
+                        select#multiselect.form-select(multiple='')
+                            option 1
+                            option 2
+                            option 3
+                            option 4
+                            option 5
+            .row
+                .col
+                    .mb-3
+                        label.form-label(for='textarea') Example textarea
+                        textarea#textarea.form-control(rows='3')
+
+            .row
+                .col
+                .text-end
+                    button.btn.btn-primary.me-2.btn-square(type='submit') Submit
+                    input.btn.btn-danger.btn-square(type='reset' value='Cancel')

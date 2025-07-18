@@ -1,0 +1,6 @@
+.card
+  .card-header.pb-0
+    +card-header('Disabled readonly', '','', '', '', 'Use the tagify plugin for readonly option available.')
+  .card-body 
+    form
+      input(name='disabledInput' disabled='' value='tag1, tag 2, another tag')

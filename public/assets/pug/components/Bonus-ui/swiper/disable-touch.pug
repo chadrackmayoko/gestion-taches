@@ -1,0 +1,18 @@
+.card
+  .card-header.pb-0
+    +card-header('Disable Touch Swiping', '','', 'Use the', 'data-bs-touch', 'Carousels support swiping left/right on touchscreen devices to move between slides. This can be disabled using the  attribute.')
+  .card-body
+    #carouselExampleControlsNoTouching.carousel.slide(data-bs-touch='false')
+      .carousel-inner
+        .carousel-item.active
+          img.d-block.w-100(src='../assets/images/slider/4.jpg' alt='drawing-room')
+        .carousel-item
+          img.d-block.w-100(src='../assets/images/slider/8.jpg' alt='drawing-room')
+        .carousel-item
+          img.d-block.w-100(src='../assets/images/slider/6.jpg' alt='drawing-room')
+      button.carousel-control-prev(type='button' data-bs-target='#carouselExampleControlsNoTouching' data-bs-slide='prev')
+        span.carousel-control-prev-icon(aria-hidden='true')
+        span.visually-hidden Previous
+      button.carousel-control-next(type='button' data-bs-target='#carouselExampleControlsNoTouching' data-bs-slide='next')
+        span.carousel-control-next-icon(aria-hidden='true')
+        span.visually-hidden Next

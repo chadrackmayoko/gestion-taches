@@ -1,0 +1,18 @@
+// Active lists
+.card
+    .card-header.pb-0
+        +card-header('Active lists', '','','Use the', '.active , .list-group-item','to indicate the current active lists.')
+    .card-body
+        ul.list-group
+            li.list-group-item.active(aria-current='true')
+                +IconlySprite('right-3', 'svg-w-18 stroke-light me-1 stroke-white') 
+                | UI Kits
+            li.list-group-item
+                +IconlySprite('right-3', 'svg-w-18 stroke-light me-1')
+                | Wow Animations
+            li.list-group-item
+                +IconlySprite('right-3', 'svg-w-18 stroke-light me-1')
+                | Apex Charts
+            li.list-group-item
+                +IconlySprite('right-3', 'svg-w-18 stroke-light me-1')
+                | Starter Kits

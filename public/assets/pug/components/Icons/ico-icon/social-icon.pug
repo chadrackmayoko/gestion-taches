@@ -1,0 +1,133 @@
+//-// Social Icon
+-
+    var ICO_ITEM12 =[
+        { id:'icofont-500px' }
+        , { id:'icofont-aim' }
+        , { id:'icofont-badoo' }
+        , { id:'icofont-baidu-tieba' }
+        , { id:'icofont-bbm-messenger' }
+        , { id:'icofont-bebo' }
+        , { id:'icofont-behance' }
+        , { id:'icofont-blogger' }
+        , { id:'icofont-bootstrap' }
+        , { id:'icofont-brightkite' }
+        , { id:'icofont-cloudapp' }
+        , { id:'icofont-concrete5' }
+        , { id:'icofont-delicious' }
+        , { id:'icofont-designbump' }
+        , { id:'icofont-designfloat' }
+        , { id:'icofont-deviantart' }
+        , { id:'icofont-digg' }
+        , { id:'icofont-dotcms' }
+        , { id:'icofont-dribbble' }
+        , { id:'icofont-dribble' }
+        , { id:'icofont-dropbox' }
+        , { id:'icofont-ebuddy' }
+        , { id:'icofont-ello' }
+        , { id:'icofont-ember' }
+        , { id:'icofont-envato' }
+        , { id:'icofont-evernote' }
+        , { id:'icofont-facebook-messenger' }
+        , { id:'icofont-facebook' }
+        , { id:'icofont-feedburner' }
+        , { id:'icofont-flikr' }
+        , { id:'icofont-folkd' }
+        , { id:'icofont-foursquare' }
+        , { id:'icofont-friendfeed' }
+        , { id:'icofont-ghost' }
+        , { id:'icofont-github' }
+        , { id:'icofont-gnome' }
+        , { id:'icofont-google-buzz' }
+        , { id:'icofont-google-hangouts' }
+        , { id:'icofont-google-map' }
+        , { id:'icofont-google-plus' }
+        , { id:'icofont-google-talk' }
+        , { id:'icofont-hype-machine' }
+        , { id:'icofont-instagram' }
+        , { id:'icofont-kakaotalk' }
+        , { id:'icofont-kickstarter' }
+        , { id:'icofont-kik' }
+        , { id:'icofont-kiwibox' }
+        , { id:'icofont-line-messenger' }
+        , { id:'icofont-line' }
+        , { id:'icofont-linkedin' }
+        , { id:'icofont-linux-mint' }
+        , { id:'icofont-live-messenger' }
+        , { id:'icofont-livejournal' }
+        , { id:'icofont-magento' }
+        , { id:'icofont-meetme' }
+        , { id:'icofont-meetup' }
+        , { id:'icofont-mixx' }
+        , { id:'icofont-newsvine' }
+        , { id:'icofont-nimbuss' }
+        , { id:'icofont-odnoklassniki' }
+        , { id:'icofont-opencart' }
+        , { id:'icofont-oscommerce' }
+        , { id:'icofont-pandora' }
+        , { id:'icofont-photobucket' }
+        , { id:'icofont-picasa' }
+        , { id:'icofont-pinterest' }
+        , { id:'icofont-prestashop' }
+        , { id:'icofont-qik' }
+        , { id:'icofont-qq' }
+        , { id:'icofont-readernaut' }
+        , { id:'icofont-reddit' }
+        , { id:'icofont-renren' }
+        , { id:'icofont-rss' }
+        , { id:'icofont-shopify' }
+        , { id:'icofont-silverstripe' }
+        , { id:'icofont-skype' }
+        , { id:'icofont-slack' }
+        , { id:'icofont-slashdot' }
+        , { id:'icofont-slidshare' }
+        , { id:'icofont-smugmug' }
+        , { id:'icofont-snapchat' }
+        , { id:'icofont-soundcloud' }
+        , { id:'icofont-spotify' }
+        , { id:'icofont-stack-exchange' }
+        , { id:'icofont-stack-overflow' }
+        , { id:'icofont-steam' }
+        , { id:'icofont-stumbleupon' }
+        , { id:'icofont-tagged' }
+        , { id:'icofont-technorati' }
+        , { id:'icofont-telegram' }
+        , { id:'icofont-tinder' }
+        , { id:'icofont-trello' }
+        , { id:'icofont-tumblr' }
+        , { id:'icofont-twitch' }
+        , { id:'icofont-twitter' }
+        , { id:'icofont-typo3' }
+        , { id:'icofont-ubercart' }
+        , { id:'icofont-viber' }
+        , { id:'icofont-viddler' }
+        , { id:'icofont-vimeo' }
+        , { id:'icofont-vine' }
+        , { id:'icofont-virb' }
+        , { id:'icofont-virtuemart' }
+        , { id:'icofont-vk' }
+        , { id:'icofont-wechat' }
+        , { id:'icofont-weibo' }
+        , { id:'icofont-whatsapp' }
+        , { id:'icofont-xing' }
+        , { id:'icofont-yahoo' }
+        , { id:'icofont-yelp' }
+        , { id:'icofont-youku' }
+        , { id:'icofont-youtube' }
+        , { id:'icofont-zencart' }
+
+    ]
+//-// Ico icon mixin
+mixin IcoContent(items)
+    each item in items 
+        .col-xxl-2.col-lg-3.col-sm-4
+            .card.d-flex.align-items-center.flex-column.default-border
+                i.icofont(class=item.id)
+                .flex-grow-1
+                    h6=item.id
+// Ico icon
+.card
+    .card-header.pb-0.d-flex.justify-content-between.align-items-center
+        h4 Social Icon
+    .card-body
+        .row.icon-event.iconly-icons.icon-lists
+            +IcoContent(ICO_ITEM12)

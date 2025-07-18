@@ -1,0 +1,139 @@
+//-// Schedule items 
+-
+    var SCHEDULE_ITEM =[
+        {
+            dotClass: 'b-l-primary',
+            url: '../assets/images/avatar/11.jpg',
+            message: 'Mobile Application Release',
+            name: 'Hannah',
+            time: '10:00 to 10:20 am',
+        },
+        {
+            dotClass: 'b-l-secondary',
+            url: '../assets/images/avatar/1.jpg',
+            message: 'General Meeting',
+            name: 'Madeleine Lisa',
+            time: '12:00 to 01:45 am',
+        },
+        {
+            dotClass: 'b-l-tertiary',
+            url: '../assets/images/avatar/3.jpg',
+            message: 'Client Visit',
+            name: 'Hemmings Edmunds',
+            time: '06:00 to 11:30 am',
+        },
+    ]
+    // schedule tab 2
+    var SCHEDULE_ITEM2 =[
+        {
+            dotClass: 'b-l-info',
+            url: '../assets/images/avatar/2.jpg',
+            message: 'What`s the project report update?',
+            name: 'Loie Fenter',
+            time: '12:00 to 02:20 am',
+        },
+        {
+            dotClass: 'b-l-success',
+            url: '../assets/images/avatar/4.jpg',
+            message: 'James created changelog page',
+            name: 'Anna Catmire',
+            time: '04:00 to 08:20 am',
+        },
+    ]
+    // schedule tab 2
+    var SCHEDULE_ITEM3 =[
+        {
+            dotClass: 'b-l-danger',
+            url: '../assets/images/avatar/5.jpg',
+            message: 'Dima phizeg edited ACME 2.4',
+            name: 'Susan Connor',
+            time: '09:00 to 02:20 am',
+        },
+        {
+            dotClass: 'b-l-dark',
+            url: '../assets/images/avatar/6.jpg',
+            message: 'Complete the medical ui system idea.',
+            name: 'Jeff Johnson',
+            time: '10:00 to 01:45 am',
+        },
+        {
+            dotClass: 'b-l-warning',
+            url: '../assets/images/avatar/9.jpg',
+            message: 'Make a new landing page.',
+            name: 'Roger Lum',
+            time: '04:00 to 10:30 am',
+        },
+    ]
+
+//-// mixin Schedule
+mixin Schedule(items)
+    each item in items
+        li.d-flex.align-items-center(class=item.dotClass)
+            .flex-grow-1 
+                span=item.time
+                h5=item.message
+                h6=item.name
+            .flex-shrink-0 
+                img.img-40.b-r-10(src=item.url alt="")
+
+// Schedule menu
+.card.schedule-card
+    .card-header.pb-0
+        h4.mb-2 Schedule Time
+        .dropdown.icon-dropdown
+          button#userdropdown8.btn.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+            i.icon-more-alt
+          .dropdown-menu.dropdown-menu-end(aria-labelledby='userdropdown8')
+            a.dropdown-item(href='#') Weekly
+            a.dropdown-item(href='#') Monthly
+            a.dropdown-item(href='#') Yearly
+    .card-body.pt-0
+        .d-flex.justify-content-between.mb-3
+            h5 Aug 2024
+            .d-flex.align-items-center.gap-2.monthly-time
+                h5.font-light Month 
+                h5.font-light Year
+        ul#myTab.schedule-wrapper.nav.nav-tabs(role='tablist')
+            li.nav-item
+                a#mon-tab.nav-link.active(data-bs-toggle='tab' href='#mon' role='tab' aria-controls='mon' aria-selected='false')
+                    span Mo 
+                    h6 01
+            li.nav-item
+                a#tue-tab.nav-link(data-bs-toggle='tab' href='#tue' role='tab' aria-controls='tue' aria-selected='true')
+                    span Tu 
+                    h6 02
+            li.nav-item
+                a#wed-tab.nav-link(data-bs-toggle='tab' href='#wed' role='tab' aria-controls='wed' aria-selected='false')
+                    span We 
+                    h6 03
+            li.nav-item
+                a#thu-tab.nav-link(data-bs-toggle='tab' href='#thu' role='tab' aria-controls='thu' aria-selected='false')
+                    span Th 
+                    h6 04
+            li.nav-item
+                a#frd-tab.nav-link(data-bs-toggle='tab' href='#frd' role='tab' aria-controls='frd' aria-selected='true')
+                    span Fr 
+                    h6 05
+            li.nav-item
+                a#sat-tab.nav-link.font-primary(data-bs-toggle='tab' href='#sat' role='tab' aria-controls='sat' aria-selected='false')
+                    span Sa 
+                    h6 06
+        #myTabContent.tab-content
+            #mon.tab-pane.fade.active.show(role='tabpanel' aria-labelledby='mon-tab')
+                ul.activity-update
+                    +Schedule(SCHEDULE_ITEM)
+            #tue.tab-pane.fade(role='tabpanel' aria-labelledby='tue-tab')
+                ul.activity-update
+                    +Schedule(SCHEDULE_ITEM2)
+            #wed.tab-pane.fade(role='tabpanel' aria-labelledby='wed-tab')
+                ul.activity-update
+                    +Schedule(SCHEDULE_ITEM3)
+            #thu.tab-pane.fade(role='tabpanel' aria-labelledby='thu-tab')
+                ul.activity-update
+                    +Schedule(SCHEDULE_ITEM)
+            #frd.tab-pane.fade(role='tabpanel' aria-labelledby='frd-tab')
+                ul.activity-update
+                    +Schedule(SCHEDULE_ITEM2)
+            #sat.tab-pane.fade(role='tabpanel' aria-labelledby='sat-tab')
+                ul.activity-update
+                    +Schedule(SCHEDULE_ITEM3)

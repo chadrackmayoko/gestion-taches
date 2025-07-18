@@ -1,0 +1,97 @@
+//-// Top Selling Products
+-
+    var SELLINGPRODUCT_ITEM =[
+        {
+            url: '../assets/images/dashboard2/order/watch.png',
+            id: '#787669',
+            price: '$30.00',
+            bgClass: 'btn-light-primary',
+            btnValue: 'Done',
+            title: 'Mi Watch Revolve',
+            mail: 'Zahid@gmail.com',
+            date: '10 April 2024',
+            type: '2637',
+        },
+        {
+            url: '../assets/images/dashboard2/order/flower.png',
+            id: '#749U8F',
+            price: '$20.00',
+            bgClass: 'btn-light-tertiary',
+            btnValue: 'Pending',
+            title: 'Tree Stylish Pot',
+            mail: 'Anna12@gmail.com',
+            date: '16 June 2024',
+            type: '6237',
+        },
+        {
+            url: '../assets/images/dashboard2/order/bench.png',
+            id: '#509478',
+            price: '$12.00',
+            bgClass: 'btn-light-primary',
+            btnValue: 'Done',
+            title: 'Wood Chair Dark',
+            mail: 'Laura@gmail.com',
+            date: '23 May 2024',
+            type: '3237',
+        },
+        {
+            url: '../assets/images/dashboard2/order/shoes.png',
+            id: '#738445',
+            price: '$62.00',
+            bgClass: 'btn-light-tertiary',
+            btnValue: 'Pending',
+            title: 'Sneakers For Men',
+            mail: 'Rache87@gmail.com',
+            date: '12 April 2024',
+            type: '3746',
+        }
+    ]
+
+//-// Invoice mixin
+mixin SellingContent(items)
+    each item in items 
+        tr
+            td
+                input.form-check-input(type="checkbox")
+            td
+                .d-flex.align-items-center.gap-2
+                    .flex-shrink-0
+                        img.img-30.b-r-10(src=item.url, alt="")
+                    .flex-grow-1 
+                        a(href="product.html") 
+                            h6.f-w-500=item.title
+                            span.font-light.f-w-400.f-13=item.date
+            td=item.id
+            td
+                span.font-light=item.mail
+            td=item.type
+            td=item.price
+            td 
+                button.btn.edge-btn.f-13.w-100(class=item.bgClass)=item.btnValue
+
+// Invoice menu
+.card
+    .card-header.pb-0
+        h4 Top Selling Products
+        .dropdown.icon-dropdown
+          button#userdropdown08.btn.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+            i.icon-more-alt
+          .dropdown-menu.dropdown-menu-end(aria-labelledby='userdropdown08')
+            a.dropdown-item(href='#') Weekly
+            a.dropdown-item(href='#') Monthly
+            a.dropdown-item(href='#') Yearly
+    .card-body.selling-table.checkbox-checked
+        .table-responsive 
+            table.table#sell-product
+                thead 
+                    tr 
+                        th.form-check
+                            input.form-check-input(type="checkbox")
+                        th Product Name
+                        th Order Id
+                        th Email
+                        th Stock
+                        th Amount 
+                        th Payment
+                tbody 
+                    +SellingContent(SELLINGPRODUCT_ITEM)

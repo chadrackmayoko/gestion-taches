@@ -1,0 +1,14 @@
+.card
+  .card-header.pb-0
+    +card-header('Clipboard on text input', '','', '', '', '')
+  .card-body
+    .clipboaard-container
+      p.f-16 Cut/copy from text input
+      input#clipboardExample1.form-control(type='text', placeholder='type some text to copy / cut')
+      .mt-3.text-end
+        button.btn.btn-primary.btn-clipboard(type='button', data-clipboard-action='copy', data-clipboard-target='#clipboardExample1')
+          i.fa.fa-copy
+          |  Copy
+        button.btn.btn-secondary.btn-clipboard-cut(type='button', data-clipboard-action='cut', data-clipboard-target='#clipboardExample1')
+          i.fa.fa-cut
+          |  Cut

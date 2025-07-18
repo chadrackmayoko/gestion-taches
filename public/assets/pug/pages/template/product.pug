@@ -1,0 +1,41 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+-var swiper                 = true;
+-var product_miniswiper     = true;
+-var range_slider           = true;
+-var product_tab            = true;
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    include ../../components/loader
+    main#pageWrapper.page-wrapper.compact-wrapper
+        include ../../components/header/header
+        .page-body-wrapper
+          include ../../components/sidebar
+          .page-body
+            .container-fluid
+              +breadcrumb(['ECommerce','Product'],'Product')
+            // Container-fluid starts
+            .container-fluid.product-wrapper
+              .product-grid
+                .feature-products
+                  .row
+                    .col-md-6.products-total
+                        include ../../components/Ecommerce/product/grid-line-product
+                    .col-md-6.text-sm-end
+                        include ../../components/Ecommerce/product/grid-details-product
+                  .row
+                    .col-sm-3
+                        include ../../components/Ecommerce/product/grid-filter-product
+                    .col-md-9.col-sm-12
+                        include ../../components/Ecommerce/product/grid-search-product
+                .product-wrapper-grid
+                  .row.list-collection
+                    include ../../components/Ecommerce/product/product-component            
+            // Container-fluid ends
+          include ../../components/footer
+    include ../../components/footer-files

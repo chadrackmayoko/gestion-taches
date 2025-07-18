@@ -1,0 +1,70 @@
+//-// Task items 
+-
+    var LIST_TASK =[
+        {
+            checkClass: 'checkbox-secondary',
+            taskName: 'so powerfully and metaphysically',
+            checked: false,
+            bgClass: 'btn-light-primary',
+            btnValue: 'Today',
+            checkid: "solid5"
+        },
+        {
+            checkClass: 'checkbox-primary',
+            taskName: 'Create a website page using a prototype.',
+            checked: true,
+            bgClass: 'btn-light-primary',
+            btnValue: 'Today',
+            checkid: "solid4"
+        },
+        {
+            checkClass: 'checkbox-tertiary',
+            taskName: 'Create a new landing page.',
+            checked: false,
+            bgClass: 'btn-light-secondary',
+            btnValue: '3 Days',
+            checkid: "solid3"
+        },
+        {
+            checkClass: 'checkbox-primary',
+            taskName: 'Complete the medical ui system idea.',
+            checked: false,
+            bgClass: 'btn-light-secondary',
+            btnValue: '3 Days',
+            checkid: "solid2"
+        },
+        {
+            checkClass: 'checkbox-secondary',
+            taskName: 'Make a new landing page.',
+            checked: false,
+            bgClass: 'btn-light-secondary',
+            btnValue: '3 Days',
+            checkid: "solid1"
+        }
+    ]
+//-// Mixin
+mixin ListContent(items)
+    each item in items
+        li.list-item
+            .d-flex.align-items-center
+                .form-check.checkbox.checkbox-solid-primary
+                  input.form-check-input(type='checkbox' checked=item.checked id=item.checkid)
+                  label.form-check-label(for=`${item.checkid}`)
+                h5.f-w-500=item.taskName
+            div
+                button.btn.edge-btn.f-12.w-100(class=item.bgClass)=item.btnValue
+            
+// Task menu
+.card.list-card
+  .card-header.pb-0
+    h4 To-do list
+    .dropdown.icon-dropdown
+      button#userdropdown05.btn.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+        i.icon-more-alt
+      .dropdown-menu.dropdown-menu-end(aria-labelledby='userdropdown05')
+        a.dropdown-item(href='#') Weekly
+        a.dropdown-item(href='#') Monthly
+        a.dropdown-item(href='#') Yearly
+  .card-body
+    ul 
+        +ListContent(LIST_TASK)

@@ -1,0 +1,19 @@
+// icons breadcrumb start
+
+.card 
+    .card-header.pb-0
+        +card-header('With Icons Breadcrumb', '','', 'You can set breadcrumb using', ' .breadcrumb ', 'class.')
+    .card-body
+        ol.breadcrumb.bg-white.p-l-0.mb-3
+            li.breadcrumb-item
+                a(href="javascript:void(0)")
+                    +IconlySprite('Home' , 'home-icon') 
+            li.breadcrumb-item.active Bonus Ui
+        ol.breadcrumb.bg-white.m-b-0.p-b-0.p-l-0
+            li.breadcrumb-item
+                a(href="javascript:void(0)")
+                    +IconlySprite('Home' , 'home-icon') 
+            li.breadcrumb-item Bonus Ui
+            li.breadcrumb-item.active Breadcrumb
+
+// icons breadcrumb End

@@ -1,0 +1,96 @@
+// With icons accordion
+.card
+    .card-header.pb-0
+        +card-header('With icons accordion', 'dote','','Use the', '.accordion , .icons-accordion',' through change plus icons accordion.')
+    .card-body.accordion-border.icons-accordion
+        #accordionPanelsStayOpenExample.accordion
+            .accordion-item
+                h2#panelsStayOpen-headingOne.accordion-header
+                    button.accordion-button.collapsed.gap-2.accordion-light-secondary(type='button' data-bs-toggle='collapse' data-bs-target='#panelsStayOpen-collapseOne' aria-expanded='true' aria-controls='panelsStayOpen-collapseOne')
+                        +IconlySprite('Bell','svg-color stroke-secondary') 
+                        | Keep in touch
+                #panelsStayOpen-collapseOne.accordion-collapse.collapse.show(aria-labelledby='panelsStayOpen-headingOne')
+                    .accordion-body
+                        p
+                            em.font-danger
+                            | &quot; This page might not behave as expected because Windows Internet Explorer isn&apos;t configured to load unsigned ActiveX controls.&quot;
+                            |  or &quot;Allow this page to install an unsigned ActiveX Control? Doing so from untrusted sources may harm your computer.&quot; (Both phrased as conditions that may cause future problems.)
+            .accordion-item
+                h2#panelsStayOpen-headingTwo.accordion-header
+                    button.accordion-button.collapsed.gap-2.accordion-light-secondary(type='button' data-bs-toggle='collapse' data-bs-target='#panelsStayOpen-collapseTwo' aria-expanded='false' aria-controls='panelsStayOpen-collapseTwo')
+                        +IconlySprite('Message','svg-color stroke-secondary')
+                        | Chats with others
+                #panelsStayOpen-collapseTwo.accordion-collapse.collapse(aria-labelledby='panelsStayOpen-headingTwo')
+                    .accordion-body
+                        ul.d-flex.flex-column.gap-2.accordions-content
+                            li
+                                | You get the same features in Chat and Chat in Gmail, but the integrated Gmail experience provides a central location to communicate with friends, family, or coworkers between emails.
+                            li
+                                strong Chat:
+                                |  Use when you prefer a dedicated chat experience and don&apos;t mind switching between different apps.
+            .accordion-item
+                h2#panelsStayOpen-headingThree.accordion-header
+                    button.accordion-button.collapsed.gap-2.accordion-light-secondary(type='button' data-bs-toggle='collapse' data-bs-target='#panelsStayOpen-collapseThree' aria-expanded='false' aria-controls='panelsStayOpen-collapseThree')
+                        +IconlySprite('Tick-square','svg-color stroke-secondary') 
+                        | Right way to code 
+                #panelsStayOpen-collapseThree.accordion-collapse.collapse(aria-labelledby='panelsStayOpen-headingThree')
+                    .accordion-body
+                        ul.d-flex.flex-column.gap-2.accordions-content
+                            li 1 Decide on the indentation and keep it that way.
+                            li 2 Make comments.
+                            li 3 Consistent name scheme.
+                            li 4 Don&apos;t repeat code.
+                            li 5 Avoid writing long code lines.
+                            li 6 Break down a big task into smaller chunks.
+                            li 7 Organize your program into smaller files.
+                            li 8 Write clever code that is also readable.
+        .code-box-copy
+            button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#tooltip', title='Copy')
+              i.icofont.icofont-copy
+            pre
+              code.language-html#icons-according
+                | &lt;!--You can use .accordion-collapse with .show class then show accordions.--&gt;  
+                | &lt;div class="accordion dark-accordion" id="accordionPanelsStayOpenExample"&gt;
+                | &lt;div class="accordion-item"&gt;
+                | &lt;h2 class="accordion-header" id="panelsStayOpen-headingOne"&gt;
+                | &lt;button class="accordion-button collapsed gap-2 accordion-light-secondary active txt-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne"&gt;&lt;i class="svg-wrapper" data-feather="bell"&gt;&lt;/i&gt;Keep in touch&lt;i class="svg-color" data-feather="chevron-down"&gt;&lt;/i&gt;&lt;/button&gt;
+                | &lt;/h2&gt;
+                | &lt;div class="accordion-collapse collapse" id="panelsStayOpen-collapseOne" aria-labelledby="panelsStayOpen-headingOne"&gt;
+                | &lt;div class="accordion-body"&gt;
+                | &lt;p&gt; &lt;em class="txt-danger"&gt; " This page might not behave as expected because Windows Internet Explorer isn't configured to load unsigned ActiveX controls."&lt;/em&gt; or "Allow this page to install an unsigned ActiveX Control? Doing so from untrusted sources may harm your computer." (Both phrased as conditions that may cause future problems.)&lt;/p&gt;
+                | &lt;/div&gt;
+                | &lt;/div&gt;
+                | &lt;/div&gt;
+                | &lt;div class="accordion-item"&gt;
+                | &lt;h2 class="accordion-header" id="panelsStayOpen-headingTwo"&gt;
+                | &lt;button class="accordion-button collapsed gap-2 accordion-light-secondary active txt-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo"&gt;&lt;i class="svg-wrapper" data-feather="message-circle"&gt;&lt;/i&gt;Chats with others&lt;i class="svg-color" data-feather="chevron-down"&gt;&lt;/i&gt;&lt;/button&gt;
+                | &lt;/h2&gt;
+                | &lt;div class="accordion-collapse collapse" id="panelsStayOpen-collapseTwo" aria-labelledby="panelsStayOpen-headingTwo"&gt;
+                | &lt;div class="accordion-body"&gt;
+                | &lt;ul class="d-flex flex-column gap-2 accordions-content"&gt;
+                | &lt;li&gt;You get the same features in Chat and Chat in Gmail, but the integrated Gmail experience provides a central location to communicate with friends, family, or coworkers between emails.&lt;/li&gt;
+                | &lt;li&gt; &lt;strong&gt;Chat:&lt;/strong&gt; Use when you prefer a dedicated chat experience and don't mind switching between different apps.&lt;/li&gt;
+                | &lt;/ul&gt;
+                | &lt;/div&gt;
+                | &lt;/div&gt;
+                | &lt;/div&gt;
+                | &lt;div class="accordion-item"&gt;
+                | &lt;h2 class="accordion-header" id="panelsStayOpen-headingThree"&gt;
+                | &lt;button class="accordion-button collapsed gap-2 accordion-light-secondary active txt-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree"&gt;&lt;i class="svg-wrapper" data-feather="check-square"&gt;&lt;/i&gt;Right way to code &lt;i class="svg-color" data-feather="chevron-down"&gt;&lt;/i&gt;&lt;/button&gt;
+                | &lt;/h2&gt;
+                | &lt;div class="accordion-collapse collapse" id="panelsStayOpen-collapseThree" aria-labelledby="panelsStayOpen-headingThree"&gt;
+                | &lt;div class="accordion-body"&gt;
+                | &lt;ul class="d-flex flex-column gap-2 accordions-content"&gt;
+                | &lt;li&gt;1) Decide on the indentation and keep it that way.&lt;/li&gt;
+                | &lt;li&gt;2) Make comments.&lt;/li&gt;
+                | &lt;li&gt;3) Consistent name scheme.&lt;/li&gt;
+                | &lt;li&gt;4) Don't repeat code.&lt;/li&gt;
+                | &lt;li&gt;5) Avoid writing long code lines.&lt;/li&gt;
+                | &lt;li&gt;6) Break down a big task into smaller chunks.&lt;/li&gt;
+                | &lt;li&gt;7) Organize your program into smaller files.&lt;/li&gt;
+                | &lt;li&gt;8) Write clever code that is also readable.&lt;/li&gt;
+                | &lt;/ul&gt;
+                | &lt;/div&gt;
+                | &lt;/div&gt;
+                | &lt;/div&gt;
+                | &lt;/div&gt;

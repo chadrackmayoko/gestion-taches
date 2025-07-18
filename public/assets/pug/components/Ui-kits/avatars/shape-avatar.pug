@@ -1,0 +1,53 @@
+//-// Shape Avatar
+-
+    var SHAPE_AVATAR =[
+        {
+            src: 'avatar/4.jpg',
+            imgClass: 'img-100 b-r-0',
+        },
+        {
+            src: 'avatar/5.jpg',
+            imgClass: 'img-90 b-r-20',
+        },
+        {
+            src: 'avatar/6.jpg',
+            imgClass: 'img-80 b-r-30',
+        },
+        {
+            src: 'avatar/7.jpg',
+            imgClass: 'img-70 b-r-40',
+        }
+    ]
+
+//-// Shape Avatar mixin
+mixin ShapeAvatar(items)
+    each item in items 
+        div.avatar
+            img(class=item.imgClass , src=`../assets/images/${item.src}`, alt='#') 
+
+// Shape Avatar
+.card 
+    .card-header.pb-0
+        +card-header('Shapes', 'dote','', 'Using','.b-r-* (0/20/30/40)', 'class you can set shape of avatar.')
+    .card-body
+        .avatar-showcase
+            .avatars
+                +ShapeAvatar(SHAPE_AVATAR)
+        .code-box-copy
+          button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#example-head' title='Copy')
+            i.icofont.icofont-copy
+          pre
+            code.language-html#avatar-shapes
+              |&lt;!-- Give the shape to avatar using .b-r-* class. (15/25/30/35). --&gt;
+              |&lt;div class="avatar"&gt;
+              |&lt;img class="img-100 b-r-8" src="../assets/images/avatar/4.jpg" alt="#"&gt;
+              |&lt;/div&gt;
+              |&lt;div class="avatar"&gt;
+              |&lt;img class="img-90 b-r-30" src="../assets/images/avatar/5.jpg" alt="#"&gt;
+              |&lt;/div&gt;
+              |&lt;div class="avatar"&gt;
+              |&lt;img class="img-80 b-r-35" src="../assets/images/avatar/6.jpg" alt="#"&gt;
+              |&lt;/div&gt;
+              |&lt;div class="avatar"&gt;
+              |&lt;img class="img-70 rounded-circle" src="../assets/images/avatar/7.jpg" alt="#"&gt;
+              |&lt;/div&gt;

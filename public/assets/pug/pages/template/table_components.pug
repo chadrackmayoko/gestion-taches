@@ -1,0 +1,44 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+-var height_equal = true;
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    include ../../components/loader
+    main#pageWrapper.page-wrapper.compact-wrapper
+        include ../../components/header/header
+        .page-body-wrapper
+          include ../../components/sidebar
+          .page-body
+            .container-fluid
+              +breadcrumb(['Bootstrap Tables','Table Components'],'Table Components')
+            // Container-fluid starts
+            .container-fluid
+                .row
+                    .col-sm-12
+                        include ../../components/tables/Table_components/ui_components
+                    .col-sm-12
+                        include ../../components/tables/Table_components/alerts_components
+                    .col-sm-12
+                        include ../../components/tables/Table_components/progressbar_components
+                    .col-sm-12  
+                        include ../../components/tables/Table_components/checkbox_components
+                    .col-sm-12
+                        include ../../components/tables/Table_components/radio_buttons_components
+                    .col-sm-12
+                        include ../../components/tables/Table_components/select_components
+                    .col-sm-12
+                        include ../../components/tables/Table_components/input_components
+                    .col-sm-12
+                        include ../../components/tables/Table_components/badges_components
+                    .col-sm-12
+                        include ../../components/tables/Table_components/tooltip_triggers_components
+                    .col-sm-12
+                        include ../../components/tables/Table_components/switch_components
+          include ../../components/footer
+    include ../../components/footer-files
+    

@@ -1,0 +1,41 @@
+.card
+    .card-header.pb-0
+        +card-header('Inline-input type', '', '', 'Use the', '.checkbox-solid-* ,.checkbox-* ', 'for bordered checkbox ')
+    .card-body.checkbox-checked
+        .row.g-3
+            .col-md-6.col-xl-4
+                .card-wrapper.solid-border.rounded-3.rtl-input
+                    h6.sub-title.f-w-500 Inline Checkbox
+                    .form-check-size
+                        .form-check.form-check-inline
+                            input#inlineCheckbox1.form-check-input.me-2(type='checkbox' value='option1' checked='')
+                            label.form-check-label(for='inlineCheckbox1') I
+                        .form-check.form-check-inline
+                            input#inlineCheckbox2.form-check-input.me-2(type='checkbox' value='option2')
+                            label.form-check-label(for='inlineCheckbox2') II
+                        .form-check.form-check-inline
+                            input#inlineCheckbox3.form-check-input.me-2(type='checkbox' value='option3' disabled='')
+                            label.form-check-label(for='inlineCheckbox3') III (disabled)
+            .col-md-6.col-xl-4
+                .card-wrapper.solid-border.rounded-3.rtl-input
+                    h6.sub-title.f-w-500 Inline Radios
+                    .form-check-size
+                        .form-check.form-check-inline
+                            input#inlineRadio1.form-check-input.me-2(type='radio' name='inlineRadioOptions' value='option1' checked='')
+                            label.form-check-label(for='inlineRadio1') 1
+                        .form-check.form-check-inline
+                            input#inlineRadio2.form-check-input.me-2(type='radio' name='inlineRadioOptions' value='option2')
+                            label.form-check-label(for='inlineRadio2') 2
+                        .form-check.form-check-inline
+                            input#inlineRadio3.form-check-input.me-2(type='radio' name='inlineRadioOptions' value='option3' disabled='')
+                            label.form-check-label(for='inlineRadio3') 3 (disabled)
+            .col-md-12.col-xl-4
+                .card-wrapper.solid-border.rounded-3
+                    h6.sub-title.f-w-500 Inline Switches
+                    .form-check-size
+                        .form-check.form-switch.form-check-inline
+                            input#flexSwitchCheckDefault2.form-check-input.check-size(type='checkbox' role='switch' checked='')
+                        .form-check.form-switch.form-check-inline
+                            input#flexSwitchCheckDefault3.form-check-input.check-size(type='checkbox' role='switch')
+                        .form-check.form-switch.form-check-inline
+                            input#flexSwitchCheckDisabled3.form-check-input.check-size(type='checkbox' role='switch' disabled='')

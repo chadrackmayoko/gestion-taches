@@ -1,0 +1,63 @@
+// Divider dropdown
+.card
+    .card-header.pb-0
+        +card-header('Sizing dropdown', 'dote','','When the.show class starts, dropdown appears. And', '[.btn-lg/.btn-sm/.btn-xs]','class through button size changed.')
+    .card-body.rtl-dropdown
+        .common-flex.align-items-center
+            .btn-showcase
+                button.btn.btn-info.light.btn-lg.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false') Large button 
+                ul.dropdown-menu.dropdown-block
+                    li
+                        a.dropdown-item(href='#') Small button
+                    li
+                        a.dropdown-item(href='#') Medium button 
+                    li
+                        a.dropdown-item(href='#') Large button 
+                    li
+                        hr.dropdown-divider
+                    li
+                        a.dropdown-item(href='#') Very large button 
+            .btn-showcase
+                button.btn.btn-dark.light.btn-sm.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false') Small button 
+                ul.dropdown-menu.dropdown-block
+                    li
+                        a.dropdown-item(href='#') Small button 
+                    li
+                        a.dropdown-item(href='#') Extra small button 
+            .btn-showcase
+                button.btn.btn-primary.light.btn-xs.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false') Extra small button 
+                ul.dropdown-menu.dropdown-block
+                    li
+                        a.dropdown-item(href='#') Small button 
+                    li
+                        a.dropdown-item(href='#') Extra extra small 
+        .code-box-copy
+            button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#tooltip', title='Copy')
+              i.icofont.icofont-copy
+            pre
+              code.language-html#size-dropdown
+                | &lt;!--You can use .dropdown-menu and inside added .dropdown-item.*(dropdown list)--&gt;  
+                | &lt;div class="btn-group"&gt;
+                | &lt;button class="btn btn-info light btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"&gt;Large button &lt;/button&gt;
+                | &lt;ul class="dropdown-menu dropdown-block"&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+                | &lt;li&gt;
+                | &lt;hr class="dropdown-divider"&gt;
+                | &lt;/li&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+                | &lt;/ul&gt;
+                | &lt;/div&gt;
+                | &lt;div class="btn-group"&gt;
+                | &lt;button class="btn btn-dark light btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"&gt;Small button &lt;/button&gt;
+                | &lt;ul class="dropdown-menu dropdown-block"&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+                | &lt;li&gt;
+                | &lt;hr class="dropdown-divider"&gt;
+                | &lt;/li&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+                | &lt;/ul&gt;
+                | &lt;/div&gt;

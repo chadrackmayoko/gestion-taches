@@ -1,0 +1,24 @@
+// Outline alert
+.card 
+    .card-header.pb-0
+        +card-header('Color alert with outline', '','','Use the', 'border-*', ' utility class to quickly provide matching border and border-width within any alert.')
+    .card-body
+        .alert.font-primary.border-primary.alert-dismissible.fade.show(role='alert')
+            +FeatherSprite('clock', 'feather') 
+            p.text-truncate
+                | One of 
+                strong YouTube&apos;s
+                | most crucial ranking factors is Watch Time.
+                button.btn-close(type='button' data-bs-dismiss='alert' aria-label='Close')
+        .alert.font-secondary.border-secondary.outline-2x.alert-dismissible.fade.show.alert-icons(role='alert')
+            +FeatherSprite('thumbs-up', 'feather') 
+            p.text-truncate
+                b  Well done! 
+                | You successfully read this important message.
+                button.btn-close(type='button' data-bs-dismiss='alert' aria-label='Close')
+        .alert.font-tertiary.border-tertiary.outline-2x.alert-dismissible.fade.show.alert-icons.mb-0(role='alert')
+            +FeatherSprite('heart', 'feather') 
+            p.text-truncate
+                b  Yahoo! 
+                | You can check in on some of those fields below.
+                button.btn-close(type='button' data-bs-dismiss='alert' aria-label='Close')

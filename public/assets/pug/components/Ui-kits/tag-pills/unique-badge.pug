@@ -1,0 +1,30 @@
+// Touchspin Badges
+.card.touchspin-badge
+    .card-header.pb-0
+        +card-header('Touchspin Badges', 'dote','','Use', '.main-touchspin,.increment-touchspin', 'for change the value.')
+    .card-body
+        .touchspin-wrapper
+            .menu-icon
+                +IconlySprite('Bell', 'svg-w-20 stroke-dark')
+            span.badge.badge-primary#inputData1.main-touchspin 3
+            button.decrement-touchspin.btn-touchspin.btn-outline-primary.me-3
+                +IconlySprite('minus', 'svg-w-16 stroke-dark')
+            button.increment-touchspin.btn-touchspin.btn-outline-primary
+                +IconlySprite('plus', 'svg-w-16 stroke-dark')
+        .code-box-copy
+            button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#example-head' title='Copy')
+                i.icofont.icofont-copy
+            pre
+                code.language-html#touchspin-badge
+                    | &lt;!--You can use .main-touchspin,.increment-touchspin', 'for change the value.--&gt;
+                    | &lt; div class="touchspin-wrapper"&gt;
+                    | &lt; div class="menu-icon"&gt;
+                    | &lt; svg class="svg-w-20 stroke-dark"&gt;
+                    | &lt; use href="../assets/svg/iconly-sprite.svg#Bell"&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/div&gt;
+                    | &lt; span class="badge badge-primary main-touchspin" id="inputData1"&gt;3&lt;/span&gt;
+                    | &lt; button class="decrement-touchspin btn-touchspin btn-outline-primary"&gt;
+                    | &lt; svg class="svg-w-16 stroke-dark"&gt;
+                    | &lt; use href="../assets/svg/iconly-sprite.svg#minus"&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/button&gt;
+                    | &lt; button class="increment-touchspin btn-touchspin btn-outline-primary"&gt;
+                    | &lt; svg class="svg-w-16 stroke-dark"&gt;
+                    | &lt; use href="../assets/svg/iconly-sprite.svg#plus"&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/button&gt;&lt;/div&gt;

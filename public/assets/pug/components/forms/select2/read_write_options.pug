@@ -1,0 +1,20 @@
+.card
+  .card-header.pb-0
+    +card-header('Read and write options', '','', '', '', 'Use the tagify plugin for read and write options.')
+  .card-body 
+    form
+      input.readonlyMix(name='tags-readonly-mix' placeholder='Type something' value='[\
+      {\
+      "value"    : "foo",\
+      "readonly" : true,\
+      "title"    : "read-only tag"\
+      },\
+      {\
+      "value"    : "bar"\
+      },\
+      {\
+      "value"    : "Locked tag",\
+      "readonly" : true,\
+      "title"    : "Another readonly tag"\
+      }\
+      ]')

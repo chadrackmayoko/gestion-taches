@@ -1,0 +1,10 @@
+// Color toast
+.card
+    .card-header.pb-0
+        +card-header('Colors Schemes', '','', 'Use the', '.hide and .show ', 'class through visible toast.')
+    .card-body
+        .toast.default-show-toast.align-items-center.text-light.bg-tertiary.border-0.fade.show(role='alert' aria-live='assertive' aria-atomic='true')
+            .d-flex.justify-content-between
+                .toast-body
+                    | Your time over after 5 minute.
+                button.btn-close.btn-close-white.me-2.m-auto(type='button' data-bs-dismiss='toast' aria-label='Close')

@@ -1,0 +1,15 @@
+.card
+  .card-header.pb-0
+    +card-header('Clipboard on paragraph', '','', '', '', '')
+  .card-body
+    .clipboaard-container
+      p.f-16 Copy from paragraph
+      h6#clipboardExample3.solid-border.rounded.card-body.f-w-300
+        | On that day, hopes and dreams were crushed.
+        |  Even though it should have been anticipated, it nonetheless
+        |  surprised me. The warning indicators have been disregarded in favour of the slim chance that it would actually occur. From a hopeful prospect, it had evolved into an unquestionable conviction that it must be fate. That was up until it wasn't,
+        |  at which point all of the aspirations and dreams collapsed.
+      .mt-3.text-end
+        button.btn.btn-info.btn-clipboard(type='button', data-clipboard-action='copy', data-clipboard-target='#clipboardExample3')
+          i.fa.fa-copy
+          |  Copy

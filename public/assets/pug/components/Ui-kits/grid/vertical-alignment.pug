@@ -1,0 +1,36 @@
+// Vertical alignment Card
+.card
+    .card-header.pb-0
+        +card-header('Vertical alignment', '','','You can use the' , 'align-items-*', 'class to set the vertical alignment.') 
+    .card-body.mb-0.grid-showcase
+        .row.mb-0
+            .col-lg-4
+                .row.grid-vertical.align-items-start.m-1.g-2.bg-light
+                    .col-6
+                        span.bg-white one column
+                    .col-6
+                        span.bg-white two column
+            .col-lg-4
+                .row.grid-vertical.align-items-center.m-1.g-2.bg-light
+                    .col-6
+                        span.bg-white one column
+                    .col-6
+                        span.bg-white two column
+            .col-lg-4
+                .row.grid-vertical.align-items-end.m-1.g-2.bg-light
+                    .col-6
+                        span.bg-white one column
+                    .col-6
+                        span.bg-white two column
+    .card-footer
+        .table-responsive
+            table.w-100
+                tbody
+                    tr
+                        th  Class
+                        th Value of the class
+                    tr
+                        td
+                            code .align-items-*
+                        td  start / center / end / baseline / stretch
+

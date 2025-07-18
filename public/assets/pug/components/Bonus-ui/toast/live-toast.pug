@@ -1,0 +1,47 @@
+// Live toast
+.card
+    .card-header.pb-0
+        +card-header('Live Toast', '','', 'Use the .hide class through', '.hide and .show, [top-0/bottom-0/start-0/end-0] ', 'class through visible toast and given directions.')
+    .card-body 
+        .common-flex
+            button#liveToastBtn.btn.btn-primary(type='button') Top-right toast
+            .toast-container.position-fixed.top-0.end-0.p-3.toast-index.toast-rtl
+                #liveToast.toast.hide.toast.fade(role='alert' aria-live='assertive' aria-atomic='true')
+                    .toast-header.toast-img
+                        img.rounded.me-2(src='../assets/images/avatar/9.jpg' alt='profile')
+                        strong.me-auto Edmin Template
+                        small 5 min ago
+                        button.btn-close(type='button' data-bs-dismiss='toast' aria-label='Close')
+                    .toast-body.toast-dark
+                        | Hello, I'm a web-designer.
+            button#liveToastBtn1.btn.btn-secondary(type='button') Bottom-right toast
+            .toast-container.position-fixed.bottom-0.end-0.p-3.toast-index.toast-rtl
+                #liveToast1.toast.hide.toast.fade(role='alert' aria-live='assertive' aria-atomic='true')
+                    .d-flex.justify-content-between.alert-secondary
+                        .toast-body
+                            | Your time over after 5 minute.
+                        button.btn-close.btn-close-white.me-2.m-auto(type='button' data-bs-dismiss='toast' aria-label='Close')
+            button#liveToastBtn2.btn.btn-warning(type='button') Top-left toast
+            .toast-container.position-fixed.start-0.top-0.p-3.toast-index.toast-rtl
+                #liveToast2.toast.hide.toast.fade(role='alert' aria-live='assertive' aria-atomic='true')
+                    .toast-header.toast-img
+                        img.rounded.me-2(src='../assets/images/avatar/9.jpg' alt='profile')
+                        strong.me-auto Edmin Template
+                        small.d-sm-block.d-none 10 min ago
+                        button.btn-close(type='button' data-bs-dismiss='toast' aria-label='Close')
+                    .toast-body.toast-dark
+                        strong.font-success Well done!
+                        |  You successfully read this important message.
+            button#liveToastBtn3.btn.btn-success(type='button') Bottom-left toast
+            .toast-container.position-fixed.start-0.bottom-0.p-3.toast-index.toast-rtl
+                #liveToast3.toast.hide.toast.fade(role='alert' aria-live='assertive' aria-atomic='true')
+                    .toast-header.toast-img
+                        img.rounded.me-2(src='../assets/images/avatar/9.jpg' alt='profile')
+                        strong.me-auto Edmin Template
+                        button.btn-close(type='button' data-bs-dismiss='toast' aria-label='Close')
+                    .toast-body.toast-dark
+                        h6.mb-2 Your account will be permanently deleted?
+                        p.mb-0 Do you intend to continue?
+                        .mt-2.pt-2.border-top.d-flex.gap-2
+                            button.btn.btn-dark.btn-sm(type='button') I'm not sure
+                            button.btn.btn-danger.btn-sm(type='button' data-bs-dismiss='toast') Remove My Account

@@ -1,0 +1,27 @@
+// Face rating
+.card
+    .card-header.pb-0
+        +card-header('Animated  Rating', '','', 'Rating is displayed using', '.rating-star', ' id using javascript.')
+    .card-body
+        ul.feedback
+            li.angry
+                div
+                    +IconlySprite('eye', 'eye left')
+                    +IconlySprite('eye', 'eye right')
+                    +IconlySprite('mouth', 'mouth')
+            li.sad
+                div
+                    +IconlySprite('eye', 'eye left')
+                    +IconlySprite('eye', 'eye right')
+                    +IconlySprite('mouth', 'mouth')
+            li.ok
+                div
+            li.good.active
+                div
+                    +IconlySprite('eye', 'eye left')
+                    +IconlySprite('eye', 'eye right')
+                    +IconlySprite('mouth', 'mouth')
+            li.happy
+                div
+                    +IconlySprite('eye', 'eye left')
+                    +IconlySprite('eye', 'eye right')

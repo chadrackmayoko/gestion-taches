@@ -1,0 +1,96 @@
+//-// task menu
+-
+    var TASK_ITEM =[
+        {
+            id: 'playbutton',
+            progress:'progress-border-primary',
+            width: 'width: 50%',
+            title: 'Begin from',
+            time: '7.00 am',
+            taskTitle: 'Search Inspiration For Project',
+            comment: '6 comments',
+            pr: '60% complete'
+        },
+        {
+            id: 'pushbutton',
+            progress:'progress-border-secondary',
+            width: 'width: 70%',
+            title: 'Begin from',
+            time: '8.03 am',
+            taskTitle: 'Look for Project Ideas',
+            comment: '5 comments',
+            pr: '80% complete'
+        },
+        {
+            id: 'playbutton',
+            progress:'progress-border-tertiary',
+            width: 'width: 30%',
+            title: 'Begin from',
+            time: '4.12 am',
+            taskTitle: 'How can i find inspiration?',
+            comment: '4 comments',
+            pr: '40% complete'
+        },
+        {
+            id: 'playbutton',
+            progress:'progress-border-primary',
+            width: 'width: 50%',
+            title: 'Begin from',
+            time: '7.30 am',
+            taskTitle: 'Can i execute my idea?',
+            comment: '9 comments',
+            pr: '50% complete'
+        }
+    ]
+
+//-// task mixin
+mixin TaskContent(items)
+
+    each item in items 
+        tr
+            td
+                .d-flex.align-items-center.gap-2
+                    .flex-shrink-0
+                        +IconlySprite(item.id,'svg-w-19') 
+                    .flex-grow-1 
+                        h6.f-w-500=item.title
+                        .font-light.mt-1.timer    
+                            +FeatherSprite('clock', 'feather me-1') 
+                            span.f-w-400.f-13=item.time
+            td
+                a(href="user-profile.html")
+                    h6.f-w-500=item.taskTitle
+                ul.mt-1
+                    li
+                        +FeatherSprite('paperclip', 'feather') 
+                        span.f-w-400.f-13 www.dribbble.com
+                    li
+                        +FeatherSprite('message-square', 'feather') 
+                        span.font-light.f-w-400=item.comment
+            td 
+                h6.f-w-500=item.pr
+                .progress-showcase.mt-2
+                    .progress.sm-progress-bar(class=item.progress)
+                        .progress-bar(role='progressbar', style=item.width, aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+            td  
+                .task-icon-button
+                    button.btn.edge-btn.f-13.w-75.btn-light-primary
+                        +IconlySprite('watch','svg-w-19')
+                        span Reminder
+
+// task menu
+.card
+    .card-header.pb-0
+        h4 Tasks
+        .dropdown.icon-dropdown
+          button#userdropdown02.btn.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+            i.icon-more-alt
+          .dropdown-menu.dropdown-menu-end(aria-labelledby='userdropdown02')
+            a.dropdown-item(href='#') Weekly
+            a.dropdown-item(href='#') Monthly
+            a.dropdown-item(href='#') Yearly
+    .card-body.pt-0.task-table
+        .table-responsive 
+            table.table
+                tbody 
+                    +TaskContent(TASK_ITEM)

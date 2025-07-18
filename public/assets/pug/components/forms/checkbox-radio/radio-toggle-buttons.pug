@@ -1,0 +1,12 @@
+.card
+    .card-header.pb-0
+        +card-header('Radio Toggle Buttons', '', '', 'The choice between these two approaches will depend on the type of toggle you are creating, and whether or not the toggle will make sense to users when announced as a checkbox or as an actual button. ', '[any one selected]', '.')
+    .card-body.common-flex.main-radio-toggle
+        input#option1.btn-check.radio-light-secondary(type='radio' name='options')
+        label.btn.bg-light-primary(for='option1') Checked
+        input#option2.btn-check.radio-light-secondary(type='radio' name='options')
+        label.btn.bg-light-primary(for='option2') Radio
+        input#option3.btn-check.radio-light-secondary(type='radio' name='options' disabled='')
+        label.btn.bg-light-primary(for='option3') Disabled
+        input#option4.btn-check.radio-light-secondary(type='radio' name='options')
+        label.btn.bg-light-primary(for='option4') Radio

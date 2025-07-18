@@ -1,0 +1,94 @@
+.card.right-sidebar-chat
+  .right-sidebar-title
+    .common-space 
+      .chat-time 
+        .active-profile
+          img.img-fluid.rounded-circle(src="../assets/images/avatar/1.jpg", alt="user")
+          .status.bg-success
+        div 
+          span Darrell Steward
+          p Online 
+      .d-flex.gap-2
+        .contact-edit.chat-alert
+          i.icon-info-alt
+        .contact-edit.chat-alert
+          i.fa-solid.fa-bars.dropdown-toggle(role="menu" data-bs-toggle="dropdown" aria-expanded="false")
+          .dropdown-menu.dropdown-menu-end
+            a.dropdown-item(href='#!')
+              | View details
+            a.dropdown-item(href='#!') 
+              | Send messages
+            a.dropdown-item(href='#!') 
+              | Add to favorites
+  .right-sidebar-Chats  
+    .msger
+      .msger-chat
+        .msg.left-msg
+          .msg-img
+          .msg-bubble
+            .msg-info
+              .msg-info-name Theresa Webb
+              .msg-info-time 01:14 PM
+            .msg-text
+              | Hey, I'm looking to redesign my website. Can you help me? &#x1F604;
+        .msg.right-msg
+          .msg-img
+          .msg-bubble
+            .msg-info
+              .msg-info-name Darrell Steward
+              .msg-info-time 12:14 PM
+            .msg-text
+              |  Absolutely! I'd be happy to assist you.
+        .msg.right-msg
+          .msg-img
+          .msg-bubble
+            .msg-info
+              .msg-info-name Darrell Steward
+              .msg-info-time 12:14 PM
+            .msg-text
+              | What kind of design aesthetic are you aiming for?
+        .msg.left-msg
+          .msg-img
+          .msg-bubble
+            .msg-info
+              .msg-info-name Theresa Webb
+              .msg-info-time 01:14 PM
+            .msg-text
+              | I want a clean and modern look with a focus on user experience.
+        .msg.right-msg
+          .msg-img
+          .msg-bubble
+            .msg-info
+              .msg-info-name Darrell Steward
+              .msg-info-time 12:14 PM
+            .msg-text
+              | Great!  Do you have any specific color schemes in mind?
+        .msg.left-msg
+          .msg-img
+          .msg-bubble
+            .msg-info
+              .msg-info-name Theresa Webb
+              .msg-info-time 01:14 PM
+            .msg-text
+              | I'm thinking of using a combination of blues and grays.
+        .msg.right-msg
+          .msg-img
+          .msg-bubble
+            .msg-info
+              .msg-info-name Darrell Steward
+              .msg-info-time 12:14 PM
+            .msg-text
+              | Excellent choice! Those colors can definitely create a professional.
+      form.msger-inputarea
+        .dropdown-form.dropdown-toggle(role='main' data-bs-toggle="dropdown" aria-expanded="false")
+          i.icon-plus
+          .chat-icon.dropdown-menu.dropdown-menu-start
+            div.dropdown-item.mb-2
+              +FeatherSprite('camera', 'feather')
+            div.dropdown-item
+              +FeatherSprite('paperclip', 'feather')
+        input.msger-input.two.uk-textarea(type='text' placeholder='Type Message here..')
+        .open-emoji
+          .second-btn.uk-button
+        button.msger-send-btn(type='submit')
+          i.fa.fa-location-arrow

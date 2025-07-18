@@ -1,0 +1,62 @@
+// Color alert
+.card 
+    .card-header.pb-0
+        +card-header('Link with dark color alerts', '','','Use the', 'data-bs-title, data-bs-trigger="click"', ' to the content under the HTML tag with click event.')
+    .card-body
+        .row
+            .col-lg-6
+                p.mb-1 Primary Alert
+                .alert.alert-primary.dark(role='alert')
+                    p.mb-0
+                        | This is a   
+                        a.alert-link.text-white(href='#') Primary alert
+                        |  with an example link.Check it out.
+                p.mb-1 Secondary Alert
+                .alert.alert-secondary.dark(role='alert')
+                    p.mb-0
+                        | This is a   
+                        a.alert-link.text-white(href='#') Secondary alert
+                        |   with an example link. Check it out.
+                p.mb-1 Tertiary Alert
+                .alert.alert-tertiary.dark(role='alert')
+                    p.mb-0
+                        | This is a   
+                        a.alert-link.text-white(href='#') Tertiary alert
+                        |   with an example link. Check it out.
+                p.mb-1 Success Alert
+                .alert.alert-success.dark(role='alert')
+                    p.mb-0
+                        | This is a  
+                        a.alert-link.text-white(href='#') Success alert 
+                        |   with an example link. Check it out.
+                p.mb-1 Info Alert
+                .alert.alert-info.dark.mb-lg-0(role='alert')
+                    p.mb-0
+                        | This is a  
+                        a.alert-link.text-white(href='#') Info alert 
+                        |   with an example link. Check it out.
+            .col-lg-6
+                p.mb-1 Warning Alert
+                .alert.alert-warning.dark(role='alert')
+                    p.mb-0
+                        | This is a  
+                        a.alert-link.text-white(href='#') Warning alert 
+                        |   with an example link. Check it out.
+                p.mb-1 Danger Alert
+                .alert.alert-danger.dark(role='alert')
+                    p.mb-0
+                        | This is a  
+                        a.alert-link.text-white(href='#') Danger alert 
+                        |   with an example link. Check it out.
+                p.mb-1 Light Alert
+                .alert.alert-light.text-dark(role='alert')
+                    p.mb-0
+                        | This is a  
+                        a.alert-link(href='#') Light alert 
+                        |   with an example link. Check it out.
+                p.mb-1 Dark Alert
+                .alert.alert-dark.dark.mb-0(role='alert')
+                    p.mb-0
+                        | This is a  
+                        a.alert-link.text-white(href='#') Dark alert 
+                        |   with an example link. Check it out.

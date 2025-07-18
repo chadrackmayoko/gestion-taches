@@ -1,0 +1,51 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+-var prism                  = true;
+-var page_clipboard         = true;
+-var customcard             = true;
+-var height_equal   = true;
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    include ../../components/loader
+    main#pageWrapper.page-wrapper.compact-wrapper
+        include ../../components/header/header
+        .page-body-wrapper
+          include ../../components/sidebar
+          .page-body
+            .container-fluid
+              +breadcrumb(['Ui Kits','Dropdown'],'Dropdown')
+            // Container-fluid starts
+            .container-fluid.ui-dropdown
+                .row
+                  .col-xl-6
+                    include ../../components/Ui-kits/dropdown/basic-dropdown
+                  .col-xl-6
+                    include ../../components/Ui-kits/dropdown/rounded-dropdown
+                  .col-xl-12
+                    include ../../components/Ui-kits/dropdown/split-dropdown
+                  .col-xl-4
+                    include ../../components/Ui-kits/dropdown/heading-dropdown
+                  .col-xl-4
+                    include ../../components/Ui-kits/dropdown/input-dropdown
+                  .col-xl-4
+                    include ../../components/Ui-kits/dropdown/dark-dropdown
+                  .col-xl-6
+                    include ../../components/Ui-kits/dropdown/unique-dropdown
+                  .col-xl-6
+                    include ../../components/Ui-kits/dropdown/justify-content-dropdown
+                  .col-xl-6
+                    include ../../components/Ui-kits/dropdown/alignment-dropdown
+                  .col-xl-6
+                    include ../../components/Ui-kits/dropdown/helper-dropdown
+                  .col-xl-6
+                    include ../../components/Ui-kits/dropdown/divider-dropdown
+                  .col-xl-6
+                    include ../../components/Ui-kits/dropdown/sizing-dropdown
+            // Container-fluid ends
+          include ../../components/footer
+    include ../../components/footer-files

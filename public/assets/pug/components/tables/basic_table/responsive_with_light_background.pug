@@ -1,0 +1,49 @@
+.card
+    .card-header
+      +card-header('Responsive Tables With Light Background', '','', 'A', '.table-responsive-*.table-light-*', 'inside table element.')
+    .card-block.row
+      .col-sm-12.col-lg-12.col-xl-12
+        .table-responsive
+          table.table.table-light
+            thead
+              tr
+                th(scope='col') Id
+                th(scope='col') Task
+                th(scope='col') Email
+                th(scope='col') Phone
+                th(scope='col') Assign
+                th(scope='col') Date
+                th(scope='col') Price   
+                th(scope='col') Status
+                th(scope='col') Progress
+            tbody
+              tr
+                th(scope='row') 1
+                td Web Development	
+                td Pixel@efo.com	
+                td +91 7874226671	
+                td Mark Jecno	
+                td 12/07/2022	
+                td $2315.00	
+                td.font-danger Pending
+                td 75%
+              tr
+                th(scope='row') 2
+                td Graphic Design	
+                td Strap@google.com	
+                td +91 8347855785	
+                td Elana John	
+                td 23/08/2022	
+                td $4125.00	
+                td.font-danger Pending	
+                td 45%
+              tr
+                th(scope='row') 3
+                td WordPress
+                td Pixelstrap@gmail.com	
+                td +91 635609347	
+                td John Deo
+                td 15/04/2022	
+                td $6123.00	
+                td.font-success Done
+                td 100%

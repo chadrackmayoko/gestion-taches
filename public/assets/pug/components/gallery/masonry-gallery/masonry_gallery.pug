@@ -1,0 +1,81 @@
+//-// masonary mixin
+-
+    var GALLERY_IMAGE =[
+        {
+            lightGallery: '../assets/images/masonry/1.jpg',
+            bigLight: '../assets/images/big-masonry/1.jpg',
+        }, 
+        {
+            lightGallery: '../assets/images/masonry/2.jpg',
+            bigLight: '../assets/images/big-masonry/2.jpg',
+        }, 
+        {
+            lightGallery: '../assets/images/masonry/3.jpg',
+            bigLight: '../assets/images/big-masonry/3.jpg',
+        }, 
+        {
+            lightGallery: '../assets/images/masonry/4.jpg',
+            bigLight: '../assets/images/big-masonry/4.jpg',
+        }, 
+        {
+            lightGallery: '../assets/images/masonry/5.jpg',
+            bigLight: '../assets/images/big-masonry/5.jpg',
+        },
+        {
+            lightGallery: '../assets/images/masonry/6.jpg',
+            bigLight: '../assets/images/big-masonry/6.jpg',
+        },
+        {
+            lightGallery: '../assets/images/masonry/7.jpg',
+            bigLight: '../assets/images/big-masonry/7.jpg',
+        },
+        {
+            lightGallery: '../assets/images/masonry/8.jpg',
+            bigLight: '../assets/images/big-masonry/8.jpg',
+        },
+        {
+            lightGallery: '../assets/images/masonry/9.jpg',
+            bigLight: '../assets/images/big-masonry/9.jpg',
+        },
+        {
+            lightGallery: '../assets/images/masonry/10.jpg',
+            bigLight: '../assets/images/big-masonry/10.jpg',
+        }, 
+        {
+            lightGallery: '../assets/images/masonry/11.jpg',
+            bigLight: '../assets/images/big-masonry/11.jpg',
+        },
+        {
+            lightGallery: '../assets/images/masonry/12.jpg',
+            bigLight: '../assets/images/big-masonry/12.jpg',
+        },
+        {
+            lightGallery: '../assets/images/masonry/13.jpg',
+            bigLight: '../assets/images/big-masonry/13.jpg',
+        },
+        {
+            lightGallery: '../assets/images/masonry/14.jpg',
+            bigLight: '../assets/images/big-masonry/14.jpg',
+        },
+        {
+            lightGallery: '../assets/images/masonry/15.jpg',
+            bigLight: '../assets/images/big-masonry/15.jpg',
+        },
+        {
+            lightGallery: '../assets/images/masonry/1.jpg',
+            bigLight: '../assets/images/big-masonry/1.jpg',
+        },
+    ]
+//- masonary mixin
+mixin ImgGallery(items)
+  each item in items
+    figure.col-md-3.col-sm-6.grid-item(itemprop='associatedMedia', itemscope='')
+      a(href=item.bigLight, data-pswp-width='1875', data-pswp-height='2500', target='_blank')
+        img.img-thumbnail(src=item.lightGallery, itemprop='thumbnail', alt='Image description')
+// gallery mixin
+.card.gallery-grid
+  .card-header.pb-0
+    +card-header('Masonry Gallery', '','', '', '', '')
+  .card-body.photoswipe-pb-responsive
+    #aniimated-thumbnials.masonry-gallery.row.grid.gallery(itemscope='')
+      +ImgGallery(GALLERY_IMAGE)

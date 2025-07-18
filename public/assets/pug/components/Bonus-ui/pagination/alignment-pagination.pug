@@ -1,0 +1,55 @@
+// Pagination Alignment Start
+//-// Pagination Alignment Data 
+-
+    var ALIGNMENT_PAGINATION =[
+        {
+            title: 'Previous',
+            first: '1',
+            second: '2',
+            third: '3',
+            next: 'Next',
+            bgcolor:'pagination-border-primary pagination-primary pagination',
+            margin:'mb-4'
+        },
+        {
+            title: 'Previous',
+            first: 'I',
+            second: 'II',
+            third: 'III',
+            next: 'Next',
+            bgcolor:'pagination justify-content-center pagination-border-secondary pagination-secondary',
+            active:'active',
+            margin:'mb-4'
+        },
+        {
+            title: 'Previous',
+            first: 'i',
+            second: 'ii',
+            third: 'iii',
+            next: 'Next',
+            bgcolor:'pagination justify-content-end pagination-border-success pagination-success',
+            margin:'mb-0'
+        },
+    ]
+//- Pagination Alignment Mixin
+mixin AlignmentPagination(items)
+    each item in items 
+        nav(aria-label='Page navigation example' class=item.margin)
+            ul.pagination(class=item.bgcolor)
+                li.page-item
+                    a.page-link(href='javascript:void(0)')=item.title
+                li.page-item
+                    a.page-link(href='javascript:void(0)')=item.first
+                li.page-item(class=item.active)
+                    a.page-link(href='javascript:void(0)')=item.second
+                li.page-item
+                    a.page-link(href='javascript:void(0)')=item.third
+                li.page-item
+                    a.page-link(href='javascript:void(0)')=item.next
+// Pagination Alignment menu
+.card
+    .card-header.pb-0
+        +card-header('Pagination Alignment', '','', 'Change the alignment of pagination components with flexbox utilities. For example, with ', '.justify-content-center:', '.')
+    .card-body
+        +AlignmentPagination(ALIGNMENT_PAGINATION)
+// Pagination Alignment Ends

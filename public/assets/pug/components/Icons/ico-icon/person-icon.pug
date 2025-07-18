@@ -1,0 +1,57 @@
+//-// Person Icon
+-
+    var ICO_ITEM24 =[
+        { id:'icofont-boy' }
+        , { id:'icofont-business-man-alt-1' }
+        , { id:'icofont-business-man-alt-2' }
+        , { id:'icofont-business-man-alt-3' }
+        , { id:'icofont-business-man' }
+        , { id:'icofont-female' }
+        , { id:'icofont-funky-man' }
+        , { id:'icofont-girl-alt' }
+        , { id:'icofont-girl' }
+        , { id:'icofont-group' }
+        , { id:'icofont-hotel-boy-alt' }
+        , { id:'icofont-hotel-boy' }
+        , { id:'icofont-kid' }
+        , { id:'icofont-man-in-glasses' }
+        , { id:'icofont-people' }
+        , { id:'icofont-support' }
+        , { id:'icofont-user-alt-1' }
+        , { id:'icofont-user-alt-2' }
+        , { id:'icofont-user-alt-3' }
+        , { id:'icofont-user-alt-4' }
+        , { id:'icofont-user-alt-5' }
+        , { id:'icofont-user-alt-6' }
+        , { id:'icofont-user-alt-7' }
+        , { id:'icofont-user-female' }
+        , { id:'icofont-user-male' }
+        , { id:'icofont-user-suited' }
+        , { id:'icofont-user' }
+        , { id:'icofont-users-alt-1' }
+        , { id:'icofont-users-alt-2' }
+        , { id:'icofont-users-alt-3' }
+        , { id:'icofont-users-alt-4' }
+        , { id:'icofont-users-alt-5' }
+        , { id:'icofont-users-alt-6' }
+        , { id:'icofont-users-social' }
+        , { id:'icofont-users' }
+        , { id:'icofont-waiter-alt' }
+        , { id:'icofont-waiter' }
+        , { id:'icofont-woman-in-glasses' }
+    ]
+//-// Ico icon mixin
+mixin IcoContent(items)
+    each item in items 
+        .col-xxl-2.col-lg-3.col-sm-4
+            .card.d-flex.align-items-center.flex-column.default-border
+                i.icofont(class=item.id)
+                .flex-grow-1
+                    h6=item.id
+// Ico icon
+.card
+    .card-header.pb-0.d-flex.justify-content-between.align-items-center
+        h4 Person Icon
+    .card-body
+        .row.icon-event.iconly-icons.icon-lists
+            +IcoContent(ICO_ITEM24)

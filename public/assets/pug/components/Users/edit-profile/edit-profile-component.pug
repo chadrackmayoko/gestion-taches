@@ -1,0 +1,57 @@
+form.card
+  .card-header
+    h4.card-title.mb-0 Edit Profile
+    .card-options
+      a.card-options-collapse(href='#', data-bs-toggle='card-collapse')
+        i.fe.fe-chevron-up
+      a.card-options-remove(href='#', data-bs-toggle='card-remove')
+        i.fe.fe-x
+  .card-body
+    .row
+      .col-md-5
+        .mb-3
+          label.form-label Company
+          input.form-control(type='text', placeholder='Company')
+      .col-sm-6.col-md-3
+        .mb-3
+          label.form-label Username
+          input.form-control(type='text', placeholder='Username')
+      .col-sm-6.col-md-4
+        .mb-3
+          label.form-label Email address
+          input.form-control(type='email', placeholder='Email')
+      .col-sm-6.col-md-6
+        .mb-3
+          label.form-label First Name
+          input.form-control(type='text', placeholder='Company')
+      .col-sm-6.col-md-6
+        .mb-3
+          label.form-label Last Name
+          input.form-control(type='text', placeholder='Last Name')
+      .col-md-12
+        .mb-3
+          label.form-label Address
+          input.form-control(type='text', placeholder='Home Address')
+      .col-sm-6.col-md-4
+        .mb-3
+          label.form-label City
+          input.form-control(type='text', placeholder='City')
+      .col-sm-6.col-md-3
+        .mb-3
+          label.form-label Postal Code
+          input.form-control(type='number', placeholder='ZIP Code')
+      .col-md-5
+        .mb-3
+          label.form-label Country
+          select.form-control.btn-square
+            option(value='0') --Select--
+            option(value='1') Germany
+            option(value='2') Canada
+            option(value='3') Usa
+            option(value='4') Aus
+      .col-md-12
+        div
+          label.form-label About Me
+          textarea.form-control(rows='4', placeholder='Enter About your description')
+  .card-footer.text-end
+    button.btn.btn-primary(type='submit') Update Profile

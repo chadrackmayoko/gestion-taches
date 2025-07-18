@@ -1,0 +1,86 @@
+//-// Counter avatar
+-
+    var COUNT_AVATAR1 =[
+        {
+            src: 'user/13.jpg',
+            imgClass: 'img-40 b-r-8',
+        },
+        {
+            src: 'user/6.jpg',
+            imgClass: 'img-40 b-r-8',
+        },
+        {
+            src: 'user/3.jpg',
+            imgClass: 'img-40 b-r-8',
+        }
+    ]
+
+//-// Counter avatar mixin
+mixin CountAvatar(items)
+    each item in items 
+        li.d-inline-block
+            img(class=item.imgClass, src=`../assets/images/${item.src}`, alt='#')
+
+
+
+.card.summary-card
+    .card-header.pb-0
+        h4 Task summary
+        .dropdown.icon-dropdown
+          button#userdropdown06.btn.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+            i.icon-more-alt
+          .dropdown-menu.dropdown-menu-end(aria-labelledby='userdropdown06')
+            a.dropdown-item(href='#') Weekly
+            a.dropdown-item(href='#') Monthly
+            a.dropdown-item(href='#') Yearly
+    .card-body 
+        .row 
+            .col-xl-8.col-sm-8.custom-width-1
+                div.project-cost
+                    h5.font-light
+                        +IconlySprite('Chart' , 'svg-w-20 stroke-light me-2')
+                        | Estimated project cost
+                    ul.d-flex
+                        li.card-hover
+                            .d-flex.bg-light-primary.flex-column
+                                .flex-shrink-0.border-primary
+                                    +IconlySprite('Pie' , 'svg-w-24 stroke-primary')
+                                .flex-grow-1
+                                    h6.f-w-500 Project
+                                    h4.f-w-700 32
+                        li.card-hover
+                            .d-flex.bg-light-secondary.flex-column
+                                .flex-shrink-0.border-secondary
+                                    +IconlySprite('Category' , 'svg-w-24 stroke-secondary')
+                                .flex-grow-1
+                                    h6.f-w-500 Assigned
+                                    h4.f-w-700 78
+                        li.card-hover
+                            .d-flex.bg-light-tertiary.flex-column
+                                .flex-shrink-0.border-tertiary
+                                    +IconlySprite('Document' , 'svg-w-24 stroke-tertiary')
+                                .flex-grow-1
+                                    h6.f-w-500 Completed
+                                    h4.f-w-700 54
+                    .task-bottom.d-flex.align-items-center.gap-2
+                        h5.font-light Completion rate in terms of time:
+                        h2.font-primary 83%
+                        span.badge.bg-light.f-14
+                            +IconlySprite('right-3' , 'svg-w-20 stroke-dark me-1')
+                            | 3.4%
+            .col-xl-4.col-sm-4.custom-width-2
+                h5.font-light 
+                    +IconlySprite('User' , 'svg-w-20 stroke-light me-2')
+                    | Our crew
+                .team-member 
+                    h5.font-light.mb-2 Team Members
+                    .customers.d-inline-block.avatar-group
+                        ul
+                            +CountAvatar(COUNT_AVATAR1)
+                            li.d-inline-block
+                                span.b-r-10 +4
+                    .d-flex.bg-light
+                        .flex-grow-1 
+                            h6.f-16.font-light Hours
+                            h4 67
+                        #team-chart.team-chart

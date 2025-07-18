@@ -1,0 +1,53 @@
+//-// Size Avatar
+-
+    var SIZE_AVATAR =[
+        {
+            src: 'avatar/1.jpg',
+            imgClass: 'img-100',
+        },
+        {
+            src: 'avatar/2.jpg',
+            imgClass: 'img-90',
+        },
+        {
+            src: 'avatar/3.jpg',
+            imgClass: 'img-80',
+        },
+        {
+            src: 'avatar/4.jpg',
+            imgClass: 'img-70',
+        }
+    ]
+
+//-// Size Avatar mixin
+mixin SizeAvatar(items)
+    each item in items 
+        div.avatar
+            img.rounded-circle(class=item.imgClass , src=`../assets/images/${item.src}`, alt='#') 
+
+// Size Avatar
+.card 
+    .card-header.pb-0
+        +card-header('Sizes', 'dote','', 'Using', '.img- * (70/80/90/100)', 'class you can set the size of avatar')
+    .card-body 
+        .avatar-showcase
+            .avatars
+                +SizeAvatar(SIZE_AVATAR)
+        .code-box-copy
+          button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#example-head' title='Copy')
+            i.icofont.icofont-copy
+          pre
+            code.language-html#avatar-size
+              | &lt;!--You can use img-* class through change the size of avatar (70/80/90/100).--&gt;
+              |&lt;div class="avatar"&gt;
+              |&lt;img class="img-100 rounded-circle" src="../assets/images/avatar/1.jpg" alt="#"&gt;
+              |&lt;/div&gt;
+              |&lt;div class="avatar"&gt;
+              |&lt;img class="img-90 rounded-circle" src="../assets/images/avatar/2.jpg" alt="#"&gt;
+              |&lt;/div&gt;
+              |&lt;div class="avatar"&gt;
+              |&lt;img class="img-80 rounded-circle" src="../assets/images/avatar/3.jpg" alt="#"&gt;
+              |&lt;/div&gt;
+              |&lt;div class="avatar"&gt;
+              |&lt;img class="img-70 rounded-circle" src="../assets/images/avatar/4.jpg" alt="#"&gt;
+              |&lt;/div&gt;

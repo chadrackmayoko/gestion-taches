@@ -1,0 +1,92 @@
+.md-sidebar
+  a.btn.btn-primary.md-sidebar-toggle(href='javascript:void(0)') contact filter
+  .md-sidebar-aside.job-left-aside.custom-scrollbar
+    .email-left-aside
+      .card
+        .card-body
+          .email-app-sidebar.left-bookmark
+            .d-flex.flex-wrap
+              .media-size-email
+                img.me-2.rounded-circle(src='../assets/images/user/4.jpg', alt='')
+              .flex-grow-1
+                h3.f-w-600.f-16 MARK JENCO
+                p Markjecno@gmail.com
+            ul.nav.main-menu.contact-options(role='tablist')
+              li.nav-item
+                button.badge-light-primary.btn-block.txt-primary.btn-mail.w-100(type='button' data-bs-toggle='modal' data-bs-target='#exampleModal')
+                  +FeatherSprite('users', 'feather me-2')
+                  |  New Contacts
+                #exampleModal.modal.fade.modal-bookmark(tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true')
+                  .modal-dialog.modal-lg(role='document')
+                    .modal-content
+                      .modal-header
+                        h5#exampleModalLabel.modal-title Add Contact
+                        button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                      .modal-body
+                        form#bookmark-form.form-bookmark.needs-validation(novalidate='')
+                          .row.g-2
+                            .mb-3.col-md-12.mt-0
+                              label(for='con-name') Name
+                              .row
+                                .col-sm-6
+                                  input#con-name.form-control(type='text' required='' placeholder='First Name' autocomplete='off')
+                                .col-sm-6
+                                  input#con-last.form-control(type='text' required='' placeholder='Last Name' autocomplete='off')
+                            .mb-3.col-md-12.mt-0
+                              label(for='con-mail') Email Address
+                              input#con-mail.form-control(type='text' required='' autocomplete='off')
+                            .mb-3.col-md-12.my-0
+                              label(for='con-phone') Phone
+                              .row
+                                .col-sm-6
+                                  input#con-phone.form-control(type='number' required='' autocomplete='off')
+                                .col-sm-6
+                                  select#con-select.form-control
+                                    option Mobile
+                                    option Work
+                                    option Others
+                          input#index_var(type='hidden' value='5')
+                          button.btn.btn-secondary(type='submit' onclick='submitContact()') Save
+                          button.btn.btn-primary(type='button' data-bs-dismiss='modal') Cancel
+              li.nav-item
+                span.main-title  Views
+              li
+                a#pills-personal-tab.active(data-bs-toggle='pill' href='#pills-personal' role='tab' aria-controls='pills-personal' aria-selected='true')
+                  span.title  Personal
+              li
+                button.btn.btn-category(type='button' data-bs-toggle='modal' data-bs-target='#exampleModal1')
+                  span.title  + Add Category
+                #exampleModal1.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel1' aria-hidden='true')
+                  .modal-dialog(role='document')
+                    .modal-content
+                      .modal-header
+                        h5#exampleModalLabel1.modal-title Add Category
+                        button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                      .modal-body
+                        form.form-bookmark
+                          .row.g-2
+                            .mb-3.col-md-12
+                              input.form-control(type='text' required='' placeholder='Enter category name' autocomplete='off')
+                          button.btn.btn-secondary(type='button') Save
+                          button.btn.btn-primary(type='button' data-bs-dismiss='modal') Cancel
+              li
+                a#pills-organization-tab.show(data-bs-toggle='pill' href='#pills-organization' role='tab' aria-controls='pills-organization' aria-selected='false')
+                  span.title  Organization
+              li
+                a(href='#')
+                  span.title Follow up
+              li
+                a(href='#')
+                  span.title Favorites
+              li
+                a(href='#')
+                  span.title Ideas
+              li
+                a(href='#')
+                  span.title Important
+              li
+                a(href='#')
+                  span.title Business
+              li
+                a(href='#')
+                  span.title Holidays

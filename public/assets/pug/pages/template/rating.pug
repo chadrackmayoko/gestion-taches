@@ -1,0 +1,36 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+-var rating        = true;
+-var height_equal  = true;
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    main#pageWrapper.page-wrapper.compact-wrapper
+        include ../../components/header/header
+        .page-body-wrapper
+          include ../../components/sidebar
+          .page-body
+            .container-fluid
+              +breadcrumb(['Bonus Ui','Rating'],'Rating')
+            // Container-fluid starts
+            .container-fluid
+              .row 
+                .col-xl-4
+                  include ../../components/Bonus-ui/rating/star-rating
+                .col-xl-4
+                  include ../../components/Bonus-ui/rating/heart-rating
+                .col-xl-4
+                  include ../../components/Bonus-ui/rating/face-rating
+                .col-xl-4
+                  include ../../components/Bonus-ui/rating/number-rating
+                .col-xl-4
+                  include ../../components/Bonus-ui/rating/slider-rating
+                .col-xl-4
+                  include ../../components/Bonus-ui/rating/emoji-message-rating
+            // Container-fluid ends
+          include ../../components/footer
+    include ../../components/footer-files

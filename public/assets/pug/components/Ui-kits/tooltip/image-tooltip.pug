@@ -1,0 +1,24 @@
+// Image Tooltip
+.card 
+    .card-header.pb-0
+        +card-header('Image Tooltip', 'dote','','Use the', 'data-bs-title, data-bs-trigger="click"', ' to the image with click event.')
+    .card-body
+        ul.common-flex
+            li
+                img(src="../assets/images/social/1.png", alt="" data-bs-toggle='tooltip' data-bs-trigger="click" data-bs-title="Facebook !!")
+            li 
+                img(src="../assets/images/social/2.png", alt="" data-bs-toggle='tooltip' data-bs-trigger="click" data-bs-title="Instagram !!")
+            li 
+                img(src="../assets/images/social/3.png", alt="" data-bs-toggle='tooltip' data-bs-trigger="click" data-bs-title="Twitter !!")
+            li 
+                img(src="../assets/images/social/4.png", alt="" data-bs-toggle='tooltip' data-bs-trigger="click" data-bs-title="Youtube !!")
+        .code-box-copy
+            button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#tooltip', title='Copy')
+              i.icofont.icofont-copy
+            pre
+              code.language-html#img-tooltip
+                | &lt;!--You can use attribute (data-bs-trigger='click') to  used tooltips.--&gt;
+                | &lt; li &gt; &lt; img src="../assets/images/social/1.png" alt="" data-bs-toggle="tooltip" data-bs-trigger="click" data-bs-title="Facebook !!"&gt;&lt;/ li &gt;
+                | &lt; li &gt; &lt; img src="../assets/images/social/2.png" alt="" data-bs-toggle="tooltip" data-bs-trigger="click" data-bs-title="Instagram !!"&gt;&lt;/ li &gt;
+                | &lt; li &gt; &lt; img src="../assets/images/social/3.png" alt="" data-bs-toggle="tooltip" data-bs-trigger="click" data-bs-title="Twitter !!"&gt;&lt;/ li &gt;
+                | &lt; li &gt; &lt; img src="../assets/images/social/4.png" alt="" data-bs-toggle="tooltip" data-bs-trigger="click" data-bs-title="Youtube !!"&gt;&lt;/ li &gt;

@@ -1,0 +1,64 @@
+// Justify contents
+.card
+    .card-header.pb-0
+        +card-header('Justify contents', 'dote','','Use the', 'text-start/text-center/text-end', ' to change dropdown texts.')
+    .card-body.m-0
+        .common-flex
+            .btn-group
+                button.btn.btn-primary.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false') Text-left
+                ul.dropdown-menu.dropdown-block.text-start(style='')
+                    li
+                        a.dropdown-item(href='#') Hello..
+                    li
+                        a.dropdown-item(href='#') How are you?
+                    li
+                        a.dropdown-item(href='#') What are you doing?
+            .btn-group
+                button.btn.btn-secondary.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false') Text-center
+                ul.dropdown-menu.dropdown-block.text-center(style='')
+                    li
+                        a.dropdown-item(href='#') Chocolate
+                    li
+                        a.dropdown-item(href='#') Ice-cream
+                    li
+                        a.dropdown-item(href='#') Trophy
+            .btn-group
+                button.btn.btn-tertiary.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false') Text-right 
+                ul.dropdown-menu.dropdown-block.text-end(style='')
+                    li
+                        a.dropdown-item(href='#') I&apos;m fine.
+                    li
+                        a.dropdown-item(href='#') ohh wow!!
+                    li
+                        a.dropdown-item(href='#') That&apos;s the good news! 
+        .code-box-copy
+            button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#tooltip', title='Copy')
+              i.icofont.icofont-copy
+            pre
+              code.language-html#justify-dropdown
+                | &lt;!--You can use .dropdown-menu and inside added .dropdown-item.*(dropdown list)--&gt;  
+                | &lt;div class="common-flex"&gt;
+                | &lt;div class="btn-group"&gt;
+                | &lt;button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"&gt;Text-left&lt;/button&gt;
+                | &lt;ul class="dropdown-menu dropdown-block text-start"&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Hello..&lt;/a&gt;&lt;/li&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;How are you?&lt;/a&gt;&lt;/li&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;What are you doing?&lt;/a&gt;&lt;/li&gt;
+                | &lt;/ul&gt;
+                | &lt;/div&gt;
+                | &lt;div class="btn-group"&gt;
+                | &lt;button class="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"&gt;Text-center&lt;/button&gt;
+                | &lt;ul class="dropdown-menu dropdown-block text-center"&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Chocolate&lt;/a&gt;&lt;/li&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Ice-cream&lt;/a&gt;&lt;/li&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Trophy&lt;/a&gt;&lt;/li&gt;
+                | &lt;/ul&gt;
+                | &lt;/div&gt;
+                | &lt;div class="btn-group"&gt;
+                | &lt;button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"&gt;Text-right &lt;/button&gt;
+                | &lt;ul class="dropdown-menu dropdown-block text-end"&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;I'm fine.&lt;/a&gt;&lt;/li&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;ohh wow!!&lt;/a&gt;&lt;/li&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;That's the good news! &lt;/a&gt;&lt;/li&gt;
+                | &lt;/ul&gt;
+                | &lt;/div&gt;

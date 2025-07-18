@@ -1,0 +1,83 @@
+// Flush accordion
+.card
+    .card-header.pb-0
+        +card-header('Flush Accordion', 'dote','.accordion-flush ','to remove the default ', 'background-color , some borders','and some rounded corners to render accordions edge-to-edge with their parent container..')
+    .card-body
+        #accordionFlushExample.accordion.accordion-flush
+            .accordion-item
+                h2#flush-headingOne.accordion-header
+                    button.accordion-button(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseOne' aria-expanded='true' aria-controls='flush-collapseOne')
+                        | Flush accordion Item #1
+                #flush-collapseOne.accordion-collapse.collapse.show(aria-labelledby='flush-headingOne' data-bs-parent='#accordionFlushExample')
+                    .accordion-body
+                        | Placeholder content for this accordion, which is intended to demonstrate the 
+                        code .accordion-flush
+                        |  class. This is the first item&apos;s accordion body. Let's imagine this being filled with some actual content. that use for remove default border and background colors.
+            .accordion-item
+                h2#flush-headingTwo.accordion-header
+                    button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseTwo' aria-expanded='false' aria-controls='flush-collapseTwo')
+                        | Flush accordion Item #2
+                #flush-collapseTwo.accordion-collapse.collapse(aria-labelledby='flush-headingTwo' data-bs-parent='#accordionFlushExample')
+                    .accordion-body
+                        | Placeholder content for this accordion, which is intended to demonstrate the 
+                        code .accordion-flush
+                        |  class. This is the second item&apos;s accordion body. Let&apos;s imagine this being filled with some actual content.
+            .accordion-item
+                h2#flush-headingThree.accordion-header
+                    button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseThree' aria-expanded='false' aria-controls='flush-collapseThree')
+                        | Flush accordion Item #3
+                #flush-collapseThree.accordion-collapse.collapse(aria-labelledby='flush-headingThree' data-bs-parent='#accordionFlushExample')
+                    .accordion-body
+                        | Placeholder content for this accordion, which is intended to demonstrate the 
+                        code .accordion-flush
+                        |  class. This is the third item&apos;s accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.
+        .code-box-copy
+            button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#tooltip', title='Copy')
+              i.icofont.icofont-copy
+            pre
+              code.language-html#flush-according
+                | &lt;!--You can use .accordion-collapse with .show class then show accordions.--&gt;
+                | &lt;div class="accordion accordion-flush dark-accordion" id="accordionFlushExample"&gt;
+                | &lt;div class="accordion-item"&gt;
+                | &lt;h2 class="accordion-header" id="flush-headingOne"&gt;
+                | &lt;button class="accordion-button collapsed txt-success accordion-light-success active" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"&gt;What is bootstrap?&lt;/button&gt;
+                | &lt;/h2&gt;
+                | &lt;div class="accordion-collapse collapse show" id="flush-collapseOne" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample"&gt;
+                | &lt;div class="accordion-body"&gt;
+                | &lt;ul class="d-flex flex-column gap-1 accordions-content"&gt;
+                | &lt;li&gt;--&gt; Bootstrap is the most popular HTML, CSS and JavaScript framework for developing a responsive and mobile friendly website.&lt;/li&gt;
+                | &lt;li&gt;--&gt; It is absolutely free to download and use.&lt;/li&gt;
+                | &lt;/ul&gt;
+                | &lt;/div&gt;
+                | &lt;/div&gt;
+                | &lt;/div&gt;
+                | &lt;div class="accordion-item"&gt;
+                | &lt;h2 class="accordion-header" id="flush-headingTwo"&gt;
+                | &lt;button class="accordion-button collapsed txt-success accordion-light-success" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo"&gt;Why Should You Use Bootstrap?&lt;/button&gt;
+                | &lt;/h2&gt;
+                | &lt;div class="accordion-collapse collapse" id="flush-collapseTwo" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample"&gt;
+                | &lt;div class="accordion-body"&gt;
+                | &lt;ul class="d-flex flex-column gap-2 accordions-content"&gt;
+                | &lt;li&gt;First and foremost, Bootstrap is easy to learn. Due to its popularity, plenty of tutorials and online forums are available to help you get started.&lt;/li&gt;
+                | &lt;li&gt;One of the reasons why Bootstrap is so popular among web developers and web designers is that it has a simple file structure. Its files are compiled for easy access, and it only requires basic knowledge of HTML, CSS, and JS to modify them.&lt;/li&gt;
+                | &lt;li&gt;You can also use Template for popular content management systems as learning tools. For example, most WordPress Template were developed using Bootstrap, which any beginner web developer can access. &lt;/li&gt;
+                | &lt;li&gt;To increase the site's page load time, Bootstrap minifies the CSS and JavaScript files. Additionally, Bootstrap maintains consistency across the syntax between websites and developers, which is ideal for team-based projects.&lt;/li&gt;
+                | &lt;/ul&gt;
+                | &lt;/div&gt;
+                | &lt;/div&gt;
+                | &lt;/div&gt;
+                | &lt;div class="accordion-item"&gt;
+                | &lt;h2 class="accordion-header" id="flush-headingThree"&gt;
+                | &lt;button class="accordion-button collapsed txt-success accordion-light-success" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree"&gt;Bootstrap Image System&lt;/button&gt;
+                | &lt;/h2&gt;
+                | &lt;div class="accordion-collapse collapse" id="flush-collapseThree" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample"&gt;
+                | &lt;div class="accordion-body"&gt;
+                | &lt;ul class="d-flex flex-column gap-2 accordions-content"&gt;
+                | &lt;li&gt;Bootstrap handles the image display and responsiveness with its predefined HTML and CSS rules.&lt;/li&gt;
+                | &lt;li&gt;Adding the .img-responsive class will automatically resize images based on the users' screen size. This will benefit your website&rsquo;s performance, as reducing image sizes is part of the site optimization process.&lt;/li&gt;
+                | &lt;li&gt;Bootstrap also provides additional classes like .img-circle and .img-rounded, which help to modify the images' shape.&lt;/li&gt;
+                | &lt;/ul&gt;
+                | &lt;/div&gt;
+                | &lt;/div&gt;
+                | &lt;/div&gt;
+                | &lt;/div&gt;

@@ -1,0 +1,29 @@
+//-// Fitness Icon
+-
+    var ICO_ITEM29 =[
+        { id:'icofont-cycling-alt' }
+        , { id:'icofont-cycling' }
+        , { id:'icofont-dumbbell' }
+        , { id:'icofont-dumbbells' }
+        , { id:'icofont-gym-alt-1' }
+        , { id:'icofont-gym-alt-2' }
+        , { id:'icofont-gym-alt-3' }
+        , { id:'icofont-gym' }
+        , { id:'icofont-muscle-weight' }
+        , { id:'icofont-muscle' }
+    ]
+//-// Ico icon mixin
+mixin IcoContent(items)
+    each item in items 
+        .col-xxl-2.col-lg-3.col-sm-4
+            .card.d-flex.align-items-center.flex-column.default-border
+                i.icofont(class=item.id)
+                .flex-grow-1
+                    h6=item.id
+// Ico icon
+.card
+    .card-header.pb-0.d-flex.justify-content-between.align-items-center
+        h4 Fitness Icon
+    .card-body
+        .row.icon-event.iconly-icons.icon-lists
+            +IcoContent(ICO_ITEM29)

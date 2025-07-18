@@ -1,0 +1,29 @@
+.card
+  .card-header.pb-0 
+    +card-header('Static Backdrop Modal', '','','When backdrop is set to static, the modal will not close when clicking outside of it. Click the button below to try it.','')
+  .card-body 
+    button.btn.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#staticBackdrop')
+      | Static backdrop modal
+    // Modal
+    #staticBackdrop.modal.fade(data-bs-backdrop='static' data-bs-keyboard='false' tabindex='-1' aria-labelledby='staticBackdrop' aria-hidden='true')
+      .modal-dialog
+        .modal-content.dark-sign-up
+          .modal-body.social-profile.text-start
+            .modal-toggle-wrapper
+              h4 Edmin Login
+              p 
+                | Fill in your information below to continue.
+              form.row.g-3
+                .col-md-12
+                  label.form-label(for='inputEmail4') Email
+                  input#inputEmail4.form-control(type='email' placeholder='Enter Your Email')
+                .col-md-12
+                  label.form-label(for='inputPassword4') Password
+                  input#inputPassword4.form-control(type='password' placeholder='Enter Your Password')
+                .col-12
+                  .form-check
+                    input#gridCheck.form-check-input(type='checkbox')
+                    label.form-check-label.d-block.mb-0(for='gridCheck')
+                      | Check me out
+                .col-12
+                  button.btn.btn-primary(type='submit' data-bs-dismiss='modal') Sign in                                                     

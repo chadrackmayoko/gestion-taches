@@ -1,0 +1,26 @@
+// Heading dropdown
+.card
+    .card-header.pb-0
+        +card-header('Dark Dropdown', 'dote','','Main heading and any sub-content in dropdown.')
+    .card-body.dropdown-basic.m-0
+        .common-flex.dark-dropdown
+            button.btn.btn-dark.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false') Dark Night
+            ul.dropdown-menu.dropdown-menu-dark.dropdown-block(style='')
+                li
+                    a.dropdown-item(href='#') Dark moon
+                li
+                    a.dropdown-item(href='#') Dark owl 
+                li
+                    a.dropdown-item(href='#') Nightfall
+        .code-box-copy
+            button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#tooltip', title='Copy')
+              i.icofont.icofont-copy
+            pre
+              code.language-html#dark-dropdown
+                | &lt;!--You can use .dropdown-menu and inside added .dropdown-item.*(dropdown list)--&gt;  
+                | &lt;button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"&gt;Dark Night&lt;/button&gt;
+                | &lt;ul class="dropdown-menu dropdown-menu-dark dropdown-block"&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item active" href="#"&gt;Dark moon&lt;/a&gt;&lt;/li&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Dark owl &lt;/a&gt;&lt;/li&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Nightfall&lt;/a&gt;&lt;/li&gt;
+                | &lt;/ul&gt;

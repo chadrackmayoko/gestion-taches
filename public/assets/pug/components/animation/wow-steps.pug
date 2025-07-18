@@ -1,0 +1,94 @@
+// Step 1
+.card
+    .card-header.pb-0
+        h4 
+            span.badge.badge-primary.rounded-pill.me-2 1
+            | Setup Wow.Js
+        p.desc.mt-1
+            span (You can link to another CSS animation library by changing wow.js settings)
+    .card-body 
+        div 
+            code &lt;link rel="stylesheet" href="assets/css/vendors/wowjs/css/libs/animate.css" &gt;
+// Step 2
+.card
+    .card-header.pb-0
+        h4 
+            span.badge.badge-primary.rounded-pill.me-2 2
+            | Link And Activate Wow.Js
+    .card-body 
+        div 
+            | &lt; script src="js/wow.min.js" &gt; &lt; /script &gt; <br>&lt; script &gt; <br><code>  WOW.init();</code><br>&lt; /script &gt;
+
+// Step 3
+.card
+    .card-header.pb-0
+        h4 
+            span.badge.badge-primary.rounded-pill.me-2 3
+            | Make An Element Revealable
+        p.desc.mt-1
+            span (You can change this CSS class in the WOW settings to avoid name conflicts.)
+    .card-body 
+        div 
+            | &lt; div class="wow" &gt; <br><code>Content to Reveal Here</code><br>&lt; /div &gt;
+// Step 4 
+.card
+    .card-header.pb-0
+        h4 
+            span.badge.badge-primary.rounded-pill.me-2 4
+            | Choose The Animation Style
+        p.desc.mt-1
+            span Pick an animation style in Animate.css , then add the CSS class to the HTML element.
+    .card-body 
+        div 
+            | &lt; div class="wow" &gt; <br><code>Content to Reveal Here</code><br>&lt; /div &gt;
+.card
+    .card-header.wow-title.pb-0
+        h4 
+            span.badge.badge-success.rounded-pill.me-2 Extra
+            | Advance Options
+    .card-body
+        div
+            .line
+                p
+                    strong data-wow-duration: 
+                    | Change the animation duration
+                    br
+                    strong data-wow-delay: 
+                    | Delay before the animation starts
+                    br
+                    strong data-wow-offset: 
+                    | Distance to start the animation (related to the browser bottom)
+                    br
+                    strong data-wow-iteration: 
+                    | Number of times the animation is repeated
+                    br
+                pre.mb-0.mt-2
+                    | &lt;section class="wow slideInLeft" data-wow-duration="2s" data-wow-delay="5s"&gt;<br> &lt;/section&gt;<br> &lt;section class="wow slideInRight" data-wow-offset="10" data-wow-iteration="10"&gt;<br> &lt;/section&gt;
+
+.card
+    .card-header.wow-title.pb-0
+        h4 
+            span.badge.badge-tertiary.rounded-pill.me-2 Settings
+            | Customize Settings
+    .card-body
+        div
+            .line
+                p
+                    strong boxClass: 
+                    | Class name that reveals the hidden box when user scrolls.
+                p
+                    strong animateClass: 
+                    | Class name that triggers the CSS animations (’animated’ by default for the animate.css library)
+                p
+                    strong offset: 
+                    | Define the distance between the bottom of browser viewport and the top of hidden box.
+                    br
+                    | When the user scrolls and reach this distance the hidden box is revealed.
+                p
+                    strong mobile: 
+                    | Turn on/off wow.js on mobile devices.
+                p
+                    strong live: 
+                    | consatantly check for new WOW elements on the page.
+                pre.mb-0.mt-2
+                    | wow = new WOW(<br> {<br> boxClass: 'wow', // default<br> animateClass: 'animated', // default<br> offset: 0, // default<br> mobile: true, // default<br> live: true // default<br> }<br> )<br> wow.init();                    

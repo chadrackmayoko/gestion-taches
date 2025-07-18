@@ -1,0 +1,18 @@
+.card
+  .card-header.pb-0
+    +card-header('Buttons with prefix and postfix', '','', 'Use the', '.decrement-touchspin-*.increment-touchspin-*', 'class.')
+  .card-body.common-flex.pre-post-touchspin.bg-touchspin
+    .input-group
+      button.decrement-touchspin.btn-touchspin.touchspin-warning
+        i.fa.fa-minus
+      button#button-addon1.btn-outline-warning(type='button') Pre
+      input.input-touchspin.spin-outline-primary(type='number' value='0')
+      button.increment-touchspin.btn-touchspin.touchspin-warning
+        i.fa.fa-plus 
+    .input-group
+      button.decrement-touchspin.btn-touchspin.touchspin-warning
+        i.fa.fa-minus
+      input.input-touchspin.spin-outline-primary(type='number' value='0')
+      button#button-addon2.btn-outline-warning(type='button') Post
+      button.increment-touchspin.btn-touchspin.touchspin-warning
+        i.fa.fa-plus

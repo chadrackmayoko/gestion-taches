@@ -1,0 +1,57 @@
+.card
+  .card-header
+    h4 SWITCH
+  div
+    .card-block.row
+      .col-sm-12.col-lg-12.col-xl-12
+        .table-responsive
+          table.table.table-bordered
+            tbody
+              tr
+                td.pills-component Default Switch
+                td.w-50
+                  label.switch
+                    input(type='checkbox', checked='')
+                    span.switch-state
+                td
+                  span
+                    | Use class 
+                    code switch
+                    |  for label.
+              tr
+                td Disable Switch
+                td.w-50
+                  label.switch
+                    input(type='checkbox', disabled='')
+                    span.switch-state
+                td
+                  span
+                    | this Disable Switch 
+                    code disabled
+              tr
+                td Switch Color
+                td.w-50
+                  .flex-grow-1.icon-state
+                    label.switch
+                      input(type='checkbox', checked='')
+                      span.switch-state.bg-primary
+                td
+                  span
+                    | Use  class 
+                    code bg-*
+                    code Primary , Secondary , Success , Info , Warning , Danger
+                    | in span with icon show switch 
+                    code icon-state
+                    | on div.
+              tr
+                td Switch Outline
+                td.w-50
+                  .flex-grow-1.icon-state.switch-outline
+                    label.switch
+                      input(type='checkbox', checked='')
+                      span.switch-state.bg-primary
+                td
+                  span
+                    | Use  class 
+                    code switch-outline
+                    | on div.

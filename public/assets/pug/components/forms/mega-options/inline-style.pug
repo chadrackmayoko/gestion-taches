@@ -1,0 +1,45 @@
+.card
+    .card-header.pb-0
+        +card-header('Inline style', '','', 'For Create inline megaoption add', '.mega-inline', 'class in form tag')
+    .card-body.megaoptions-border-space-sm
+      form.mega-inline
+        .row
+          .col-sm-6
+            .card
+              .d-flex.p-20.pb-0
+                label.d-block(for='radio19')
+                  input#radio19.radio.radio-border-warning.radio-warning(type='radio', name='radio1', value='option1')
+                  | COD
+                .flex-grow-1
+                  span.badge.badge-warning.pull-right.digits 50 INR
+              span.p-20.pt-0 Estimated 14-20 Day Shipping ( Duties end taxes may be due upon delivery )
+          .col-sm-6
+            .card
+              .d-flex.p-20.pb-0
+                label.d-block(for='radio20')
+                  input#radio20.radio.radio-border-secondary.radio-secondary(type='radio', name='radio1', value='option1')
+                  | Fast
+                .flex-grow-1
+                  span.badge.badge-secondary.pull-right.digits 100 INR
+              span.p-20.pt-0 Estimated 1 Day Shipping ( Duties end taxes may be due upon delivery )
+          .col-sm-6
+            .card
+              .d-flex.p-20.pb-0
+                label.d-block(for='radio21')
+                  input#radio21.radio.radio-border-secondary.radio-secondary(type='radio', name='radio1', value='option1')
+                  | Standard
+                .flex-grow-1
+                  span.badge.badge-secondary.pull-right.digits 80 INR
+              span.p-20.pt-0 Estimated 3 Day Shipping ( Duties end taxes may be due upon delivery )
+          .col-sm-6
+            .card
+              .d-flex.p-20.pb-0
+                label.d-block(for='radio22')
+                  input#radio22.radio.radio-border-warning.radio-warning(type='radio', name='radio1', value='option1')
+                  | Local
+                .flex-grow-1
+                  span.badge.badge-warning.pull-right.digits Free
+              span.p-20.pt-0 Estimated 15 Day Shipping ( Duties end taxes may be due upon delivery )
+    .card-footer.text-end
+      button.btn.btn-warning.m-r-15(type='submit') Submit
+      button.btn.bg-light(type='submit') Cancel

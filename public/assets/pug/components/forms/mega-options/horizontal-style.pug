@@ -1,0 +1,61 @@
+.card
+    .card-header.pb-0
+        +card-header('Horizontal style', '','', 'horizontal style in mega-options. Use the', '.mega-horizontal', 'class through created horizontal alignments.')
+    .card-body
+      form.mega-horizontal
+        .row
+          .col-sm-3
+            p.mega-title Delivery Option
+          .col-sm-9
+            .card
+              .d-flex.p-20.pb-0
+                label.d-block(for='radio30')
+                  input#radio30.radio.radio-border-primary.radio-primary(type='radio', name='radio22', value='option1')
+                  | COD
+                .flex-grow-1
+                  span.badge.badge-primary.pull-right.digits 50 INR
+              span.p-20.pt-0 Estimated 5 Day Shipping ( Duties end tax may be due delivery )
+          .col-sm-9.offset-sm-3
+            .card
+              .d-flex.p-20.pb-0
+                label.d-block(for='radio31')
+                  input#radio31.radio.radio-border-secondary.radio-secondary(type='radio', name='radio22', value='option1' checked='')
+                  | Fast
+                .flex-grow-1
+                  span.badge.badge-secondary.pull-right.digits 100 INR
+              span.p-20.pt-0 Estimated 1 Day Shipping ( Duties end tax may be due delivery )
+          .col-sm-3
+            p.mega-title Buying Option
+          .col-sm-9
+            .card
+              .d-flex.p-20.pb-0
+                label.d-block(for='radio32')
+                  input#radio32.radio.radio-border-success.radio-success(type='radio', name='radio23', value='option1')
+                  | Pixelstrap
+                .flex-grow-1
+                  span.badge.badge-success.pull-right.digits 250 INR
+              span.p-20.pt-0.rating-star-wrapper
+                i.icofont.icofont-star.font-warning
+                i.icofont.icofont-star.font-warning
+                i.icofont.icofont-star.font-warning
+                i.icofont.icofont-star.font-warning
+                i.icofont.icofont-star.font-warning.m-r-5
+                | 5 start rating
+          .col-sm-9.offset-sm-3
+            .card.mb-0
+              .d-flex.p-20.pb-0
+                label.d-block(for='radio33')
+                  input#radio33.radio.radio-border-info.radio-info(type='radio', name='radio23', value='option1' checked='')
+                  | Tivo
+                .flex-grow-1
+                  span.badge.badge-info.pull-right.digits 150 INR
+              span.p-20.pt-0.rating-star-wrapper
+                i.icofont.icofont-star.font-warning
+                i.icofont.icofont-star
+                i.icofont.icofont-star
+                i.icofont.icofont-star
+                i.icofont.icofont-star.m-r-5
+                | 1 start rating
+    .card-footer.text-end
+      button.btn.btn-primary.m-r-15(type='submit') Submit
+      button.btn.bg-light(type='submit') Cancel

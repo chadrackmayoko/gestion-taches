@@ -1,0 +1,14 @@
+// default Toasts
+.card.height_equal
+    .card-header.pb-0
+        +card-header('Default Toasts', '','', 'Use the', '.hide , .show', 'class through visible toast.')
+    .card-body.toast-rtl
+        .toast.default-show-toast.toast.show(role='alert' aria-live='assertive' aria-atomic='true')
+            .toast-header.toast-img
+                img.rounded.me-2(src='../assets/images/avatar/9.jpg' alt='profile')
+                strong.me-auto Edmin Template
+                small.d-sm-block.d-none 10 min ago
+                button.btn-close(type='button' data-bs-dismiss='toast' aria-label='Close')
+            .toast-body.toast-dark
+                strong.font-success Well done!
+                |  You successfully read this important message.

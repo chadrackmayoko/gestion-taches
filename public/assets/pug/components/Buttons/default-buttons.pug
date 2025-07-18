@@ -1,0 +1,59 @@
+// Default Buttons Start
+//-// Default Buttons Data
+-
+    var DEFAULT_BUTTONS =[
+        {
+            title: 'Primary Button',
+            BtnColor: 'btn-primary',
+            tooltip: 'btn btn-primary',
+        },
+        {
+            title: 'Secondary Button',
+            BtnColor: 'btn-secondary',
+            tooltip: 'btn btn-secondary',
+        },
+        {
+            title: 'Tertiary Button',
+            BtnColor: 'btn-tertiary',
+            tooltip: 'btn btn-tertiary',
+        },
+        {
+            title: 'Success Button',
+            BtnColor: 'btn-success',
+            tooltip: 'btn btn-success',
+        },
+        {
+            title: 'Info Button',
+            BtnColor: 'btn-info',
+            tooltip: 'btn btn-info',
+        },
+        {
+            title: 'Warning Button',
+            BtnColor: 'btn-warning',
+            tooltip: 'btn btn-warning',
+        },
+        {
+            title: 'Danger Button',
+            BtnColor: 'btn-danger',
+            tooltip: 'btn btn-danger',
+        },
+        {
+            title: 'Light Button',
+            BtnColor: 'font-dark btn-light',
+            tooltip: 'btn btn-light',
+        },
+        {
+            title: 'Dark Button',
+            BtnColor: 'btn-dark',
+            tooltip: 'btn btn-dark',
+        },
+    ] 
+//- Default Buttons Mixin   
+mixin DefaultButtons(items)
+    each item in items
+        .text-center.col-12.col-sm-6.col-md-12
+            button.btn.m-1(type='button' data-bs-toggle='tooltip' class=item.BtnColor title=item.tooltip)=item.title
+// Default Buttons Menu            
+.btn-showcase.row
+    +DefaultButtons(DEFAULT_BUTTONS)
+// Default Buttons End

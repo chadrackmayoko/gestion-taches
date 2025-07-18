@@ -1,0 +1,9 @@
+.card.range_4.height_equal 
+    .card-header.pb-0
+        +card-header('Default range slider', '','', 'Use the', '.slider', 'class. and edmin used Io range slider.')
+    .card-body
+        .slider-container
+            #slider_thumb.range-slider_thumb
+            .range-slider_line
+                #slider_line.range-slider_line-fill
+            input#slider_input.range-slider_input(type='range' value='20' min='0' max='100')

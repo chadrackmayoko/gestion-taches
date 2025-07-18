@@ -1,0 +1,22 @@
+// Rounded Pagination Start
+.card
+    .card-header.pb-0
+        +card-header('Rounded Pagination', '','', 'Used in rounded pagination', '[.rounded-circle]', '')
+    .card-body
+        nav(aria-label='Page navigation example')
+            ul.pagination.pagination-tertiary.pagination-border-tertiary.gap-2
+                li.page-item
+                    a.page-link.rounded-circle(href='javascript:void(0)' aria-label='Previous')
+                        span(aria-hidden='true') «
+                li.page-item
+                    a.page-link.rounded-circle(href='javascript:void(0)') 1
+                li.page-item
+                    a.page-link.rounded-circle(href='javascript:void(0)') 2
+                li.page-item
+                    a.page-link.rounded-circle(href='javascript:void(0)') ...
+                li.page-item
+                    a.page-link.rounded-circle(href='javascript:void(0)') 20
+                li.page-item
+                    a.page-link.rounded-circle(href='javascript:void(0)' aria-label='Next')
+                        span(aria-hidden='true') »
+// Rounded Pagination End

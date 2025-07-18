@@ -1,0 +1,45 @@
+.email-sidebar.md-sidebar
+  a.btn.btn-primary.email-aside-toggle.md-sidebar-toggle To Do filter
+  .email-left-aside.md-sidebar-aside
+    .card 
+      .card-body 
+        .email-app-sidebar.left-bookmark.custom-scrollbar
+          .d-flex.align-items-center.flex-wrap
+            .media-size-email
+              img.me-3.img-40.rounded-circle(src="../assets/images/avatar/1.jpg", alt="")
+            .flex-grow-1 
+              h6.f-w-600 Mark Jecno
+              p Markjecno@gmail.com
+          ul.nav.main-menu
+            li.nav-item
+              button.btn-primary.bg-primary.d-block.btn-mail.w-100
+                +FeatherSprite('check-circle', 'feather me-2')
+                | To Do List
+            li.nav-item 
+              a(href="javascript:void(0)")
+                span.iconbg.badge-light-primary
+                  +FeatherSprite('file-plus', 'feather')
+                span.title.ms-2 All Task
+            li.nav-item
+              a(href="javascript:void(0)")
+                span.iconbg.badge-light-success
+                  +FeatherSprite('check-circle', 'feather')
+                span.title.ms-2 Completed
+                span.badge.badge-success 3
+            li.nav-item
+              a(href="javascript:void(0)")
+                span.iconbg.badge-light-danger
+                  +FeatherSprite('cast', 'feather')
+                span.title.ms-2 Pending
+                span.badge.badge-danger 2
+            li.nav-item
+              a(href="javascript:void(0)")
+                span.iconbg.badge-light-info
+                  +FeatherSprite('activity', 'feather')
+                span.title.ms-2 In Process
+                span.badge.badge-primary 2
+            li.nav-item
+              a(href="javascript:void(0)")
+                span.iconbg.badge-light-danger
+                  +FeatherSprite('trash', 'feather')
+                span.title.ms-2 Trash

@@ -1,0 +1,18 @@
+// Basic Popover
+.card 
+    .card-header.pb-0
+        +card-header('Basic popover', 'dote','','Use the', 'data-bs-toggle/="popover"', ' through popover above buttons.')
+    .card-body.common-flex.popover-wrapper
+        button.btn.btn-primary.example-popover.mb-0.me-0(type='button' data-bs-toggle='popover' data-bs-placement='left' title='' data-bs-content="If the package restore doesn't help, you can look at the Output window in the Visual Studio." data-bs-original-title='Basic Popover') Hurry Up! 
+        button.example-popover.btn.btn-success.mb-0.me-0(type='button' data-bs-trigger='hover' data-container='body' data-bs-toggle='popover' data-bs-placement='bottom' title='' data-offset='-20px -20px' data-bs-content=' Several utility instruction sets have been featured in the Bootstrap 4 to promote very easy learning for beginners in the business of web building.' data-bs-original-title='Hover Popover') Hover tooltip
+        a.btn.btn-secondary(tabindex='0' role='button' data-bs-toggle='popover' data-bs-trigger='focus' title='' data-bs-title='Dismissible popover' data-bs-content='You are able to even develop and suggest improvements to the Bootstrap 4 before its final version is delivered.' data-bs-original-title='Dismissible popover') Dismissible popover
+        .code-box-copy
+            button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#example-head' title='Copy')
+                i.icofont.icofont-copy
+            pre
+                code.language-html#hover-variations
+                  | &lt;!--You can use attribute (data-bs-toggle='popover') through make popover on buttons.--&gt;
+                  | &lt;div class="card-body common-flex"&gt;
+                  | &lt;button class="btn btn-primary example-popover mb-0 me-0" type="button" data-bs-toggle="popover" title="Basic Popover" data-bs-content="If the package restore doesn't help, you can look at the Output window in the Visual Studio."&gt;Hurry Up! &lt;/button&gt;
+                  | &lt;button class="example-popover btn btn-success mb-0 me-0" type="button" data-bs-trigger="hover" data-container="body" data-bs-toggle="popover" data-bs-placement="bottom" title="Hover Popover" data-offset="-20px -20px" data-bs-content=" Several utility instruction sets have been featured in the Bootstrap 4 to promote very easy learning for beginners in the business of web building."&gt;Hover tooltip&lt;/button&gt;
+                  | &lt;a class="btn btn-lg btn-secondary" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="Dismissible popover" data-bs-title="Dismissible popover" data-bs-content="You are able to even develop and suggest improvements to the Bootstrap 4 before its final version is delivered."&gt;Dismissible popover&lt;/a&gt;

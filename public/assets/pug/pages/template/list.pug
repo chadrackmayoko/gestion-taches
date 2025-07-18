@@ -1,0 +1,50 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+-var height_equal    = true;
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    include ../../components/loader
+    main#pageWrapper.page-wrapper.compact-wrapper
+        include ../../components/header/header
+        .page-body-wrapper
+          include ../../components/sidebar
+          .page-body
+            .container-fluid
+              +breadcrumb(['Ui Kits','Lists'],'Lists')
+            // Container-Fluid Starts
+            .container-fluid.list-content-ui
+              .row
+                .col-lg-4
+                  include ../../components/Ui-kits/lists/default-list
+                .col-lg-4
+                  include ../../components/Ui-kits/lists/active-list
+                .col-lg-4
+                  include ../../components/Ui-kits/lists/flush-list
+                .col-xxl-6
+                  include ../../components/Ui-kits/lists/contexual-list
+                .col-xxl-6
+                  include ../../components/Ui-kits/lists/horizontal-list
+                .col-md-12
+                  include ../../components/Ui-kits/lists/custom-content-list
+                .col-md-4
+                  include ../../components/Ui-kits/lists/checkbox-list
+                .col-md-4
+                  include ../../components/Ui-kits/lists/radio-list
+                .col-md-4
+                  include ../../components/Ui-kits/lists/number-list
+                .col-md-12
+                  include ../../components/Ui-kits/lists/javascript-list
+                .col-xxl-4.col-lg-6
+                  include ../../components/Ui-kits/lists/badge-number-list
+                .col-xxl-4.col-lg-6
+                  include ../../components/Ui-kits/lists/disable-list
+                .col-xxl-4.col-xl-12
+                  include ../../components/Ui-kits/lists/scrollable-list
+            // Container-Fluid Ends
+          include ../../components/footer
+    include ../../components/footer-files

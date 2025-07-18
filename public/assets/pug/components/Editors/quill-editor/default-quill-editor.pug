@@ -1,0 +1,46 @@
+.card
+  .card-header.pb-0
+    +card-header('Quilljs Editor', '','', '', '', '') 
+  .card-body
+    .toolbar-box
+      #toolbar7
+        span.ql-formats
+          select.ql-size
+            option(value='small') Small
+            option(selected='') Normal
+            option(value='large') Large
+            option(value='huge') Huge
+        span.ql-formats
+          button.ql-bold Bold
+          button.ql-italic Italic
+          button.ql-underline Underline
+          button.ql-strike Strike
+          button.ql-script(value='sub')
+          button.ql-script(value='super')
+        span.ql-formats
+          button.ql-header(value='1')
+          button.ql-header(value='2')
+        span.ql-formats
+          button.ql-list(value='ordered') List
+          button.ql-list(value='bullet') Bullet
+          button.ql-indent(value='-1')
+          button.ql-indent(value='+1')
+        span.ql-formats
+          button.ql-link Link
+          button.ql-image Image
+          button.ql-video Video
+          select.ql-color
+          select.ql-background
+        // Add more options here
+        span.ql-formats
+          button.ql-blockquote Blockquote
+          button.ql-code-block
+        span.ql-formats
+          button.ql-align(value='')
+          button.ql-align(value='center')
+          button.ql-align(value='right')
+          button.ql-align(value='justify')
+        span.ql-formats 
+          button.ql-clean
+      #editor7.quill-paragraph
+        p There was a road along with that open place. When the tiger saw any man passing by he said to him, “Brother, here is a good bangle. I wish to give it to you. Don’t fear. lam old and infirm now. I now pray to God five times a day and doing it will be useful to you. Don’t fear, come to me and take other religious acts. This bangle is useless to me. It will be useful to you. Don’t fear, come to me and take this.”

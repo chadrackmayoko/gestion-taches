@@ -1,0 +1,39 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+-var notify                 = true;
+-var height_equal           = true;
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    include ../../components/loader
+    main#pageWrapper.page-wrapper.compact-wrapper
+        include ../../components/header/header
+        .page-body-wrapper
+          include ../../components/sidebar
+          .page-body
+            .container-fluid
+              +breadcrumb(['Bonus Ui','Toast'],'Toast')
+            // Container-fluid starts
+            .container-fluid
+              .row 
+                .col-xl-6
+                  include ../../components/Bonus-ui/toast/live-toast
+                .col-xl-6
+                  include ../../components/Bonus-ui/toast/color-toast
+                .col-xl-6
+                  include ../../components/Bonus-ui/toast/stacking-toast
+                .col-xl-6
+                  include ../../components/Bonus-ui/toast/translucent-toast
+                .col-xl-6
+                  include ../../components/Bonus-ui/toast/default-toast
+                .col-xl-6
+                  include ../../components/Bonus-ui/toast/unique-toast
+                .col-xl-12
+                  include ../../components/Bonus-ui/toast/toast-placement
+            // Container-fluid ends
+          include ../../components/footer
+    include ../../components/footer-files 

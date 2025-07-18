@@ -1,0 +1,40 @@
+.card
+  .card-body.email-verify
+    .row.g-3
+      .col-md-6
+        .card-wrapper.solid-border.rounded-3.h-100
+          .row.g-1 
+            .col-xxl-4.box-col-5
+              .authenticate
+                img.img-fluid(src="../assets/images/forms/email.png", alt="")
+            .col-xxl-8.box-col-7
+              h4 Email verification
+              p A verification code has been sent to your email. This code will be valid for 15 minutes.
+              .input-group.mb-3
+                input.form-control(type='text' placeholder="Please enter the code here" aria-label="basic-addon2" aria-describedby='basic-addon2')
+                span#basic-addon2.input-group-text.bg-primary Verify
+      .col-md-6
+        .card-wrapper.solid-border.rounded-3.h-100
+          .authenticate
+            h4 Verification code
+            img.img-fluid(src="../assets/images/forms/authenticate.png", alt="authenticate")
+            span We've sent a verification code to
+            span +91********70
+            form.row
+              .col 
+                h4 Your OTP Code here:
+              .col.otp-generate
+                input.form-control.code-input(type="text" maxlength="1" pattern="[0-9]" required)
+                input.form-control.code-input(type="text" maxlength="1" pattern="[0-9]" required)
+                input.form-control.code-input(type="text" maxlength="1" pattern="[0-9]" required)
+                input.form-control.code-input(type="text" maxlength="1" pattern="[0-9]" required)
+                input.form-control.code-input(type="text" maxlength="1" pattern="[0-9]" required)
+                input.form-control.code-input(type="text" maxlength="1" pattern="[0-9]" required)
+              .col 
+                button.btn.btn-primary.w-100(type="submit") Verify
+              div 
+                span Not received your code?
+                span
+                  a.font-primary(href="javascript:void(0)") Resend 
+                  | OR 
+                  a.font-primary(href="javascript:void(0)") Call  

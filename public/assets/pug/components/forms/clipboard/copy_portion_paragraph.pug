@@ -1,0 +1,16 @@
+.card
+  .card-header.pb-0
+    +card-header('Copy portion from paragraph', '','', '', '', '')
+  .card-body
+    .clipboaard-container
+      p.f-16 Copy portion from paragraph
+      h6.solid-border.rounded.card-body.f-w-300
+        span#clipboardExample4.bg-primary.text-white.p-1 Web design is the process of creating websites 
+        | that are visible online. Take a website design course to learn how to 
+        | create an appealing and responsive website. In the discipline of web design,
+        |  there are degree, diploma, postgraduate degree, and certificate programmes.
+        |  A web designer is responsible for a website's look, feel, and occasionally even content.
+      .mt-3.text-end
+        button.btn.btn-secondary.btn-clipboard(type='button', data-clipboard-action='copy', data-clipboard-target='#clipboardExample4')
+          i.fa.fa-copy
+          |  Copy highlighted text

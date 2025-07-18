@@ -1,0 +1,87 @@
+// Divider dropdown
+.card
+    .card-header.pb-0
+        +card-header('Divider dropdown', 'dote','','When the.show class starts, dropdown appears. And', '.dropdown-divider','to change dropdown section.')
+    .card-body.rtl-dropdown
+        .common-flex
+            .btn-group
+                button.btn.btn-success.rounded-pill.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false') Wishlist
+                ul.dropdown-menu.dropdown-block
+                    li
+                        a.dropdown-item(href='#') Shoes 
+                    li
+                        a.dropdown-item(href='#') Bag
+                    li
+                        a.dropdown-item(href='#') Clothes 
+                    li
+                        hr.dropdown-divider
+                    li
+                        a.dropdown-item(href='#') Separated link
+            .btn-group
+                button.btn.btn-primary.rounded-pill.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false') Sports 
+                ul.dropdown-menu.dropdown-block
+                    li
+                        a.dropdown-item(href='#') Badminton
+                    li
+                        a.dropdown-item(href='#') Tenis 
+                    li
+                        a.dropdown-item(href='#') Kho-Kho
+                    li
+                        hr.dropdown-divider
+                    li
+                        a.dropdown-item(href='#') Separated link
+            .btn-group
+                button.btn.btn-secondary.rounded-pill.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false') Colors 
+                ul.dropdown-menu.dropdown-block
+                    li
+                        a.dropdown-item(href='#') Orange 
+                    li
+                        a.dropdown-item(href='#') Yellow 
+                    li
+                        a.dropdown-item(href='#') Red 
+                    li
+                        hr.dropdown-divider
+                    li
+                        a.dropdown-item(href='#') Separated link
+        .code-box-copy
+            button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#tooltip', title='Copy')
+              i.icofont.icofont-copy
+            pre
+              code.language-html#divider-dropdown
+                | &lt;!--You can use .dropdown-menu and inside added .dropdown-item.*(dropdown list)--&gt;  
+                | &lt;div class="btn-group"&gt;
+                | &lt;button class="btn btn-success rounded-pill dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"&gt;Wishlist&lt;/button&gt;
+                | &lt;ul class="dropdown-menu dropdown-block"&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Shoes &lt;/a&gt;&lt;/li&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Bag&lt;/a&gt;&lt;/li&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Clothes &lt;/a&gt;&lt;/li&gt;
+                | &lt;li&gt;
+                | &lt;hr class="dropdown-divider"&gt;
+                | &lt;/li&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+                | &lt;/ul&gt;
+                | &lt;/div&gt;
+                | &lt;div class="btn-group"&gt;
+                | &lt;button class="btn btn-primary rounded-pill dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"&gt;Sports &lt;/button&gt;
+                | &lt;ul class="dropdown-menu dropdown-block"&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Badminton&lt;/a&gt;&lt;/li&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Tenis &lt;/a&gt;&lt;/li&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Kho-Kho&lt;/a&gt;&lt;/li&gt;
+                | &lt;li&gt;
+                | &lt;hr class="dropdown-divider"&gt;
+                | &lt;/li&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+                | &lt;/ul&gt;
+                | &lt;/div&gt;
+                | &lt;div class="btn-group"&gt;
+                | &lt;button class="btn btn-secondary rounded-pill dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"&gt;Colors &lt;/button&gt;
+                | &lt;ul class="dropdown-menu dropdown-block"&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Orange &lt;/a&gt;&lt;/li&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Yellow &lt;/a&gt;&lt;/li&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Red &lt;/a&gt;&lt;/li&gt;
+                | &lt;li&gt;
+                | &lt;hr class="dropdown-divider"&gt;
+                | &lt;/li&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+                | &lt;/ul&gt;
+                | &lt;/div&gt;

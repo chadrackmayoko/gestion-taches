@@ -1,0 +1,53 @@
+// Page sidebar start
+.overlay
+aside.page-sidebar(data-sidebar-layout='stroke-svg')
+    ul.sidebar-menu#simple-bar
+        li.pin-title.sidebar-list.p-0
+            h5.sidebar-main-title Pinned
+        li.line.pin-line
+        li.sidebar-list 
+            +IconlySprite('Pin', 'pinned-icon') 
+            a.sidebar-link(href="../template/index.html")
+                +IconlySprite('Home','stroke-icon') 
+                span Dashboard
+        li.sidebar-list 
+            +IconlySprite('Pin', 'pinned-icon') 
+            a.sidebar-link(href="javascript:void(0)")
+                +IconlySprite('Star', 'stroke-icon') 
+                span Starter kit
+                +FeatherSprite('chevron-right', 'feather') 
+            ul.sidebar-submenu 
+                li
+                    a.submenu-title(href="javascript:void(0)") 
+                        +IconlySprite('right-3' , 'svg-menu')
+                        | color version
+                        +FeatherSprite('chevron-right', 'feather')
+                    ul.according-submenu
+                        li
+                            a(href="index.html") 
+                                | Layout Light
+                        li
+                            a(href="layout-dark.html") 
+                                | Layout Dark
+                li
+                    a.submenu-title(href="javascript:void(0)") 
+                        +IconlySprite('right-3' , 'svg-menu')
+                        | Page layout
+                        +FeatherSprite('chevron-right', 'feather')
+                    ul.according-submenu
+                        li
+                            a(href="boxed.html") 
+                                | Boxed
+                        li
+                            a(href="layout-rtl.html") 
+                                | RTL
+        li.sidebar-list 
+            +IconlySprite('Pin', 'pinned-icon') 
+            a.sidebar-link(href="https://support.pixelstrap.com/" target="_blank")
+                +IconlySprite('Camera', 'stroke-icon') 
+                span Raise Support
+        li.sidebar-list 
+            +IconlySprite('Pin', 'pinned-icon') 
+            a.sidebar-link(href="https://docs.pixelstrap.net/admin/edmin/document/" target="_blank")
+                +IconlySprite('Paper', 'stroke-icon')
+                span Documentation

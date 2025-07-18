@@ -1,0 +1,54 @@
+// Pagination Alignment Start
+//-// Pagination Alignment Data 
+-
+    var SIZE_PAGINATION =[
+        {
+            title: 'Previous',
+            first: '1',
+            second: '2',
+            third: '3',
+            next: 'Next',
+            bgcolor:'pagination-lg pagination-info pagination-border-info',
+            margin:'mb-4'
+        },
+        {
+            title: 'Previous',
+            first: '1',
+            second: '2',
+            third: '3',
+            next: 'Next',
+            bgcolor:'pagination-md pagination-info pagination-border-info',
+            margin:'mb-4'
+        },
+        {
+            title: 'Previous',
+            first: '1',
+            second: '2',
+            third: '3',
+            next: 'Next',
+            bgcolor:'pagination-sm pagination-info pagination-border-info',
+            margin:'mb-0'
+        },
+    ]
+//- Pagination Alignment Mixin
+mixin SizePagination(items)
+    each item in items 
+        nav(aria-label='Page navigation example' class=item.margin)
+            ul.pagination(class=item.bgcolor)
+                li.page-item
+                    a.page-link(href='javascript:void(0)')=item.title
+                li.page-item
+                    a.page-link(href='javascript:void(0)')=item.first
+                li.page-item
+                    a.page-link(href='javascript:void(0)')=item.second
+                li.page-item
+                    a.page-link(href='javascript:void(0)')=item.third
+                li.page-item
+                    a.page-link(href='javascript:void(0)')=item.next
+// Pagination Alignment menu
+.card
+    .card-header.pb-0
+        +card-header('Pagination Sizing', '','', 'Use', ' [pagination-lg/pagination-md/pagination-sm]', 'for additional sizes.')
+    .card-body
+        +SizePagination(SIZE_PAGINATION)
+// Pagination Alignment Ends

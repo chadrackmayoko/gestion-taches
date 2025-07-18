@@ -1,0 +1,49 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+-var height_equal           = true;
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    include ../../components/loader
+    main#pageWrapper.page-wrapper.compact-wrapper
+        include ../../components/header/header
+        .page-body-wrapper
+          include ../../components/sidebar
+          .page-body
+            .container-fluid
+              +breadcrumb(['Bootstrap Tables','Bootstrap Basic Tables'],'Bootstrap Basic Tables')
+            // Container-fluid starts
+            .container-fluid.table-space.basic_table
+              .row 
+                  .col-sm-12
+                    include ../../components/tables/basic_table/bootstrap_basic_border
+                  .col-sm-12
+                    include ../../components/tables/basic_table/inverse_table
+                  .col-sm-12
+                    include ../../components/tables/basic_table/hoverablerows_horizontal_border
+                  .col-sm-12
+                    include ../../components/tables/basic_table/inverse_primary_background
+                  .col-sm-12
+                    include ../../components/tables/basic_table/caption_table
+                  .col-sm-6
+                    include ../../components/tables/basic_table/table_head_options
+                  .col-sm-6
+                    include ../../components/tables/basic_table/striped_row_inverse
+                  .col-sm-12
+                    include ../../components/tables/basic_table/breckpoint_specific
+                  .col-sm-12
+                    include ../../components/tables/basic_table/responsive_with_light_background
+                  .col-sm-12
+                    include ../../components/tables/basic_table/sizing_tables
+                  .col-sm-12
+                    include ../../components/tables/basic_table/custom_color_with_hover_stripped
+                  .col-sm-12
+                    include ../../components/tables/basic_table/dashed_border
+            // Container-fluid starts
+          include ../../components/footer
+    include ../../components/footer-files
+    

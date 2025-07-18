@@ -1,0 +1,72 @@
+//-// Payment Icon
+-
+    var ICO_ITEM20 =[
+        { id:'icofont-air-balloon' }
+        , { id:'icofont-airplane-alt' }
+        , { id:'icofont-airplane' }
+        , { id:'icofont-articulated-truck' }
+        , { id:'icofont-auto-mobile' }
+        , { id:'icofont-auto-rickshaw' }
+        , { id:'icofont-bicycle-alt-1' }
+        , { id:'icofont-bicycle-alt-2' }
+        , { id:'icofont-bicycle' }
+        , { id:'icofont-bus-alt-1' }
+        , { id:'icofont-bus-alt-2' }
+        , { id:'icofont-bus-alt-3' }
+        , { id:'icofont-bus' }
+        , { id:'icofont-cab' }
+        , { id:'icofont-cable-car' }
+        , { id:'icofont-car-alt-1' }
+        , { id:'icofont-car-alt-2' }
+        , { id:'icofont-car-alt-3' }
+        , { id:'icofont-car-alt-4' }
+        , { id:'icofont-car' }
+        , { id:'icofont-delivery-time' }
+        , { id:'icofont-fast-delivery' }
+        , { id:'icofont-fire-truck-alt' }
+        , { id:'icofont-fire-truck' }
+        , { id:'icofont-free-delivery' }
+        , { id:'icofont-helicopter' }
+        , { id:'icofont-motor-bike-alt' }
+        , { id:'icofont-motor-bike' }
+        , { id:'icofont-motor-biker' }
+        , { id:'icofont-oil-truck' }
+        , { id:'icofont-rickshaw' }
+        , { id:'icofont-rocket-alt-1' }
+        , { id:'icofont-rocket-alt-2' }
+        , { id:'icofont-rocket' }
+        , { id:'icofont-sail-boat-alt-1' }
+        , { id:'icofont-sail-boat-alt-2' }
+        , { id:'icofont-sail-boat' }
+        , { id:'icofont-scooter' }
+        , { id:'icofont-sea-plane' }
+        , { id:'icofont-ship-alt' }
+        , { id:'icofont-ship' }
+        , { id:'icofont-speed-boat' }
+        , { id:'icofont-taxi' }
+        , { id:'icofont-tractor' }
+        , { id:'icofont-train-line' }
+        , { id:'icofont-train-steam' }
+        , { id:'icofont-tram' }
+        , { id:'icofont-truck-alt' }
+        , { id:'icofont-truck-loaded' }
+        , { id:'icofont-truck' }
+        , { id:'icofont-van-alt' }
+        , { id:'icofont-van' }
+        , { id:'icofont-yacht' }
+    ]
+//-// Ico icon mixin
+mixin IcoContent(items)
+    each item in items 
+        .col-xxl-2.col-lg-3.col-sm-4
+            .card.d-flex.align-items-center.flex-column.default-border
+                i.icofont(class=item.id)
+                .flex-grow-1
+                    h6=item.id
+// Ico icon
+.card
+    .card-header.pb-0.d-flex.justify-content-between.align-items-center
+        h4 Payment Icon
+    .card-body
+        .row.icon-event.iconly-icons.icon-lists
+            +IcoContent(ICO_ITEM20)

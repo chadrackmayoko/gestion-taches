@@ -1,0 +1,64 @@
+//-// text editor Icon
+-
+    var ICO_ITEM21 =[
+        { id:'icofont-align-center' }
+        , { id:'icofont-align-left' }
+        , { id:'icofont-align-right' }
+        , { id:'icofont-all-caps' }
+        , { id:'icofont-bold' }
+        , { id:'icofont-brush' }
+        , { id:'icofont-clip-board' }
+        , { id:'icofont-code-alt' }
+        , { id:'icofont-color-bucket' }
+        , { id:'icofont-color-picker' }
+        , { id:'icofont-copy-invert' }
+        , { id:'icofont-copy' }
+        , { id:'icofont-cut' }
+        , { id:'icofont-delete-alt' }
+        , { id:'icofont-edit-alt' }
+        , { id:'icofont-eraser-alt' }
+        , { id:'icofont-font' }
+        , { id:'icofont-heading' }
+        , { id:'icofont-indent' }
+        , { id:'icofont-italic-alt' }
+        , { id:'icofont-italic' }
+        , { id:'icofont-justify-all' }
+        , { id:'icofont-justify-center' }
+        , { id:'icofont-justify-left' }
+        , { id:'icofont-justify-right' }
+        , { id:'icofont-link-broken' }
+        , { id:'icofont-outdent' }
+        , { id:'icofont-paper-clip' }
+        , { id:'icofont-paragraph' }
+        , { id:'icofont-pin' }
+        , { id:'icofont-printer' }
+        , { id:'icofont-redo' }
+        , { id:'icofont-rotation' }
+        , { id:'icofont-save' }
+        , { id:'icofont-small-cap' }
+        , { id:'icofont-strike-through' }
+        , { id:'icofont-sub-listing' }
+        , { id:'icofont-subscript' }
+        , { id:'icofont-superscript' }
+        , { id:'icofont-table' }
+        , { id:'icofont-text-height' }
+        , { id:'icofont-text-width' }
+        , { id:'icofont-trash' }
+        , { id:'icofont-underline' }
+        , { id:'icofont-undo' }
+    ]
+//-// Ico icon mixin
+mixin IcoContent(items)
+    each item in items 
+        .col-xxl-2.col-lg-3.col-sm-4
+            .card.d-flex.align-items-center.flex-column.default-border
+                i.icofont(class=item.id)
+                .flex-grow-1
+                    h6=item.id
+// Ico icon
+.card
+    .card-header.pb-0.d-flex.justify-content-between.align-items-center
+        h4 Text Editor Icon
+    .card-body
+        .row.icon-event.iconly-icons.icon-lists
+            +IcoContent(ICO_ITEM21)

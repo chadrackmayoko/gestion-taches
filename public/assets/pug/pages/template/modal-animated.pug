@@ -1,0 +1,27 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+-var custom_animate       = true;
+-var modal_animated       = true;
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    include ../../components/loader
+    main#pageWrapper.page-wrapper.compact-wrapper
+        include ../../components/header/header
+        .page-body-wrapper
+          include ../../components/sidebar
+          .page-body
+            .container-fluid
+              +breadcrumb(['Bonus Ui','Modal Animated'],'Modal Animated')
+            // Container-fluid starts
+            .container-fluid
+              .row 
+                .col-sm-12
+                  include ../../components/Bonus-ui/modal-animated/basic-animated
+            // Container-fluid ends
+          include ../../components/footer
+    include ../../components/footer-files

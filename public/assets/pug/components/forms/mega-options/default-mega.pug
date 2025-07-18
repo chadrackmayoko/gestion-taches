@@ -1,0 +1,27 @@
+.card
+    .card-header.pb-0
+        +card-header('Default style', '','', '', '', 'This option is show by default you do not need to add any extra class.')
+    .card-body.megaoptions-border-space-sm
+        form.mega-inline
+            .row
+                .col-sm-6
+                    .card
+                        .d-flex.p-20.pb-0
+                            label.d-block(for='radio14')
+                                input#radio14.radio.radio-border-primary.radio-primary(type='radio' name='radio1' value='option1')
+                                | COD
+                            .flex-grow-1
+                                span.badge.badge-primary.pull-right.digits 50 INR
+                        span.p-20.pt-0 Estimated 2 Day Shipping ( Duties end tax may be due delivery )
+                .col-sm-6
+                    .card
+                        .d-flex.p-20.pb-0
+                            label.d-block(for='radio13')
+                                input#radio13.radio.radio-border-secondary.radio-secondary(type='radio' name='radio1' value='option1')
+                                | Fast
+                            .flex-grow-1
+                                span.badge.badge-secondary.pull-right.digits 100 INR
+                        span.p-20.pt-0 Estimated 1 Day Shipping ( Duties end tax may be due delivery )
+    .card-footer.text-end
+        button.btn.btn-primary.m-r-15(type='submit') Submit
+        button.btn.bg-light(type='submit') Cancel

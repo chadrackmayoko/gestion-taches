@@ -1,0 +1,46 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+-var animate                = true;
+-var notify_bootstrap       = true;
+-var icon_notify            = true;
+-var iconly_icon            = true;
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    include ../../components/loader
+    main#pageWrapper.page-wrapper.compact-wrapper
+        include ../../components/header/header
+        .page-body-wrapper
+          include ../../components/sidebar
+          .page-body
+            .container-fluid
+              +breadcrumb(['Icons','Iconly Sprite'],'Iconly Sprite')
+            // Container-fluid starts
+            .container-fluid
+              .row
+                .col-xl-12 
+                  include ../../components/Icons/iconly-component
+            // Container-fluid ends
+          include ../../components/footer
+        .icon-hover-bottom.position-fixed.fa-fa-icon-show-div
+          .container-fluid
+            .row
+              .icon-popup
+                .close-icon
+                  i.icofont.icofont-close
+                .icon-first
+                  i#icon_main.fa-2x
+                .icon-class
+                  label.icon-title Class
+                  span#fclass1
+                .icon-last.icon-last
+                  label.icon-title Markup
+                  .form-inline
+                    .form-group
+                      input#input_copy.inp-val.form-control.m-r-10(type='text', value='', readonly='readonly')
+                      button.btn.btn-primary.notification(onclick='myFunction()') Copy text
+    include ../../components/footer-files

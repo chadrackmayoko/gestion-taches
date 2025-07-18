@@ -1,0 +1,63 @@
+.card
+    .card-header.pb-0
+        +card-header('Variation of addons', '','', 'Place one add-on or button on either side of an input. You may also place one on both sides of an input. Remember to place ', '<label>', 's outside the input group.')
+    .card-body.card-wrapper.input-group-wrapper
+        .row
+        .col
+            form.theme-form.row.g-3
+                div
+                    label.form-label Left Addon
+                    .input-group
+                        span.input-group-text.list-light-primary
+                            i.icofont.icofont-pencil-alt-5.font-primary
+                        input.form-control(type='text' placeholder='Email')
+                div
+                    label.form-label Right Addon
+                    .input-group
+                        input.form-control(type='text' placeholder="Recipient's username" aria-label="Recipient's username")
+                        span.input-group-text.list-light-danger
+                            i.icofont.icofont-ui-dial-phone.font-danger  
+                div
+                    label.form-label Joint Addon
+                    .input-group
+                        span.input-group-text.list-light-primary
+                            i.icofont.icofont-link-broken.font-primary
+                        span.input-group-text 0.00  
+                        input.form-control(type='text' aria-label='Amount (to the nearest dollar)')
+                div
+                    label.form-label Left &amp; Right Addon
+                    .input-group
+                        span.input-group-text.list-light-danger
+                            i.icofont.icofont-ui-zoom-out.font-danger
+                        input.form-control(type='text' aria-label='Amount (to the nearest dollar)')
+                        span.input-group-text.list-light-danger
+                            i.icofont.icofont-ui-zoom-in.font-danger
+                div.input-group-solid
+                    label.form-label Solid style
+                    .input-group
+                        span.input-group-text.list-light-primary
+                            i.icofont.icofont-users.font-primary
+                        input.form-control(type='text' placeholder='999999')
+                div.input-group-square
+                    label.form-label Flat style
+                    .input-group
+                        span.input-group-text.list-light-danger
+                            i.icofont.icofont-credit-card.font-danger
+                        input.form-control(type='text' placeholder='')
+                div.input-group-square
+                    label.form-label Raise style
+                    .input-group
+                        span.input-group-text.list-light-primary
+                            i.icofont.icofont-download.font-primary
+                        input.form-control.input-group-air(type='text' placeholder='https://www.example.com')
+                div
+                    label.form-label Left &amp; Right Addon
+                    .input-group.pill-input-group
+                        span.input-group-text.list-light-danger
+                            i.icofont.icofont-ui-copy.font-danger
+                        input.form-control(type='text' aria-label='Amount (to the nearest dollar)')
+                        span.input-group-text.list-light-danger
+                            i.icofont.icofont-search-stock.font-danger
+    .card-footer
+        button.btn.btn-primary(type='submit').m-r-15 Submit
+        button.btn.bg-light(type='submit') Cancel 

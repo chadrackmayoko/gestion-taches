@@ -1,0 +1,130 @@
+//-// Product menu
+-
+    var PRODUCT_LIST =[
+        {
+            src: '../assets/images/ecommerce/01.jpg',
+            productName: 'Women\'s Top',
+            delPrice: ': 220$',
+            textAvaiabilty: 'In stock',
+            textcolor: 'font-success',
+            star: 5,
+        },        
+        {
+            src: '../assets/images/ecommerce/02.jpg',
+            productName: 'Men\'s Jacket',
+            delPrice: ': 220$',
+            textAvaiabilty: 'Out of stock',
+            textcolor: 'font-danger',
+            star: 4,
+        },        
+        {
+            src: '../assets/images/ecommerce/03.jpg',
+            productName: 'Women\'s T-shirt',
+            delPrice: ': 220$',
+            textAvaiabilty: 'Out of stock',
+            textcolor: 'font-danger',
+            star: 5,
+        },        
+        {
+            src: '../assets/images/ecommerce/04.jpg',
+            productName: 'Denim Jacket',
+            delPrice: ': 220$',
+            textAvaiabilty: 'In stock',
+            textcolor: 'font-success',
+            star: 4,
+        },        
+        {
+            src: '../assets/images/ecommerce/05.jpg',
+            productName: 'Women\'s Dress',
+            delPrice: ': 220$',
+            textAvaiabilty: 'Out of stock',
+            textcolor: 'font-danger',
+            star: 3,
+        },        
+        {
+            src: '../assets/images/ecommerce/06.jpg',
+            productName: 'Women\'s Jacket',
+            delPrice: ': 220$',
+            textAvaiabilty: 'In stock',
+            textcolor: 'font-success',
+            star: 5,
+        },        
+        {
+            src: '../assets/images/ecommerce/07.jpg',
+            productName: 'Men\'s Shirt',
+            delPrice: ': 220$',
+            textAvaiabilty: 'Out of stock',
+            textcolor: 'font-danger',
+            star: 4,
+        },       
+        {
+            src: '../assets/images/ecommerce/08.jpg',
+            productName: 'Men\'s Shirt',
+            delPrice: ': 220$',
+            textAvaiabilty: 'In stock',
+            textcolor: 'font-success',
+            star: 4,
+        },       
+        {
+            src: '../assets/images/ecommerce/05.jpg',
+            productName: 'Women\'s Dress',
+            delPrice: ': 220$',
+            textAvaiabilty: 'Out of stock',
+            textcolor: 'font-danger',
+            star: 3,
+        },        
+        {
+            src: '../assets/images/ecommerce/04.jpg',
+            productName: 'Denim Jacket',
+            delPrice: ': 220$',
+            textAvaiabilty: 'Out of stock',
+            textcolor: 'font-danger',
+            star: 5,
+        },        
+        {
+            src: '../assets/images/ecommerce/03.jpg',
+            productName: 'Women\'s T-shirt',
+            delPrice: ': 220$',
+            textAvaiabilty: 'In stock',
+            textcolor: 'font-success',
+            star: 4,
+        },        
+        {
+            src: '../assets/images/ecommerce/02.jpg',
+            productName: 'Men\'s Jacket',
+            delPrice: ': 220$',
+            textAvaiabilty: 'Out of stock',
+            textcolor: 'font-danger',
+            star: 3,
+        }, 
+    ]
+mixin rating(value)
+  - const ratingValue = Math.round(value) // Round the value to the nearest integer
+  .rating
+    each star in [1, 2, 3, 4, 5]
+      if star <= ratingValue
+        i.fa-solid.fa-star
+      else
+        i.fa-regular.fa-star
+//-// Product mixin
+mixin ListContent(items)
+    each item in items 
+        .col-xl-2.col-md-4.col-sm-6.col-lg-3
+            .prooduct-details-box
+                .d-block
+                    a(href="product-page.html")
+                        img.align-self-center.img-fluid(src=item.src, alt='')
+                    .flex-grow-1
+                        .product-name
+                            a(href="product-page.html")
+                                h6=item.productName
+                        +rating(item.star)
+                        .price
+                            |Price 
+                            span=item.delPrice
+                        .avaiabilty
+                            div(class=item.textcolor)=item.textAvaiabilty
+                        a.btn.btn-primary.btn-xs(href="cart.html") Move to Cart
+
+// Product menu
++ListContent(PRODUCT_LIST)

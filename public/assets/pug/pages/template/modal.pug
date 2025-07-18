@@ -1,0 +1,42 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+-var height_equal           = true;
+-var popover                = true;
+-var tooltip                = true;
+-var validation_modal       = true;
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    include ../../components/loader
+    main#pageWrapper.page-wrapper.compact-wrapper
+        include ../../components/header/header
+        .page-body-wrapper
+          include ../../components/sidebar
+          .page-body  
+            .container-fluid
+              +breadcrumb(['Ui Kits','Modal'],'Modal')
+            // Container-fluid starts
+            .container-fluid
+              .row 
+                .col-lg-6
+                  include ../../components/Ui-kits/modal/basic-modal
+                .col-lg-6
+                  include ../../components/Ui-kits/modal/size-modal
+                .col-xl-12
+                  include ../../components/Ui-kits/modal/fullscreen-modal
+                .col-xxl-3.col-xl-4
+                  include ../../components/Ui-kits/modal/centered-modal
+                .col-xxl-4.col-xl-4
+                  include ../../components/Ui-kits/modal/toggle-modal
+                .col-xxl-5.col-xl-4
+                  include ../../components/Ui-kits/modal/staticbackdrop-modal
+                .col-12
+                  include ../../components/Ui-kits/modal/edmincustom-modal
+            // Container-fluid ends
+          include ../../components/footer
+    include ../../components/footer-files
+    

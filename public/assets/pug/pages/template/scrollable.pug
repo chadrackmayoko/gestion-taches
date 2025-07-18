@@ -1,0 +1,38 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+-var scrollable             = true;
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    include ../../components/loader
+    main#pageWrapper.page-wrapper.compact-wrapper
+        include ../../components/header/header
+        .page-body-wrapper
+          include ../../components/sidebar
+          .page-body
+            .container-fluid
+              +breadcrumb(['Bonus Ui','Scrollable'],'Scrollable')
+            // Container-fluid starts
+            .container-fluid
+              .row 
+                .col-xl-6
+                  include ../../components/Bonus-ui/scrollable/custom-scrollbar
+                .col-xl-6
+                  include ../../components/Bonus-ui/scrollable/rtl-direction-scrollbar
+                .col-xl-4.col-md-6
+                  include ../../components/Bonus-ui/scrollable/badges-scrollbar
+                .col-xl-4.col-md-6
+                  include ../../components/Bonus-ui/scrollable/profilescrollable
+                .col-xl-4.col-md-12
+                  include ../../components/Bonus-ui/scrollable/content-scrollable
+                .col-xl-6
+                  include ../../components/Bonus-ui/scrollable/horizontal-scrollbar
+                .col-xl-6
+                  include ../../components/Bonus-ui/scrollable/bothside-scrollbar
+            // Container-fluid ends
+          include ../../components/footer
+    include ../../components/footer-files

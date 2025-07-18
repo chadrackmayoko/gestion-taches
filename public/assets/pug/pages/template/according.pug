@@ -1,0 +1,40 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+-var prism                  = true;
+-var page_clipboard         = true;
+-var customcard             = true;
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    include ../../components/loader
+    main#pageWrapper.page-wrapper.compact-wrapper
+        include ../../components/header/header
+        .page-body-wrapper
+          include ../../components/sidebar
+          .page-body
+            .container-fluid
+              +breadcrumb(['Ui Kits','Accordion'],'Accordion')
+            // Container-Fluid Starts
+            .container-fluid.accordion-page
+              .row
+                .col-md-6
+                  include ../../components/Ui-kits/according/simple-according
+                .col-md-6
+                  include ../../components/Ui-kits/according/flush-according
+                .col-md-12
+                  include ../../components/Ui-kits/according/multiple-according
+                .col-md-6
+                  include ../../components/Ui-kits/according/icon-according
+                .col-md-6
+                  include ../../components/Ui-kits/according/nested-according
+                .col-xxl-6.col-xl-5
+                  include ../../components/Ui-kits/according/horizontal-according
+                .col-xxl-6.col-xl-7
+                  include ../../components/Ui-kits/according/tag-according
+            // Container-Fluid Ends
+          include ../../components/footer
+    include ../../components/footer-files

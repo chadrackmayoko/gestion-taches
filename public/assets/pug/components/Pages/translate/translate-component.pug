@@ -1,0 +1,60 @@
+.site
+    .site-bd
+        .wrapper
+            .card
+                .card-header.language-header.pb-0
+                    h4 Translate
+                    .main(role='main')
+                        select.langChoice.js-languageSelect#language-select
+                            option(value="en") English
+                            option(value="gr") German
+                            option(value="rs") Russian
+                            option(value="ar") Arabic
+                .card-body
+                    .row
+                        .col-md-6
+                            h5.hdg.hdg_main.js-languagePageHdg.mb-2#heading1 Static Sub Nav
+                            .masthead(role='banner')
+                                ul.icon-lists.solid-border.navs-icon.hList.hList_loose.masthead-nav.js-languageList
+                                    li
+                                        a(href='#')
+                                            span#title1  Base
+                                    li
+                                        a(href='#')
+                                            span#title2  Advance
+                                        ul.hList.hList_loose.masthead-nav.js-languageList
+                                            li.pl-navs-inline
+                                                a(href='#')
+                                                    span#title3 Scrollable
+                                            li.pl-navs-inline
+                                                a(href='#')
+                                                    span#title4 Tree View
+                                            li.pl-navs-inline
+                                                a(href='#')
+                                                    span#title5 Rating
+                                    li
+                                        a(href='#')
+                                            span#title6(data-mlr-text='')  Forms
+                                    li
+                                        a(href='#')
+                                            span#title7(data-mlr-text='')  Tables
+                        .col-md-6.language-xs
+                            h5.hdg.hdg_main.js-languagePageHdg.mb-2#heading2 Task List
+                            .masthead(role='banner')
+                                ul
+                                    li.d-flex.line-primary
+                                        .flex-grow-1
+                                            h5#content1 Task With dropdown menu
+                                            h6#content2 By Johnny
+                                    li.d-flex.line-secondary
+                                        .flex-grow-1
+                                            h5#content3 Badge on the right task
+                                            h6#content4 This task has show on hover actions!
+                                    li.d-flex.line-tertiary
+                                        .flex-grow-1
+                                            h5#content5 Wash the car
+                                            h6#content6 Written by bob
+                                    li.d-flex.line-info
+                                        .flex-grow-1
+                                            h5#content7 Development Task
+                                            h6#content8 Finish react todo list app

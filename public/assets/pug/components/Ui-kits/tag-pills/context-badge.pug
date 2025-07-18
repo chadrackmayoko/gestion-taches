@@ -1,0 +1,30 @@
+// Context-badge Card
+.card
+    .card-header.pb-0
+        +card-header('Badges contextual variations', 'dote','','Use the', '.badge', 'utility class to make more badges.')
+    .card-body
+        .badge-spacing
+            span.badge.badge-primary Primary
+            span.badge.badge-secondary Secondary
+            span.badge.badge-tertiary Tertiary
+            span.badge.badge-success Success
+            span.badge.badge-info Info
+            span.badge.badge-warning Warning
+            span.badge.badge-danger Danger
+            span.badge.badge-light.text-dark Light
+            span.badge.badge-dark.tag-pills-sm-mb Dark
+        .code-box-copy
+            button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#example-head' title='Copy')
+                i.icofont.icofont-copy
+            pre
+                code.language-html#badge-variations
+                    | &lt;!--You can use badge-* class through change the colors of badges (primary/secondary/success...).--&gt;
+                    | &lt;span  class="badge badge-primary"&gt;Primary&lt;/span&gt;
+                    | &lt;span  class="badge badge-secondary"&gt;Secondary&lt;/span&gt;
+                    | &lt;span  class="badge badge-tertiary"&gt;Tertiary&lt;/span&gt;
+                    | &lt;span  class="badge badge-success"&gt;Success&lt;/span&gt;
+                    | &lt;span  class="badge badge-info"&gt;Info&lt;/span&gt;
+                    | &lt;span  class="badge badge-warning"&gt;Warning&lt;/span&gt;
+                    | &lt;span  class="badge badge-danger"&gt;Danger&lt;/span&gt;
+                    | &lt;span  class="badge badge-light text-dark"&gt;Light&lt;/span&gt;
+                    | &lt;span  class="badge badge-dark tag-pills-sm-mb"&gt;Dark&lt;/span&gt;        

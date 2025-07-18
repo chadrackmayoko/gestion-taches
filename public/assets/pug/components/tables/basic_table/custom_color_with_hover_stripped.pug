@@ -1,0 +1,49 @@
+.card
+    .card-header
+      +card-header('Custom Table Color With Hover And Stripped', '','', 'Use class', 'table-hover, table-striped table-*table-info,table-success,table-success,table-info,table-danger,table-primary,table-secondary,table-light,table-active', 'inside table element.')
+    .table-responsive
+      table.table.table-striped.bg-primary.hover
+        thead.tbl-strip-thad-bdr
+          tr
+            th(scope='col') Id
+            th(scope='col') Film Title
+            th(scope='col') Released
+            th(scope='col') Studio
+            th(scope='col') Budget  
+            th(scope='col') Domestic Gross
+        tbody
+          tr
+            th(scope='row') 1
+            td Frozen	
+            td 2013	
+            td Disney	
+            td $150,000,000
+            td $400,953,009
+          tr
+            th(scope='row') 2
+            td Minions	
+            td 2015	
+            td Universal	
+            td $74,000,000
+            td $336,045,770
+          tr
+            th(scope='row') 3
+            td Zootopia	
+            td 2016	
+            td Disney	
+            td $150,000,000
+            td $341,268,248
+          tr
+            th(scope='row') 4
+            td Finding Dory		
+            td 2016
+            td Disney	Pixar
+            td $175,000,000
+            td 	$486,295,561
+          tr
+            th(scope='row') 5
+            td Toy Story 3		
+            td 2010
+            td Disney	Pixar
+            td $200,000,000
+            td $415,004,880

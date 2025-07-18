@@ -1,0 +1,54 @@
+//-// Ratio Avatar
+-
+    var RATIO_AVATAR =[
+        {
+            src: 'avatar/4.jpg',
+            imgClass: 'img-100 b-r-8',
+        },
+        {
+            src: 'avatar/5.jpg',
+            imgClass: 'img-90 b-r-8',
+        },
+        {
+            src: 'avatar/1.jpg',
+            imgClass: 'img-80 b-r-8',
+        },
+        {
+            src: 'avatar/7.jpg',
+            imgClass: 'img-70 b-r-8',
+        }
+    ]
+
+//-// Ratio Avatar mixin
+mixin RatioAvatar(items)
+    each item in items 
+        div.avatar.ratio
+            img(class=item.imgClass , src=`../assets/images/${item.src}`, alt='#') 
+
+// Ratio Avatar
+.card
+    .card-header.pb-0
+        +card-header('Ratio', 'dote','','Give the ratio to avatar using', '.ratio , img-* (70/80/90/100)', 'class.')
+    .card-body
+        .avatar-showcase
+            .avatars
+                +RatioAvatar(RATIO_AVATAR)
+        .code-box-copy
+          button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#example-head' title='Copy')
+            i.icofont.icofont-copy
+          pre
+            code.language-html#avatar-ratio
+              |&lt;!-- You can use b-r-* class through the set status (70/80/90/100). --&gt;
+              |&lt;div class="avatars"&gt;
+              |&lt;div class="avatar ratio"&gt;
+              |&lt;img class="b-r-8 img-100" src="../assets/images/avatar/4.jpg" alt="#"&gt;
+              |&lt;/div&gt;
+              |&lt;div class="avatar ratio"&gt;
+              |&lt;img class="b-r-8 img-90" src="../assets/images/avatar/5.jpg" alt="#"&gt;
+              |&lt;/div&gt;
+              |&lt;div class="avatar ratio"&gt;
+              |&lt;img class="b-r-8 img-80" src="../assets/images/avatar/1.jpg" alt="#"&gt;
+              |&lt;/div&gt;
+              |&lt;div class="avatar ratio"&gt;
+              |&lt;img class="b-r-8 img-70" src="../assets/images/avatar/7.jpg" alt="#"&gt;
+              |&lt;/div&gt;

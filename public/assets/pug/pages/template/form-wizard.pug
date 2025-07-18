@@ -1,0 +1,33 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+-var height_equal= true;
+-var form_wizard = true;
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    include ../../components/loader
+    main#pageWrapper.page-wrapper.compact-wrapper
+        include ../../components/header/header
+        .page-body-wrapper
+          include ../../components/sidebar
+          .page-body
+            .container-fluid
+              +breadcrumb(['Form Layout','Form Wizard'],'Form Wizard')
+            // Container-fluid starts
+            .container-fluid
+              .row 
+                  .col-xl-6
+                    include ../../components/forms/form_wizard/numbering_wizard
+                  .col-xl-6
+                    include ../../components/forms/form_wizard/student_validation_form
+                  .col-md-12
+                    include ../../components/forms/form_wizard/vertical_validation_wizard
+                  .col-md-12
+                    include ../../components/forms/form_wizard/shipping_form
+            // Container-fluid ends
+          include ../../components/footer
+    include ../../components/footer-files

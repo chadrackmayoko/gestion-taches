@@ -1,0 +1,75 @@
+//-// Medical Icon
+-
+    var ICO_ITEM18 =[
+        { id:'icofont-aids' }
+        , { id:'icofont-ambulance-crescent' }
+        , { id:'icofont-ambulance-cross' }
+        , { id:'icofont-ambulance' }
+        , { id:'icofont-autism' }
+        , { id:'icofont-bandage' }
+        , { id:'icofont-blind' }
+        , { id:'icofont-blood-drop' }
+        , { id:'icofont-blood-test' }
+        , { id:'icofont-blood' }
+        , { id:'icofont-brain-alt' }
+        , { id:'icofont-brain' }
+        , { id:'icofont-capsule' }
+        , { id:'icofont-crutch' }
+        , { id:'icofont-disabled' }
+        , { id:'icofont-dna-alt-1' }
+        , { id:'icofont-dna-alt-2' }
+        , { id:'icofont-dna' }
+        , { id:'icofont-doctor-alt' }
+        , { id:'icofont-doctor' }
+        , { id:'icofont-drug-pack' }
+        , { id:'icofont-drug' }
+        , { id:'icofont-first-aid-alt' }
+        , { id:'icofont-first-aid' }
+        , { id:'icofont-heart-beat-alt' }
+        , { id:'icofont-heart-beat' }
+        , { id:'icofont-heartbeat' }
+        , { id:'icofont-herbal' }
+        , { id:'icofont-hospital' }
+        , { id:'icofont-icu' }
+        , { id:'icofont-injection-syringe' }
+        , { id:'icofont-laboratory' }
+        , { id:'icofont-medical-sign-alt' }
+        , { id:'icofont-medical-sign' }
+        , { id:'icofont-nurse-alt' }
+        , { id:'icofont-nurse' }
+        , { id:'icofont-nursing-home' }
+        , { id:'icofont-operation-theater' }
+        , { id:'icofont-paralysis-disability' }
+        , { id:'icofont-patient-bed' }
+        , { id:'icofont-patient-file' }
+        , { id:'icofont-pills' }
+        , { id:'icofont-prescription' }
+        , { id:'icofont-pulse' }
+        , { id:'icofont-stethoscope-alt' }
+        , { id:'icofont-stethoscope' }
+        , { id:'icofont-stretcher' }
+        , { id:'icofont-surgeon-alt' }
+        , { id:'icofont-surgeon' }
+        , { id:'icofont-tablets' }
+        , { id:'icofont-test-bottle' }
+        , { id:'icofont-test-tube' }
+        , { id:'icofont-thermometer-alt' }
+        , { id:'icofont-thermometer' }
+        , { id:'icofont-tooth' }
+        , { id:'icofont-xray' }
+    ]
+//-// Ico icon mixin
+mixin IcoContent(items)
+    each item in items 
+        .col-xxl-2.col-lg-3.col-sm-4
+            .card.d-flex.align-items-center.flex-column.default-border
+                i.icofont(class=item.id)
+                .flex-grow-1
+                    h6=item.id
+// Ico icon
+.card
+    .card-header.pb-0.d-flex.justify-content-between.align-items-center
+        h4 Medical Icon
+    .card-body
+        .row.icon-event.iconly-icons.icon-lists
+            +IcoContent(ICO_ITEM18)

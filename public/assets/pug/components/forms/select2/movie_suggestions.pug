@@ -1,0 +1,7 @@
+.card
+  .card-header.pb-0
+    +card-header('Movie suggestions', '','', '', '', 'Use the tagify plugin for select movie options.')
+  .card-body 
+    form
+      textarea(name='tags2' placeholder='Enter movie names')
+        | [{&quot;value&quot;:&quot;Hot Sit&quot;}, {&quot;value&quot;:&quot;The Matrix&quot;}]

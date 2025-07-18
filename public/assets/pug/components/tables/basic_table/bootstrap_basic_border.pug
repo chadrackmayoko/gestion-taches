@@ -1,0 +1,100 @@
+.card
+    .card-header
+      +card-header('Basic Table With Border Bottom Color', '','', 'use a class', 'table-*.border-bottom-*', 'class for Border bottom color')
+    .table-responsive
+      table.table
+        thead
+          tr.b-b-primary
+            th(scope='col') Id
+            th(scope='col') First Name
+            th(scope='col') Last Name
+            th(scope='col') Username
+            th(scope='col') Designation
+            th(scope='col') Company
+            th(scope='col') Language
+            th(scope='col') Country
+        tbody
+          tr.b-b-tertiary
+            th(scope='row') 1
+            td 
+              img.img-30.me-2(src="../assets/images/avatar/1.jpg", alt="profile") 
+              | Ram Jacob
+            td Wolfe
+            td RamJacob@twitter
+            td Developer
+            td Apple Inc.
+            td 
+              span.badge.badge-light-danger Php
+            td IND
+          tr.b-b-success
+            th(scope='row') 2
+            td 
+              img.img-30.me-2(src="../assets/images/avatar/2.jpg", alt="profile")
+              | John Deo
+            td Gummer
+            td JohnDeo@twitter	
+            td Designer
+            td Hewlett packard	
+            td 
+              span.badge.badge-light-primary Html
+            td US
+          tr.b-b-warning
+            th(scope='row') 3
+            td 
+              img.img-30.me-2(src="../assets/images/avatar/3.jpg", alt="profile")
+              | Elana John
+            td Cazale	
+            td ElanaJohn@twitter
+            td Designer
+            td Microsoft
+            td 
+              span.badge.badge-light-danger Pug
+            td UK
+          tr.b-b-info
+            th(scope='row') 4
+            td 
+              img.img-30.me-2(src="../assets/images/avatar/4.jpg", alt="")
+              | Meryl Streep
+            td Roberts
+            td MerylStreep@twitter
+            td Developer
+            td Tata Ltd.	
+            td 
+              span.badge.badge-light-success React
+            td IDN
+          tr.b-b-danger
+            th(scope='row') 5
+            td 
+              img.img-30.me-2(src="../assets/images/avatar/5.jpg", alt="")
+              | Emma Stone
+            td Stone
+            td EmmaStone@twitter	
+            td Developer
+            td Wipro Ltd.	
+            td 
+              span.badge.badge-light-primary Vue
+            td IRN
+          tr.b-b-secondary 
+            th(scope='row') 6
+            td 
+              img.img-30.me-2(src="../assets/images/avatar/6.jpg", alt="") 
+              | Eliana Jons
+            td Jons
+            td ElianaJons@twitter		
+            td Developer
+            td Info Ltd.		
+            td 
+              span.badge.badge-light-success Vue
+            td IRN
+          tr
+            th(scope='row') 7
+            td 
+              img.img-30.me-2(src="../assets/images/avatar/7.jpg", alt="") 
+              | Ram Jacob
+            td Ottandy
+            td ElianaJons@twitter		
+            td Developer
+            td Info Ltd.		
+            td 
+              span.badge.badge-light-success Vue
+            td IRN

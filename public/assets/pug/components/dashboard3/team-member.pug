@@ -1,0 +1,86 @@
+//-// Total investment menu
+-
+    var TEAM_ITEM =[
+        {
+            url: '../assets/images/avatar/10.jpg',
+            price: 'Website',
+            bgClass: 'btn-light-primary',
+            btnValue: 'Done',
+            title: 'Rick Novak',
+            time: 'rick35@gmail.com',
+            type: '256',
+            id: 'team-chart1',
+        },
+        {
+            url: '../assets/images/avatar/11.jpg',
+            price: 'Mobile App',
+            bgClass: 'btn-light-tertiary',
+            btnValue: 'Pending',
+            title: 'Susan Connor',
+            time: 'susan6@gmail.com',
+            type: '145',
+            id: 'team-chart2',
+        },
+        {
+            url: '../assets/images/avatar/1.jpg',
+            price: 'Wordpress',
+            bgClass: 'btn-light-primary',
+            btnValue: 'Done',
+            title: 'Roger Lum',
+            time: 'roger8@gmail.com',
+            type: '956',
+            id: 'team-chart3',
+        },
+        {
+            url: '../assets/images/avatar/3.jpg',
+            price: 'Nft Web Page',
+            bgClass: 'btn-light-tertiary',
+            btnValue: 'Done',
+            title: 'Jeff Johnson',
+            time: 'jeff761@gmail.com',
+            type: '324',
+            id: 'team-chart4',
+        }
+    ]
+
+//-// Bookmark mixin
+mixin TeamMemberContent(items)
+
+    each item in items 
+        tr
+            td
+                .d-flex.align-items-center.gap-2
+                    .flex-shrink-0
+                        img.img-40.b-r-10(src=item.url, alt="")
+                    .flex-grow-1
+                        a(href="user-profile.html")  
+                            h6.f-w-500=item.title
+                            span.font-light.f-w-400.f-13=item.time
+            td=item.price
+            td=item.type
+            td
+                .team-chart
+                    div(id=item.id)
+
+// Bookmark menu
+.card 
+    .card-header.pb-0
+        h4 Team Members
+        .dropdown.icon-dropdown
+          button#userdropdown04.btn.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+            i.icon-more-alt
+          .dropdown-menu.dropdown-menu-end(aria-labelledby='userdropdown04')
+            a.dropdown-item(href='#') Weekly
+            a.dropdown-item(href='#') Monthly
+            a.dropdown-item(href='#') Yearly
+    .card-body.team-table.pt-0
+        .table-responsive 
+            table.table.table-borderless
+                thead 
+                    tr 
+                        th Client Name
+                        th Designation
+                        th Task
+                        th Graph
+                tbody 
+                    +TeamMemberContent(TEAM_ITEM)

@@ -1,0 +1,38 @@
+// Translucent Toasts
+.card
+    .card-header
+        +card-header('Translucent Toasts', '','', 'Use the', '.hide , .show', 'class through visible toast and given directions.[toast-*]through change icons colors.')
+    .card-body.toast-rtl.bg-dark
+        .toast-container
+            .toast.show(role='alert' aria-live='assertive' aria-atomic='true')
+                .toast-header
+                    +FeatherSprite('disc', 'feather toast-icons toast-info') 
+                    strong.me-auto Edmin template
+                    small.d-sm-block.d-none 11 mins ago
+                    button.btn-close(type='button' data-bs-dismiss='toast' aria-label='Close')
+                .toast-body.toast-dark
+                    |  Hello, I'm a web-designer.
+            .toast.show(role='alert' aria-live='assertive' aria-atomic='true')
+                .toast-header
+                    +FeatherSprite('disc', 'feather toast-icons toast-dark') 
+                    strong.me-auto Koho Template
+                    small.d-sm-block.d-none 1 sec ago
+                    button.btn-close(type='button' data-bs-dismiss='toast' aria-label='Close')
+                .toast-body.toast-dark
+                    |  Hello, I'm a full-stack developer.
+            .toast.show(role='alert' aria-live='assertive' aria-atomic='true')
+                .toast-header
+                    +FeatherSprite('disc', 'feather toast-icons toast-secondary') 
+                    strong.me-auto Fastkart Template
+                    small.font-danger.d-sm-block.d-none just now
+                    button.btn-close(type='button' data-bs-dismiss='toast' aria-label='Close')
+                .toast-body.toast-dark
+                    |  Hello, I'm a UX-designer.
+            .toast.show(role='alert' aria-live='assertive' aria-atomic='true')
+                .toast-header
+                    +FeatherSprite('disc', 'feather toast-icons toast-success') 
+                    strong.me-auto Enzo Template
+                    small.d-sm-block.d-none 44 min ago
+                    button.btn-close(type='button' data-bs-dismiss='toast' aria-label='Close')
+                .toast-body.toast-dark
+                    |  Hello, I'm a penetration-tester.

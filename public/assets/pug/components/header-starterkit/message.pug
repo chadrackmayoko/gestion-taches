@@ -1,0 +1,50 @@
+//-// Bookmark menu
+-
+    var MESSAGE_ITEM =[
+        {
+            title: 'Design meeting',
+            bClass: 'b-t-primary',
+            time: 'Just Now',
+            status: 'Open',
+            badgeClass: 'badge-light-danger'
+        },
+        {
+            title: 'Weekly scurm Meeting',
+            bClass: 'b-t-secondary',
+            time: '1  Hour Ago',
+            status: 'Open',
+            badgeClass: 'badge-light-danger'
+        },
+        {
+            title: 'Check your login page',
+            bClass: 'b-t-tertiary',
+            time: '2  Hour Ago',
+            status: 'Closed',
+            badgeClass: 'badge-light-success'
+        }
+    ]
+
+//-// Bookmark mixin
+mixin MessageContent(items)
+
+    each item in items 
+        li.d-flex(class=item.bClass)
+            .d-block
+                a(href="../template/letter-box.html")
+                    h5=item.title
+                h6
+                    +FeatherSprite('clock', 'feather me-1')
+                    span=item.time
+            .badge(class=item.badgeClass)
+                +FeatherSprite('clock', 'feather me-1')
+                span=item.status
+
+// Bookmark menu
+li.custom-dropdown
+    a(href="javascript:void(0)")
+        +IconlySprite('Message', 'svg-color')
+    span.badge.rounded-pill.badge-tertiary 3
+    .custom-menu.message-dropdown.py-0.overflow-hidden
+        h5.title.bg-primary-light Messages
+        ul 
+            +MessageContent(MESSAGE_ITEM)

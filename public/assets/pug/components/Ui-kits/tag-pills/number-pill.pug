@@ -1,0 +1,30 @@
+// Context-pill Card
+.card
+    .card-header.pb-0
+        +card-header('Number of pills tags', 'dote','','Use the', '.rounded-pill', ' utility class to make badges more rounded with a larger border-radius.')
+    .card-body
+        .badge-spacing
+            span.badge.badge-primary.rounded-pill.badge-p-space 1
+            span.badge.badge-secondary.rounded-pill.badge-p-space 2
+            span.badge.badge-tertiary.rounded-pill.badge-p-space 3
+            span.badge.badge-success.rounded-pill.badge-p-space 4
+            span.badge.badge-info.rounded-pill.badge-p-space 5
+            span.badge.badge-warning.rounded-pill.badge-p-space 6
+            span.badge.badge-danger.rounded-pill.badge-p-space 7
+            span.badge.badge-light.text-dark.rounded-pill.badge-p-space 8
+            span.badge.badge-dark.tag-pills-sm-mb.rounded-pill.badge-p-space 9
+        .code-box-copy
+            button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#example-head' title='Copy')
+                i.icofont.icofont-copy
+            pre
+                code.language-html#number-of-pills
+                    | &lt;!--You can use .rounded-circle class through change the circled badges (rounded-circle).--&gt;
+                    | &lt; span class="badge badge-primary rounded-pill badge-p-space"&gt;1&lt;/span&gt;
+                    | &lt; span class="badge badge-secondary rounded-pill badge-p-space"&gt;2&lt;/span&gt;
+                    | &lt; span class="badge badge-tertiary rounded-pill badge-p-space"&gt;3&lt;/span&gt;
+                    | &lt; span class="badge badge-success rounded-pill badge-p-space"&gt;4&lt;/span&gt;
+                    | &lt; span class="badge badge-info rounded-pill badge-p-space"&gt;5&lt;/span&gt;
+                    | &lt; span class="badge badge-warning rounded-pill badge-p-space"&gt;6&lt;/span&gt;
+                    | &lt; span class="badge badge-danger rounded-pill badge-p-space"&gt;7&lt;/span&gt;
+                    | &lt; span class="badge badge-light text-dark rounded-pill badge-p-space"&gt;8&lt;/span&gt;
+                    | &lt; span class="badge badge-dark tag-pills-sm-mb rounded-pill badge-p-space"&gt;9&lt;/span&gt;

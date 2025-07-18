@@ -1,0 +1,37 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    include ../../components/loader
+    main#pageWrapper.page-wrapper.compact-wrapper
+        include ../../components/header/header
+        .page-body-wrapper
+          include ../../components/sidebar
+          .page-body
+            .container-fluid
+              +breadcrumb(['Ui Kits','Grid'],'Grid')
+            // Container-fluid starts
+            .container-fluid.grid-option
+              .row 
+                .col-xl-12
+                  include ../../components/Ui-kits/grid/grid-option
+                .col-xl-12
+                  include ../../components/Ui-kits/grid/grid-column
+                .col-xl-12
+                  include ../../components/Ui-kits/grid/vertical-alignment
+                .col-xl-12
+                  include ../../components/Ui-kits/grid/horizontal-alignment
+                .col-xl-12
+                  include ../../components/Ui-kits/grid/nesting
+                .col-xl-12
+                  include ../../components/Ui-kits/grid/order
+                .col-xl-12
+                  include ../../components/Ui-kits/grid/offset-grid
+            // Container-fluid ends
+          include ../../components/footer
+    include ../../components/footer-files

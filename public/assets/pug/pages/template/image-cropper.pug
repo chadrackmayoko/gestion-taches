@@ -1,0 +1,32 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+-var img_cropper       = true;
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    include ../../components/loader
+    main#pageWrapper.page-wrapper.compact-wrapper
+        include ../../components/header/header
+        .page-body-wrapper
+          include ../../components/sidebar
+          .page-body
+            .container-fluid
+              +breadcrumb(['Bonus Ui','Image Cropper'],'Image Cropper')
+            // Container-fluid starts
+            .container-fluid.img-cropper
+              .row 
+                .col-xl-12
+                  include ../../components/Bonus-ui/image-cropper/default-cropper
+                .col-xl-6
+                  include ../../components/Bonus-ui/image-cropper/fixed-cropper
+                .col-xl-6
+                  include ../../components/Bonus-ui/image-cropper/circle-img-cropper
+                .col-xl-12
+                  include ../../components/Bonus-ui/image-cropper/multiple-cropper
+            // Container-fluid ends
+          include ../../components/footer
+    include ../../components/footer-files

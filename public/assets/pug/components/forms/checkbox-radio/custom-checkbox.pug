@@ -1,0 +1,74 @@
+.card
+    .card-header.pb-0
+        +card-header('Custom Checkbox', '', '', 'Use the', '.checkbox-solid-* ,.checkbox-* ', 'for bordered checkbox ')
+    .card-body.checkbox-checked
+        .row.g-3
+            .col-xxl-4.col-sm-6
+                .card-wrapper.solid-border.rounded-3
+                    h6.sub-title.f-w-500 Bordered Checkbox 
+                    label.d-block
+                      input#chk-ani_8.checkbox-primary.checkbox-border-primary(type='checkbox')
+                      | Primary - checkbox-primary
+                    label.d-block
+                      input#chk-ani_9.checkbox-secondary.checkbox-border-secondary(type='checkbox')
+                      | Secondary - checkbox-secondary
+                    label.d-block
+                      input#chk-ani_10.checkbox-tertiary.checkbox-border-tertiary(type='checkbox')
+                      | Tertiary - checkbox-tertiary
+            .col-xxl-4.col-sm-12.order-xxl-0.order-sm-1
+                .card-wrapper.solid-border.rounded-3
+                    h6.sub-title.f-w-500 Icon Checkbox 
+                    .form-check.ps-0.main-icon-checkbox
+                        ul.checkbox-wrapper
+                            li 
+                                input#checkbox-icon.form-check-input.checkbox-shadow(type='checkbox')
+                                label.form-check-label(for='checkbox-icon')
+                                    i.fa.fa-sliders
+                                    span Sliders
+                            li 
+                                input#checkbox-icon1.form-check-input.checkbox-shadow(type='checkbox' checked='')
+                                label.form-check-label(for='checkbox-icon1')
+                                    i.fa-solid.fa-user
+                                    span User 
+                            li 
+                                input#checkbox-icon2.form-check-input.checkbox-shadow(type='checkbox')
+                                label.form-check-label(for='checkbox-icon2')
+                                    i.fa-solid.fa-tag
+                                    span Tags
+                            li 
+                                input#checkbox-icon3.form-check-input.checkbox-shadow(type='checkbox')
+                                label.form-check-label(for='checkbox-icon3')
+                                    i.fa-brands.fa-android
+                                    span Android 
+                            li 
+                                input#checkbox-icon4.form-check-input.checkbox-shadow(type='checkbox')
+                                label.form-check-label(for='checkbox-icon4')
+                                    i.fa-solid.fa-eye-slash
+                                    span Hidden
+                            li 
+                                input#checkbox-icon5.form-check-input.checkbox-shadow(type='checkbox')
+                                label.form-check-label(for='checkbox-icon5')
+                                    i.fa-solid.fa-folder-open
+                                    span Folder
+                            li 
+                                input#checkbox-icon6.form-check-input.checkbox-shadow(type='checkbox')
+                                label.form-check-label(for='checkbox-icon6')
+                                    i.fa.fa-paper-plane
+                                    span Send
+                            li 
+                                input#checkbox-icon7.form-check-input.checkbox-shadow(type='checkbox')
+                                label.form-check-label(for='checkbox-icon7')
+                                    i.fa.fa-cloud-upload
+                                    span Upload
+            .col-xxl-4.col-sm-6
+                .card-wrapper.solid-border.rounded-3
+                    h6.sub-title.f-w-500 Filled Checkbox 
+                    .form-check.checkbox.checkbox-solid-warning
+                        input#solid4.form-check-input(type='checkbox', checked='')
+                        label.form-check-label(for='solid4') Warning - checkbox-solid-warning 
+                    .form-check.checkbox.checkbox-solid-danger
+                        input#solid5.form-check-input(type='checkbox', checked='')
+                        label.form-check-label(for='solid5') Danger - checkbox-solid-danger 
+                    .form-check.checkbox.checkbox-solid-info
+                        input#solid6.form-check-input(type='checkbox', checked='')
+                        label.form-check-label(for='solid6') Info - checkbox-solid-info 

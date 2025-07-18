@@ -1,0 +1,15 @@
+.card
+  .card-header.pb-0
+    +card-header('Clipboard on textarea', '','', '', '', '')
+  .card-body
+    .clipboaard-container
+      p.f-16 Cut/copy from textarea
+      textarea#clipboardExample2.form-control.f-14(rows='3', spellcheck='false')
+        | A web designer must always enhance their work since creating websites is a creative effort. Therefore, a web designer must be more imaginative to produce exceptional results. Blogs about web design assist web designers in learning about new technologies, offer lessons, news, direction for a freebie, and much more. These blogs allow web designers to stay creative and improve their abilities. Therefore, advice from web design blogs is required to improve your business.
+      .mt-3.text-end
+        button.btn.btn-warning.btn-clipboard(type='button', data-clipboard-action='copy', data-clipboard-target='#clipboardExample2')
+          i.fa.fa-copy
+          |  Copy
+        button.btn.btn-success.btn-clipboard-cut(type='button', data-clipboard-action='cut', data-clipboard-target='#clipboardExample2')
+          i.fa.fa-cut
+          |  Cut

@@ -1,0 +1,30 @@
+//-// Search Icon
+-
+    var ICO_ITEM28 =[
+        { id:'icofont-search-1' }
+        , { id:'icofont-search-2' }
+        , { id:'icofont-search-document' }
+        , { id:'icofont-search-folder' }
+        , { id:'icofont-search-job' }
+        , { id:'icofont-search-map' }
+        , { id:'icofont-search-property' }
+        , { id:'icofont-search-restaurant' }
+        , { id:'icofont-search-stock' }
+        , { id:'icofont-search-user' }
+        , { id:'icofont-search' }
+    ]
+//-// Ico icon mixin
+mixin IcoContent(items)
+    each item in items 
+        .col-xxl-2.col-lg-3.col-sm-4
+            .card.d-flex.align-items-center.flex-column.default-border
+                i.icofont(class=item.id)
+                .flex-grow-1
+                    h6=item.id
+// Ico icon
+.card
+    .card-header.pb-0.d-flex.justify-content-between.align-items-center
+        h4 Search Icon
+    .card-body
+        .row.icon-event.iconly-icons.icon-lists
+            +IcoContent(ICO_ITEM28)

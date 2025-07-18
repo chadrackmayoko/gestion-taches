@@ -1,0 +1,28 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+-var md_sidebar = true;
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    include ../../components/loader
+    main#pageWrapper.page-wrapper.compact-wrapper
+        include ../../components/header/header
+        .page-body-wrapper
+          include ../../components/sidebar
+          .page-body
+            .container-fluid
+              +breadcrumb(['Learning','Learning List'],'Learning List')
+            // Container-fluid starts
+            .container-fluid.job-cards-view
+              .row 
+                .col-xl-9.xl-60.order-xl-0.order-1.box-col-12
+                  include ../../components/Learning/learning-list/learning-list-components
+                .col-xl-3.xl-40.box-col-12.learning-filter
+                  include ../../components/Learning/learning-list/accordian-learning-list
+            // Container-fluid starts
+          include ../../components/footer
+    include ../../components/footer-files

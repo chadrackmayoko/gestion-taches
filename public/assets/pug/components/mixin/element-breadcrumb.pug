@@ -1,0 +1,12 @@
+mixin breadcrumb(items,pagetitle)
+    .row.page-title
+        .col-sm-6
+          h3= pagetitle
+        .col-sm-6
+          nav
+            ol.breadcrumb.justify-content-sm-end.align-items-center
+              li.breadcrumb-item 
+                a(href='index.html')
+                  +IconlySprite('Home', 'svg-color')
+              each pagename, index in items
+                li.breadcrumb-item(class=`${(index === items.length - 1 ?'active':'')}`)= pagename

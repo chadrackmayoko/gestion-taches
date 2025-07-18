@@ -1,0 +1,102 @@
+.card
+    .card-header.pb-0
+      +card-header('Sizes modal', '','','Modals have three optional sizes, available via modifier classes to be placed on a', 'modal-dialog','')
+    .card-body.badge-spacing
+      //full screen modal
+      .btn.btn-secondary(data-bs-toggle='modal', data-bs-target='.bd-example-modal-fullscreen') Full Screen Modal
+      .modal.fade.bd-example-modal-fullscreen(tabindex='-1', role='dialog', aria-labelledby='myFullLargeModalLabel', aria-hidden='true')
+        .modal-dialog.modal-fullscreen
+          .modal-content
+            .modal-header
+              h5#myFullLargeModalLabel.modal-title Extra large modal
+              button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close')
+            .modal-body.dark-modal
+              .large-modal-header
+                +FeatherSprite('chevrons-right', 'feather') 
+                h6 Web design 
+              p.modal-padding-space We build specialised websites for companies, list them on digital directories, and set up a sales funnel to boost ROI.
+              .large-modal-header
+                +FeatherSprite('chevrons-right', 'feather')
+                h6 Content marketing 
+              p.modal-padding-space Through better opportunities and knowledgeable marketing strategies, we aid business funnel. We won't only hit the target; instead, we'll aim higher and surpass the objectives.
+              .large-modal-header
+                +FeatherSprite('chevrons-right', 'feather')
+                h6 PPC 
+              p.modal-padding-space Customized advertising to increase visitors and improve conversion. To increase retention, identify the correct audience and remarket to them.
+              .large-modal-header
+                +FeatherSprite('chevrons-right', 'feather')
+                h6 UX designer 
+              p.modal-padding-space The capacity to comprehend and experience other people's feelings is known as empathy. A positive consumer experience is prioritised by UX. The finest UX designers spend time studying individuals and their tendencies because of this. Designers may produce goods that genuinely engage and excite customers by having a thorough understanding of the end consumers.
+      //Extra large modal
+      .btn.btn-info(data-bs-toggle='modal', data-bs-target='.bd-example-modal-xl') Extra large Modal
+      .modal.fade.bd-example-modal-xl(tabindex='-1', role='dialog', aria-labelledby='myLargeModalLabel', aria-hidden='true')
+        .modal-dialog.modal-xl
+          .modal-content
+            .modal-header
+              h5#myLargeModalLabel.modal-title Extra large modal
+              button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close')
+            .modal-body.dark-modal
+              .large-modal-header
+                +FeatherSprite('chevrons-right', 'feather')
+                h6 Web design 
+              p.modal-padding-space We build specialised websites for companies, list them on digital directories, and set up a sales funnel to boost ROI.
+              .large-modal-header
+                +FeatherSprite('chevrons-right', 'feather')
+                h6 Content marketing 
+              p.modal-padding-space Through better opportunities and knowledgeable marketing strategies, we aid business funnel. We won't only hit the target; instead, we'll aim higher and surpass the objectives.
+              .large-modal-header
+                +FeatherSprite('chevrons-right', 'feather')
+                h6 PPC 
+              p.modal-padding-space Customized advertising to increase visitors and improve conversion. To increase retention, identify the correct audience and remarket to them.
+              .large-modal-header
+                +FeatherSprite('chevrons-right', 'feather')
+                h6 UX designer 
+              p.modal-padding-space The capacity to comprehend and experience other people's feelings is known as empathy. A positive consumer experience is prioritised by UX. The finest UX designers spend time studying individuals and their tendencies because of this. Designers may produce goods that genuinely engage and excite customers by having a thorough understanding of the end consumers.
+      // Large modal
+      button.btn.btn-success(type='button', data-bs-toggle='modal', data-bs-target='.bd-example-modal-lg') Large Modal
+      .modal.fade.bd-example-modal-lg(tabindex='-1', role='dialog', aria-labelledby='myExtraLargeModal', aria-hidden='true')
+        .modal-dialog.modal-lg
+          .modal-content
+            .modal-header
+              h5#myExtraLargeModal.modal-title Large modal
+              button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close')
+            .modal-body.dark-modal
+              .large-modal-header
+                +FeatherSprite('chevrons-right', 'feather')
+                h6 Start with your goals 
+              p.modal-padding-space.mb-0 No matter how talented you are as a content writer or creator, you will always fail if you don't have a clear set of goals.
+              p.modal-padding-space.mb-0 First of all, without goals, there is no way to determine your success. Additionally, you lack direction.
+              p.modal-padding-space.mb-0 Together with your team, respond to the following questions to make sure they are:
+              .large-modal-body
+                +FeatherSprite('corner-up-right', 'feather')
+                p.ps-1 What must you achieve, and by when?
+              .large-modal-body
+                +FeatherSprite('corner-up-right', 'feather')
+                p.ps-1 How will you evaluate your level of success?
+              .large-modal-body
+                +FeatherSprite('corner-up-right', 'feather')
+                p.ps-1 Can you accomplish it with the available resources?
+              .large-modal-body
+                +FeatherSprite('corner-up-right', 'feather')
+                p.ps-1 Does it advance your core business aims?                          
+      // Small modal
+      button.btn.btn-primary(type='button', data-bs-toggle='modal', data-bs-target='.bd-example-modal-sm') Small Modal
+      .modal.fade.bd-example-modal-sm(tabindex='-1', role='dialog', aria-labelledby='mySmallModalLabel', aria-hidden='true')
+        .modal-dialog.modal-sm
+          .modal-content
+            .modal-header
+              h5#mySmallModalLabel.modal-title Small modal
+              button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close')
+            .modal-body.dark-modal
+              .large-modal-header
+                +FeatherSprite('chevrons-right', 'feather')
+                h6 Web design 
+              p.modal-padding-space We build specialised websites for companies, list them on digital directories, and set up a sales funnel to boost ROI.
+              .large-modal-header
+                +FeatherSprite('chevrons-right', 'feather')
+                h6 Content marketing 
+              p.modal-padding-space Through better opportunities and knowledgeable marketing strategies, we aid business funnel. We won't only hit the target; instead, we'll aim higher and surpass the objectives.
+              .large-modal-header
+                +FeatherSprite('chevrons-right', 'feather')
+                h6 PPC 
+              p.modal-padding-space Customized advertising to increase visitors and improve conversion. To increase retention, identify the correct audience and remarket to them.

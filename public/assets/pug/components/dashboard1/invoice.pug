@@ -1,0 +1,94 @@
+//-// All Invoice menu
+-
+    var INVOICE_ITEM =[
+        {
+            url: '../assets/images/avatar/10.jpg',
+            id: '#IH63390',
+            price: '$5411.55',
+            bgClass: 'btn-light-primary',
+            btnValue: 'Done',
+            title: 'Elle Amberson',
+            mail: 'Elle34@gmail.com',
+            date: '10-10-2024',
+            type: 'Website',
+        },
+        {
+            url: '../assets/images/avatar/11.jpg',
+            id: '#F749U8',
+            price: '$6589.36',
+            bgClass: 'btn-light-tertiary',
+            btnValue: 'Pending',
+            title: 'Anna Catmire',
+            mail: 'Anna12@gmail.com',
+            date: '15-09-2024',
+            type: 'Mobile App',
+        },
+        {
+            url: '../assets/images/avatar/1.jpg',
+            id: '#RT5094',
+            price: '$9655.16',
+            bgClass: 'btn-light-primary',
+            btnValue: 'Done',
+            title: 'Laura Dagson',
+            mail: 'Laura@gmail.com',
+            date: '23-05-2024',
+            type: 'Wordpress',
+        },
+        {
+            url: '../assets/images/avatar/3.jpg',
+            id: '#PZ7384',
+            price: '$5984.62',
+            bgClass: 'btn-light-danger',
+            btnValue: 'Overdue',
+            title: 'Rachel Green',
+            mail: 'Rache87@gmail.com',
+            date: '15-02-2024',
+            type: 'Service',
+        }
+    ]
+//-// Invoice mixin
+mixin InvoiceContent(items)
+    each item in items 
+        tr
+            td
+                input.form-check-input(type="checkbox")
+            td=item.id
+            td
+                .d-flex.align-items-center.gap-2
+                    .flex-shrink-0
+                        img.b-r-10(src=item.url, alt="")
+                    .flex-grow-1
+                        a(href="user-profile.html")
+                            h6.f-w-500=item.title
+                        span.font-light.f-w-400.f-13=item.mail
+            td=item.type
+            td=item.date
+            td=item.price
+            td 
+                button.btn.edge-btn.f-13.w-100(class=item.bgClass)=item.btnValue
+// Invoice menu
+.card.invoice-card
+    .card-header.pb-0
+        h4 All Invoices
+        .dropdown.icon-dropdown
+            button#userdropdown4.btn.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+                i.icon-more-alt
+            .dropdown-menu.dropdown-menu-end(aria-labelledby='userdropdown4')
+                a.dropdown-item(href='#') Weekly
+                a.dropdown-item(href='#') Monthly
+                a.dropdown-item(href='#') Yearly
+    .card-body.invoice-table.checkbox-checked
+        .table-responsive 
+            table.table#all-invoice
+                thead 
+                    tr 
+                        th.form-check
+                            input.form-check-input(type="checkbox")
+                        th Invoice Id
+                        th Client Name
+                        th Project
+                        th Created Date
+                        th Amount 
+                        th Status
+                tbody 
+                    +InvoiceContent(INVOICE_ITEM)

@@ -1,0 +1,54 @@
+//-// Notification items 
+-
+    var NOTIFICATION_ITEM =[
+        {
+            dotClass: 'b-l-primary',
+            url: '../assets/images/avatar/10.jpg',
+            message: 'What`s the project report update?',
+            name: 'Rick Novak',
+            time: 'Just Now',
+        },
+        {
+            dotClass: 'b-l-secondary',
+            url: '../assets/images/avatar/4.jpg',
+            message: 'James created changelog page',
+            name: 'Susan Connor',
+            time: '12:47 am',
+        },
+        {
+            dotClass: 'b-l-tertiary',
+            url: '../assets/images/avatar/1.jpg',
+            message: 'Polly edited Contact page',
+            name: 'Roger Lum',
+            time: '06:10 pm',
+        },
+    ]
+
+//-// mixin notification
+
+mixin Notification(items)
+
+    each item in items
+        li.d-flex.align-items-center(class=item.dotClass)
+            .flex-grow-1 
+                span=item.time
+                a(href="../template/private-chat.html")
+                    h5=item.message
+                h6=item.name
+            .flex-shrink-0 
+                img.b-r-15.img-40(src=item.url alt="")
+
+// Notification menu
+li.custom-dropdown
+    a(href="javascript:void(0)")
+        +IconlySprite('Bell', 'svg-color circle-color')
+    span.badge.rounded-pill.badge-secondary 3
+    .custom-menu.notification-dropdown.py-0.overflow-hidden
+        h5.title.bg-primary-light Notifications 
+            a(href="../template/private-chat.html")
+                span.font-primary View
+        ul.activity-update
+            +Notification(NOTIFICATION_ITEM)
+            li.mt-3.d-flex.justify-content-center
+                div.button-group
+                    a.btn.btn-secondary(href="../template/private-chat.html") All Notification

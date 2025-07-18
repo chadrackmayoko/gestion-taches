@@ -1,0 +1,16 @@
+// Unique Toasts
+.card.height_equal
+    .card-header.pb-0
+        +card-header('Unique Toasts', '','', 'Use the', '.hide , .show', 'class through visible toast.')
+    .card-body.toast-rtl
+        .toast.fade.show(role='alert' aria-live='assertive' aria-atomic='true')
+            .toast-header.toast-img
+                img.rounded.me-2(src='../assets/images/avatar/1.jpg' alt='profile')
+                strong.me-auto Edmin template
+                button.btn-close(type='button' data-bs-dismiss='toast' aria-label='Close')
+            .toast-body.toast-dark
+                h6.mb-2 Your account will be permanently deleted?
+                p.mb-0 Do you intend to continue?
+                .mt-2.pt-2.d-flex.gap-2
+                    button.btn.btn-dark.btn-sm(type='button') I'm not sure
+                    button.btn.btn-danger.btn-sm(type='button' data-bs-dismiss='toast') Remove My Account

@@ -1,0 +1,35 @@
+.card
+    .card-header.pb-0
+        +card-header('Offer style border', '','', 'Use the', '.offer-style -*.mega-inline-*', 'you can archive this style.')
+    .card-body.megaoptions-border-space-sm.checkbox-checked
+        form.mega-inline.offer-style
+            .row.flex-column
+                .col-12
+                    .card
+                        .p-20
+                            .form-check.form-check-inline
+                                input#inlineCheckbox1.form-check-input(type='checkbox' value='option1')
+                                label.form-check-label(for='inlineCheckbox1') 
+                                    span.flex-grow-1
+                                        span.d-flex.list-behavior-1
+                                            span.flex-shrink-0
+                                                img.tab-img.img-fluid(src="../assets/images/email-template/11.jpg" alt="fruits") 
+                                            span.flex-grow-1    
+                                                span.mb-0
+                                                    | Fruits are an essential part of a healthy diet, and offer many health benefits. They're packed with vitamins, minerals, and fiber, which can help improve digestion.
+                .col-12
+                    .card
+                        .p-20
+                            .form-check.form-check-inline
+                                input#inlineCheckbox2.form-check-input(type='checkbox' checked='')
+                                label.form-check-label(for='inlineCheckbox2') 
+                                    span.flex-grow-1
+                                        span.d-flex.list-behavior-1
+                                            span.flex-shrink-0 
+                                                img.tab-img.img-fluid(src="../assets/images/email-template/10.jpg" alt="flowers")
+                                            span.flex-grow-1
+                                                span.mb-0
+                                                    | Flowers have long been used to express feelings and sentiments, and each bloom has its own distinct significance. For instance, while daisies signify innocence and purity.
+    .card-footer.text-end
+        button.btn.btn-success.m-r-15(type='submit') Submit
+        button.btn.bg-light(type='submit') Cancel

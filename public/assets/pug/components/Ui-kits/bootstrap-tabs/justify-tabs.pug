@@ -1,0 +1,131 @@
+// Justify tabs
+.card
+    .card-header.pb-0
+        +card-header('Justify tabs', '','','Use the', '.nav-link','class and set content using flex property.')
+    .card-body
+        .card-header.d-flex.justify-content-between.align-items-center.flex-wrap.gap-2.pb-2.p-0
+            p
+                em.font-danger Edmin Profiles For New Employees:
+            ul#j-pills-tab.nav.nav-pills.nav-warning(role='tablist')
+                li.nav-item
+                    a#j-pills-web-designer-tab.nav-link(data-bs-toggle='pill' href='#j-pills-web-designer' role='tab' aria-controls='j-pills-web-designer' aria-selected='true')  Web designer
+                li.nav-item
+                    a#j-pills-UX-designer-tab.nav-link.active(data-bs-toggle='pill' href='#j-pills-UX-designer' role='tab' aria-controls='j-pills-UX-designer' aria-selected='false') UX designer
+                li.nav-item
+                    a#j-pills-IOT-developer-tab.nav-link(data-bs-toggle='pill' href='#j-pills-IOT-developer' role='tab' aria-controls='j-pills-IOT-developer' aria-selected='false') IOT developer
+        .card-body.px-0.pb-0
+            #j-pills-tabContent.tab-content
+                #j-pills-web-designer.tab-pane.fade(role='tabpanel' aria-labelledby='j-pills-web-designer-tab')
+                    .designer-details
+                        .designer-profile
+                            .designer-wrap
+                                img.designer-img(src='../assets/images/avatar/1.jpg' alt='profile')
+                                .designer-content
+                                    h6 Kathy M. Anderson
+                                    p  440-494-0729
+                        .designer-profile
+                            .designer-wrap
+                                img.designer-img(src='../assets/images/avatar/2.jpg' alt='profile')
+                                .designer-content
+                                    h6 Lillian J. Goodfellow
+                                    p 239-664-7751
+                        .designer-profile
+                            .designer-wrap
+                                img.designer-img(src='../assets/images/avatar/3.jpg' alt='profile')
+                                .designer-content
+                                    h6 Carolyn A. Sutton
+                                    p 218-793-6609
+                        .designer-profile
+                            .designer-wrap
+                                img.designer-img(src='../assets/images/avatar/4.jpg' alt='profile')
+                                .designer-content
+                                    h6 Mary O. Miller
+                                    p 720-744-0921
+                        .designer-profile
+                            .designer-wrap
+                                img.designer-img(src='../assets/images/avatar/5.jpg' alt='profile')
+                                .designer-content
+                                    h6 Patricia H. Hummel
+                                    p 314-445-1451
+                        .designer-profile
+                            .designer-wrap
+                                img.designer-img(src='../assets/images/avatar/6.jpg' alt='profile')
+                                .designer-content
+                                    h6 Minnie F. Evans
+                                    p 718-740-8438
+                #j-pills-UX-designer.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='j-pills-UX-designer-tab')
+                    .designer-details
+                        .designer-profile
+                            .designer-wrap
+                                img.designer-img(src='../assets/images/avatar/7.jpg' alt='profile')
+                                .designer-content
+                                    h6 Thomas A. Leroy
+                                    p 305-539-6871
+                        .designer-profile
+                            .designer-wrap
+                                img.designer-img(src='../assets/images/avatar/8.jpg' alt='profile')
+                                .designer-content
+                                    h6 Mark S. Ward
+                                    p 303-561-8880
+                        .designer-profile
+                            .designer-wrap
+                                img.designer-img(src='../assets/images/avatar/9.jpg' alt='profile')
+                                .designer-content
+                                    h6 Emily T. Hooper
+                                    p 301-553-1836
+                        .designer-profile
+                            .designer-wrap
+                                img.designer-img(src='../assets/images/avatar/2.jpg' alt='profile')
+                                .designer-content
+                                    h6 Natasha W. Watson
+                                    p 267-605-4499
+                        .designer-profile
+                            .designer-wrap
+                                img.designer-img(src='../assets/images/avatar/4.jpg' alt='profile')
+                                .designer-content
+                                    h6 Jennifer A. Camacho
+                                    p 770-527-7554
+                        .designer-profile
+                            .designer-wrap
+                                img.designer-img(src='../assets/images/avatar/6.jpg' alt='profile')
+                                .designer-content
+                                    h6 Ann J. Strickland
+                                    p 469-218-4678
+                #j-pills-IOT-developer.tab-pane.fade(role='tabpanel' aria-labelledby='j-pills-IOT-developer-tab')
+                    .designer-details
+                        .designer-profile
+                            .designer-wrap
+                                img.designer-img(src='../assets/images/avatar/7.jpg' alt='profile')
+                                .designer-content
+                                    h6 Jaclyn T. Duncan
+                                    p 413-618-9222
+                        .designer-profile
+                            .designer-wrap
+                                img.designer-img(src='../assets/images/avatar/8.jpg' alt='profile')
+                                .designer-content
+                                    h6 Christine H. Lin
+                                    p 909-219-0342
+                        .designer-profile
+                            .designer-wrap
+                                img.designer-img(src='../assets/images/avatar/6.jpg' alt='profile')
+                                .designer-content
+                                    h6 Ronnie S. Mountain
+                                    p 978-426-9732
+                        .designer-profile
+                            .designer-wrap
+                                img.designer-img(src='../assets/images/avatar/9.jpg' alt='profile')
+                                .designer-content
+                                    h6 Louise A. Hilliard
+                                    p 502-262-5600
+                        .designer-profile
+                            .designer-wrap
+                                img.designer-img(src='../assets/images/avatar/3.jpg' alt='profile')
+                                .designer-content
+                                    h6 Kayla Hutt
+                                    p 312-456-8275
+                        .designer-profile
+                            .designer-wrap
+                                img.designer-img(src='../assets/images/avatar/5.jpg' alt='profile')
+                                .designer-content
+                                    h6 Amber Cecil
+                                    p 802-662-2407

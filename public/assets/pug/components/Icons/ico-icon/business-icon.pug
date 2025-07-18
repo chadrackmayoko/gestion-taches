@@ -1,0 +1,42 @@
+//-// Business Icon
+-
+    var ICO_ITEM25 =[
+        { id:'icofont-bank-alt' }
+        , { id:'icofont-bank' }
+        , { id:'icofont-barcode' }
+        , { id:'icofont-bill-alt' }
+        , { id:'icofont-billboard' }
+        , { id:'icofont-briefcase-1' }
+        , { id:'icofont-briefcase-2' }
+        , { id:'icofont-businessman' }
+        , { id:'icofont-businesswoman' }
+        , { id:'icofont-chair' }
+        , { id:'icofont-coins' }
+        , { id:'icofont-company' }
+        , { id:'icofont-contact-add' }
+        , { id:'icofont-files-stack' }
+        , { id:'icofont-handshake-deal' }
+        , { id:'icofont-id-card' }
+        , { id:'icofont-meeting-add' }
+        , { id:'icofont-money-bag' }
+        , { id:'icofont-pie-chart' }
+        , { id:'icofont-presentation-alt' }
+        , { id:'icofont-presentation' }
+        , { id:'icofont-stamp' }
+        , { id:'icofont-stock-mobile' }
+    ]
+//-// Ico icon mixin
+mixin IcoContent(items)
+    each item in items 
+        .col-xxl-2.col-lg-3.col-sm-4
+            .card.d-flex.align-items-center.flex-column.default-border
+                i.icofont(class=item.id)
+                .flex-grow-1
+                    h6=item.id
+// Ico icon
+.card
+    .card-header.pb-0.d-flex.justify-content-between.align-items-center
+        h4 Business Icon
+    .card-body
+        .row.icon-event.iconly-icons.icon-lists
+            +IcoContent(ICO_ITEM25)

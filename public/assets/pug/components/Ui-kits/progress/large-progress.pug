@@ -1,0 +1,15 @@
+// Large progress bars
+.card.height_equal
+    .card-header.pb-0
+        +card-header('Large progress bars', '','','Use', '.lg-progress-bar', 'class to change progress size to large.')
+    .card-body.progress-showcase
+        .row
+            .col
+                .progress.lg-progress-bar
+                    .progress-bar.bg-primary(role='progressbar' style='width: 25%' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100') 25%
+                .progress.lg-progress-bar
+                    .progress-bar.bg-secondary(role='progressbar' style='width: 50%' aria-valuenow='50' aria-valuemin='0' aria-valuemax='100') 50%
+                .progress.lg-progress-bar
+                    .progress-bar.bg-success(role='progressbar' style='width: 75%' aria-valuenow='75' aria-valuemin='0' aria-valuemax='100') 75%
+                .progress.lg-progress-bar
+                    .progress-bar.bg-info(role='progressbar' style='width: 100%' aria-valuenow='100' aria-valuemin='0' aria-valuemax='100') 100%

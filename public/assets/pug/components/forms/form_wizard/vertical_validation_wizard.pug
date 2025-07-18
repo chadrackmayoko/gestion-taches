@@ -1,0 +1,195 @@
+.card
+  .card-header.pb-0
+    +card-header('Vertical validation wizard', '','', '', '', 'Fill up your true details and next proceed.')
+  //- .custom-input used as dark mode 
+  .card-body
+    .vertical-main-wizard
+      .row.g-3     
+        .col-xxl-3.col-xl-4.col-12
+            #wizard-tab.nav.flex-column.header-vertical-wizard(role='tablist' aria-orientation='vertical')
+              a#wizard-contact-tab.nav-link.active(data-bs-toggle='pill' href='#wizard-contact' role='tab' aria-controls='wizard-contact' aria-selected='true') 
+                .vertical-wizard
+                  .stroke-icon-wizard
+                    i.fa.fa-user
+                  .vertical-wizard-content 
+                    h6 Your Info
+                    p Add your details 
+              a#wizard-cart-tab.nav-link(data-bs-toggle='pill' href='#wizard-cart' role='tab' aria-controls='wizard-cart' aria-selected='false') 
+                .vertical-wizard
+                  .stroke-icon-wizard
+                    i.fa.fa-chain-broken
+                  .vertical-wizard-content 
+                    h6 Cart Info
+                    p Add your a/c details
+              a#wizard-banking-tab.nav-link(data-bs-toggle='pill' href='#wizard-banking' role='tab' aria-controls='wizard-banking' aria-selected='false') 
+                .vertical-wizard
+                  .stroke-icon-wizard
+                    i.fa-solid.fa-people-group
+                  .vertical-wizard-content 
+                    h6 Net Banking
+                    p Choose your bank
+        .col-xxl-9.col-xl-8.col-12
+            #wizard-tabContent.tab-content
+              #wizard-contact.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='wizard-contact-tab')
+                form.row.g-3.needs-validation.custom-input(novalidate='')
+                  .col-xxl-4.col-sm-6
+                    label.form-label(for='validationCustom0-a') First name
+                      span.font-danger *
+                    input#validationCustom0-a.form-control(type='text' placeholder="Enter first name" required='')
+                    .valid-feedback
+                      | Looks good!
+                  .col-xxl-4.col-sm-6
+                    label.form-label(for='validationCustom-b') Last name
+                      span.font-danger *
+                    input#validationCustom-b.form-control(type='text' placeholder='Enter last name' required='')
+                    .valid-feedback
+                      | Looks good!
+                  .col-xxl-4.col-sm-6
+                    label.form-label(for='validationemail-b') Email
+                      span.font-danger *
+                    input#validationemail-b.form-control(type='email' required='' placeholder='edmin@example.com')
+                    .valid-feedback
+                      | Looks good!
+                  .col-xxl-5.col-sm-6
+                    label.form-label(for='validationCustom04') State
+                    select#validationCustom04.form-select(required='')
+                      option(selected='' disabled='' value='') Choose...
+                      option USA 
+                      option U.K 
+                      option U.S
+                    .invalid-feedback
+                      | Please select a valid state.
+                  .col-xxl-3.col-sm-6
+                    label.form-label(for='validationCustom05') Zip Code
+                    input#validationCustom05.form-control(type='text' required='')
+                    .invalid-feedback
+                      | Please provide a valid zip.
+                  .col-xxl-4.col-sm-6
+                    label.form-label(for='contactnumber') Contact Number
+                    input#contactnumber.form-control(type='number' placeholder='Enter number' required='')
+                    .valid-feedback
+                      | Looks good!
+                  .col-12
+                    .form-check.checkbox-checked.form-check-inline
+                      input#invalidCheck-9.form-check-input(type='checkbox' value='' required='')
+                      label.form-check-label(for='invalidCheck-9')
+                        | Agree to terms and conditions
+                      .invalid-feedback
+                        | You must agree before submitting.
+                  .col-12.text-end 
+                    button.btn.btn-primary Next
+              #wizard-cart.tab-pane.fade(role='tabpanel' aria-labelledby='wizard-cart-tab')
+                form.row.g-3.needs-validation.custom-input(novalidate='')
+                  .col-xxl-6
+                    .card-wrapper.solid-border.rounded-3.checkbox-checked
+                      h6.sub-title Select your payment method
+                      .radio-form
+                        .form-check
+                          input#flexRadioDefault1.form-check-input(type='radio' name='flexRadioDefault-a')
+                          label.form-check-label(for='flexRadioDefault1')
+                            | Visa
+                        .form-check
+                          input#flexRadioDefault2.form-check-input(type='radio' name='flexRadioDefault-a' checked='')
+                          label.form-check-label(for='flexRadioDefault2')
+                            | MasterCard
+                        .form-check
+                          input#flexRadioDefault3.form-check-input(type='radio' name='flexRadioDefault-a' checked='')
+                          label.form-check-label(for='flexRadioDefault3')
+                            | Paypal
+                  .col-xxl-6 
+                    .row 
+                      .col-12
+                        .input-group.mb-3
+                          input.form-control(type='text' placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby='button-addon2')
+                          button#button-addon2.btn.btn-outline-secondary(type='button') Submit
+                      .col-12 
+                        .input-group
+                          span#basic-addon1.input-group-text @
+                          input.form-control(type='text' placeholder='Username' aria-label='Username' aria-describedby='basic-addon1')
+                  .col-md-4.col-sm-6
+                    label.form-label(for='txtCardNumber1') Card Number
+                    input#txtCardNumber1.form-control(type='text' required='' placeholder='xxxx xxxx xxxx xxxx')
+                    .invalid-feedback
+                      | Please enter your valid number
+                    .valid-feedback 
+                      | Looks's Good!
+                  .col-md-4.col-sm-6
+                    label.form-label(for='validationDates') Expiration(MM/YY)
+                    input#validationDates.form-control(type='number' required='' placeholder='xx/xx')
+                    .invalid-feedback
+                      | Please enter your valid number
+                    .valid-feedback 
+                      | Looks's Good!
+                  .col-md-4.col-sm-6
+                    label.form-label(for='cvvNumber-b') CVV
+                    input#cvvNumber-b.form-control(type='text' required='')
+                    .invalid-feedback
+                      | Please enter your valid number
+                    .valid-feedback 
+                      | Looks's Good!
+                  .col-md-12.col-sm-6
+                    label.form-label(for='formFile2') Upload Documentation
+                    input#formFile2.form-control(type='file' aria-label='file example' required='')
+                    .invalid-feedback Invalid form file selected
+                  .col-12
+                    .form-check.checkbox-checked.form-check-inline.mb-0
+                      input#invalidCheck-7.form-check-input(type='checkbox' value='' required='')
+                      label.form-check-label(for='invalidCheck-7')
+                        | All the above information is correct
+                      .invalid-feedback
+                        | You must agree before submitting.
+                  .col-12.text-end 
+                    button.btn.btn-primary Previous
+                    button.btn.btn-primary Next
+              #wizard-banking.tab-pane.fade.custom-input(role='tabpanel' aria-labelledby='wizard-banking-tab')
+                form.row.g-3.mb-3.needs-validation(novalidate='')
+                  .col-md-12 
+                    #accordionExample-a.accordion.dark-accordion
+                      .accordion-item
+                        h2#headingOne-a.accordion-header
+                          button.accordion-button.collapsed.accordion-light-primary.font-primary(type='button' data-bs-toggle='collapse' data-bs-target='#collapseOne-a' aria-expanded='true' aria-controls='collapseOne-a')
+                            | NET BANKING
+                            i.svg-color(data-feather='chevron-down')
+                        #collapseOne-a.accordion-collapse.collapse(aria-labelledby='headingOne-a' data-bs-parent='#accordionExample-a')
+                          .accordion-body.weight-title.card-wrapper
+                            h6.sub-title.f-14 SELECT YOUR BANK
+                            .row.choose-bank
+                              .col-sm-6
+                                .form-check.radio
+                                  label.d-block(for='flexRadioDefault-z')
+                                    input#flexRadioDefault-z.radio-primary(type='radio' name='flexRadioDefault-v')
+                                    | Industrial & Commercial Bank
+                                .form-check.radio
+                                  label.d-block(for='flexRadioDefault-y')
+                                    input#flexRadioDefault-y.radio-primary(type='radio' name='flexRadioDefault-v')
+                                    | Agricultural Bank
+                                .form-check.radio
+                                  label.d-block(for='flexRadioDefault-x')
+                                    input#flexRadioDefault-x.radio-primary(type='radio' name='flexRadioDefault-v' checked='')
+                                    | JPMorgan Chase & Co.
+                              .col-sm-6
+                                .form-check.radio
+                                  label.d-block(for='flexRadioDefault-w')
+                                    input#flexRadioDefault-w.radio-primary(type='radio' name='flexRadioDefault-v')
+                                    | Construction Bank Corp.
+                                .form-check.radio
+                                  label.d-block(for='flexRadioDefault-v')
+                                    input#flexRadioDefault-v.radio-primary(type='radio' name='flexRadioDefault-v')
+                                    | Bank of America
+                                .form-check.radio
+                                  label.d-block(for='flexRadioDefault-u')
+                                    input#flexRadioDefault-u.radio-primary(type='radio' name='flexRadioDefault-v')
+                                    | HDFC Bank
+                  .col-12 
+                    textarea#validationTextarea24.form-control(placeholder='Your Feedback' required='')
+                    .invalid-feedback
+                      | Please enter a message in the textarea.
+                  .col-12
+                    .form-check.checkbox-checked.form-check-inline.mb-0
+                      input#invalidCheck-8.form-check-input(type='checkbox' value='' required='')
+                      label.form-check-label(for='invalidCheck-8')
+                        | Agree to terms and conditions
+                      .invalid-feedback
+                        | You must agree before submitting.
+                  .col-12.text-end 
+                    button.btn.btn-success Finish

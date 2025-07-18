@@ -1,0 +1,25 @@
+// Basic Tooltip
+.card 
+    .card-header.pb-0
+        +card-header('Basic Tooltip', 'dote','','Use the', 'data-bs-toggle', ' to add tooltip attribute.')
+    .card-body
+        button.example-popover.btn.btn-primary.mb-0.me-0(type='button' data-bs-container='body' data-bs-toggle='tooltip' data-bs-placement='top' title='' data-bs-original-title='Surprise!!! Thank you for hovering...') It&apos;s magic please hover me... 
+        h4.mb-1.py-4.pb-0 Inline Tooltip Content
+        p.mb-0
+            | Here, is some content about tooltips that you can set the 
+            a.font-primary.fw-bold(data-bs-toggle='tooltip' data-bs-placement='top' data-bs-title='tooltip' data-bs-original-title='popover text') tooltip
+            |   inside the content with help of tooltip and also you can add
+            button.btn.btn-secondary.border-0.px-3.py-1.me-0.mb-0(type='button' data-bs-toggle='tooltip' data-bs-placement='top' data-bs-title='Button Tooltip!!' data-bs-original-title='' title='') button 
+            |  .Tooltips helps you to add more and more content. A tooltip is often used to specify extra information about something when the user moves the mouse pointer over an element
+        .code-box-copy
+            button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#tooltip', title='Copy')
+              i.icofont.icofont-copy
+            pre
+              code.language-html#tooltip
+                | &lt;!--You can use attribute (data-bs-target='tooltip') to  used tooltips.--&gt;
+                | &lt;button class="example-popover btn btn-primary mb-0 me-0" type="button" data-container="body" data-bs-toggle="tooltip" data-bs-placement="top" title="Surprise!!! Thank you for hovering..."&gt;It's magic please hover me... &lt;/button&gt;
+                | &lt;h5 class="mb-1 py-4 pb-0"&gt;Inline Tooltip Content&lt;/h5&gt;
+                | &lt;p&gt;
+                |    Here, is some content about tooltips that you can set the&lt;a class="font-primary fw-bold" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="tooltip" data-bs-original-title="popover text"&gt; tooltip&lt;/a&gt; inside the content with help of tooltip and also you can add
+                | &lt;button class="btn btn-success text-white border-0 px-3 py-1 me-0 mb-0" type="button" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="button"&gt;button &lt;/button&gt; .Tooltips helps you to add more and more content. A tooltip is often used to specify extra information about something when the user moves the mouse pointer over an element
+                | &lt;/p&gt;

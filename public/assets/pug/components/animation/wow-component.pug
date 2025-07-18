@@ -1,0 +1,187 @@
+//-// img gallery mixin
+-
+    var GALLERY_IMAGE =[
+        {
+            lightGallery: '../assets/images/lightgallery/1.jpg',
+            bigLight: '../assets/images/big-lightgallery/1.jpg',
+            wowClass: 'rollIn'
+        }, 
+        {
+            lightGallery: '../assets/images/lightgallery/2.jpg',
+            bigLight: '../assets/images/big-lightgallery/2.jpg',
+            wowClass: 'bounceInDown center'
+        }, 
+        {
+            lightGallery: '../assets/images/lightgallery/3.jpg',
+            bigLight: '../assets/images/big-lightgallery/3.jpg',
+            wowClass: 'lightSpeedIn'
+        }, 
+        {
+            lightGallery: '../assets/images/lightgallery/4.jpg',
+            bigLight: '../assets/images/big-lightgallery/4.jpg',
+            wowClass: 'rollIn center'
+        }, 
+        {
+            lightGallery: '../assets/images/lightgallery/5.jpg',
+            bigLight: '../assets/images/big-lightgallery/5.jpg',
+            wowClass: 'pulse'
+        },
+        {
+            lightGallery: '../assets/images/lightgallery/6.jpg',
+            bigLight: '../assets/images/big-lightgallery/6.jpg',
+            wowClass: 'bounceInRight center'
+        },
+        {
+            lightGallery: '../assets/images/lightgallery/7.jpg',
+            bigLight: '../assets/images/big-lightgallery/7.jpg',
+            wowClass: 'bounceInLeft'
+        },
+        {
+            lightGallery: '../assets/images/lightgallery/8.jpg',
+            bigLight: '../assets/images/big-lightgallery/8.jpg',
+            wowClass: 'flipInX center'
+        },
+        {
+            lightGallery: '../assets/images/lightgallery/9.jpg',
+            bigLight: '../assets/images/big-lightgallery/9.jpg',
+            wowClass: 'bounceInRight'
+        },
+        {
+            lightGallery: '../assets/images/lightgallery/10.jpg',
+            bigLight: '../assets/images/big-lightgallery/10.jpg',
+            wowClass: 'rollIn center'
+        }, 
+        {
+            lightGallery: '../assets/images/lightgallery/11.jpg',
+            bigLight: '../assets/images/big-lightgallery/11.jpg',
+            wowClass: 'shake'
+        },
+        {
+            lightGallery: '../assets/images/lightgallery/12.jpg',
+            bigLight: '../assets/images/big-lightgallery/12.jpg',
+            wowClass: 'swing center'
+        },
+        {
+            wowClass: 'rollIn',
+            lightGallery: '../assets/images/lightgallery/1.jpg',
+            bigLight: '../assets/images/big-lightgallery/1.jpg',
+        },
+        {
+            wowClass: 'bounceInUp center',
+            lightGallery: '../assets/images/lightgallery/2.jpg',
+            bigLight: '../assets/images/big-lightgallery/2.jpg',
+        },
+        {
+            wowClass: 'lightSpeedIn',
+            lightGallery: '../assets/images/lightgallery/3.jpg',
+            bigLight: '../assets/images/big-lightgallery/3.jpg',
+        },
+        {
+            wowClass: 'rollIn center',
+            lightGallery: '../assets/images/lightgallery/4.jpg',
+            bigLight: '../assets/images/big-lightgallery/4.jpg',
+        },
+        {
+            wowClass: 'pulse',
+            lightGallery: '../assets/images/lightgallery/5.jpg',
+            bigLight: '../assets/images/big-lightgallery/5.jpg',
+        },
+        {
+            wowClass: 'flip',
+            lightGallery: '../assets/images/lightgallery/6.jpg',
+            bigLight: '../assets/images/big-lightgallery/6.jpg',
+        },
+        {
+            wowClass: 'lightSpeedIn center',
+            lightGallery: '../assets/images/lightgallery/7.jpg',
+            bigLight: '../assets/images/big-lightgallery/7.jpg',
+        },
+        {
+            wowClass: 'bounce',
+            lightGallery: '../assets/images/lightgallery/8.jpg',
+            bigLight: '../assets/images/big-lightgallery/8.jpg',
+        },
+        {
+            wowClass: 'bounceInUp center',
+            lightGallery: '../assets/images/lightgallery/9.jpg',
+            bigLight: '../assets/images/big-lightgallery/9.jpg',
+        },
+        {
+            wowClass: 'bounceInRight',
+            lightGallery: '../assets/images/lightgallery/10.jpg',
+            bigLight: '../assets/images/big-lightgallery/10.jpg',
+        },
+        {
+            wowClass: 'rollIn center',
+            lightGallery: '../assets/images/lightgallery/11.jpg',
+            bigLight: '../assets/images/big-lightgallery/11.jpg',
+        },
+        {
+            wowClass: 'bounceInRight center',
+            lightGallery: '../assets/images/lightgallery/12.jpg',
+            bigLight: '../assets/images/big-lightgallery/12.jpg',
+        },
+        {
+            wowClass: 'rollIn',
+            lightGallery: '../assets/images/lightgallery/1.jpg',
+            bigLight: '../assets/images/big-lightgallery/1.jpg',
+        },
+        {
+            wowClass: 'bounceInDown center',
+            lightGallery: '../assets/images/lightgallery/2.jpg',
+            bigLight: '../assets/images/big-lightgallery/2.jpg',
+        },
+        {
+            wowClass: 'bounceInRight',
+            lightGallery: '../assets/images/lightgallery/3.jpg',
+            bigLight: '../assets/images/big-lightgallery/3.jpg',
+        },
+        {
+            wowClass: 'bounceInRight center',
+            lightGallery: '../assets/images/lightgallery/4.jpg',
+            bigLight: '../assets/images/big-lightgallery/4.jpg',
+        },
+        {
+            wowClass: 'rollIn',
+            lightGallery: '../assets/images/lightgallery/5.jpg',
+            bigLight: '../assets/images/big-lightgallery/5.jpg',
+        },
+        {
+            wowClass: 'bounceInLeft center',
+            lightGallery: '../assets/images/lightgallery/6.jpg',
+            bigLight: '../assets/images/big-lightgallery/6.jpg',
+        },
+        {
+            wowClass: 'lightSpeedIn',
+            lightGallery: '../assets/images/lightgallery/7.jpg',
+            bigLight: '../assets/images/big-lightgallery/7.jpg',
+        },
+        {
+            wowClass: 'pulse',
+            lightGallery: '../assets/images/lightgallery/8.jpg',
+            bigLight: '../assets/images/big-lightgallery/8.jpg',
+        },
+        {
+            wowClass: 'slideInRight',
+            lightGallery: '../assets/images/lightgallery/9.jpg',
+            bigLight: '../assets/images/big-lightgallery/9.jpg',
+        },
+        {
+            wowClass: 'slideInRight',
+            lightGallery: '../assets/images/lightgallery/10.jpg',
+            bigLight: '../assets/images/big-lightgallery/10.jpg',
+        },
+    ]
+//-//gallery mixin
+mixin ImgGallery(items)
+    each item in items
+        .pswp-gallery.col-xl-2.col-md-3.col-6.wow(class=item.wowClass)
+            a(href=item.bigLight, data-pswp-width='1875' data-pswp-height='2500' target='_blank')
+                img.img-thumbnail(src=item.lightGallery , alt='')
+
+// gallery mixin
+.card.gallery-grid
+    .card-header.pb-0
+        +card-header('WOW animation', '','', 'For more detailed follow below steps', '', '.')
+    .gallery.my-gallery.card-body.row.animation-style(itemscope='')
+        +ImgGallery(GALLERY_IMAGE)

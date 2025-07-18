@@ -1,0 +1,336 @@
+.left-sidebar-wrapper.card
+  .left-sidebar-chat
+    .input-group
+      span.input-group-text
+        +FeatherSprite('search', 'feather text-gray')
+      input.form-control(type='text' placeholder='Search here..')  
+  .advance-options 
+    ul#chat-options-tab.nav.border-tab(role='tablist')
+      li.nav-item
+        a#chats-tab.nav-link.active(data-bs-toggle='tab' href='#chats' role='tab' aria-controls='chats' aria-selected='true') Chats
+      li.nav-item
+        a#contacts-tab.nav-link(data-bs-toggle='tab' href='#contacts' role='tab' aria-controls='contacts' aria-selected='false') Contacts
+    #chat-options-tabContent.tab-content 
+      #chats.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='chats-tab')
+        .common-space 
+          p Recent chats
+          .header-top
+            a.btn.badge-light-primary.f-w-500(href="#!")
+              i.fa.fa-plus
+        ul.chats-user
+          li.common-space
+            .chat-time
+              .active-profile
+                img.img-fluid.rounded-circle(src="../assets/images/avatar/1.jpg", alt="user")
+                .status.bg-success
+              div 
+                span Cameron Williamson
+                p Hey, How are you?
+            div
+              p 2 min 
+              .badge.badge-light-success 15
+          li.common-space
+            .chat-time
+              .active-profile
+                img.img-fluid.rounded-circle(src="../assets/images/avatar/2.jpg", alt="user")
+                .status.bg-success
+              div 
+                span Esther Howard
+                p Thanks for reply
+            div
+              p 7:30 PM
+          li.common-space
+            .chat-time
+              .active-profile
+                img.img-fluid.rounded-circle(src="../assets/images/avatar/3.jpg", alt="user")
+                .status.bg-success
+              div 
+                span Jane Cooper
+                p Hey, What's up?
+            div
+              p 1:10 PM
+          li.common-space
+            .chat-time
+              .active-profile
+                img.img-fluid.rounded-circle(src="../assets/images/avatar/4.jpg", alt="user")
+                .status.bg-success
+              div 
+                span Ronald Richards
+                p I'm ready
+            div
+              p 13:10 PM
+          li.common-space
+            .chat-time
+              .active-profile
+                img.img-fluid.rounded-circle(src="../assets/images/avatar/5.jpg", alt="user")
+                .status.bg-warning
+              div 
+                span Darlene Robertson
+                p Hey, How are you?
+            div
+              p 1:30 PM
+          li.common-space
+            .chat-time
+              .active-profile
+                img.img-fluid.rounded-circle(src="../assets/images/avatar/6.jpg", alt="user")
+                .status.bg-warning
+              div 
+                span Darrell Steward
+                p What's going on?
+            div
+              p 2:10 PM
+          li.common-space
+            .chat-time
+              .active-profile
+                img.img-fluid.rounded-circle(src="../assets/images/avatar/7.jpg", alt="user")
+                .status.bg-success
+              div 
+                span Theresa Webb
+                p What's up?
+            div
+              p 1:50 AM
+          li.common-space
+            .chat-time
+              .active-profile
+                img.img-fluid.rounded-circle(src="../assets/images/avatar/8.jpg", alt="user")
+                .status.bg-warning
+              div 
+                span Floyd Miles
+                p Are you sure?
+            div
+              p 5:14 PM
+          li.common-space
+            .chat-time
+              .active-profile
+                img.img-fluid.rounded-circle(src="../assets/images/avatar/9.jpg", alt="user")
+                .status.bg-warning
+              div 
+                span Annette Black
+                p Thanks
+            div
+              p 1:50 PM
+      #contacts.tab-pane.fade(role='tabpanel' aria-labelledby='contacts-tab')
+        .common-space 
+          p Contacts
+          .header-top
+            a.btn.badge-light-primary.f-w-500(href="#!")
+              i.fa.fa-plus
+        .search-contacts
+          input.form-control(type="text" placeholder="Name and phone number")
+          i.fa-solid.fa-magnifying-glass
+          +FeatherSprite('mic', 'feather')
+        .contact-wrapper
+          p A 
+          ul.border-0
+            li.common-space
+              .chat-time
+                img.img-fluid.rounded-circle(src="../assets/images/avatar/1.jpg", alt="user")
+                div 
+                  span Andres Williamson
+                  p 191-900-5689
+              .contact-edit
+                i.fa-solid.fa-bars.dropdown-toggle(role="menu" data-bs-toggle="dropdown" aria-expanded="false")
+                .dropdown-menu.dropdown-menu-end
+                  a.dropdown-item(href='#!')
+                    | View details
+                  a.dropdown-item(href='#!') 
+                    | Send messages
+                  a.dropdown-item(href='#!') 
+                    | Add to favorites
+          p B
+          ul.border-0
+            li.common-space
+              .chat-time
+                img.img-fluid.rounded-circle(src="../assets/images/avatar/2.jpg", alt="user")
+                div 
+                  span Britlin Weed
+                  p 698-781-5581
+              .contact-edit
+                i.fa-solid.fa-bars.dropdown-toggle(role="menu" data-bs-toggle="dropdown" aria-expanded="false")
+                .dropdown-menu.dropdown-menu-end
+                  a.dropdown-item(href='#!')
+                    | View details
+                  a.dropdown-item(href='#!') 
+                    | Send messages
+                  a.dropdown-item(href='#!') 
+                    | Add to favorites
+            li.common-space
+              .chat-time
+                .custom-name.bg-light-secondary
+                  p.font-secondary.f-w-500 BD
+                div 
+                  span Brendra Dixit
+                  p 589-789-2563
+              .contact-edit
+                i.fa-solid.fa-bars.dropdown-toggle(role="menu" data-bs-toggle="dropdown" aria-expanded="false")
+                .dropdown-menu.dropdown-menu-end
+                  a.dropdown-item(href='#!')
+                    | View details
+                  a.dropdown-item(href='#!') 
+                    | Send messages
+                  a.dropdown-item(href='#!') 
+                    | Add to favorites
+          p C 
+          ul.border-0
+            li.common-space
+              .chat-time
+                img.img-fluid.rounded-circle(src="../assets/images/avatar/3.jpg", alt="user")
+                div 
+                  span Cody Fisher
+                  p 983-333-4545
+              .contact-edit
+                i.fa-solid.fa-bars.dropdown-toggle(role="menu" data-bs-toggle="dropdown" aria-expanded="false")
+                .dropdown-menu.dropdown-menu-end
+                  a.dropdown-item(href='#!')
+                    | View details
+                  a.dropdown-item(href='#!') 
+                    | Send messages
+                  a.dropdown-item(href='#!') 
+                    | Add to favorites
+            li.common-space
+              .chat-time
+                .position-relative.custom-name.bg-light-success
+                  p.font-success.f-w-500 CE
+                div 
+                  span Clifford Evans
+                  p 321-456-7878
+              .contact-edit
+                i.fa-solid.fa-bars.dropdown-toggle(role="menu" data-bs-toggle="dropdown" aria-expanded="false")
+                .dropdown-menu.dropdown-menu-end
+                  a.dropdown-item(href='#!')
+                    | View details
+                  a.dropdown-item(href='#!') 
+                    | Send messages
+                  a.dropdown-item(href='#!') 
+                    | Add to favorites  
+            li.common-space
+              .chat-time
+                .custom-name.bg-light-warning
+                  p.font-warning.f-w-500 CW 
+                div 
+                  span Cameron Williamson
+                  p 369-852-7417
+              .contact-edit
+                i.fa-solid.fa-bars.dropdown-toggle(role="menu" data-bs-toggle="dropdown" aria-expanded="false")
+                .dropdown-menu.dropdown-menu-end
+                  a.dropdown-item(href='#!')
+                    | View details
+                  a.dropdown-item(href='#!') 
+                    | Send messages
+                  a.dropdown-item(href='#!') 
+                    | Add to favorites
+          p D
+          ul.border-0
+            li.common-space
+              .chat-time
+                img.img-fluid.rounded-circle(src="../assets/images/avatar/4.jpg", alt="user")
+                div 
+                  span Darlene Robertson
+                  p 231-279-1001
+              .contact-edit
+                i.fa-solid.fa-bars.dropdown-toggle(role="menu" data-bs-toggle="dropdown" aria-expanded="false")
+                .dropdown-menu.dropdown-menu-end
+                  a.dropdown-item(href='#!')
+                    | View details
+                  a.dropdown-item(href='#!') 
+                    | Send messages
+                  a.dropdown-item(href='#!') 
+                    | Add to favorites
+            li.common-space
+              .chat-time
+                img.img-fluid.rounded-circle(src="../assets/images/user/5.jpg", alt="user")
+                div 
+                  span Dianne Russell
+                  p 569-789-1002
+              .contact-edit
+                i.fa-solid.fa-bars.dropdown-toggle(role="menu" data-bs-toggle="dropdown" aria-expanded="false")
+                .dropdown-menu.dropdown-menu-end
+                  a.dropdown-item(href='#!')
+                    | View details
+                  a.dropdown-item(href='#!') 
+                    | Send messages
+                  a.dropdown-item(href='#!') 
+                    | Add to favorites
+            li.common-space
+              .chat-time
+                img.img-fluid.rounded-circle(src="../assets/images/user/6.jpg", alt="user")
+                div 
+                  span Darrell Steward
+                  p 200-300-1030
+              .contact-edit
+                i.fa-solid.fa-bars.dropdown-toggle(role="menu" data-bs-toggle="dropdown" aria-expanded="false")
+                .dropdown-menu.dropdown-menu-end
+                  a.dropdown-item(href='#!')
+                    | View details
+                  a.dropdown-item(href='#!') 
+                    | Send messages
+                  a.dropdown-item(href='#!') 
+                    | Add to favorites
+          p E 
+          ul.border-0
+            li.common-space
+              .chat-time
+                img.img-fluid.rounded-circle(src="../assets/images/user/7.jpg", alt="user")
+                div 
+                  span Emily Collins
+                  p 100-555-7032
+              .contact-edit
+                i.fa-solid.fa-bars.dropdown-toggle(role="menu" data-bs-toggle="dropdown" aria-expanded="false")
+                .dropdown-menu.dropdown-menu-end
+                  a.dropdown-item(href='#!')
+                    | View details
+                  a.dropdown-item(href='#!') 
+                    | Send messages
+                  a.dropdown-item(href='#!') 
+                    | Add to favorites
+          p F 
+          ul.border-0
+            li.common-space
+              .chat-time
+                img.img-fluid.rounded-circle(src="../assets/images/user/8.jpg", alt="user")
+                div 
+                  span Fiona Cooper
+                  p 362-778-1919
+              .contact-edit
+                i.fa-solid.fa-bars.dropdown-toggle(role="menu" data-bs-toggle="dropdown" aria-expanded="false")
+                .dropdown-menu.dropdown-menu-end
+                  a.dropdown-item(href='#!')
+                    | View details
+                  a.dropdown-item(href='#!') 
+                    | Send messages
+                  a.dropdown-item(href='#!') 
+                    | Add to favorites
+            li.common-space
+              .chat-time
+                .custom-name.bg-light-danger
+                  p.font-danger.f-w-500 FG
+                div 
+                  span Freya Grayson
+                  p 589-789-2563
+              .contact-edit
+                i.fa-solid.fa-bars.dropdown-toggle(role="menu" data-bs-toggle="dropdown" aria-expanded="false")
+                .dropdown-menu.dropdown-menu-end
+                  a.dropdown-item(href='#!')
+                    | View details
+                  a.dropdown-item(href='#!') 
+                    | Send messages
+                  a.dropdown-item(href='#!') 
+                    | Add to favorites
+          p G
+          ul.border-0  
+            li.common-space
+              .chat-time
+                .custom-name.bg-light-warning
+                  p.font-warning.f-w-500 GE
+                div 
+                  span Gabriel Evans
+                  p 963-147-5024
+              .contact-edit
+                i.fa-solid.fa-bars.dropdown-toggle(role="menu" data-bs-toggle="dropdown" aria-expanded="false")
+                .dropdown-menu.dropdown-menu-end
+                  a.dropdown-item(href='#!')
+                    | View details
+                  a.dropdown-item(href='#!') 
+                    | Send messages
+                  a.dropdown-item(href='#!') 
+                    | Add to favorites   

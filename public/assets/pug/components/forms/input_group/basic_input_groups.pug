@@ -1,0 +1,44 @@
+.card
+    .card-header.pb-0
+        +card-header('Basic input groups', '','', 'Place one add-on or button on either side of an input. You may also place one on both sides of an input. Remember to place ', '<label>', 's outside the input group.')
+    .card-body.card-wrapper.input-group-wrapper
+        .row.g-5
+            .col-md-12
+                .card-wrapper.solid-border.rounded-3.main-custom-form.input-group-wrapper
+                    h6.sub-title.fw-bold Basic
+                    form.theme-form.row.g-3
+                        .input-group
+                            span#basic-addon1.input-group-text @
+                            input.form-control(type='text' placeholder='Username' aria-label='Username' aria-describedby='basic-addon1')
+                        .input-group
+                            input.form-control(type='text' placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby='basic-addon2')
+                            span#basic-addon2.input-group-text @example.com
+                        label.form-label(for='basic-url') Your vanity URL
+                        .input-group.m-0
+                            span#basic-addon3.input-group-text https://example.com/
+                            input#basic-url.form-control(type='text' aria-describedby='basic-addon3')
+                        .input-group
+                            span.input-group-text $
+                            input.form-control(type='text' aria-label='Amount (to the nearest dollar)')
+                            span.input-group-text .00
+                        .input-group
+                            input.form-control(type='text' placeholder='Username' aria-label='Username')
+                            span.input-group-text @
+                            input.form-control(type='text' placeholder='Server' aria-label='Server')
+                        .input-group
+                            span.input-group-text With textarea
+                            textarea.form-control(aria-label='With textarea')
+            .col-12
+                .card-wrapper.solid-border.rounded-3.input-radius
+                    h6.sub-title.fw-bold Wrapping 
+                    p.f-m-light.mb-1
+                        | Input groups wrap by default via flex-wrap: wrap in order to accommodate custom form field validation within an input group. You may disable this with 
+                        code .flex-nowrap
+                        | .
+                    form.theme-form.row.g-3  
+                        .input-group.flex-nowrap
+                            span#addon-wrapping.input-group-text @
+                            input.form-control(type='text' placeholder='Username' aria-label='Username' aria-describedby='addon-wrapping')
+    .card-footer
+        button.btn.btn-primary.m-r-15(type='submit') Submit
+        button.btn.btn-light-primary(type='submit') Cancel  

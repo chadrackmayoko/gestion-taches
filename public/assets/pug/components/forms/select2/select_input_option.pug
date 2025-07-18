@@ -1,0 +1,37 @@
+.card
+  .card-header.pb-0
+      +card-header('Select input using search option', '','', '', '', 'Use search option through select any options.')
+  .card-body 
+    .select-box
+      .options-container
+        .selection-option
+          input#webdesigner.radio(type='radio' name='category')
+          label.mb-0(for='webdesigner') web-designer
+        .selection-option
+          input#film.radio(type='radio' name='category')
+          label.mb-0(for='film') Film &amp; Animation
+        .selection-option
+          input#software.radio(type='radio' name='category')
+          label.mb-0(for='software') software-engineer
+        .selection-option
+          input#art.radio(type='radio' name='category')
+          label.mb-0(for='art') Art
+        .selection-option
+          input#music.radio(type='radio' name='category')
+          label.mb-0(for='music') Music
+        .selection-option
+          input#travel.radio(type='radio' name='category')
+          label.mb-0(for='travel') Travel &amp; Events
+        .selection-option
+          input#sports.radio(type='radio' name='category')
+          label.mb-0(for='sports') Sports
+        .selection-option
+          input#news.radio(type='radio' name='category')
+          label.mb-0(for='news') News &amp; Politics
+        .selection-option
+          input#tutorials.radio(type='radio' name='category')
+          label.mb-0(for='tutorials') Tutorials
+      .selected-box
+        | Select Your Profession
+      .search-box
+        input(type='text' placeholder='Start Typing...')

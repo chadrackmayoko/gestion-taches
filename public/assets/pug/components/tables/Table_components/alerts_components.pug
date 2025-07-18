@@ -1,0 +1,82 @@
+.card
+    .card-header
+        h4 Alerts
+    div
+        .card-block.row
+            .col-sm-12.col-lg-12.col-xl-12
+                .table-responsive
+                    table.table.table-bordered
+                        tbody
+                            tr
+                                td Basic Alert
+                                td.w-50
+                                  .alert.alert-primary
+                                        p
+                                            strong Success!
+                                            |  Indicates a successful or positive action.
+                                td
+                                    p
+                                        span
+                                            | Alerts are available for any length of text, as well as an optional dismiss       button. Add 
+                                            code  alert alert-primary
+                                            | ,
+                                            code  alert alert-secondary
+                                            | ,
+                                            code  alert alert-success
+                                            | ,
+                                            code  alert alert-info
+                                            |  classes for alert with all Template colors.
+                            tr
+                                td Alerts with Links
+                                td
+                                    .alert.alert-primary
+                                      p
+                                        strong Success!
+                                        |  You should 
+                                        a.alert-link.text-white(href='#') read this message.
+                                td
+                                    p
+                                        span
+                                            | Alerts are available for any length of text, as well as an optional dismiss       button. Add 
+                                            code  alert alert-primary
+                                            | ,
+                                            code  alert alert-secondary
+                                            | ,
+                                            code  alert alert-success
+                                            | ,
+                                            code  alert alert-info
+                                            |  classes for alert with all Template colors.
+                            tr
+                                td Dismissible Alerts
+                                td
+                                    .alert.alert-secondary.alert-dismissible.fade.show(role='alert')
+                                        p
+                                            strong Holy !
+                                            |  You can check in on some of those fields below.
+                                        button.btn-close(type='button', data-bs-dismiss='alert', aria-label='Close')
+                                td
+                                    span
+                                        | Add a dismiss button and the
+                                        code  alert alert-dismissable
+                                        | class, which adds extra padding to the right of the alert and positions the
+                                        code close
+                                        | a link On the dismiss button, add the data-bs-dismiss="alert" attribute,  which triggers the JavaScript functionality. Be sure to use the
+                                        code a
+                                        | element with it for proper behavior across all devices. To animate alerts  when dismissing them, be sure to add the .fade and .in classes.
+                            tr
+                                td Alerts with icons
+                                td
+                                    .alert.alert-primary.inverse.alert-dismissible.fade.show(role='alert')
+                                        i.icofont.icofont-heart-alt
+                                        p
+                                            | Good Morning! Start your day with some alerts.
+                                        button.btn-close(type='button', data-bs-dismiss='alert', aria-label='Close')
+                                td
+                                    span
+                                        | Add a dismiss button and the
+                                        code  alert alert-dismissable
+                                        | class, which adds extra padding to the right of the alert and positions the
+                                        code close
+                                        | a link On the dismiss button, add the data-bs-dismiss="alert" attribute,  which triggers the JavaScript functionality. Be sure to use the
+                                        code a
+                                        | element with it for proper behavior across all devices. To animate alerts when dismissing them, be sure to add the .fade and .in classes.

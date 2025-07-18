@@ -1,0 +1,92 @@
+// init aos
+.card
+    .card-header.pb-0
+        h4 Init AOS
+    .card-body 
+        div
+            span.comment
+                | // The Below Function is example of how to initlize reveal
+            .line
+                span
+                |  &lt;script&gt; 
+                span
+                br
+                code AOS.init();
+                br
+                span  &lt;
+                |  /script 
+                span  &gt; 
+// how to use
+.card
+    .card-header.pb-0
+        +card-header('How To Use It?', '','', 'All you have to do is to add', 'data-aos', 'attribute to html element, like so:')
+    .card-body
+        .font-primary
+            span  &lt;
+            |  div data-aos="animation_name" 
+            span  &gt;
+// advanced setting
+.card
+    .card-header.pb-0
+        +card-header('Advanced Settings', '','', 'These settings can be set both on certain elements, or as default while initializing script (in options object without', 'data- part', ').')
+    .card-body.table-responsive
+        table.table.mb-0
+            thead
+                tr
+                    th Attribute
+                    th Description
+                    th Example value
+                    th Default value
+            tbody
+                tr
+                    td
+                        em
+                            code data-aos-offset
+                    td Change offset to trigger animations sooner or later (px)
+                    td 200
+                    td 120
+                tr
+                    td
+                        em
+                            code data-aos-duration
+                    td *Duration of animation (ms)
+                    td 600
+                    td 400
+                tr
+                    td
+                        em
+                            code data-aos-easing
+                    td Choose timing function to ease elements in different ways
+                    td ease-in-sine
+                    td ease
+                tr
+                    td
+                        em
+                            code data-aos-delay
+                    td Delay animation (ms)
+                    td 300
+                    td 0
+                tr
+                    td
+                        em
+                            code data-aos-anchor
+                    td
+                        | Anchor element, whose offset will be counted to trigger animation instead of actual elements offset
+                    td #selector
+                    td null
+                tr
+                    td
+                        em
+                            code data-aos-anchor-placement
+                    td
+                        | Anchor placement - which one position of element on the screen should trigger animation
+                    td top-center
+                    td top-bottom
+                tr
+                    td
+                        em
+                            code data-aos-once
+                    td
+                        | Choose wheter animation should fire once, or every time you scroll up/down to element
+                    td true
+                    td false

@@ -1,0 +1,26 @@
+// Number rating
+.card
+    .card-body.number-rating
+        .card.rating_card.mb-0
+            h4.title How did we do?
+            p
+                | Please let us know how we did with your support request. All feedback is appreciated
+                | to help us improve our offering!
+            ul.ratings
+                li.circle.rating(data-rating='1') 1
+                li.circle.rating(data-rating='2') 2
+                li.circle.rating(data-rating='3') 3
+                li.circle.rating(data-rating='4') 4
+                li.circle.rating(data-rating='5') 5
+            button.rating-button.btn.btn-secondary Submit
+            // Rating state end
+        .card.back-card.hidden.mb-0
+            .illustration
+                img(src='../assets/images/other-images/invoice.svg' alt='')
+            p.result
+            .greet
+                h4 Thank you!
+                p
+                    | We appreciate you taking the time to give a rating. If you ever need more support,
+                    | don&rsquo;t hesitate to get in touch!
+            // Thank you state end

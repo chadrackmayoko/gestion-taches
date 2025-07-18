@@ -1,0 +1,59 @@
+// Outline Buttons Start
+//-// Outline Buttons Data
+-
+    var OUTLINE_BUTTONS =[
+        {
+            title: 'Primary Button',
+            BtnColor: 'btn-primary btn-outline-primary',
+            tooltip: 'btn btn-outline-primary',
+        },
+        {
+            title: 'Secondary Button',
+            BtnColor: 'btn-secondary btn-outline-secondary',
+            tooltip: 'btn btn-outline-secondary',
+        },
+        {
+            title: 'Tertiary Button',
+            BtnColor: 'btn-tertiary btn-outline-tertiary',
+            tooltip: 'btn btn-outline-tertiary',
+        },
+        {
+            title: 'Success Button',
+            BtnColor: 'btn-success btn-outline-success',
+            tooltip: 'btn btn-outline-success',
+        },
+        {
+            title: 'Info Button',
+            BtnColor: 'btn-info btn-outline-info',
+            tooltip: 'btn btn-outline-info',
+        },
+        {
+            title: 'Warning Button',
+            BtnColor: 'btn-warning btn-outline-warning',
+            tooltip: 'btn btn-outline-warning',
+        },
+        {
+            title: 'Danger Button',
+            BtnColor: 'btn-danger btn-outline-danger',
+            tooltip: 'btn btn-outline-danger',
+        },
+        {
+            title: 'Light Button',
+            BtnColor: 'font-dark btn-light btn-outline-light',
+            tooltip: 'btn btn-outline-light',
+        },
+        {
+            title: 'Dark Button',
+            BtnColor: 'btn-dark btn-outline-dark',
+            tooltip: 'btn btn-outline-dark',
+        },
+    ] 
+//- Outline Buttons Mixin   
+mixin OutlineButtons(items)
+    each item in items
+        .text-center.col-12.col-sm-6.col-md-12
+            button.btn.m-1(type='button' data-bs-toggle='tooltip' class=item.BtnColor title=item.tooltip)=item.title
+// Outline Buttons Menu            
+.btn-showcase.row
+    +OutlineButtons(OUTLINE_BUTTONS)
+// Outline Buttons End      

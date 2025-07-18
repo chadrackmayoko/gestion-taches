@@ -1,0 +1,20 @@
+// HTML Tooltip
+.card 
+    .card-header.pb-0
+        +card-header('HTML elements with click event', 'dote','','Use the', 'data-bs-title, data-bs-trigger="click"', ' to the content under the HTML tag with click event.')
+    .card-body
+        .common-flex
+            button.btn.btn-primary.mb-0.me-0(type='button' data-bs-toggle='tooltip' data-bs-trigger="click" data-bs-custom-class="custom-tooltip" data-bs-html='true' data-bs-placement='top' data-bs-title='&lt; em &gt;Thank&lt;/em&gt; &lt; u &gt;you&lt;/ul&gt;' data-bs-original-title='' title='') Notifications Received
+            button.btn.btn-warning.mb-0.me-0(type='button' data-bs-toggle='tooltip' data-bs-trigger="click" data-bs-placement='top' data-bs-html='true' data-bs-title='&lt; b &gt;Thank&lt;/ b &gt; &lt; em &gt;you&lt;/em&gt;' data-bs-original-title='' title='') Last Warning
+            button.btn.btn-danger.mb-0.me-0(type='button' data-bs-toggle='tooltip' data-bs-trigger="click" data-bs-placement='top' data-bs-html='true' data-bs-title='&lt; em &gt;Thank&lt;/em&gt; &lt; u &gt;you&lt;/ul&gt;' data-bs-original-title='' title='') It&apos;s Danger
+            button.btn.btn-info.mb-0.me-0(type='button' data-bs-toggle='tooltip' data-bs-trigger="click" data-bs-placement='top' data-bs-html='true' data-bs-title='&lt; b &gt;Thank&lt;/ b &gt; &lt; em &gt;you&lt;/em&gt;' data-bs-original-title='' title='') Coming soon
+        .code-box-copy
+            button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#tooltip', title='Copy')
+              i.icofont.icofont-copy
+            pre
+              code.language-html#click-tooltip
+                | &lt;!--You can use attribute (data-bs-target='click') to  used tooltips.--&gt;
+                | &lt;button class="btn btn-primary mb-0 me-0" type="button" data-bs-toggle="tooltip" data-bs-trigger="click" data-bs-custom-class="custom-tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt; em &gt;Thank&lt;/em&gt; &lt; u &gt;you&lt;/ul&gt;" data-bs-original-title="" title="" aria-describedby="tooltip348788"&gt;Notifications Received&lt;/button&gt;
+                | &lt;button class="btn btn-warning mb-0 me-0" type="button" data-bs-toggle="tooltip" data-bs-trigger="click" data-bs-placement="top" data-bs-html="true" data-bs-title="&lt; b &gt;Thank&lt;/ b &gt; &lt; em &gt;you&lt;/em&gt;" data-bs-original-title="" title="" aria-describedby="tooltip851095"&gt;Last Warning&lt;/button&gt;
+                | &lt;button class="btn btn-danger mb-0 me-0" type="button" data-bs-toggle="tooltip" data-bs-trigger="click" data-bs-placement="top" data-bs-html="true" data-bs-title="&lt; em &gt;Thank&lt;/em&gt; &lt; u &gt;you&lt;/ul&gt;" data-bs-original-title="" title="" aria-describedby="tooltip891699"&gt;It's Danger&lt;/button&gt;
+                | &lt;button class="btn btn-info mb-0 me-0" type="button" data-bs-toggle="tooltip" data-bs-trigger="click" data-bs-placement="top" data-bs-html="true" data-bs-title="&lt; b &gt;Thank&lt;/ b &gt; &lt; em &gt;you&lt;/em&gt;" data-bs-original-title="" title="" aria-describedby="tooltip260145"&gt;Coming soon&lt;/button&gt;

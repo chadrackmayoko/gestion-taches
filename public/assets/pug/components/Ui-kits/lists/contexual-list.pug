@@ -1,0 +1,38 @@
+// Contextual classes
+.card
+    .card-header.pb-0
+        +card-header('Contextual classes', '','','Use contextual classes to style list items with a stateful background and color', '.list-light-* , .font-*','')
+    .card-body
+        .list-group
+            a.list-group-item.list-group-item-action.list-group-item-primary(href='#')
+                | This is Primary bg you can use 
+                em.font-primary.fw-bold .list-group-item-primary
+                |  class.
+            a.list-group-item.list-group-item-action.list-group-item-secondary(href='#')
+                | This is Secondary bg you can use 
+                em.font-secondary.fw-bold .list-group-item-secondary
+                |  class.
+            a.list-group-item.list-group-item-action.list-group-item-tertiary(href='#')
+                | This is Tertiary bg you can use 
+                em.font-tertiary.fw-bold .list-group-item-tertiary
+                |  class.
+            a.list-group-item.list-group-item-action.list-group-item-success(href='#')
+                | This is Success bg you can use 
+                em.font-success.fw-bold .list-group-item-success
+                |  class.
+            a.list-group-item.list-group-item-action.list-group-item-danger(href='#')
+                | This is Danger bg you can use
+                em.font-danger.fw-bold .list-group-item-danger
+                |  class.
+            a.list-group-item.list-group-item-action.list-group-item-info(href='#')
+                | This is Info bg you can use 
+                em.font-info.fw-bold .list-group-item-info
+                |  class.
+            a.list-group-item.list-group-item-action.list-group-item-light.font-dark(href='#')
+                | This is Light bg you can use 
+                em.font-light.fw-bold .list-group-item-light
+                |  class.
+            a.list-group-item.list-group-item-action.list-group-item-dark(href='#')
+                | This is Dark bg you can use 
+                em.font-dark.fw-bold .list-group-item-dark
+                |  class.

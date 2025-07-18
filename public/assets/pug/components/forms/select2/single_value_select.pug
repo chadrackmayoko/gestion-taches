@@ -1,0 +1,13 @@
+.card
+  .card-header.pb-0
+    +card-header('Single-value select', '','', 'Use the tagify plugin for drag and sort options available.')
+  .card-body 
+    form.row.g-3
+      .col-xl-3.col-sm-6
+        input.selectMode.badge-light-primary(name='tags-select-mode' placeholder='Please select')
+      .col-xl-3.col-sm-6
+        input.selectMode.badge-light-secondary(name='tags-select-value-mode' placeholder='Please select')
+      .col-xl-3.col-sm-6
+        input.selectMode.badge-light-danger(name='tags-select-v-mode' placeholder='Please select')
+      .col-xl-3.col-sm-6
+        input.selectMode.badge-light-warning(name='tags-s-value-mode' placeholder='Please select')

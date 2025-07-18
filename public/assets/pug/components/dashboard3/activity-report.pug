@@ -1,0 +1,13 @@
+.card
+  .card-header.pb-0
+    h4 Activity report
+    .dropdown.icon-dropdown
+      button#userdropdown01.btn.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+        i.icon-more-alt
+      .dropdown-menu.dropdown-menu-end(aria-labelledby='userdropdown01')
+        a.dropdown-item(href='#') Weekly
+        a.dropdown-item(href='#') Monthly
+        a.dropdown-item(href='#') Yearly
+  .card-body
+    .chart-container.chart-height
+      #activity-chart

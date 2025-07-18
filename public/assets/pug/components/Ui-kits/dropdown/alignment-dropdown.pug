@@ -1,0 +1,80 @@
+// Heading dropdown
+.card
+    .card-header.pb-0
+        +card-header('Alignments', 'dote','','Use the', 'dropstart/dropup/dropend','this class through change dropdown directions.')
+    .card-body.rtl-dropdown
+        .common-flex
+            .btn-group.dropup
+                button.btn.btn-warning.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false') Warning top
+                ul.dropdown-menu.dropdown-block(style='')
+                    li
+                        a.dropdown-item(href='#') Be careful 
+                    li
+                        a.dropdown-item(href='#') Notifications
+                    li
+                        a.dropdown-item(href='#') Beware 
+            .btn-group.dropend
+                button.btn.btn-success.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false') Success right
+                ul.dropdown-menu.dropdown-block.text-end(style='')
+                    li
+                        a.dropdown-item(href='#') Good luck 
+                    li
+                        a.dropdown-item(href='#') Good job 
+                    li
+                        a.dropdown-item(href='#') Done!
+            .btn-group
+                button.btn.btn-primary.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false') Primary bottom
+                ul.dropdown-menu.dropdown-block.text-end(style='')
+                    li
+                        a.dropdown-item(href='#') It&apos;s important
+                    li
+                        a.dropdown-item(href='#') Happy life 
+                    li
+                        a.dropdown-item(href='#') Another work
+            .btn-group.dropstart
+                button.btn.btn-danger.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false') Danger left
+                ul.dropdown-menu.dropdown-block(style='')
+                    li
+                        a.dropdown-item(href='#') Threat 
+                    li
+                        a.dropdown-item(href='#') Dangerous
+                    li
+                        a.dropdown-item(href='#') Alert 
+        .code-box-copy
+            button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#tooltip', title='Copy')
+              i.icofont.icofont-copy
+            pre
+              code.language-html#alignment-dropdown
+                | &lt;!--You can use .dropdown-menu and inside added .dropdown-item.*(dropdown list)--&gt;  
+                | &lt;div class="btn-group dropup"&gt;
+                | &lt;button class="btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"&gt;Warning top&lt;/button&gt;
+                | &lt;ul class="dropdown-menu dropdown-block"&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Be careful &lt;/a&gt;&lt;/li&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Notifications&lt;/a&gt;&lt;/li&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Beware &lt;/a&gt;&lt;/li&gt;
+                | &lt;/ul&gt;
+                | &lt;/div&gt;
+                | &lt;div class="btn-group dropend"&gt;
+                | &lt;button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"&gt;Success right&lt;/button&gt;
+                | &lt;ul class="dropdown-menu dropdown-block text-end"&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Good luck &lt;/a&gt;&lt;/li&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Good job &lt;/a&gt;&lt;/li&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Done!&lt;/a&gt;&lt;/li&gt;
+                | &lt;/ul&gt;
+                | &lt;/div&gt;
+                | &lt;div class="btn-group"&gt;
+                | &lt;button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"&gt;Primary bottom&lt;/button&gt;
+                | &lt;ul class="dropdown-menu dropdown-block text-end"&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;It's important&lt;/a&gt;&lt;/li&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Happy life &lt;/a&gt;&lt;/li&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Another work&lt;/a&gt;&lt;/li&gt;
+                | &lt;/ul&gt;
+                | &lt;/div&gt;
+                | &lt;div class="btn-group dropstart"&gt;
+                | &lt;button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"&gt;Danger left&lt;/button&gt;
+                | &lt;ul class="dropdown-menu dropdown-block"&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Threat &lt;/a&gt;&lt;/li&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Dangerous&lt;/a&gt;&lt;/li&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Alert &lt;/a&gt;&lt;/li&gt;
+                | &lt;/ul&gt;
+                | &lt;/div&gt;

@@ -1,0 +1,34 @@
+.card
+    .card-header.pb-0 
+        +card-header('Images with Checkbox', '', '', 'Use the', '.form-check-input-* ,.form-check-label-* ', 'for image checkbox.')
+    .card-body.checkbox-checked
+        .main-img-checkbox
+            .row.g-3
+                .col-xxl-3.col-sm-6
+                    .card-wrapper.solid-border.rounded-3
+                        h6.sub-title.fw-bold Custom
+                        .img-checkbox
+                            input#img-check-1.main-img-cover.form-check-input(type="checkbox")
+                            label.form-check-label.mb-0(for="img-check-1") 
+                                img(src="../assets/images/switch/1.jpg", alt="coffee-beans")
+                .col-xxl-3.col-sm-6
+                    .card-wrapper.solid-border.rounded-3
+                        h6.sub-title.fw-bold Checked Image
+                        .img-checkbox
+                            input#img-check-2.main-img-cover.form-check-input(type="checkbox" checked='')
+                            label.form-check-label.mb-0(for="img-check-2") 
+                                img(src="../assets/images/switch/2.jpg", alt="tree")
+                .col-xxl-3.col-sm-6
+                    .card-wrapper.solid-border.rounded-3
+                        h6.sub-title.fw-bold Disable Image
+                        .img-checkbox
+                            input#img-check-3.main-img-cover.form-check-input(type="checkbox" disabled='')
+                            label.form-check-label.mb-0(for="img-check-3") 
+                                img(src="../assets/images/switch/3.jpg", alt="flowers")
+                .col-xxl-3.col-sm-6
+                    .card-wrapper.solid-border.rounded-3
+                        h6.sub-title.fw-bold Disable Checked Image
+                        .img-checkbox
+                            input#img-check-4.main-img-cover.form-check-input(type="checkbox" disabled='' checked='')
+                            label.form-check-label.mb-0(for="img-check-4") 
+                                img(src="../assets/images/switch/4.jpg", alt="rose-tea")

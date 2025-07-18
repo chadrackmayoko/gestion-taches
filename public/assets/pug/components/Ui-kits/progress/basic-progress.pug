@@ -1,0 +1,17 @@
+// Basic Progress Card
+.card 
+    .card-header.pb-0
+        +card-header('Basic Progress Bars', '','','Progress components are built with two HTML elements, some CSS to set the width, and a few attributes. We use the', '.progress , progress-bar', 'requires an inline style, utility class, or custom CSS to set their width.')
+    .card-body.progress-showcase
+        .row
+            .col
+                .progress
+                    .progress-bar(role='progressbar' aria-valuenow='0' aria-valuemin='0' aria-valuemax='100')  
+                .progress
+                    .progress-bar.bg-primary(role='progressbar' style='width: 25%' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100') 25%
+                .progress
+                    .progress-bar.bg-secondary(role='progressbar' style='width: 50%' aria-valuenow='50' aria-valuemin='0' aria-valuemax='100') 50%
+                .progress
+                    .progress-bar.bg-tertiary(role='progressbar' style='width: 75%' aria-valuenow='75' aria-valuemin='0' aria-valuemax='100') 75%
+                .progress
+                    .progress-bar.bg-success(role='progressbar' style='width: 100%' aria-valuenow='100' aria-valuemin='0' aria-valuemax='100') 100%

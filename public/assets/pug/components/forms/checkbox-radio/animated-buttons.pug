@@ -1,0 +1,41 @@
+.card
+    .card-header.pb-0
+        +card-header('Animated Buttons', '', '', 'Use the', '.radio_animated ', 'through animated checkbox and radios.')
+    .card-body.checkbox-checked
+        .row.g-3
+            .col-sm-6
+                .card-wrapper.solid-border.rounded-3
+                    h6.sub-title.f-w-500 Select your payment method
+                    label.d-block
+                        input#radio-ani_1.radio-primary(type='radio' name='radio-animation' checked='')
+                        | Visa
+                    label.d-block
+                        input#radio-ani1.radio-secondary(type='radio' name='radio-animation')
+                        | MasterCard
+                    label.d-block
+                        input#radio-ani2.radio-tertiary(type='radio' name='radio-animation' checked='')
+                        | Paypal
+                    label.d-block
+                        input#radio-ani13.radio-success(type='radio' name='radio-animation')
+                        | G-pay 
+                    label.d-block
+                        input#radio-ani4.radio-info(type='radio' name='radio-animation')
+                        | Bitpay
+            .col-sm-6
+                .card-wrapper.solid-border.rounded-3
+                    h6.sub-title.f-w-500 What is your favorite social media? 
+                    label.d-block
+                        input#chk-ani_2.checkbox-primary(type='checkbox' checked='')
+                        | Instagram
+                    label.d-block
+                        input#chk-ani1.checkbox-secondary(type='checkbox')
+                        | Facebook
+                    label.d-block
+                        input#chk-ani2.checkbox-tertiary(type='checkbox' checked='')
+                        | Whatsapp
+                    label.d-block
+                        input#chk-ani3.checkbox-danger(type='checkbox' checked='')
+                        | Twitter
+                    label.d-block
+                        input#chk-ani4.checkbox-info(type='checkbox')
+                        | Linkedin

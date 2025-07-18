@@ -1,0 +1,38 @@
+.card
+    .card-header.pb-0
+        +card-header('Default Checkbox', '', '', 'Use the', '.form-check-input, .form-check-label', 'for checkbox.')
+    .card-body.checkbox-checked
+        .row.g-3
+            .col-sm-6.col-xxl-4
+                .card-wrapper.solid-border.rounded-3
+                    h6.sub-title.f-w-500 Default Checks
+                    .form-check
+                        input#flexCheckDefault.form-check-input(type='checkbox' value='')
+                        label.form-check-label(for='flexCheckDefault') Default checkbox
+                    .form-check
+                        input#flexCheckChecked.form-check-input(type='checkbox' value='' checked='')
+                        label.form-check-label(for='flexCheckChecked') Checked checkbox
+            .col-sm-6.col-xxl-4
+                .card-wrapper.solid-border.rounded-3
+                    h6.sub-title.f-w-500 Disabled Checks
+                    .form-check
+                        input#flexCheckDisabled.form-check-input(type='checkbox' value='' disabled='')
+                        label.form-check-label(for='flexCheckDisabled') Disabled checkbox
+                    .form-check
+                        input#flexCheckCheckedDisabled.form-check-input(type='checkbox' value='' checked='' disabled='')
+                        label.form-check-label(for='flexCheckCheckedDisabled') Disabled checked checkbox
+            .col-sm-6.col-xxl-4
+                .card-wrapper.solid-border.rounded-3
+                    h6.sub-title.f-w-500 Right Checks   
+                    .form-check.form-check-reverse
+                        input#reverseCheck1.form-check-input(type='checkbox' value='')
+                        label.form-check-label(for='reverseCheck1') Reverse checkbox
+                    .form-check.form-check-reverse
+                        input#reverseCheck2.form-check-input(type='checkbox' value='' disabled='' checked='')
+                        label.form-check-label(for='reverseCheck2') Disabled reverse checkbox
+            .col-xxl-12.col-sm-6
+                .card-wrapper.solid-border.rounded-3
+                    h6.sub-title.f-w-500 Indeterminate 
+                    .form-check
+                        input#flexCheckIndeterminate.form-check-input(type='checkbox' value='')
+                        label.form-check-label(for='flexCheckIndeterminate') Indeterminate checkbox

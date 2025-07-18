@@ -1,0 +1,118 @@
+//-// Device Icon
+-
+    var ICO_ITEM5 =[
+        { id:'icofont-apple' }
+        , { id:'icofont-arabian-coffee' }
+        , { id:'icofont-artichoke' }
+        , { id:'icofont-asparagus' }
+        , { id:'icofont-avocado' }
+        , { id:'icofont-baby-food' }
+        , { id:'icofont-banana' }
+        , { id:'icofont-bbq' }
+        , { id:'icofont-beans' }
+        , { id:'icofont-beer' }
+        , { id:'icofont-bell-pepper-capsicum' }
+        , { id:'icofont-birthday-cake' }
+        , { id:'icofont-bread' }
+        , { id:'icofont-broccoli' }
+        , { id:'icofont-burger' }
+        , { id:'icofont-cabbage' }
+        , { id:'icofont-carrot' }
+        , { id:'icofont-cauli-flower' }
+        , { id:'icofont-cheese' }
+        , { id:'icofont-chef' }
+        , { id:'icofont-cherry' }
+        , { id:'icofont-chicken-fry' }
+        , { id:'icofont-chicken' }
+        , { id:'icofont-cocktail' }
+        , { id:'icofont-coconut-water' }
+        , { id:'icofont-coconut' }
+        , { id:'icofont-coffee-alt' }
+        , { id:'icofont-coffee-cup' }
+        , { id:'icofont-coffee-mug' }
+        , { id:'icofont-coffee-pot' }
+        , { id:'icofont-cola' }
+        , { id:'icofont-corn' }
+        , { id:'icofont-croissant' }
+        , { id:'icofont-crop-plant' }
+        , { id:'icofont-cucumber' }
+        , { id:'icofont-culinary' }
+        , { id:'icofont-cup-cake' }
+        , { id:'icofont-dining-table' }
+        , { id:'icofont-donut' }
+        , { id:'icofont-egg-plant' }
+        , { id:'icofont-egg-poached' }
+        , { id:'icofont-farmer-alt' }
+        , { id:'icofont-farmer' }
+        , { id:'icofont-fast-food' }
+        , { id:'icofont-food-basket' }
+        , { id:'icofont-food-cart' }
+        , { id:'icofont-fork-and-knife' }
+        , { id:'icofont-french-fries' }
+        , { id:'icofont-fruits' }
+        , { id:'icofont-grapes' }
+        , { id:'icofont-honey' }
+        , { id:'icofont-hot-dog' }
+        , { id:'icofont-ice-cream-alt' }
+        , { id:'icofont-ice-cream' }
+        , { id:'icofont-juice' }
+        , { id:'icofont-ketchup' }
+        , { id:'icofont-kiwi' }
+        , { id:'icofont-layered-cake' }
+        , { id:'icofont-lemon-alt' }
+        , { id:'icofont-lemon' }
+        , { id:'icofont-lobster' }
+        , { id:'icofont-mango' }
+        , { id:'icofont-milk' }
+        , { id:'icofont-mushroom' }
+        , { id:'icofont-noodles' }
+        , { id:'icofont-onion' }
+        , { id:'icofont-orange' }
+        , { id:'icofont-pear' }
+        , { id:'icofont-peas' }
+        , { id:'icofont-pepper' }
+        , { id:'icofont-pie-alt' }
+        , { id:'icofont-pie' }
+        , { id:'icofont-pineapple' }
+        , { id:'icofont-pizza-slice' }
+        , { id:'icofont-pizza' }
+        , { id:'icofont-plant' }
+        , { id:'icofont-popcorn' }
+        , { id:'icofont-potato' }
+        , { id:'icofont-pumpkin' }
+        , { id:'icofont-raddish' }
+        , { id:'icofont-restaurant-menu' }
+        , { id:'icofont-restaurant' }
+        , { id:'icofont-salt-and-pepper' }
+        , { id:'icofont-sandwich' }
+        , { id:'icofont-sausage' }
+        , { id:'icofont-soft-drinks' }
+        , { id:'icofont-soup-bowl' }
+        , { id:'icofont-spoon-and-fork' }
+        , { id:'icofont-steak' }
+        , { id:'icofont-strawberry' }
+        , { id:'icofont-sub-sandwich' }
+        , { id:'icofont-sushi' }
+        , { id:'icofont-taco' }
+        , { id:'icofont-tea-pot' }
+        , { id:'icofont-tea' }
+        , { id:'icofont-tomato' }
+        , { id:'icofont-watermelon' }
+        , { id:'icofont-wheat' }
+ 
+    ]
+//-// Ico icon mixin
+mixin IcoContent(items)
+    each item in items 
+        .col-xxl-2.col-lg-3.col-sm-4
+            .card.d-flex.align-items-center.flex-column.default-border
+                i.icofont(class=item.id)
+                .flex-grow-1
+                    h6=item.id
+// Ico icon
+.card
+    .card-header.pb-0.d-flex.justify-content-between.align-items-center
+        h4 Food Icon
+    .card-body
+        .row.icon-event.iconly-icons.icon-lists
+            +IcoContent(ICO_ITEM5)

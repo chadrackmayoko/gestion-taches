@@ -1,0 +1,60 @@
+//-// File type Icon
+-
+    var ICO_ITEM22 =[
+        { id:'icofont-file-alt' }
+        , { id:'icofont-file-audio' }
+        , { id:'icofont-file-avi-mp4' }
+        , { id:'icofont-file-bmp' }
+        , { id:'icofont-file-code' }
+        , { id:'icofont-file-css' }
+        , { id:'icofont-file-document' }
+        , { id:'icofont-file-eps' }
+        , { id:'icofont-file-excel' }
+        , { id:'icofont-file-exe' }
+        , { id:'icofont-file-file' }
+        , { id:'icofont-file-flv' }
+        , { id:'icofont-file-gif' }
+        , { id:'icofont-file-html5' }
+        , { id:'icofont-file-image' }
+        , { id:'icofont-file-iso' }
+        , { id:'icofont-file-java' }
+        , { id:'icofont-file-javascript' }
+        , { id:'icofont-file-jpg' }
+        , { id:'icofont-file-midi' }
+        , { id:'icofont-file-mov' }
+        , { id:'icofont-file-mp3' }
+        , { id:'icofont-file-pdf' }
+        , { id:'icofont-file-php' }
+        , { id:'icofont-file-png' }
+        , { id:'icofont-file-powerpoint' }
+        , { id:'icofont-file-presentation' }
+        , { id:'icofont-file-psb' }
+        , { id:'icofont-file-psd' }
+        , { id:'icofont-file-python' }
+        , { id:'icofont-file-ruby' }
+        , { id:'icofont-file-spreadsheet' }
+        , { id:'icofont-file-sql' }
+        , { id:'icofont-file-svg' }
+        , { id:'icofont-file-text' }
+        , { id:'icofont-file-tiff' }
+        , { id:'icofont-file-video' }
+        , { id:'icofont-file-wave' }
+        , { id:'icofont-file-wmv' }
+        , { id:'icofont-file-word' }
+        , { id:'icofont-file-zip' }
+    ]
+//-// Ico icon mixin
+mixin IcoContent(items)
+    each item in items 
+        .col-xxl-2.col-lg-3.col-sm-4
+            .card.d-flex.align-items-center.flex-column.default-border
+                i.icofont(class=item.id)
+                .flex-grow-1
+                    h6=item.id
+// Ico icon
+.card
+    .card-header.pb-0.d-flex.justify-content-between.align-items-center
+        h4 File Type Icon
+    .card-body
+        .row.icon-event.iconly-icons.icon-lists
+            +IcoContent(ICO_ITEM22)

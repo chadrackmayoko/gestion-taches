@@ -1,0 +1,31 @@
+.card
+  .card-header
+    h4.card-title.mb-0 My Profile
+    .card-options
+      a.card-options-collapse(href='#', data-bs-toggle='card-collapse')
+        i.fe.fe-chevron-up
+      a.card-options-remove(href='#', data-bs-toggle='card-remove')
+        i.fe.fe-x
+  .card-body
+    form
+      .row.mb-2
+        .profile-title
+          .d-flex                         
+            img.img-70.rounded-circle(alt='', src='../assets/images/avatar/1.jpg')
+            .flex-grow-1
+              h5.mb-1 MARK JECNO
+              p DESIGNER
+      .mb-3
+        h6.form-label Bio
+        textarea.form-control(rows='5') On the other hand, we denounce with righteous indignation
+      .mb-3
+        label.form-label Email-Address
+        input.form-control(placeholder='your-email@domain.com')
+      .mb-3
+        label.form-label Password
+        input.form-control(type='password', value='password')
+      .mb-3
+        label.form-label Website
+        input.form-control(placeholder='http://Uplor .com')
+      .form-footer
+        button.btn.btn-primary.btn-block Save

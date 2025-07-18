@@ -1,0 +1,52 @@
+.card
+  .card-header.pb-0
+    +card-header('Switch sizing', '','', 'Use the', '.switch-sm-*.switch-lg-*', 'class through defined switch sizing.')
+  .card-body.common-flex.switch-wrapper
+    .d-flex
+        label.col-form-label.m-r-10 Small Size
+        .flex-grow-1.text-end.switch-sm
+          label.switch
+            input(type='checkbox', checked='')
+            span.switch-state
+    .d-flex
+      label.col-form-label.m-r-10 Small Size Unhecked
+      .flex-grow-1.text-end.switch-sm
+        label.switch
+          input(type='checkbox')
+          span.switch-state 
+    .d-flex
+      label.col-form-label.m-r-10 Normal Size
+      .flex-grow-1.text-end
+        label.switch
+          input(type='checkbox', checked='')
+          span.switch-state
+    .d-flex 
+      label.col-form-label.m-r-10 Normal Unhecked
+      .flex-grow-1.text-end
+        label.switch
+          input(type='checkbox')
+          span.switch-state    
+    .d-flex
+      label.col-form-label.m-r-10 Disabled State
+      .flex-grow-1.text-end
+        label.switch
+          input(type='checkbox', disabled='')
+          span.switch-state
+    .d-flex
+        label.col-form-label.m-r-10 Large Size
+        .flex-grow-1.text-end.switch-lg
+          label.switch
+            input(type='checkbox', checked='')
+            span.switch-state
+    .d-flex
+      label.col-form-label.m-r-10 Large Unhecked
+      .flex-grow-1.text-end.switch-lg
+        label.switch
+          input(type='checkbox')
+          span.switch-state
+    .d-flex
+      label.col-form-label.m-r-10 Disabled
+      .flex-grow-1.text-end.switch-lg
+        label.switch
+          input(type='checkbox' disabled='')
+          span.switch-state

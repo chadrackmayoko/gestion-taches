@@ -1,0 +1,53 @@
+.card
+  .card-header.pb-0
+    +card-header('Post Edit', '','', '', '', '')
+  .card-body.add-post
+    form.row.needs-validation(novalidate='')
+      .col-sm-12
+        .mb-3
+          label(for='validationCustom01') Title:
+          input#validationCustom01.form-control(type='text', placeholder='Post Title', required='')
+          .valid-feedback
+            | Looks good!
+        .mb-3
+          label Type:
+          .m-checkbox-inline
+            label(for='edo-ani')
+              input#edo-ani.radio-primary(type='radio', name='rdo-ani', checked='')
+              | Text
+            label(for='edo-ani1')
+              input#edo-ani1.radio-primary(type='radio', name='rdo-ani')
+              | Image
+            label(for='edo-ani2')
+              input#edo-ani2.radio-primary(type='radio', name='rdo-ani', checked='')
+              | Audio
+            label(for='edo-ani3')
+              input#edo-ani3.radio-primary(type='radio', name='rdo-ani')
+              | Video
+        .mb-3(data-test-hook='remove-button')
+            label.col-form-label.mb-2(for='choices-remove-button') Category:
+            select#choices-remove-button.form-control.col-sm-12(name='choices-remove-button' multiple='')
+              option(value='') Select Your Name
+              option(value='Choice 1') Lifestyle
+              option(value='Choice 2') Travel
+        .email-wrapper
+          .theme-form
+            .mb-3
+              label Content:
+              .toolbar-box
+                #toolbar1
+                    button.ql-bold Bold 
+                    button.ql-italic Italic 
+                    button.ql-underline underline
+                    button.ql-list(value="ordered") List 
+                    button.ql-list(value="bullet") 
+                    button.ql-link
+                    button.ql-image
+                #editor1
+    form#singleFileUpload.dropzone(action='/upload.php')
+      .m-0.dz-message.needsclick
+        i.icon-cloud-up
+        h6.mb-0 Drop files here or click to upload.
+    .btn-showcase.text-end.blog-btn
+      button.btn.btn-primary(type='submit') Post
+      input.btn.bg-light(type='reset', value='Discard') 

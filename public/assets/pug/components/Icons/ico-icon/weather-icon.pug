@@ -1,0 +1,101 @@
+//-// Ico icon
+-
+    var ICO_ITEM =[
+        { id:'icofont-breakdown' }
+        , { id:'icofont-celsius' }
+        , { id:'icofont-clouds' }
+        , { id:'icofont-cloudy' }
+        , { id:'icofont-dust' }
+        , { id:'icofont-eclipse' }
+        , { id:'icofont-fahrenheit' }
+        , { id:'icofont-forest-fire' }
+        , { id:'icofont-full-night' }
+        , { id:'icofont-full-sunny' }
+        , { id:'icofont-hail-night' }
+        , { id:'icofont-hail-rainy-night' }
+        , { id:'icofont-hail-rainy-sunny' }
+        , { id:'icofont-hail-rainy' }
+        , { id:'icofont-hail-sunny' }
+        , { id:'icofont-hail-thunder-night' }
+        , { id:'icofont-hail-thunder-sunny' }
+        , { id:'icofont-hail-thunder' }
+        , { id:'icofont-hail' }
+        , { id:'icofont-hill-night' }
+        , { id:'icofont-hill-sunny' }
+        , { id:'icofont-hurricane' }
+        , { id:'icofont-meteor' }
+        , { id:'icofont-night' }
+        , { id:'icofont-rainy-night' }
+        , { id:'icofont-rainy-sunny' }
+        , { id:'icofont-rainy-thunder' }
+        , { id:'icofont-rainy' }
+        , { id:'icofont-snow-alt' }
+        , { id:'icofont-snow-flake' }
+        , { id:'icofont-snow-temp' }
+        , { id:'icofont-snow' }
+        , { id:'icofont-snowy-hail' }
+        , { id:'icofont-snowy-night-hail' }
+        , { id:'icofont-snowy-night-rainy' }
+        , { id:'icofont-snowy-night' }
+        , { id:'icofont-snowy-rainy' }
+        , { id:'icofont-snowy-sunny-hail' }
+        , { id:'icofont-snowy-sunny-rainy' }
+        , { id:'icofont-snowy-sunny' }
+        , { id:'icofont-snowy-thunder-night' }
+        , { id:'icofont-snowy-thunder-sunny' }
+        , { id:'icofont-snowy-thunder' }
+        , { id:'icofont-snowy-windy-night' }
+        , { id:'icofont-snowy-windy-sunny' }
+        , { id:'icofont-snowy-windy' }
+        , { id:'icofont-snowy' }
+        , { id:'icofont-sun-alt' }
+        , { id:'icofont-sun-rise' }
+        , { id:'icofont-sun-set' }
+        , { id:'icofont-sun' }
+        , { id:'icofont-sunny-day-temp' }
+        , { id:'icofont-sunny' }
+        , { id:'icofont-thunder-light' }
+        , { id:'icofont-tornado' }
+        , { id:'icofont-umbrella-alt' }
+        , { id:'icofont-umbrella' }
+        , { id:'icofont-volcano' }
+        , { id:'icofont-wave' }
+        , { id:'icofont-wind-scale-0' }
+        , { id:'icofont-wind-scale-1' }
+        , { id:'icofont-wind-scale-10' }
+        , { id:'icofont-wind-scale-11' }
+        , { id:'icofont-wind-scale-12' }
+        , { id:'icofont-wind-scale-2' }
+        , { id:'icofont-wind-scale-3' }
+        , { id:'icofont-wind-scale-4' }
+        , { id:'icofont-wind-scale-5' }
+        , { id:'icofont-wind-scale-6' }
+        , { id:'icofont-wind-scale-7' }
+        , { id:'icofont-wind-scale-8' }
+        , { id:'icofont-wind-scale-9' }
+        , { id:'icofont-wind-waves' }
+        , { id:'icofont-wind' }
+        , { id:'icofont-windy-hail' }
+        , { id:'icofont-windy-night' }
+        , { id:'icofont-windy-raining' }
+        , { id:'icofont-windy-sunny' }
+        , { id:'icofont-windy-thunder-raining' }
+        , { id:'icofont-windy-thunder' }
+        , { id:'icofont-windy' }
+
+    ]
+//-// Ico icon mixin
+mixin IcoContent(items)
+    each item in items 
+        .col-xxl-2.col-lg-3.col-sm-4
+            .card.d-flex.align-items-center.flex-column.default-border
+                i.icofont(class=item.id)
+                .flex-grow-1
+                    h6=item.id
+// Ico icon
+.card
+    .card-header.pb-0.d-flex.justify-content-between.align-items-center
+        h4 Weather Icon
+    .card-body
+        .row.icon-event.iconly-icons.icon-lists
+            +IcoContent(ICO_ITEM)

@@ -1,0 +1,77 @@
+.card
+  .card-header
+    h4 Radio Buttons
+  div
+    .card-block.row
+      .col-sm-12.col-lg-12.col-xl-12
+        .table-responsive
+          table.table.table-bordered.radio-first-col-width
+            tbody
+              tr
+                td Basic Radio Buttons
+                td.w-50
+                  input#radio(type='radio')
+                  label(for='radio') Default radio
+                td
+                  span Basic Radio Buttons
+              tr
+                td Default Radio
+                td
+                  .form-group.m-b-0.d-flex
+                    label.d-block.me-3(for='radio-ani_22')
+                      input#radio-ani_22.radio-tertiary(type='radio' name='radio-animation')
+                      | Option 1
+                td
+                  span
+                    | Wrap with use 
+                    code .radio-*
+                    |  and color 
+                    code .radio-*
+                    code primary , secondary , success , info
+                    |  on Radio.
+              tr
+                td Checked Radio
+                td
+                  .form-group.m-b-0.d-flex
+                    label.d-block.me-3(for='radio-ani_23')
+                      input#radio-ani_23.radio-tertiary(type='radio' name='radio-animation' checked='')
+                      | Checked
+                td
+                  span
+                    | Wrap with use
+                    code checkbox-dark
+                    | for this style of checkbox.
+              tr
+                td Flat Skin Check
+                td
+                  .form-group.m-b-0.d-flex
+                    label.d-block.me-3(for='radio-ani_24')
+                      input#radio-ani_24.radio-tertiary(type='radio' name='radio-animation' disabled='')
+                      | Disabled
+                td
+                  span
+                    | Wrap with use
+                    code checkbox-solid-*
+                    | ,
+                    code primary, secondary, success, info, warning, danger
+                    | for this style of checkbox.
+              tr
+                td Inline  Checkbox
+                td
+                  .form-group.m-b-0
+                    label.d-inline-block.me-3
+                      input#radio-ani2.radio-tertiary(type='radio' name='radio-animation')
+                      | Option 1
+                    label.d-inline-block.me-3
+                      input#radio-ani13.radio-success(type='radio' name='radio-animation')
+                      | Option 1
+                    label.d-inline-block.me-3
+                      input#radio-ani4.radio-info(type='radio' name='radio-animation')
+                      | Option 1
+                td
+                  span
+                    | Wrap with use
+                    code disabled
+                    | ,
+                    code primary, secondary, success, info, warning, danger, light, dark
+                    | for this style of checkbox disable.

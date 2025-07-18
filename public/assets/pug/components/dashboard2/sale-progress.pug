@@ -1,0 +1,60 @@
+//-// Sales Progress items 
+-
+    var SALES_ITEMS =[
+        {
+            bClass: 'border-primary',
+            bgClass: 'bg-light-primary',
+            productname: 'Mobiles , Computers',
+            disc: '50% Best Offer',
+            url: '../assets/images/dashboard2/product/1.png',
+            badge: '2',
+            badgeName: '4.5%',
+            progress: 'progress-striped-primary',
+            badgeClass: 'svg-w-20 stroke-primary'
+        },
+        {
+            bClass: 'border-secondary',
+            bgClass: 'bg-light-secondary',
+            productname: 'Home , Kitchen',
+            disc: 'Combo Offer',
+            url: '../assets/images/dashboard2/product/2.png',
+            badge: '2',
+            badgeName: '2.4%',
+            progress: 'progress-striped-secondary',
+            badgeClass: 'svg-w-20 stroke-secondary'
+        },
+        {
+            bClass: 'border-tertiary',
+            bgClass: 'bg-light-tertiary',
+            productname: 'Beauty , Health',
+            disc: 'Weekend sale',
+            url: '../assets/images/dashboard2/product/3.png',
+            badge: '2',
+            badgeName: '3.5%',
+            progress: 'progress-striped-tertiary',
+            badgeClass: 'svg-w-20 stroke-tertiary'
+        },
+    ]
+//-// Mixin
+mixin SaleContent(items)
+
+    each item in items
+        li.d-flex.gap-3(class=item.bgClass)
+            .flex-shrink-0(class=item.bClass)
+                img(src=item.url alt="")
+            .flex-grow-1
+                h5=item.productname
+                span=item.disc
+                .progress(class=item.progress)
+                    .progress-bar(style="width: 55%" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100")
+            span.badge.f-14.b-r-0(class=item.bgClass)
+                +IconlySprite('right-3' , item.badgeClass)
+                span.f-w-500=item.badgeName
+// Sale Progress menu
+.card.sale-progress
+    .card-header.pb-0
+        +card-header('Sale Progress', 'dote','')
+    .card-body
+        ul
+            +SaleContent(SALES_ITEMS)
+            

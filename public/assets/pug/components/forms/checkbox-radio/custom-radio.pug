@@ -1,0 +1,81 @@
+.card
+    .card-header.pb-0
+        +card-header('Custom Radio', '', '', 'Use the', '.form-check-input-* ,.form-check-label-* ', 'for radios.')
+    .card-body.checkbox-checked
+        .row.g-3
+            .col-xxl-4.col-sm-6
+                .card-wrapper.solid-border.rounded-3
+                    h6.sub-title.fw-bold Bordered Radio
+                    label.d-block(for='radio22')
+                        input#radio22.radio.radio-border-primary.radio-primary(type='radio' name='radio1' value='option1' checked='')
+                        | Koho Template 
+                    label.d-block(for='radio55')
+                        input#radio55.radio.radio-border-danger.radio-danger(type='radio', name='radio1', value='option1')
+                        | Roxo Template 
+                    label.d-block(for='radio33')
+                        input#radio33.radio.radio-border-warning.radio-warning(type='radio', name='radio1', value='option1')
+                        | Voxo Template 
+                    label.d-block(for='radio66')
+                        input#radio66.radio.radio-border-secondary.radio-secondary(type='radio', name='radio1', value='option1')
+                        | Zeta Template
+            .col-xxl-4.col-sm-12.order-xxl-0.order-sm-1
+                .card-wrapper.solid-border.rounded-3
+                    h6.sub-title.fw-bold Icons Radio
+                    .form-check.radio.ps-0
+                        ul.radio-wrapper
+                            li 
+                                input#radio-icon.form-check-input(type='radio', name='radio2', value='option2')
+                                label.form-check-label(for='radio-icon')
+                                    i.fa.fa-sliders
+                                    span Sliders
+                            li 
+                                input#radio-icon4.form-check-input(type='radio', name='radio2', value='option2' checked='')
+                                label.form-check-label(for='radio-icon4')
+                                    i.fa-solid.fa-eye-slash
+                                    span Hidden
+                            li 
+                                input#radio-icon5.form-check-input(type='radio', name='radio2', value='option2')
+                                label.form-check-label(for='radio-icon5')
+                                    i.fa-solid.fa-folder-open
+                                    span Folder
+                            li 
+                                input#radio-icon7.form-check-input(type='radio', name='radio2', value='option2')
+                                label.form-check-label(for='radio-icon7')
+                                    i.fa.fa-paper-plane
+                                    span Send
+                            li 
+                                input#radio-icon8.form-check-input(type='radio', name='radio2', value='option2')
+                                label.form-check-label(for='radio-icon8')
+                                    i.fa-solid.fa-user
+                                    span User 
+                            li 
+                                input#radio-icon9.form-check-input(type='radio', name='radio2', value='option2')
+                                label.form-check-label(for='radio-icon9')
+                                    i.fa-solid.fa-trash
+                                    span Trash
+                            li 
+                                input#radio-icon10.form-check-input(type='radio', name='radio2', value='option2')
+                                label.form-check-label(for='radio-icon10')
+                                    i.fa-brands.fa-github
+                                    span github
+                            li 
+                                input#radio-icon11.form-check-input(type='radio', name='radio2', value='option2')
+                                label.form-check-label(for='radio-icon11')
+                                    i.fa-solid.fa-play
+                                    span Play
+            .col-xxl-4.col-sm-6
+                .card-wrapper.solid-border.rounded-3.fill-radio
+                    h6.sub-title.fw-bold Filled Radio
+                    form
+                        label.d-block(for='radio-ani111')
+                            input#radio-ani111.radio.radio-primary.radio-border-primary(type='radio' name='radio-animation' value='option3' checked='')
+                            | Product
+                        label.d-block(for='radio-ani222')
+                            input#radio-ani222.radio.radio-danger.radio-border-danger(type='radio' name='radio-animation' value='option3')
+                            | Order history
+                        label.d-block(for='radio-ani333')
+                            input#radio-ani333.radio.radio-warning.radio-border-warning(type='radio' name='radio-animation' value='option3')
+                            | Invoice
+                        label.d-block(for='radio-ani444')
+                            input#radio-ani444.radio.radio-secondary.radio-border-secondary(type='radio' name='radio-animation' value='option3')
+                            | Wishlist

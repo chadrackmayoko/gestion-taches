@@ -1,0 +1,78 @@
+.card
+  .card-header.pb-0
+    +card-header('Validation form', '','', 'Custom feedback styles apply custom colors, borders, focus styles, and background icons to better communicate feedback.Background icons for ', '<select>-*.form-select-*', 'are only available with.')
+  .card-body.checkbox-checked
+    form.theme-form.row.g-3.needs-validation.custom-input(novalidate='')
+      .col-12
+        label.form-label(for='validationCustom01') First name
+        input#validationCustom01.form-control(type='text' placeholder="Mark" required='')
+        .invalid-feedback
+          | Please enter your valid 
+        .valid-feedback 
+          | Looks's Good!
+      .col-12
+        label.col-sm-12.col-form-label(for='inputPassword1') Password
+        input#inputPassword1.form-control(type='password' required='')
+        .invalid-feedback
+          | Please enter your valid password            
+      .col-12
+        label.form-label(for='validationCustom04') State
+        select#validationCustom04.form-select(required='')
+          option(selected='' disabled='' value='') Choose...
+          option U.K 
+          option India 
+          option Thailand
+          option Newyork
+        .invalid-feedback
+          | Please select a valid state.
+        .valid-feedback 
+          | Looks's Good!   
+      .col-md-6
+        label.form-label(for='validationCustom03') City
+        input#validationCustom03.form-control(type='text' required='')
+        .invalid-feedback
+          | Please provide a valid city.
+        .valid-feedback 
+          | Looks's Good!
+      .col-md-6
+        label.form-label(for='validationCustom05') Zip
+        input#validationCustom05.form-control(type='text' required='')
+        .invalid-feedback
+          | Please provide a valid zip.
+        .valid-feedback 
+          | Looks's Good!
+      .col-12 
+        .card-wrapper.solid-border.rounded-3.checkbox-checked
+          h6.sub-title.fw-bold Select your payment method
+          .radio-form
+            .form-check
+              input#validationFormCheck25.form-check-input(type='radio' name='radio-stacked' required='')
+              label.form-check-label(for='validationFormCheck25') MaterCard
+            .form-check
+              input#validationFormCheck23.form-check-input(type='radio' name='radio-stacked' required='')
+              label.form-check-label(for='validationFormCheck23') VISA
+      .col-12 
+        select.form-select(required='' aria-label='select example')
+          option(value='') Select Your Favorite Pixelstrap theme
+          option(value='1') Tivo
+          option(value='2') Edmin
+          option(value='3') Wingo
+        .invalid-feedback Invalid select feedback
+      .col-12 
+        label.form-label(for='formFile1') Choose File
+        input#formFile1.form-control(type='file' aria-label='file example' required='')
+        .invalid-feedback Invalid form file selected
+      .col-12 
+        label.form-label(for='validationTextarea') Description
+        textarea#validationTextarea.form-control(placeholder='Enter your comment' required='')
+        .invalid-feedback
+          | Please enter a message in the textarea.
+      .col-12
+        .form-check.checkbox-checked.form-check-inline
+          input#invalidCheck.form-check-input(type='checkbox' value='' required='')
+          label.form-check-label(for='invalidCheck')
+            | Agree to terms and conditions
+          .invalid-feedback
+            | You must agree before submitting.
+      .col-12
+        button.btn.btn-primary(type='submit') Submit form

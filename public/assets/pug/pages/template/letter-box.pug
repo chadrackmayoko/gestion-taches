@@ -1,0 +1,32 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+-var quill_editor = true;
+-var print = true;
+-var md_sidebar =true;
+-var email_pagination = true;
+-var letter_box = true;
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    include ../../components/loader
+    main#pageWrapper.page-wrapper.compact-wrapper
+        include ../../components/header/header
+        .page-body-wrapper
+          include ../../components/sidebar
+          .page-body
+            .container-fluid
+              +breadcrumb(['Email','Letter Box'],'Letter Box')
+            // Container-fluid starts
+            .container-fluid.email-wrap.email-main-wrapper
+              .row 
+                .col-xxl-3.col-xl-4.box-col-12
+                  include ../../components/email/email-left-sidebar
+                .col-xxl-9.col-xl-8.box-col-12 
+                  include ../../components/email/email-right-sidebar
+            // Container-fluid starts
+          include ../../components/footer
+    include ../../components/footer-files

@@ -1,0 +1,85 @@
+//-// Sport Icon
+-
+    var ICO_ITEM17 =[
+
+        { id:'icofont-architecture-alt' }
+        , { id:'icofont-architecture' }
+        , { id:'icofont-barricade' }
+        , { id:'icofont-bolt' }
+        , { id:'icofont-bricks' }
+        , { id:'icofont-building-alt' }
+        , { id:'icofont-bull-dozer' }
+        , { id:'icofont-calculations' }
+        , { id:'icofont-cement-mix' }
+        , { id:'icofont-cement-mixer' }
+        , { id:'icofont-concrete-mixer' }
+        , { id:'icofont-danger-zone' }
+        , { id:'icofont-drill' }
+        , { id:'icofont-eco-energy' }
+        , { id:'icofont-eco-environmen' }
+        , { id:'icofont-energy-air' }
+        , { id:'icofont-energy-oil' }
+        , { id:'icofont-energy-savings' }
+        , { id:'icofont-energy-solar' }
+        , { id:'icofont-energy-water' }
+        , { id:'icofont-engineer' }
+        , { id:'icofont-fire-extinguisher-alt' }
+        , { id:'icofont-fire-extinguisher' }
+        , { id:'icofont-fix-tools' }
+        , { id:'icofont-fork-lift' }
+        , { id:'icofont-glue-oil' }
+        , { id:'icofont-hammer-alt' }
+        , { id:'icofont-hammer' }
+        , { id:'icofont-help-robot' }
+        , { id:'icofont-industries-1' }
+        , { id:'icofont-industries-2' }
+        , { id:'icofont-industries-3' }
+        , { id:'icofont-industries-4' }
+        , { id:'icofont-industries-5' }
+        , { id:'icofont-industries' }
+        , { id:'icofont-labour' }
+        , { id:'icofont-mining' }
+        , { id:'icofont-paint-brush' }
+        , { id:'icofont-pollution' }
+        , { id:'icofont-power-zone' }
+        , { id:'icofont-radio-active' }
+        , { id:'icofont-recycle-alt' }
+        , { id:'icofont-recycling-man' }
+        , { id:'icofont-safety-hat-light' }
+        , { id:'icofont-safety-hat' }
+        , { id:'icofont-saw' }
+        , { id:'icofont-screw-driver' }
+        , { id:'icofont-tools-1' }
+        , { id:'icofont-tools-bag' }
+        , { id:'icofont-tow-truck' }
+        , { id:'icofont-trolley' }
+        , { id:'icofont-trowel' }
+        , { id:'icofont-under-construction-alt' }
+        , { id:'icofont-under-construction' }
+        , { id:'icofont-vehicle-cement' }
+        , { id:'icofont-vehicle-crane' }
+        , { id:'icofont-vehicle-delivery-van' }
+        , { id:'icofont-vehicle-dozer' }
+        , { id:'icofont-vehicle-excavator' }
+        , { id:'icofont-vehicle-trucktor' }
+        , { id:'icofont-vehicle-wrecking' }
+        , { id:'icofont-worker' }
+        , { id:'icofont-workers-group' }
+        , { id:'icofont-wrench' }
+    
+    ]
+//-// Ico icon mixin
+mixin IcoContent(items)
+    each item in items 
+        .col-xxl-2.col-lg-3.col-sm-4
+            .card.d-flex.align-items-center.flex-column.default-border
+                i.icofont(class=item.id)
+                .flex-grow-1
+                    h6=item.id
+// Ico icon
+.card
+    .card-header.pb-0.d-flex.justify-content-between.align-items-center
+        h4 Construction Icon
+    .card-body
+        .row.icon-event.iconly-icons.icon-lists
+            +IcoContent(ICO_ITEM17)

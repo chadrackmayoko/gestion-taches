@@ -1,0 +1,27 @@
+.card.visit-card.card-hover
+    .card-header.pb-0
+        h4 Total visit
+        .dropdown.icon-dropdown
+          button#userdropdown03.btn.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+            i.icon-more-alt
+          .dropdown-menu.dropdown-menu-end(aria-labelledby='userdropdown03')
+            a.dropdown-item(href='#') Weekly
+            a.dropdown-item(href='#') Monthly
+            a.dropdown-item(href='#') Yearly
+    .card-body.pb-0
+        ul.d-flex.justify-content-xl-between.justify-content-evenly
+            li 
+                .badge.bg-light-primary.b-r-0
+                    +IconlySprite('mobile' , 'svg-menu me-1')
+                    | Mobile 
+                .d-block.text-center.mt-2
+                    h6.f-w-500 68,9%
+                    span.font-light.f-13 20,600
+            li 
+                .badge.bg-light-secondary.b-r-0
+                    +IconlySprite('desktop' , 'svg-menu me-1')
+                    | Desktop
+                .d-block.text-center.mt-2
+                    h6.f-w-500 13,4%
+                    span.font-light.f-13 02,450
+    .visit-chart

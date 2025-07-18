@@ -1,0 +1,58 @@
+// Unique dropdown
+.card
+    .card-header.pb-0
+        +card-header('Unique dropdown', 'dote','','Unique way to represent form dropdown and text dropdown.')
+    .card-body.rtl-dropdown
+        .common-flex
+            .btn-group
+                button.btn.btn-tertiary.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false' data-bs-auto-close='outside') Dropdown form
+                form.dropdown-menu.p-4.form-wrapper.dark-form(style='')
+                    .mb-3
+                        label.form-label(for='exampleDropdownFormEmail2') Email address
+                        input#exampleDropdownFormEmail2.form-control(type='email' placeholder='email@example.com')
+                    .mb-3
+                        label.form-label(for='exampleDropdownFormPassword2') Password
+                        input#exampleDropdownFormPassword2.form-control(type='password' placeholder='Password')
+                    .mb-3
+                        .form-check
+                            input#dropdownCheck2.form-check-input(type='checkbox')
+                            label.form-check-label.f-14(for='dropdownCheck2') Remember me
+                    button.btn.btn-dark(type='submit') Sign in
+            .btn-group
+                button.btn.btn-dark.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false') Text 
+                .dropdown-menu.p-4.form-wrapper(style='')
+                    p Some example text that&apos;s free-flowing within the dropdown menu.
+                    p.mb-0 And this is more example text.
+        .code-box-copy
+            button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#tooltip', title='Copy')
+              i.icofont.icofont-copy
+            pre
+              code.language-html#unique-dropdown
+                | &lt;!--You can use .dropdown-menu and inside added .dropdown-item.*(dropdown list)--&gt;  
+                | &lt;div class="btn-group"&gt;
+                | &lt;button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside"&gt;Dropdown form&lt;/button&gt;
+                | &lt;form class="dropdown-menu p-4 form-wrapper"&gt;
+                | &lt;div class="mb-3"&gt;
+                | &lt;label class="form-label" for="exampleDropdownFormEmail2"&gt;Email address&lt;/label&gt;
+                | &lt;input class="form-control" id="exampleDropdownFormEmail2" type="email" placeholder="email@example.com"&gt;
+                | &lt;/div&gt;
+                | &lt;div class="mb-3"&gt;
+                | &lt;label class="form-label" for="exampleDropdownFormPassword2"&gt;Password&lt;/label&gt;
+                | &lt;input class="form-control" id="exampleDropdownFormPassword2" type="password" placeholder="Password"&gt;
+                | &lt;/div&gt;
+                | &lt;div class="mb-3"&gt;
+                | &lt;div class="form-check"&gt;
+                | &lt;input class="form-check-input" id="dropdownCheck2" type="checkbox"&gt;
+                | &lt;label class="form-check-label f-14" for="dropdownCheck2"&gt;Remember me&lt;/label&gt;
+                | &lt;/div&gt;
+                | &lt;/div&gt;
+                | &lt;button class="btn btn-dark" type="submit"&gt;Sign in&lt;/button&gt;
+                | &lt;/form&gt;
+                | &lt;/div&gt;
+                | &lt;div class="btn-group"&gt;
+                | &lt;button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"&gt;Text &lt;/button&gt;
+                | &lt;div class="dropdown-menu p-4 text-muted form-wrapper"&gt;
+                | &lt;p&gt;Some example text that&amp;apos;s free-flowing within the dropdown menu.&lt;/p&gt;
+                | &lt;p class="mb-0"&gt;And this is more example text. &lt;/p&gt;
+                | &lt;/div&gt;
+                | &lt;/div&gt;

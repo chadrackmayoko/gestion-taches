@@ -1,0 +1,50 @@
+.card
+  .card-header.pb-0
+    +card-header('Snow Template', '','', '', '', '')
+  .card-body
+    .toolbar-box
+      #toolbar5
+        span.ql-formats
+          select.ql-size
+            option(value='small') Small
+            option(selected='') Normal
+            option(value='large') Large
+            option(value='huge') Huge
+          span.ql-formats
+            button.ql-bold Bold
+            button.ql-italic Italic
+            button.ql-underline Underline
+            button.ql-strike Strike
+            button.ql-script(value='sub')
+            button.ql-script(value='super')
+          span.ql-formats
+            button.ql-list(value='ordered') List
+            button.ql-list(value='bullet') Bullet
+            button.ql-indent(value='-1')
+            button.ql-indent(value='+1')
+          span.ql-formats
+            button.ql-link Link
+            button.ql-image Image
+            button.ql-video Video
+            select.ql-color
+          // Add more options here
+          span.ql-formats
+            button.ql-blockquote Blockquote
+            button.ql-code-block
+          span.ql-formats
+            button.ql-align(value='')
+            button.ql-align(value='center')
+            button.ql-align(value='right')
+            button.ql-align(value='justify')
+      #editor5.quill-paragraph
+        p As a 
+          strong web designer
+          | , your role is crucial in creating visually appealing and user-friendly websites. You are responsible for designing the layout, selecting color schemes, and creating an intuitive user interface. You work closely with clients to understand their requirements and translate them into stunning website designs. Your expertise lies in using HTML, CSS, and JavaScript to bring these designs to life. You pay attention to detail, ensuring that every element is pixel-perfect and responsive across different devices.
+        ol
+          li Artist 
+          li Developer  
+          li Musician
+        ul 
+          li Web-designer 
+          li UI-UX designer 
+          li Software engineer

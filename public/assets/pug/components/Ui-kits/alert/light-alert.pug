@@ -1,0 +1,62 @@
+// Light color alert
+.card 
+    .card-header.pb-0
+        +card-header('Link with light color alerts', '','','Use the', '.alert-link', ' utility class to quickly provide matching colored links within any alert.')
+    .card-body
+        .row
+            .col-lg-6
+                p.mb-1 Primary Alert
+                .alert.alert-light-primary(role='alert')
+                    p.mb-0
+                        | This is a   
+                        a.alert-link.font-primary(href='#') Primary alert
+                        |  with an example link.Check it out.
+                p.mb-1 Secondary Alert
+                .alert.alert-light-secondary(role='alert')
+                    p.mb-0
+                        | This is a   
+                        a.alert-link.font-secondary(href='#') Secondary alert
+                        |   with an example link. Check it out.
+                p.mb-1 Tertiary Alert
+                .alert.alert-light-tertiary(role='alert')
+                    p.mb-0
+                        | This is a   
+                        a.alert-link.font-tertiary(href='#') Tertiary alert
+                        |   with an example link. Check it out.
+                p.mb-1 Success Alert
+                .alert.alert-light-success(role='alert')
+                    p.mb-0
+                        | This is a  
+                        a.alert-link.font-success(href='#') Success alert 
+                        |   with an example link. Check it out.
+                p.mb-1 Info Alert
+                .alert.alert-light-info.dark.mb-lg-0(role='alert')
+                    p.mb-0
+                        | This is a  
+                        a.alert-link.font-info(href='#') Info alert 
+                        |   with an example link. Check it out.
+            .col-lg-6
+                p.mb-1 Warning Alert
+                .alert.alert-light-warning(role='alert')
+                    p.mb-0
+                        | This is a  
+                        a.alert-link.font-warning(href='#') Warning alert 
+                        |   with an example link. Check it out.
+                p.mb-1 Danger Alert
+                .alert.alert-light-danger(role='alert')
+                    p.mb-0
+                        | This is a  
+                        a.alert-link.font-danger(href='#') Danger alert 
+                        |   with an example link. Check it out.
+                p.mb-1 Light Alert
+                .alert.alert-light-light(role='alert')
+                    p.mb-0
+                        | This is a  
+                        a.alert-link.font-dark(href='#') Light alert 
+                        |   with an example link. Check it out.
+                p.mb-1 Dark Alert
+                .alert.alert-light-dark.dark.mb-0.font-light(role='alert')
+                    p.mb-0
+                        | This is a  
+                        a.alert-link.font-light(href='#') Dark alert 
+                        |   with an example link. Check it out.

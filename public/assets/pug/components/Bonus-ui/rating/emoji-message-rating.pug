@@ -1,0 +1,33 @@
+// Emoji with message rating
+.card
+    .card-header.pb-0
+        +card-header('Emoji with message', '','', 'Use', '.emoji-wrapper', 'add emoji with messages.')
+    .card-body
+        .emoji-wrapper
+            input#star-1(type='radio' name='rate')
+            input#star-2(type='radio' name='rate')
+            input#star-3(type='radio' name='rate')
+            input#star-4(type='radio' name='rate')
+            input#star-5(type='radio' name='rate')
+            .content
+                .outer
+                    ul.emojis
+                        li.slideImg
+                            img(src='../assets/images/other-images/emoji/angry.png' alt='')
+                        li
+                            img(src='../assets/images/other-images/emoji/sad.png' alt='')
+                        li
+                            img(src='../assets/images/other-images/emoji/think.png' alt='')
+                        li
+                            img(src='../assets/images/other-images/emoji/smile.png' alt='')
+                        li
+                            img(src='../assets/images/other-images/emoji/love.png' alt='')
+                .stars
+                    label.star-1.fas.fa-star(for='star-1')
+                    label.star-2.fas.fa-star(for='star-2')
+                    label.star-3.fas.fa-star(for='star-3')
+                    label.star-4.fas.fa-star(for='star-4')
+                    label.star-5.fas.fa-star(for='star-5')
+            .footer
+                span.text
+                span.numb

@@ -1,0 +1,14 @@
+.card
+    .card-header.pb-0
+        +card-header('Outlined Checkbox Styles', '', '', 'The choice between these two approaches will depend on the type of toggle you are creating, and whether or not the toggle will make sense to users when announced as a checkbox or as an actual button. ', '[multiple selected]', '.')
+    .card-body.common-flex
+        input#btn-check-outlined.btn-check(type='checkbox')
+        label.btn.btn-outline-info(for='btn-check-outlined') Single toggle
+        br
+        input#btn-check-2-outlined.btn-check(type='checkbox' checked='')
+        label.btn.btn-outline-danger(for='btn-check-2-outlined') Checked
+        br
+        input#success-outlined.btn-check(type='radio' name='options-outlined' checked='')
+        label.btn.btn-outline-success(for='success-outlined') Checked success radio
+        input#danger-outlined.btn-check(type='radio' name='options-outlined')
+        label.btn.btn-outline-dark(for='danger-outlined') Dark radio

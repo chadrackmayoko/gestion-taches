@@ -1,0 +1,17 @@
+// Popover offset
+.card 
+    .card-header.pb-0
+        +card-header('Popover offset', 'dote','','Use the', 'data-bs-offset/="*"', ' through popover direction above buttons.')
+    .card-body.common-flex.popover-wrapper
+        button.btn.btn-secondary.mb-0.me-0(type='button' data-bs-offset='50,0' data-bs-toggle='popover' data-bs-delay-show='5000' title='' data-bs-content="And here's some amazing content. It's very engaging. Right?" data-kt-initialized='1' data-bs-original-title='Popover title') Popover offset 50
+        button.example-popover.btn.btn-dark.mb-0.me-0(type='button' data-bs-offset='-50,0' data-container='body' data-bs-toggle='popover' data-bs-placement='left' title='' data-bs-content='Popovers are opt-in for effectiveness causes, in this way you have to initialize them yourself.' data-bs-original-title='Popover On Left') Popover offset -50
+        .code-box-copy
+            button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#example-head' title='Copy')
+                i.icofont.icofont-copy
+            pre
+                code.language-html#offset-variations
+                    | &lt;!--You can use data-bs-offset="" through set popover offset --&gt;
+                    | &lt;button class="btn btn-secondary mb-0 me-0" type="button" data-bs-offset="50,0" data-bs-toggle="popover" data-bs-delay-show="5000" title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?" data-kt-initialized="1"&gt;Popover offset 50
+                    | &lt;/button&gt;
+                    | &lt;button class="example-popover btn btn-dark mb-0 me-0" type="button" data-bs-offset="-50,0" data-container="body" data-bs-toggle="popover" data-bs-placement="left" title="Popover On Left" data-bs-content="Popovers are opt-in for effectiveness causes, in this way you have to initialize them yourself."&gt;Popover offset -50
+                    | &lt;/button&gt;

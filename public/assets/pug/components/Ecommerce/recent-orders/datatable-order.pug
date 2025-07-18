@@ -1,0 +1,201 @@
+//-// DATATABLE menu
+-
+    var DATATABLE_ITEM =[
+        {
+            url: '../assets/images/product/1.png',
+            productName: 'Long Top',
+            processDetail: 'Processing',
+            size: 'M',
+            color: 'Lavander',
+            code: '4215738',
+            price: '$21',
+        },             
+        {
+            url: '../assets/images/product/2.png',
+            productName: 'Fancy watch',
+            processDetail: 'Processing',
+            size: '35mm',
+            color: 'Blue',
+            code: '5476182',
+            price: '$10',
+        },         
+        {
+            url: '../assets/images/product/3.png',
+            productName: 'Man shoes',
+            processDetail: 'Processing',
+            size: '8',
+            color: 'Black & white',
+            code: '	1756457',
+            price: '$18',
+        },         
+        {
+            url: '../assets/images/product/4.png',
+            productName: 'Ledis side bag',
+            processDetail: 'Shipped',
+            size: '22cm x 18cm',
+            color: 'Brown',
+            code: '7451725',
+            price: '$13',
+            orderClass: 'shipped-order',
+        },         
+        {
+            url: '../assets/images/product/10.png',
+            productName: 'Ledis Slipper',
+            processDetail: 'Shipped',
+            size: '6',
+            color: 'Brown & white',
+            code: '4127421',
+            price: '$6',
+            orderClass: 'shipped-order',
+        },         
+        {
+            url: '../assets/images/product/11.png',
+            productName: 'Fancy ledis Jacket',
+            processDetail: 'Shipped',
+            size: 'Xl',
+            color: 'Light gray',
+            code: '3581714',
+            price: '$24',
+            orderClass: 'shipped-order',
+        },         
+        {
+            url: '../assets/images/product/12.png',
+            productName: 'Ledis Handbagp',
+            processDetail: 'Shipped',
+            size: '25cm x 20cm',
+            color: 'Black',
+            code: '6748142',
+            price: '$14',
+            orderClass: 'shipped-order',
+        },         
+        {
+            url: '../assets/images/product/13.png',
+            productName: 'Iphone6 mobile',
+            processDetail: 'Cancelled',
+            size: '10cm x 15cm',
+            color: 'black',
+            code: '5748214',
+            price: '$25',
+            orderClass: 'cancel-order',
+        },         
+        {
+            url: '../assets/images/product/14.png',
+            productName: 'Watch',
+            processDetail: 'Cancelle',
+            size: '27mm',
+            color: 'Brown',
+            code: '2471254',
+            price: '$12',
+            orderClass: 'cancel-order',
+        },         
+        {
+            url: '../assets/images/product/15.png',
+            productName: 'Slipper',
+            processDetail: 'Cancelle',
+            size: '6',
+            color: 'Blue',
+            code: '8475112',
+            price: '$6',
+            orderClass: 'cancel-order',
+        },         
+        {
+            url: '../assets/images/product/10.png',
+            productName: 'Slipper',
+            processDetail: 'Cancelle',
+            size: '6',
+            color: 'Blue',
+            code: '8475112',
+            price: '$6',
+            orderClass: 'cancel-order',
+        },         
+        {
+            url: '../assets/images/product/14.png',
+            productName: 'Watch',
+            processDetail: 'Cancelle',
+            size: '27mm',
+            color: 'Brown',
+            code: '2471254',
+            price: '$12',
+            orderClass: 'cancel-order',
+        },         
+        {
+            url: '../assets/images/product/13.png',
+            productName: 'Iphone6 mobile',
+            processDetail: 'Cancelled',
+            size: '10cm x 15cm',
+            color: 'black',
+            code: '5748214',
+            price: '$25',
+            orderClass: 'cancel-order',
+        },         
+        {
+            url: '../assets/images/product/12.png',
+            productName: 'Ledis Handbagp',
+            processDetail: 'Shipped',
+            size: '25cm x 20cm',
+            color: 'Black',
+            code: '6748142',
+            price: '$14',
+            orderClass: 'shipped-order',
+        },         
+        {
+            url: '../assets/images/product/11.png',
+            productName: 'Fancy ledis Jacket',
+            processDetail: 'Shipped',
+            size: 'Xl',
+            color: 'Light gray',
+            code: '3581714',
+            price: '$24',
+            orderClass: 'shipped-order',
+        },         
+        {
+            url: '../assets/images/product/15.png',
+            productName: 'Ledis Slipper',
+            processDetail: 'Shipped',
+            size: '6',
+            color: 'Brown & white',
+            code: '4127421',
+            price: '$6',
+            orderClass: 'shipped-order',
+        },    
+    ]
+//-// Invoice mixin
+mixin DatatableContent(items)
+
+    each item in items 
+        tr
+            td
+              img.img-30(src=item.url, alt="")
+            td 
+              .product-name
+                a(href="javascript:void(0)")=item.productName
+                .order-process
+                  span.order-process-circle(class=item.orderClass)=item.processDetail
+            td=item.size 
+            td=item.color
+            td=item.code
+            td 1
+            td=item.price
+            td
+              +FeatherSprite('more-vertical', 'feather')
+
+// Invoice menu
+.card
+  .card-header
+    +card-header('Datatable order history', '','', '', '', '')
+  .card-body
+    .order-history.table-responsive
+      table#basic-3.table.table-bordernone.display
+        thead
+          tr 
+            th(scope='col') Prdouct
+            th(scope='col') Prdouct name
+            th(scope='col') Size
+            th(scope='col') Color
+            th(scope='col') Article number
+            th(scope='col') Units
+            th(scope='col') Price
+            th(scope='col')
+              i.fa.fa-angle-down
+        tbody 
+          +DatatableContent(DATATABLE_ITEM)

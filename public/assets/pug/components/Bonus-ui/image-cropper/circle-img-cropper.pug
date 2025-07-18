@@ -1,0 +1,8 @@
+.card
+    .card-header.pb-0
+        +card-header('Crop a round image', '', '', 'Use the', '.circle-img', 'class cropped rounded image.')
+    .card-body
+        .circle-image.text-center
+            img#circle-img.img-fluid(src='../assets/images/other-images/img-2.jpg', alt='')
+            button.btn.btn-primary#circle-crop.mt-3 Crop
+            #result

@@ -1,0 +1,77 @@
+//-// img gallery mixin
+-
+    var GALLERY_IMAGE =[
+        {
+            lightGallery: '../assets/images/lightgallery/1.jpg',
+            bigLight: '../assets/images/big-lightgallery/1.jpg',
+            caption: 'Image caption  1',
+        }, 
+        {
+            lightGallery: '../assets/images/lightgallery/2.jpg',
+            bigLight: '../assets/images/big-lightgallery/2.jpg',
+            caption: 'Image caption  2',
+        }, 
+        {
+            lightGallery: '../assets/images/lightgallery/3.jpg',
+            bigLight: '../assets/images/big-lightgallery/3.jpg',
+            caption: 'Image caption  3',
+        }, 
+        {
+            lightGallery: '../assets/images/lightgallery/4.jpg',
+            bigLight: '../assets/images/big-lightgallery/4.jpg',
+            caption: 'Image caption  4',
+        }, 
+        {
+            lightGallery: '../assets/images/lightgallery/5.jpg',
+            bigLight: '../assets/images/big-lightgallery/5.jpg',
+            caption: 'Image caption  5',
+        },
+        {
+            lightGallery: '../assets/images/lightgallery/6.jpg',
+            bigLight: '../assets/images/big-lightgallery/6.jpg',
+            caption: 'Image caption  6',
+        },
+        {
+            lightGallery: '../assets/images/lightgallery/7.jpg',
+            bigLight: '../assets/images/big-lightgallery/7.jpg',
+            caption: 'Image caption  7',
+        },
+        {
+            lightGallery: '../assets/images/lightgallery/8.jpg',
+            bigLight: '../assets/images/big-lightgallery/8.jpg',
+            caption: 'Image caption  8',
+        },
+        {
+            lightGallery: '../assets/images/lightgallery/9.jpg',
+            bigLight: '../assets/images/big-lightgallery/9.jpg',
+            caption: 'Image caption  9',
+        },
+        {
+            lightGallery: '../assets/images/lightgallery/10.jpg',
+            bigLight: '../assets/images/big-lightgallery/10.jpg',
+            caption: 'Image caption  10',
+        }, 
+        {
+            lightGallery: '../assets/images/lightgallery/11.jpg',
+            bigLight: '../assets/images/big-lightgallery/11.jpg',
+            caption: 'Image caption  11',
+        },
+        {
+            lightGallery: '../assets/images/lightgallery/12.jpg',
+            bigLight: '../assets/images/big-lightgallery/12.jpg',
+            caption: 'Image caption  12',
+        },
+    ]
+//-//gallery mixin
+mixin ImgGallery(items)
+    each item in items
+         .pswp-gallery.col-xl-3.col-md-4.col-6
+                a(href=item.bigLight, data-pswp-width='1875', data-pswp-height='2500', target='_blank')
+                    img.img-thumbnail(src=item.lightGallery , alt='')
+
+// gallery mixin
+.card.gallery-grid
+  .card-header.pb-0
+    +card-header('Image Gallery', '','', '', '', '')
+  .gallery.my-gallery.card-body.row.mb-0(itemscope='')
+     +ImgGallery(GALLERY_IMAGE)

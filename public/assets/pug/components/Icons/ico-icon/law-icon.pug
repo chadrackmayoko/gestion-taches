@@ -1,0 +1,59 @@
+//-// Law Icon
+-
+    var ICO_ITEM6 =[
+        { id:'icofont-burglar' }
+        , { id:'icofont-cannon-firing' }
+        , { id:'icofont-cc-camera' }
+        , { id:'icofont-cop-badge' }
+        , { id:'icofont-cop' }
+        , { id:'icofont-court-hammer' }
+        , { id:'icofont-court' }
+        , { id:'icofont-finger-print' }
+        , { id:'icofont-gavel' }
+        , { id:'icofont-handcuff-alt' }
+        , { id:'icofont-handcuff' }
+        , { id:'icofont-investigation' }
+        , { id:'icofont-investigator' }
+        , { id:'icofont-jail' }
+        , { id:'icofont-judge' }
+        , { id:'icofont-law-alt-1' }
+        , { id:'icofont-law-alt-2' }
+        , { id:'icofont-law-alt-3' }
+        , { id:'icofont-law-book' }
+        , { id:'icofont-law-document' }
+        , { id:'icofont-law-order' }
+        , { id:'icofont-law-protect' }
+        , { id:'icofont-law-scales' }
+        , { id:'icofont-law' }
+        , { id:'icofont-lawyer-alt-1' }
+        , { id:'icofont-lawyer-alt-2' }
+        , { id:'icofont-lawyer' }
+        , { id:'icofont-legal' }
+        , { id:'icofont-pistol' }
+        , { id:'icofont-police-badge' }
+        , { id:'icofont-police-cap' }
+        , { id:'icofont-police-car-alt-1' }
+        , { id:'icofont-police-car-alt-2' }
+        , { id:'icofont-police-car' }
+        , { id:'icofont-police-hat' }
+        , { id:'icofont-police-van' }
+        , { id:'icofont-police' }
+        , { id:'icofont-thief-alt' }
+        , { id:'icofont-thief' }
+
+    ]
+//-// Ico icon mixin
+mixin IcoContent(items)
+    each item in items 
+        .col-xxl-2.col-lg-3.col-sm-4
+            .card.d-flex.align-items-center.flex-column.default-border
+                i.icofont(class=item.id)
+                .flex-grow-1
+                    h6=item.id
+// Ico icon
+.card
+    .card-header.pb-0.d-flex.justify-content-between.align-items-center
+        h4 Law Icon
+    .card-body
+        .row.icon-event.iconly-icons.icon-lists
+            +IcoContent(ICO_ITEM6)

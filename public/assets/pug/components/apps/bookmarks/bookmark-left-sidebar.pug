@@ -1,0 +1,69 @@
+.md-sidebar
+  a.btn.btn-primary.md-sidebar-toggle(href='javascript:void(0)') bookmark filter
+  .md-sidebar-aside.custom-scrollbar
+    .email-left-aside
+      .card
+        .card-body
+          .email-app-sidebar.left-bookmark
+            .d-flex.flex-wrap
+              .media-size-email
+                img.me-3.rounded-circle(src='../assets/images/user/4.jpg', alt='')
+              .flex-grow-1
+                h6.f-w-600 MARK JENCO
+                p Markjecno@gmail.com
+            ul.nav.main-menu(role='tablist')
+              li.nav-item
+                button.btn-light-primary.btn-block.btn-mail.w-100(type='button', data-bs-toggle='modal', data-bs-target='#exampleModal')
+                  +FeatherSprite('bookmark', 'feather me-2') 
+                  |  New Bookmark
+              li.nav-item
+                span.main-title
+                  |  Views
+              li
+                a#pills-created-tab.active(data-bs-toggle='pill', href='#pills-created', role='tab', aria-controls='pills-created', aria-selected='true')
+                  span.title
+                    |  Created by me
+              li
+                a#pills-favourites-tab(data-bs-toggle='pill', href='#pills-favourites', role='tab', aria-controls='pills-favourites', aria-selected='false')
+                  span.title
+                    |  Favourites
+              li
+                a#pills-shared-tab(data-bs-toggle='pill', href='#pills-shared', role='tab', aria-controls='pills-shared', aria-selected='false')
+                  span.title
+                    |  Shared with me
+              li
+                a#pills-bookmark-tab(data-bs-toggle='pill', href='#pills-bookmark', role='tab', aria-controls='pills-bookmark', aria-selected='false')
+                  span.title
+                    |  My bookmark
+              li
+                hr
+              li
+                span.main-title
+                  |  Tags
+                  span.pull-right
+                    a(href='#', data-bs-toggle='modal', data-bs-target='#createtag')
+                      +FeatherSprite('plus-circle', 'feather stroke-primary')
+              li
+                a#pills-notification-tab(data-bs-toggle='pill', href='#pills-notification', role='tab', aria-controls='pills-notification', aria-selected='false')
+                  span.title
+                    |  notification
+              li
+                a#pills-newsletter-tab(data-bs-toggle='pill', href='#pills-newsletter', role='tab', aria-controls='pills-newsletter', aria-selected='false')
+                  span.title
+                    |  Newsletter
+              li
+                a#pills-business-tab(data-bs-toggle='pill', href='#pills-business', role='tab', aria-controls='pills-business-tab', aria-selected='false')
+                  span.title
+                    |  Business
+              li
+                a#pills-holidays-tab(data-bs-toggle='pill', href='#pills-holidays', role='tab', aria-controls='pills-holidays-tab', aria-selected='false')
+                  span.title
+                    |  Holidays
+              li
+                a#pills-important-tab(data-bs-toggle='pill', href='#pills-important', role='tab', aria-controls='pills-important-tab', aria-selected='false')
+                  span.title
+                    |  Important
+              li
+                a#pills-orgenization-tab(data-bs-toggle='pill', href='#pills-orgenization', role='tab', aria-controls='pills-orgenization-tab', aria-selected='false')
+                  span.title
+                    |  Organization

@@ -1,0 +1,56 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+-var apexcharts             = true;
+-var chartjs                = true;
+-var datatables             = true;
+-var dashboard_default      = true;
+include ../../components/mixin
+doctype html
+html(lang='en')
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    include ../../components/loader
+    main#pageWrapper.page-wrapper.compact-wrapper
+        include ../../components/header/header
+        .page-body-wrapper
+          include ../../components/sidebar
+          .page-body
+            .container-fluid
+              +breadcrumb(['Dashboard','Default'],'Default dashboard')
+            .container-fluid.default-dashboard
+              .row
+                .col-sm-6.col-xl-4
+                  include ../../components/dashboard1/welcome
+                .col-sm-6.col-xl-3
+                  include ../../components/dashboard1/projects
+                .col-sm-6.col-xl-2
+                  .row
+                    include ../../components/dashboard1/client-project
+                .col-sm-6.col-xl-3
+                  include ../../components/dashboard1/investing
+                .col-md-6.col-xl-6
+                  include ../../components/dashboard1/invoice
+                .col-md-6.col-xl-3
+                  include ../../components/dashboard1/invest
+                .col-md-6.col-xl-3
+                  include ../../components/dashboard1/task-list
+                .col-md-6.col-lg-6.col-xl-7
+                  include ../../components/dashboard1/overview
+                .col-md-6.col-xl-5
+                  include ../../components/dashboard1/task-summary
+                .col-md-6.col-xl-4
+                  include ../../components/dashboard1/course-highlight
+                .col-sm-6.col-xl-3.order-1.order-xl-0
+                  include ../../components/dashboard1/schedule
+                .col-sm-12.col-xl-2.custom-margin
+                  .row
+                    .col-6.col-xl-12.col-lg-5
+                      include ../../components/dashboard1/total-visit
+                    .col-6.col-xl-12.col-lg-7
+                      include ../../components/dashboard1/total-earn
+                .col-sm-6.col-xl-3.custom-margin
+                  include ../../components/dashboard1/notification-component
+          include ../../components/footer
+    include ../../components/footer-files

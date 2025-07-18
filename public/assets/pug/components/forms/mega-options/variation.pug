@@ -1,0 +1,90 @@
+.card
+    .card-header.pb-0
+        +card-header('Variation radio', '','', 'Use the', 'radio', 'attribute through create variation of radio designs.')
+    .card-body
+        .row.g-3
+            .col-xl-4.col-md-6
+                .card-wrapper.default-border.rounded-3.h-100.checkbox-checked
+                    h6.sub-title Select your payment method
+                    .payment-wrapper
+                        .payment-first
+                            label.d-block
+                                input#ptm11.radio.radio-primary(type='radio' name='radio1' value='option1')
+                                | BOB
+                        .payment-second
+                            img.img-fluid(src="../assets/images/ecommerce/card.png" alt="card")
+                    .payment-wrapper
+                        .payment-first
+                            label.d-block
+                                input#ptm22.radio.radio-primary(type='radio' name='radio1' value='option1' checked='')
+                                | MasterCard
+                        .payment-second
+                            img.img-fluid(src="../assets/images/ecommerce/mastercard.png" alt="card")
+                    .payment-wrapper
+                        .payment-first
+                            label.d-block
+                                input#ptm33.radio.radio-primary(type='radio' name='radio1' value='option1')
+                                | Paypal
+                        .payment-second
+                            img.img-fluid(src="../assets/images/ecommerce/paypal.png" alt="card")
+                    .payment-wrapper
+                        .payment-first
+                            label.d-block
+                                input#ptm44.radio.radio-primary(type='radio' name='radio1' value='option1')
+                                | VISA
+                        .payment-second
+                            img.img-fluid(src="../assets/images/ecommerce/visa.png" alt="card")
+            .col-xl-4.col-md-6
+                .card-wrapper.default-border.rounded-3.h-100.checkbox-checked
+                    h6.sub-title What are the most important things to learn about web design?
+                    .payment-wrapper
+                        .payment-first
+                            label.d-block
+                                input#ptm101.radio.radio-primary(type='radio' name='radio3' value='option1')
+                                | A. HTML 
+                    .payment-wrapper
+                        .payment-first
+                            label.d-block
+                                input#ptm201.radio.radio-primary(type='radio' name='radio3' value='option1')
+                                | B. CSS
+                    .payment-wrapper
+                        .payment-first
+                            label.d-block
+                                input#ptm301.radio.radio-primary(type='radio' name='radio3' value='option1' checked='')
+                                | C. Javascript
+                    .payment-wrapper
+                        .payment-first
+                            label.d-block
+                                input#ptm401.radio.radio-primary(type='radio' name='radio3' value='option1')
+                                | D. Above the all 
+            .col-xl-4
+                .card-wrapper.default-border.rounded-3.h-100.checkbox-checked
+                    h6.sub-title Radios With Creative Options & SVG Icons
+                    .payment-wrapper
+                        .payment-first
+                            label.d-block
+                                input#ptm100.radio.radio-primary(type='radio' name='radio2' value='option1')
+                                | The notification icon displayed new messages.
+                        .payment-second
+                            +FeatherSprite('bell', 'feather stroke-danger')
+                    .payment-wrapper
+                        .payment-first
+                            label.d-block
+                                input#ptm200.radio.radio-primary(type='radio' name='radio2' value='option1')
+                                | The download icon indicated completion.
+                        .payment-second
+                            +FeatherSprite('calendar', 'feather stroke-success')
+                    .payment-wrapper
+                        .payment-first
+                            label.d-block
+                                input#ptm300.radio.radio-primary(type='radio' name='radio2' value='option1' checked='')
+                                | The tag icon allowed easy categorization.
+                        .payment-second
+                            +FeatherSprite('tag', 'feather stroke-dark')
+                    .payment-wrapper
+                        .payment-first
+                            label.d-block
+                                input#ptm400.radio.radio-primary(type='radio' name='radio2' value='option1')
+                                | The email icon was inaccessibly located.
+                        .payment-second
+                            +FeatherSprite('mail', 'feather stroke-primary')

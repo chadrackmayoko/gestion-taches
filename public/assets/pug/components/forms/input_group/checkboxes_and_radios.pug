@@ -1,0 +1,13 @@
+.card
+    .card-header.pb-0
+        +card-header('Checkboxes and radios', '','', 'Place any checkbox or radio option within an input group addon instead of text. We recommend adding', '  .mt-0 to the .form-check-input ', 'when there is no visible text next to the input. ')
+    .card-body.card-wrapper.input-group-wrapper.checkbox-checked
+        form.theme-form.row.g-5
+            .input-group
+                .input-group-text
+                    input.form-check-input.mt-0(type='checkbox' value='' aria-label='Checkbox for following text input')
+                input.form-control(type='text' aria-label='Text input with checkbox')
+            .input-group
+                .input-group-text
+                    input.form-check-input.mt-0(type='radio' value='' aria-label='Radio button for following text input' checked='')
+                input.form-control(type='text' aria-label='Text input with radio button')

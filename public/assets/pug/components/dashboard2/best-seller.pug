@@ -1,0 +1,97 @@
+//-// Seller menu
+-
+    var SELLER_ITEM =[
+        {
+            url: '../assets/images/avatar/6.jpg',
+            price: '$76.00',
+            bgClass: 'btn-light-primary',
+            btnValue: 'Sold',
+            title: 'John Keter',
+            date: '06 Aug 2024',
+            amount: '$54,653',
+            product: 'Brand Shoes'
+        },
+        {
+            url: '../assets/images/user/8.jpg',
+            price: '$65.00',
+            bgClass: 'btn-light-tertiary',
+            btnValue: 'Out of stock',
+            title: 'Harry Venter',
+            date: '09 June 2024',
+            amount: '$65,412',
+            product: 'Headphone'
+        },
+        {
+            url: '../assets/images/user/15.jpg',
+            price: '$95.00',
+            bgClass: 'btn-light-secondary',
+            btnValue: 'Sell',
+            title: 'Loadin Deo',
+            date: '23 May 2024',
+            amount: '$32,012',
+            product: 'Cell Phone'
+        },
+        {
+            url: '../assets/images/user/14.jpg',
+            price: '$34.00',
+            bgClass: 'btn-light-tertiary',
+            btnValue: 'Sold',
+            title: 'Horen Hors',
+            date: '17 Jan 2024',
+            amount: '$75,152',
+            product: 'Fashion'
+        },
+        {
+            url: '../assets/images/avatar/9.jpg',
+            price: '$34.00',
+            bgClass: 'btn-light-secondary',
+            btnValue: 'Sell',
+            title: 'Fenter Jessy',
+            date: '04 Aug 2024',
+            amount: '$12,152',
+            product: 'Bookshop'
+        }
+    ]
+
+//-// mixin
+mixin BestSellerContent(items)
+
+    each item in items 
+        tr
+            td
+                .d-flex.align-items-center.gap-2
+                    .flex-shrink-0
+                        img.b-r-10(src=item.url, alt="")
+                    .flex-grow-1 
+                        a(href="user-profile.html") 
+                            h6.f-w-500=item.title
+                            span.f-w-400.f-13=item.date
+            td=item.price
+            td=item.product
+            td=item.amount
+            td 
+                a.btn.edge-btn.f-12.w-100(class=item.bgClass)=item.btnValue
+
+// Seller card
+.card
+    .card-header.pb-0
+        h4 Best Sellers
+        .dropdown.icon-dropdown
+          button#userdropdown02.btn.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+            i.icon-more-alt
+          .dropdown-menu.dropdown-menu-end(aria-labelledby='userdropdown02')
+            a.dropdown-item(href='#') Weekly
+            a.dropdown-item(href='#') Monthly
+            a.dropdown-item(href='#') Yearly
+    .card-body.pt-0.seller-table
+        .table-responsive 
+            table.table
+                thead 
+                    tr 
+                        th Client Name
+                        th Price
+                        th Product
+                        th Amount
+                        th Status
+                tbody 
+                    +BestSellerContent(SELLER_ITEM)

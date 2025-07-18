@@ -1,0 +1,36 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+-var photoswipe             = true;
+-var photoswipe_custom      = true;
+-var user_counter           = true;
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    include ../../components/loader
+    main#pageWrapper.page-wrapper.compact-wrapper
+        include ../../components/header/header
+        .page-body-wrapper
+          include ../../components/sidebar
+          .page-body
+            .container-fluid
+              +breadcrumb(['Users','User Profile'],'User Profile')
+            // Container-fluid starts
+            .container-fluid.user-profile
+              .row
+                .col-sm-12
+                  include ../../components/Users/user-profile/user-profile
+                .col-sm-12
+                  include ../../components/Users/user-profile/second-post
+                .col-sm-12
+                  include ../../components/Users/user-profile/third-user
+                .col-sm-12
+                  include ../../components/Users/user-profile/forth-user
+                .col-sm-12
+                  include ../../components/Users/user-profile/fifth-user
+            // Container-fluid ends
+          include ../../components/footer
+    include ../../components/footer-files

@@ -1,0 +1,9 @@
+//-// Mixin for Iconly sprite icon
+mixin IconlySprite(iconName,iconClass)
+    svg(class=`${iconClass}`)
+        use(href=`../assets/svg/iconly-sprite.svg#${iconName}`)
+
+//-// Mixin for feather sprite icon
+mixin FeatherSprite(iconName,iconClass)
+    svg(class=`${iconClass}`)
+        use(href=`../assets/svg/feather-icons/dist/feather-sprite.svg#${iconName}`)

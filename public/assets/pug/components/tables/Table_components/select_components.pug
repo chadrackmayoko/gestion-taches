@@ -1,0 +1,69 @@
+.card
+  .card-header
+    h4 Select 
+  div
+    .card-block.row
+      .col-sm-12.col-lg-12.col-xl-12
+        .table-responsive
+          table.table.table-bordered.checkbox-td-width
+            tbody
+              tr
+                td Single Select
+                td.w-50
+                  select#exampleFormControlSelect45.form-select
+                    option 1
+                    option 2
+                    option 3
+                    option 4
+                    option 5
+                td
+                  span Use for basic select control.
+              tr
+                td Disabled Select Mode
+                td
+                  select#exampleFormControlSelect4.form-select(disabled='')
+                    option 1
+                    option 2
+                    option 3
+                    option 4
+                    option 5
+                td
+                  span
+                    | Use for disabled select control add 
+                    code disabled
+                    | .
+              tr
+                td Large Select Mode
+                td
+                  select#exampleFormControlSelect1.form-select.form-control-lg.mb-10
+                    option 1
+                    option 2
+                    option 3
+                    option 4
+                    option 5
+                  select#exampleFormControlSelect3.form-select.form-control-sm.mt-5.mb-10
+                    option 1
+                    option 2
+                    option 3
+                    option 4
+                    option 5
+                td
+                  span
+                    | Use for large and small select control add class
+                    code form-control-*
+                    code lg, sm
+                    | .
+              tr
+                td Example multiple select
+                td
+                  select#exampleFormControlSelect22.form-control(multiple='')
+                    option 1
+                    option 2
+                    option 3
+                    option 4
+                    option 5
+                td
+                  span
+                    | Use for multi select control add code 
+                    code multiple
+                    | on select.

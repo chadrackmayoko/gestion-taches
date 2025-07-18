@@ -1,0 +1,97 @@
+// Rounded dropdown
+.card
+    .card-header.pb-0
+        +card-header('Rounded dropdown', 'dote','','When the', '.rounded-pill', 'to change rounded dropdowns.')
+    .card-body.rtl-dropdown
+        .common-flex
+            .btn-group
+                button.btn.btn-primary.rounded-pill.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false') Primary
+                ul.dropdown-menu.dropdown-block(style='')
+                    li
+                        a.dropdown-item(href='#') Dark
+                    li
+                        a.dropdown-item(href='#') Light
+                    li
+                        a.dropdown-item(href='#') Lighter
+            .btn-group
+                button.btn.btn-success.rounded-pill.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false') Success 
+                ul.dropdown-menu.dropdown-block(style='')
+                    li
+                        a.dropdown-item(href='#') Dark
+                    li
+                        a.dropdown-item(href='#') Light
+                    li
+                        a.dropdown-item(href='#') Lighter
+            .btn-group
+                button.btn.btn-info.rounded-pill.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false') Info 
+                ul.dropdown-menu.dropdown-block(style='')
+                    li
+                        a.dropdown-item(href='#') Dark
+                    li
+                        a.dropdown-item(href='#') Light
+                    li
+                        a.dropdown-item(href='#') Lighter
+            .btn-group
+                button.btn.btn-warning.rounded-pill.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false') Warning
+                ul.dropdown-menu.dropdown-block(style='')
+                    li
+                        a.dropdown-item(href='#') Dark
+                    li
+                        a.dropdown-item(href='#') Light
+                    li
+                        a.dropdown-item(href='#') Lighter
+            .btn-group
+                button.btn.btn-danger.rounded-pill.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false') Danger 
+                ul.dropdown-menu.dropdown-block(style='')
+                    li
+                        a.dropdown-item(href='#') Dark 
+                    li
+                        a.dropdown-item(href='#') Light 
+                    li
+                        a.dropdown-item(href='#') Lighter
+        .code-box-copy
+            button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#tooltip', title='Copy')
+              i.icofont.icofont-copy
+            pre
+              code.language-html#rounded-dropdown
+                | &lt;!--You can use .dropdown-menu and inside added .dropdown-item.*(dropdown list)--&gt;       
+                | &lt;div class="btn-group"&gt;
+                | &lt;button class="btn btn-primary rounded-pill dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"&gt;Primary&lt;/button&gt;
+                | &lt;ul class="dropdown-menu dropdown-block"&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Primary-dark&lt;/a&gt;&lt;/li&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Primary-light&lt;/a&gt;&lt;/li&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Primary-lighter&lt;/a&gt;&lt;/li&gt;
+                | &lt;/ul&gt;
+                | &lt;/div&gt;
+                | &lt;div class="btn-group"&gt;
+                | &lt;button class="btn btn-success rounded-pill dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"&gt;Success &lt;/button&gt;
+                | &lt;ul class="dropdown-menu dropdown-block"&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Success dark&lt;/a&gt;&lt;/li&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Success light &lt;/a&gt;&lt;/li&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Success lighter &lt;/a&gt;&lt;/li&gt;
+                | &lt;/ul&gt;
+                | &lt;/div&gt;
+                | &lt;div class="btn-group"&gt;
+                | &lt;button class="btn btn-info rounded-pill dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"&gt;Info &lt;/button&gt;
+                | &lt;ul class="dropdown-menu dropdown-block"&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Info dark &lt;/a&gt;&lt;/li&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Info light &lt;/a&gt;&lt;/li&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Info lighter &lt;/a&gt;&lt;/li&gt;
+                | &lt;/ul&gt;
+                | &lt;/div&gt;
+                | &lt;div class="btn-group"&gt;
+                | &lt;button class="btn btn-warning rounded-pill dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"&gt;Warning&lt;/button&gt;
+                | &lt;ul class="dropdown-menu dropdown-block"&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Warning dark &lt;/a&gt;&lt;/li&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Warning light &lt;/a&gt;&lt;/li&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Warning lighter &lt;/a&gt;&lt;/li&gt;
+                | &lt;/ul&gt;
+                | &lt;/div&gt;
+                | &lt;div class="btn-group"&gt;
+                | &lt;button class="btn btn-danger rounded-pill dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"&gt;Danger &lt;/button&gt;
+                | &lt;ul class="dropdown-menu dropdown-block"&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Danger dark &lt;/a&gt;&lt;/li&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Danger light &lt;/a&gt;&lt;/li&gt;
+                | &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Danger lighter &lt;/a&gt;&lt;/li&gt;
+                | &lt;/ul&gt;
+                | &lt;/div&gt;

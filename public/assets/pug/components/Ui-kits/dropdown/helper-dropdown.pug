@@ -1,0 +1,57 @@
+// Unique dropdown
+.card
+    .card-header.pb-0
+        +card-header('Helper dropdown', 'dote','','Unique way to represent form dropdown and text dropdown.')
+    .card-body.rtl-dropdown
+        .common-flex
+            .btn-group
+                button.btn.btn-secondary.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false') Helper Card
+                ul.dropdown-menu.dropdown-block.p-3.dark-form(style='')
+                    li
+                        h6.fs-6.pb-2 Learn More!
+                        p.dropdown-item.helper-truncate There is a lot of information available here
+            .btn-group
+                button.btn.btn-warning.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false') Warning Card
+                ul.dropdown-menu.dropdown-block.p-3.dark-form(style='')
+                    li
+                        h6.fs-6.pb-2 Warning!
+                        p.dropdown-item.helper-truncate Please! Check your notifications.
+            .btn-group
+                button.btn.btn-info.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false') Alert Card
+                ul.dropdown-menu.dropdown-block.p-3.dark-form
+                    li
+                        h6.fs-6.pb-2 Danger
+                        p.dropdown-item.helper-truncate It&apos;s a danger path.
+        .code-box-copy
+            button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#tooltip', title='Copy')
+              i.icofont.icofont-copy
+            pre
+              code.language-html#helper-dropdown
+                | &lt;!--You can use .dropdown-menu and inside added .dropdown-item.*(dropdown list)--&gt;  
+                | &lt;div class="btn-group"&gt;
+                | &lt;button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"&gt;Helper Card&lt;/button&gt;
+                | &lt;ul class="dropdown-menu dropdown-block p-3 dark-form"&gt;
+                | &lt;li&gt;
+                | &lt;h6 class="fs-6 fw-bold pb-2"&gt;Learn More!&lt;/h6&gt;
+                | &lt;p class="dropdown-item p-0 helper-truncate"&gt; There is a lot of information available here&lt;/p&gt;
+                | &lt;/li&gt;
+                | &lt;/ul&gt;
+                | &lt;/div&gt;
+                | &lt;div class="btn-group"&gt;
+                | &lt;button class="btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"&gt;Warning Card&lt;/button&gt;
+                | &lt;ul class="dropdown-menu dropdown-block p-3 dark-form"&gt;
+                | &lt;li&gt;
+                | &lt;h6 class="fs-6 fw-bold pb-2"&gt;Warning!&lt;/h6&gt;
+                | &lt;p class="dropdown-item p-0 helper-truncate"&gt; Please! Check your notifications.&lt;/p&gt;
+                | &lt;/li&gt;
+                | &lt;/ul&gt;
+                | &lt;/div&gt;
+                | &lt;div class="btn-group"&gt;
+                | &lt;button class="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"&gt;Alert Card&lt;/button&gt;
+                | &lt;ul class="dropdown-menu dropdown-block p-3 dark-form"&gt;
+                | &lt;li&gt;
+                | &lt;h6 class="fs-6 fw-bold pb-2"&gt;Danger&lt;/h6&gt;
+                | &lt;p class="dropdown-item p-0 helper-truncate" href="#"&gt;It's a danger path.&lt;/p&gt;
+                | &lt;/li&gt;
+                | &lt;/ul&gt;
+                | &lt;/div&gt;

@@ -1,0 +1,89 @@
+//-// YTD Products
+-
+    var YTD_ITEM =[
+        {
+            amount: '$5.874',
+            name: 'Rocks',
+            sold: '28.63%',
+            progress: 'progress-border-primary',
+            width: 'width: 50%'
+        },
+        {
+            amount: '$2.256',
+            name: 'Trimming',
+            sold: '24.75%',
+            progress: 'progress-border-secondary',
+            width: 'width: 30%'
+        },
+        {
+            amount: '$1.954',
+            name: 'Maintenance',
+            sold: '35.35%',
+            progress: 'progress-border-tertiary',
+            width: 'width: 80%'
+        },
+        {
+            amount: '$4.158',
+            name: 'Pest Control',
+            sold: '15.63%',
+            progress: 'progress-border-primary',
+            width: 'width: 40%'
+        },
+        {
+            amount: '$9.861',
+            name: 'Installation',
+            sold: '95.98%',
+            progress: 'progress-border-secondary',
+            width: 'width: 60%'
+        }
+    ]
+
+//-// mixin
+mixin YTDContent(items)
+    each item in items 
+        tr
+            td=item.name
+            td=item.amount
+            td=item.sold
+            td 
+                .progress-showcase
+                    .progress.sm-progress-bar(class=item.progress)
+                        .progress-bar(role='progressbar', style=item.width, aria-valuenow='25', aria-valuemin='0', aria-valuemax='100') 
+// Invoice menu
+.card 
+    .card-header.pb-0
+        h4 Sales By Product
+        .dropdown.icon-dropdown
+          button#userdropdown06.btn.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+            i.icon-more-alt
+          .dropdown-menu.dropdown-menu-end(aria-labelledby='userdropdown06')
+            a.dropdown-item(href='#') Weekly
+            a.dropdown-item(href='#') Monthly
+            a.dropdown-item(href='#') Yearly
+    .card-body.sale-product.pt-0
+        .row 
+            .col-5
+                h5.f-w-500.mb-1.mt-2 Current YTD
+                h6.font-light Feb 2, 2024 to Jan 23,
+            .col-7
+                select.form-select(aria-label='Default select example')
+                    option(selected='') Current YTD
+                    option(value='1') Current MTD
+                    option(value='2') YTD earning
+                    option(value='3') YTD Net Pay
+                    option(value='4') MTD Earning
+        table.table
+            thead
+                tr 
+                    th Product
+                    th Amount
+                    th %Sold
+                    th
+            tbody 
+                +YTDContent(YTD_ITEM)
+            tfoot.bg-light 
+                tr 
+                    th Total
+                    th.font-dark.f-w-800 $9,978
+                    th 
+                    th

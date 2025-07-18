@@ -1,0 +1,32 @@
+.card
+  .card-header.pb-0
+    +card-header('Debit card', '','', '', '', '')
+  .card-body
+    form.theme-form.e-commerce-form.row
+      .mb-3.col-sm-6.p-r-0
+        input.form-control(type='text', placeholder='Full name here')
+      .mb-3.col-sm-6
+        input.form-control(type='text', placeholder='Card number')
+      .mb-3.col-sm-6.p-r-0
+        input.form-control(type='text', placeholder='CVV number')
+      .mb-3.col-sm-6
+        input.form-control(type='text', placeholder='CVC')
+      .col-12
+        label.col-form-label.p-b-20 Expiration Date
+      .mb-3.col-sm-6.p-r-0
+        select.form-select(size='1')
+          option Select Month
+          option Jan
+          option Fab
+          option March
+          option April
+      .mb-3.col-sm-6
+        select.form-select(size='1')
+          option Select Year
+          option 2024
+          option 2019
+          option 2020
+          option 2021
+          option 2022
+      .col-12
+        button.btn.btn-primary.btn-block(type='button', title='') Submit

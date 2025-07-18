@@ -1,0 +1,10 @@
+// Live alert
+.card.height_equal
+    .card-header.pb-0
+        +card-header('Live alert', '','','Click the button below to show an alert,then dismiss it with the built-in close button.')
+    .card-body.live-dark
+        #liveAlertPlaceholder
+            .alert.alert-light-info.mb-3.alert-dismissible(role='alert')
+                div.text-truncate Oh snap! Change a few things up Notification check
+                button.btn-close(type='button' data-bs-dismiss='alert' aria-label='Close')
+        button#liveAlertBtn.btn.btn-info.mt-3(type='button') Show live alert

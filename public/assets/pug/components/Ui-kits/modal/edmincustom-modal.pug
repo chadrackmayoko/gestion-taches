@@ -1,0 +1,136 @@
+.card 
+    .card-header.pb-0   
+      +card-header('edmin custom modals', '','','Custom Modal make by edmin.','','') 
+    .card-body
+      .row.g-3
+        .col-xl-4.col-md-6.custom-alert.text-center
+          .card-wrapper.solid-border.rounded-3.h-100
+              .edmin-demo-img
+                ul.dot-group.pb-3.pt-0
+                  li
+                  li
+                  li
+                .title-wrapper.pb-3.modal-heading
+                  h4.theme-name.mb-0
+                    span Modal 1 -
+                    | Profile Modal
+                  p Example of edmin dashboard profile card.
+                .overflow-hidden
+                  img.img-fluid(src='../assets/images/alert/social.png' alt='social')
+                  button.btn.btn-primary.mx-auto.mt-3(type='button', data-bs-toggle='modal', data-bs-target='#exampleModallaptop1')
+                    | Click Out
+                #exampleModallaptop1.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModallaptop1', aria-hidden='true')
+                  .modal-dialog.modal-dialog-centered(role='document')
+                    .modal-content
+                      .col-xl-12
+                        .card.social-profile.mb-0
+                          .card-body
+                            .social-img-wrap 
+                              .social-img
+                                img(src="../assets/images/avatar/1.jpg", alt="profile")
+                              .edit-icon
+                                .icon
+                                 +FeatherSprite('check-circle', 'feather stroke-primary')
+                            .social-details
+                              h4.mb-1
+                                a.f-20(href="social-app.html") Brooklyn Simmons
+                              span.font-light @brookly.simmons
+                              ul.social-follow
+                                li
+                                  h4.mb-0 1,908
+                                  span.font-light Posts
+                                li
+                                  h4.mb-0 34.0k
+                                  span.font-light Followers
+                                li
+                                  h4.mb-0 897
+                                  span.font-light Following
+        .col-xl-4.col-md-6.custom-alert.text-center
+          .card-wrapper.solid-border.rounded-3.h-100
+              .edmin-demo-img
+                ul.dot-group.pb-3.pt-0
+                  li
+                  li
+                  li
+                .title-wrapper.pb-3.modal-heading
+                  h4.theme-name.mb-0
+                    span Modal 2 - 
+                    | Result Modal
+                  p Example of edmin login form.
+                .overflow-hidden
+                  img.img-fluid(src='../assets/images/alert/learning.png' alt='learning')
+                  button.btn.btn-primary.mx-auto.mt-3(type='button', data-bs-toggle='modal', data-bs-target='#exampleModallogin')
+                    | Click Out
+                #exampleModallogin.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModallogin', aria-hidden='true')
+                  .modal-dialog.modal-dialog-centered(role='document')
+                    .modal-content.dark-sign-up
+                      .modal-body.social-profile.text-start
+                        .modal-toggle-wrapper
+                          h4 Edmin Login
+                          p.mb-3 
+                            | Fill in your information below to continue.
+                          form.row.g-3
+                            .col-md-12
+                              label.form-label.mb-1(for='inputEmailEnter') Email
+                              input#inputEmailEnter.form-control(type='email' placeholder='Enter Your Email')
+                            .col-md-12
+                              label.form-label.mb-1(for='inputPasswordEnter') Password
+                              input#inputPasswordEnter.form-control(type='password' placeholder='Enter Your Password')
+                            .col-12
+                              .form-check.ps-0
+                                input#checkout.checkbox-primary(type='checkbox')
+                                label.form-check-label(for='checkout')
+                                  | Check me out
+                            .col-12
+                              button.btn.btn-primary(type='submit' data-bs-dismiss='modal') Sign in 
+        .col-xl-4.col-md-12.custom-alert.text-center
+          .card-wrapper.solid-border.rounded-3.h-100
+              .edmin-demo-img
+                ul.dot-group.pb-3.pt-0
+                  li
+                  li
+                  li
+                .title-wrapper.pb-3.modal-heading
+                  h4.theme-name.mb-0
+                    span Modal 3 - 
+                    | Balance Modal
+                  p Example of edmin dashboard balance card.
+                .overflow-hidden.balance-modal
+                  img.img-fluid(src='../assets/images/alert/balance.png' alt='balance')
+                  button.btn.btn-primary.mx-auto.mt-3(type='button', data-bs-toggle='modal', data-bs-target='#exampleModalbalancebox')
+                    | Click Out
+                #exampleModalbalancebox.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalbalancebox', aria-hidden='true')
+                  .modal-dialog.modal-dialog-centered(role='document')
+                    .modal-content
+                      .col-xl-12
+                        .card.balance-box.mb-0
+                          .card-body
+                            .balance-profile
+                              .balance-img
+                                img(src="../assets/images/avatar/9.jpg", alt="user vector")
+                                a(href="user-profile.html").edit-icon
+                                  .icon
+                                   +FeatherSprite('edit-2', 'feather stroke-primary')
+                              span.font-light.d-block Your Balance 
+                              h4.mt-1 $768,987.90
+                              ul 
+                                li
+                                  .balance-item
+                                    .balance-icon-wrap.bg-light-danger
+                                      .balance-icon.bg-danger
+                                        .icon
+                                         +FeatherSprite('arrow-down-right', 'feather') 
+                                    div 
+                                      span.f-12.font-light Investment  
+                                      h4 78.8K
+                                      span.badge.badge-light-danger.rounded-pill -11.67%
+                                li
+                                  .balance-item
+                                    .balance-icon-wrap.bg-light-success 
+                                      .balance-icon.bg-success
+                                        .icon
+                                         +FeatherSprite('arrow-up-right', 'feather')
+                                    div 
+                                      span.f-12.font-light Cash Back
+                                      h4 19.7K
+                                      span.badge.badge-light-success.rounded-pill +10.67%

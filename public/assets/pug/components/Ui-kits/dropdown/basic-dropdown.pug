@@ -1,0 +1,80 @@
+// Basic dropdown
+.card
+    .card-header.pb-0
+        +card-header('Basic dropdown', 'dote','','When the', '.show', 'class add, dropdown appears.')
+    .card-body
+        .common-flex
+            .btn-group
+                button.btn.btn-primary.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false') Dashboard
+                ul.dropdown-menu.dropdown-block(style='')
+                    li
+                        a.dropdown-item(href='#') Project
+                    li
+                        a.dropdown-item(href='#') Ecommerce
+                    li
+                        a.dropdown-item(href='#') Crypto
+            .btn-group
+                button.btn.btn-secondary.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false')  Ecommerce
+                ul.dropdown-menu.dropdown-block
+                    li
+                        a.dropdown-item(href='#') Product
+                    li
+                        a.dropdown-item(href='#') Product details
+                    li
+                        a.dropdown-item(href='#') Cart
+            .btn-group
+                button.btn.btn-tertiary.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false') Ui kits
+                ul.dropdown-menu.dropdown-block(style='')
+                    li
+                        a.dropdown-item(href='#') Typography
+                    li
+                        a.dropdown-item(href='#') Avatars
+                    li
+                        a.dropdown-item(href='#') Grid
+            .btn-group
+                button.btn.btn-danger.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false') Error page
+                ul.dropdown-menu.dropdown-block(style='')
+                    li
+                        a.dropdown-item(href='#') Error 400
+                    li
+                        a.dropdown-item(href='#') Error 403
+                    li
+                        a.dropdown-item(href='#') Error 500
+        .code-box-copy
+            button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#tooltip', title='Copy')
+              i.icofont.icofont-copy
+            pre
+              code.language-html#basic-dropdown
+                | &lt;!--You can use .dropdown-menu and inside added .dropdown-item.*(dropdown list)--&gt;
+                | &lt;div class="btn-group"&gt;
+                |   &lt;button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"&gt;Dashboard&lt;/button&gt;
+                |   &lt;ul class="dropdown-menu dropdown-block"&gt;
+                |     &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Project&lt;/a&gt;&lt;/li&gt;
+                |     &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Ecommerce&lt;/a&gt;&lt;/li&gt;
+                |     &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Crypto&lt;/a&gt;&lt;/li&gt;
+                | &lt;/ul&gt;
+                | &lt;/div&gt;
+                | &lt;div class="btn-group"&gt;
+                |   &lt;button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"&gt; Ecommerce&lt;/button&gt;
+                |   &lt;ul class="dropdown-menu dropdown-block"&gt;
+                |     &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Product&lt;/a&gt;&lt;/li&gt;
+                |     &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Product details&lt;/a&gt;&lt;/li&gt;
+                |     &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Cart&lt;/a&gt;&lt;/li&gt;
+                | &lt;/ul&gt;
+                | &lt;/div&gt;
+                | &lt;div class="btn-group"&gt;
+                |   &lt;button class="btn btn-warning text-black dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"&gt;Ui kits&lt;/button&gt;
+                |   &lt;ul class="dropdown-menu dropdown-block"&gt;
+                |     &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Typography&lt;/a&gt;&lt;/li&gt;
+                |     &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Avatars&lt;/a&gt;&lt;/li&gt;
+                |     &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Grid&lt;/a&gt;&lt;/li&gt;
+                | &lt;/ul&gt;
+                | &lt;/div&gt;
+                | &lt;div class="btn-group"&gt;
+                |   &lt;button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"&gt;Error page&lt;/button&gt;
+                |   &lt;ul class="dropdown-menu dropdown-block"&gt;
+                |     &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Error 400&lt;/a&gt;&lt;/li&gt;
+                |     &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Error 403&lt;/a&gt;&lt;/li&gt;
+                |     &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Error 500&lt;/a&gt;&lt;/li&gt;
+                | &lt;/ul&gt;
+                | &lt;/div&gt;

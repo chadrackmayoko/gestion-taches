@@ -1,0 +1,29 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    include ../../components/loader
+    main#pageWrapper.page-wrapper.compact-wrapper
+        include ../../components/header/header
+        .page-body-wrapper
+          include ../../components/sidebar
+          .page-body
+            .container-fluid
+              +breadcrumb(['Users','Edit Profile'],'Edit Profile')
+            // Container-fluid starts
+            .container-fluid.edit-profile
+              .row
+                .col-xl-4
+                  include ../../components/Users/edit-profile/my-profile
+                .col-xl-8
+                  include ../../components/Users/edit-profile/edit-profile-component
+                .col-md-12
+                  include ../../components/Users/edit-profile/project-profile
+            // Container-fluid ends
+          include ../../components/footer
+    include ../../components/footer-files

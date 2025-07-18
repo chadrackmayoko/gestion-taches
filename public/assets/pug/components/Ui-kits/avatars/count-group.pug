@@ -1,0 +1,99 @@
+//-// Counter avatar
+-
+    var COUNT_AVATAR1 =[
+        {
+            src: 'avatar/4.jpg',
+            imgClass: 'img-40 b-r-10',
+        },
+        {
+            src: 'avatar/5.jpg',
+            imgClass: 'img-40 b-r-10',
+        },
+        {
+            src: 'avatar/6.jpg',
+            imgClass: 'img-40 b-r-10',
+        }
+    ]
+    var COUNT_AVATAR2 =[
+        {
+            src: 'avatar/4.jpg',
+            imgClass: 'img-40 b-r-30',
+        },
+        {
+            src: 'avatar/5.jpg',
+            imgClass: 'img-40 b-r-30',
+        },
+        {
+            src: 'avatar/8.jpg',
+            imgClass: 'img-40 b-r-30',
+        }
+    ]
+
+//-// Counter avatar mixin
+mixin CountAvatar(items)
+    each item in items 
+        li.d-inline-block
+            img(class=item.imgClass, src=`../assets/images/${item.src}`, alt='#')
+
+// Counter avatar
+.card
+    .card-header.pb-0
+        +card-header('Grouping With Counter', 'dote','','Set the group with counter ', '.img-* , .b-r-*', 'class.')
+    .card-body
+        .avatar-showcase
+            .avatars
+                .customers.d-inline-block.avatar-group
+                    ul.d-flex
+                        +CountAvatar(COUNT_AVATAR1)
+                        li.d-inline-block
+                            span.b-r-10 +4
+                .customers.d-inline-block.avatar-group
+                    ul.d-flex
+                        +CountAvatar(COUNT_AVATAR2)
+                        li.d-inline-block
+                            span.b-r-30 +2
+        .code-box-copy
+            button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#example-head' title='Copy')
+              i.icofont.icofont-copy
+            pre
+              code.language-html#avatar-showcase
+                |&lt;!-- You can use status-* class through the set status (.img-* , .b-r-*'). --&gt;
+                |&lt;div class="avatar-showcase"&gt;
+                |&lt;div class="avatars"&gt;
+                |&lt;div class="customers d-inline-block avatar-group"&gt;
+                |&lt;ul class="d-flex"&gt;
+                |&lt;li class="d-inline-block"&gt;
+                |&lt;img class="img-40 b-r-10" src="../assets/images/avatar/4.jpg" alt="#"&gt;
+                |&lt;/li&gt;
+                |&lt;li class="d-inline-block"&gt;
+                |&lt;img class="img-40 b-r-10" src="../assets/images/avatar/5.jpg" alt="#"&gt;
+                |&lt;/li&gt;
+                |&lt;li class="d-inline-block"&gt;
+                |&lt;img class="img-40 b-r-10" src="../assets/images/avatar/6.jpg" alt="#"&gt;
+                |&lt;/li&gt;
+                |&lt;li class="d-inline-block"&gt;
+                |&lt;span class="b-r-10"&gt;+4
+                |&lt;/span&gt;
+                |&lt;/li&gt;
+                |&lt;/ul&gt;
+                |&lt;/div&gt;
+                |&lt;div class="customers d-inline-block avatar-group"&gt;
+                |&lt;ul class="d-flex"&gt;
+                |&lt;li class="d-inline-block"&gt;
+                |&lt;img class="img-40 b-r-30" src="../assets/images/avatar/4.jpg" alt="#"&gt;
+                |&lt;/li&gt;
+                |&lt;li class="d-inline-block"&gt;
+                |&lt;img class="img-40 b-r-30" src="../assets/images/avatar/5.jpg" alt="#"&gt;
+                |&lt;/li&gt;
+                |&lt;li class="d-inline-block"&gt;
+                |&lt;img class="img-40 b-r-30" src="../assets/images/avatar/8.jpg" alt="#"&gt;
+                |&lt;/li&gt;
+                |&lt;li class="d-inline-block"&gt;
+                |&lt;span class="b-r-30"&gt;+2
+                |&lt;/span&gt;
+                |&lt;/li&gt;
+                |&lt;/ul&gt;
+                |&lt;/div&gt;
+                |&lt;/div&gt;
+                |&lt;/div&gt;
+

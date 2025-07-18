@@ -1,0 +1,37 @@
+.card
+    .card-header
+      +card-header('Sizing Tables', '','', 'Example of Extra large table Add', '.table-xl-*.table-lg-*.table-de-*.table-sm -*', 'to create a table.')
+    .card-block.row
+      .col-sm-12.col-lg-12.col-xl-12
+        .table-responsive
+          table.table.table-lg
+            thead
+              tr
+                th(scope='col') Id
+                th(scope='col') Employee Name
+                th(scope='col') Date
+                th(scope='col') Status
+                th(scope='col') Hours
+                th(scope='col') Performance
+            tbody
+              tr
+                th(scope='row') 1
+                td Mark Jecno	
+                td 22/08/2022	
+                td.font-danger On leave	
+                td 0
+                td 29/30
+              tr
+                th(scope='row') 2
+                td Elana Robbert	
+                td 21/08/2022	
+                td.font-success Present
+                td 10
+                td 30/30
+              tr
+                th(scope='row') 3
+                td John Deo	
+                td 18/08/2022
+                td.font-danger On leave	
+                td 8
+                td 28/30

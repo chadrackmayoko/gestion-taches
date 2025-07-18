@@ -1,0 +1,46 @@
+.card
+  .card-header.pb-0
+    +card-header('Date Picker', '','', 'Use the', '.flatpickr-input ', 'through create date picker with javascript.')
+  .card-body.main-flatpickr
+    .card-wrapper.border.rounded-3
+      form.timepicker-wrapper
+        .row
+          label.col-xxl-3.box-col-12.text-start Default Date 
+          .col-xxl-9.box-col-12
+            .input-group.flatpicker-calender
+              input#datetime-local.form-control(type='date' value="2024-05-03")
+        .row
+          label.col-xxl-3.box-col-12.text-start Human Friendly 
+          .col-xxl-9.box-col-12 
+            .input-group.flatpicker-calender
+              input#human-friendly.form-control(type='date')
+        .row
+          label.col-xxl-3.box-col-12.text-start Min-Max Value
+          .col-xxl-9.box-col-12 
+            .input-group.flatpicker-calender
+              input#min-max.form-control(type='date')
+        .row
+          label.col-xxl-3.box-col-12.text-start Disabled Dates
+          .col-xxl-9.box-col-12 
+            .input-group.flatpicker-calender
+              input#disabled-date.form-control(type='date' value="2024-05-03")
+        .row
+          label.col-xxl-3.box-col-12.text-start Multiples Dates
+          .col-xxl-9.box-col-12 
+            .input-group.flatpicker-calender
+              input#multiple-date.form-control(type='date')
+        .row
+          label.col-xxl-3.box-col-12.text-start Customizing Conjunction
+          .col-xxl-9.box-col-12 
+            .input-group.flatpicker-calender
+              input#customize-date.form-control(type='date')
+        .row
+          label.col-xxl-3.box-col-12.text-start  Range
+          .col-xxl-9.box-col-12 
+            .input-group.flatpicker-calender
+              input#range-date.form-control(type='date')
+        .row
+          label.col-xxl-3.box-col-12.text-start  Preloading Dates
+          .col-xxl-9.box-col-12 
+            .input-group.flatpicker-calender
+              input#preloading-date.form-control(type='date')

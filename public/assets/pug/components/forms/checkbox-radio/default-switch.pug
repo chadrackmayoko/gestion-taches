@@ -1,0 +1,32 @@
+.card
+    .card-header.pb-0
+        +card-header('Default Switch', '', '', 'Use the', '.checkbox-solid-* ,.checkbox-* ', 'for bordered checkbox ')
+    .card-body.checkbox-checked
+        .row.g-3
+            .col-md-6.col-xl-4
+                .card-wrapper.solid-border.rounded-3.rtl-input
+                    h6.sub-title.f-w-500 Custom Switches 
+                    .form-check.form-switch
+                        input#flexSwitchCheckDefault.form-check-input(type='checkbox' role='switch')
+                        label.form-check-label(for='flexSwitchCheckDefault') Default switch checkbox input
+                    .form-check.form-switch
+                        input#flexSwitchCheckChecked.form-check-input(type='checkbox' role='switch' checked='')
+                        label.form-check-label(for='flexSwitchCheckChecked') Checked switch checkbox input
+            .col-md-6.col-xl-4
+                .card-wrapper.solid-border.rounded-3.rtl-input
+                    h6.sub-title.f-w-500 Disabled Switches
+                    .form-check.form-switch
+                        input#flexSwitchCheckDisabled.form-check-input(type='checkbox' role='switch' disabled='')
+                        label.form-check-label(for='flexSwitchCheckDisabled') Disabled switch checkbox input
+                    .form-check.form-switch
+                        input#flexSwitchCheckCheckedDisabled.form-check-input(type='checkbox' role='switch' checked='' disabled='')
+                        label.form-check-label(for='flexSwitchCheckCheckedDisabled') Disabled checked switch checkbox input
+            .col-md-12.col-xl-4
+                .card-wrapper.solid-border.rounded-3
+                    h6.sub-title.f-w-500 Right Switches 
+                    .form-check.form-switch.form-check-reverse
+                        input#flexSwitchCheckReverse.form-check-input.ms-2(type='checkbox')
+                        label.form-check-label(for='flexSwitchCheckReverse') Reverse switch checkbox input
+                    .form-check.form-switch.form-check-reverse
+                        input#flexSwitchCheckDisabled1.form-check-input.ms-2(type='checkbox' role='switch' disabled='')
+                        label.form-check-label(for='flexSwitchCheckDisabled1') Disabled switch checkbox input

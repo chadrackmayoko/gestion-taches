@@ -1,0 +1,42 @@
+.card
+    .card-header
+      +card-header('Caption', '','', 'A', '<caption>', 'functions like a heading for a table. It helps users with screen readers to find a table and understand what it’s about and decide if they want to read it.')
+    .card-block.row
+      .col-sm-12.col-lg-12.col-xl-12
+        .table-responsive
+          table.table
+            caption.ms-3 List of users
+            thead
+              tr
+                th(scope='col') Id
+                th(scope='col') Employee Name	
+                th(scope='col') Email
+                th(scope='col') Experience
+                th(scope='col') Sex
+                th(scope='col') Contact No.	
+                th(scope='col') Age
+            tbody
+              tr
+                th(scope='row') 1
+                td Elana Robbert	
+                td ElanaRob@gmail.com	
+                td 1 Year	
+                td Male	
+                td +91 9789887777		
+                td 28	
+              tr
+                th(scope='row') 2
+                td Stiphen Deo		
+                td Stiphen@yahoo.com		
+                td 6 Month		
+                td Female
+                td +91 9874563210		
+                td 22	
+              tr
+                th(scope='row') 3
+                td Genelia Ottre	
+                td Genelia@gmail.com	
+                td 2 Days		
+                td Male	
+                td +91 8794562135		
+                td 24	

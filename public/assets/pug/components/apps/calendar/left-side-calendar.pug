@@ -1,0 +1,29 @@
+.md-sidebar.mb-3
+  a.btn.btn-primary.md-sidebar-toggle(href='javascript:void(0)') calendar filter
+  .md-sidebar-aside.job-left-aside.custom-scrollbar
+    #external-events
+      h4 Draggable Events
+      #external-events-list
+        .fc-event.fc-h-event.fc-daygrid-event.fc-daygrid-block-event
+          .fc-event-main 
+            i.fa.fa-birthday-cake.me-2
+            | Birthday Party
+        .fc-event.fc-h-event.fc-daygrid-event.fc-daygrid-block-event
+          .fc-event-main 
+            i.fa.fa-user.me-2
+            | Meeting With Team.
+        .fc-event.fc-h-event.fc-daygrid-event.fc-daygrid-block-event
+          .fc-event-main 
+            i.fa.fa-plane.me-2
+            | Tour & Picnic
+        .fc-event.fc-h-event.fc-daygrid-event.fc-daygrid-block-event
+          .fc-event-main 
+            i.fa.fa-file-text.me-2
+            | Reporting Schedule
+        .fc-event.fc-h-event.fc-daygrid-event.fc-daygrid-block-event
+          .fc-event-main 
+            i.fa.fa-briefcase.me-2
+            | Lunch & Break
+      p
+        input#drop-remove.checkbox-primary(type='checkbox')
+        label(for='drop-remove') remove after drop

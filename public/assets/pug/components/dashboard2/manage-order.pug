@@ -1,0 +1,79 @@
+//-// Manage Order Products
+-
+    var MANAGEORDER_ITEM =[
+        {
+            url: 'avatar/2.jpg',
+            price: '$254.23',
+            name: 'Elle Amberson',
+            mail: 'Elle34@gmail.com',
+            sale: '564 Sale',
+        },
+        {
+            url: 'avatar/5.jpg',
+            price: '$658.32',
+            name: 'Anna Catmire',
+            mail: 'anna12@gmail.com',
+            sale: '654 Sale',
+        },
+        {
+            url: 'avatar/9.jpg',
+            price: '$352.95',
+            name: 'Laura Dagson',
+            mail: 'laura@gmail.com',
+            sale: '347 Sale',
+        },
+        {
+            url: 'avatar/8.jpg',
+            price: '$852.65',
+            name: 'Rachel Green',
+            mail: 'Rache87@gmail.com',
+            sale: '254 Sale',
+        },
+        {
+            url: 'avatar/13.jpg',
+            price: '$359.95',
+            name: 'Fran Loain',
+            mail: 'fran34@gmail.com',
+            sale: '349 Sale',
+        },
+        {
+            url: 'avatar/7.jpg',
+            price: '$358.94',
+            name: 'Loie Fenter',
+            mail: 'loie234@gmail.com',
+            sale: '584 Sale',
+        }
+    ]
+
+//-// Invoice mixin
+mixin ManageContent(items)
+    each item in items 
+        tr
+            td 
+                .d-flex.gap-2.align-items-center
+                    .flex-shrink-0 
+                        img.img-fluid.img-42.b-r-10(src=`../assets/images/${item.url}`, alt="")
+                    .flex-grow-1 
+                        a(href="user-profile.html") 
+                            h6.f-w-500=item.name
+                            span.f-13=item.mail
+            td 
+                .d-block.text-end
+                    h6.f-w-500=item.price
+                    span.f-w-500=item.sale
+
+// Invoice menu
+.card 
+    .card-header.pb-0
+        h4 Manage Order
+        .dropdown.icon-dropdown
+          button#userdropdown01.btn.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+            i.icon-more-alt
+          .dropdown-menu.dropdown-menu-end(aria-labelledby='userdropdown01')
+            a.dropdown-item(href='#') Weekly
+            a.dropdown-item(href='#') Monthly
+            a.dropdown-item(href='#') Yearly
+    .card-body.manage-order
+        table.table
+            tbody 
+                +ManageContent(MANAGEORDER_ITEM)

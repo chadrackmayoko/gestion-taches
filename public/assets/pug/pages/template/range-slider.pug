@@ -1,0 +1,37 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+-var range_slider  = true;
+-var height_equal  = true;
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    include ../../components/loader
+    main#pageWrapper.page-wrapper.compact-wrapper
+        include ../../components/header/header
+        .page-body-wrapper
+          include ../../components/sidebar
+          .page-body
+            .container-fluid
+              +breadcrumb(['Bonus Ui','Range Slider'],'Range Slider')
+            // Container-fluid starts
+            .container-fluid.range-slider
+              .row
+                .col-xl-6 
+                  include ../../components/Bonus-ui/range-slider/default-rangeslider
+                .col-xl-6 
+                  include ../../components/Bonus-ui/range-slider/steps-rangeslider
+                .col-xl-6 
+                  include ../../components/Bonus-ui/range-slider/min-max
+                .col-xl-6 
+                  include ../../components/Bonus-ui/range-slider/manipulating
+                .col-xl-6 
+                  include ../../components/Bonus-ui/range-slider/disabled-slider
+                .col-xl-6 
+                  include ../../components/Bonus-ui/range-slider/prefix-slider
+            // Container-fluid ends
+          include ../../components/footer
+    include ../../components/footer-files

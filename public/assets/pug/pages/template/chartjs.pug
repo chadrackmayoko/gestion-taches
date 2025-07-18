@@ -1,0 +1,26 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+-var chartjs         = true;
+-var chartjs_custom  = true;
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    include ../../components/loader
+    main#pageWrapper.page-wrapper.compact-wrapper
+        include ../../components/header/header
+        .page-body-wrapper
+          include ../../components/sidebar
+          .page-body
+            .container-fluid
+              +breadcrumb(['Charts','ChartJS'],'ChartJS')
+            // Container-fluid starts
+            .container-fluid
+              .row
+                include ../../components/charts/chartjs-component
+            // Container-fluid ends
+          include ../../components/footer
+    include ../../components/footer-files

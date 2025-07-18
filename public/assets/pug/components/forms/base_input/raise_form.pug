@@ -1,0 +1,51 @@
+.card
+    .card-header.pb-0
+        H4 Raise Style 
+    .card-body
+        form.form.theme-form.raise-form
+            .row
+                .col
+                    .mb-3
+                        label.form-label(for='raiseemail') Email address
+                        input#raiseemail.form-control(type='email' placeholder='name@example.com')
+            .row
+                .col
+                .mb-3
+                    label.form-label(for='raisepwd') Password
+                    input#raisepwd.form-control(type='password' placeholder='Password')
+            .row
+                .col
+                .mb-3
+                    label.form-label(for='raisedisable') Disabled
+                    input#raisedisable.form-control(type='text' disabled='' placeholder='Disabled')
+            .row
+                .col
+                    .mb-3
+                        label.form-label(for='raiseselect') Example select
+                        select#raiseselect.form-select
+                            option 1
+                            option 2
+                            option 3
+                            option 4
+                            option 5
+            .row
+                .col
+                .mb-3
+                    label.form-label(for='raiseselectmulti') Example multiple select
+                    select#raiseselectmulti.form-select(multiple='')
+                        option 1
+                        option 2
+                        option 3
+                        option 4
+                        option 5
+            .row
+                .col
+                .mb-3
+                    label.form-label(for='raisetextarea') Example textarea
+                    textarea#raisetextarea.form-control(rows='3')
+            .row
+                .col
+                .text-end
+                    button.btn.btn-primary.btn-air-light.me-2(type='submit') Submit
+                    input.btn.btn-danger.btn-air-light(type='reset' value='Cancel')
+

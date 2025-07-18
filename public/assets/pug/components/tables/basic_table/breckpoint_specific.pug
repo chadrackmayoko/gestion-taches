@@ -1,0 +1,37 @@
+.card
+    .card-header
+      +card-header('Breckpoint Specific', '','', 'use', '.table-responsive"❴-sm|-md|-lg|-xl|-xxl❵"', 'functions like a heading for a table. It helps users with screen readers to find a table and understand what it is about and decide if they want to read it.')
+    .card-block.row
+      .col-sm-12.col-lg-12.col-xl-12
+        .table-responsive
+          table.table.table-responsive-sm
+            thead
+              tr
+                th(scope='col') Id
+                th(scope='col') Name
+                th(scope='col') Order Id	
+                th(scope='col') Price
+                th(scope='col') Quantity
+                th(scope='col') Total
+            tbody
+              tr
+                th(scope='row') 1
+                td Iphone X Grey	
+                td C12345
+                td $12550	
+                td 1
+                td $1255                 
+              tr
+                th(scope='row') 2
+                td Titan Watch	
+                td A14725	
+                td $120
+                td 2
+                td $250
+              tr
+                th(scope='row') 3
+                td Apple Airpods	
+                td B54213
+                td $210	
+                td 1
+                td $210

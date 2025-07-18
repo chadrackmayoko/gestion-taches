@@ -1,0 +1,40 @@
+.card
+  .card-header
+    h4 Progressbar
+  div
+    .card-block.row
+      .col-sm-12.col-lg-12.col-xl-12
+        .table-responsive
+          table.table.table-bordered.checkbox-td-width
+            tbody
+              tr
+                td Default Progress
+                td.w-50
+                  .progress
+                    .progress-bar.bg-primary(role='progressbar', style='width: 75%', aria-valuenow='75', aria-valuemin='0', aria-valuemax='100')
+                td
+                  span
+                    | Uses a progress bar with class
+                    code progress-bar
+                    |  and background color
+                    code bg-primary, bg-secondary
+                    | also change
+              tr
+                td Striped Progress 
+                td
+                  .progress
+                    .progress-bar.progress-bar-striped.bg-primary(role='progressbar', style='width: 75%', aria-valuenow='75', aria-valuemin='0', aria-valuemax='100')
+                td
+                  span
+                    | Uses a gradient to create a striped effect class.
+                    code progress-bar-striped
+              tr
+                td Progress Sizes
+                td
+                  .progress.lg-progress-bar
+                    .progress-bar.bg-primary(role='progressbar', style='width: 75%', aria-valuenow='75', aria-valuemin='0', aria-valuemax='100')
+                td
+                  span
+                    | Different sized progress. For Default progress, class need
+                    code lg-progress-bar
+                    | on div.

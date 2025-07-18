@@ -1,0 +1,34 @@
+// HTML Tooltip
+.card 
+    .card-header.pb-0
+        +card-header('Wonky Tooltip', 'dote','','Use the', '.wonky-tooltip , .input-group"', 'add animation to shake the tooltip.')
+    .card-body.wonky-tooltip
+        form
+            .input-group
+                input.form-control(type='text' placeholder="Username" aria-label="Username")
+                span.input-group-text.bg-primary
+                    +IconlySprite('Profile', 'svg-w-20 svg-white')
+                    span.tooltip.bg-white.default-border.font-primary Username must consist of "Number or special characters"
+            .input-group
+                input.form-control(type='password' placeholder="Password" aria-label="Password")
+                span.input-group-text.bg-secondary
+                    +IconlySprite('Password', 'svg-w-20 svg-white')
+                    span.tooltip.bg-white.default-border.font-secondary Minimum 8 characters password contains combination
+        .code-box-copy
+            button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#tooltip', title='Copy')
+              i.icofont.icofont-copy
+            pre
+              code.language-html#wonky-tooltip
+                | &lt;!--You can use .wonky-tooltip , .input-group"', 'add animation to shake the tooltip.--&gt;
+                | &lt; div class="input-group"&gt;
+                | &lt; input class="form-control" type="text" placeholder="Username" aria-label="Username"&gt;
+                | &lt; span class="input-group-text bg-primary"&gt;
+                | &lt; svg class="svg-w-20 svg-white"&gt;
+                | &lt; use href="../assets/svg/iconly-sprite.svg#Profile"&gt;&lt;/ use &gt;&lt;/ svg &gt;
+                | &lt; span class="tooltip bg-white default-border font-primary"&gt;Username must consist of "Number or special characters"&lt;/ span &gt;&lt;/ span &gt;&lt;/ div &gt;
+                | &lt; div class="input-group"&gt;
+                | &lt; input class="form-control" type="text" placeholder="Password" aria-label="Password"&gt;
+                | &lt; span class="input-group-text bg-secondary"&gt;
+                | &lt; svg class="svg-w-20 svg-white"&gt;
+                | &lt; use href="../assets/svg/iconly-sprite.svg#Password"&gt;&lt;/ use &gt;&lt;/ svg &gt;
+                | &lt; span class="tooltip bg-white default-border font-secondary"&gt;Minimum 8 characters password contains combination&lt;/ span &gt;&lt;/ span &gt;&lt;/ div &gt;

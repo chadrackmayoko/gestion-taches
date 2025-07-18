@@ -1,0 +1,41 @@
+// Icon with tabs
+.card
+    .card-header.pb-0
+        +card-header('Icons with tabs', '','','Use the', 'nav-link , .show','class to tabs change.')
+    .card-body
+        ul#icon-tab.nav.nav-tabs(role='tablist')
+            li.nav-item
+                a#icon-home-tab.nav-link.active.font-info(data-bs-toggle='tab' href='#icon-home' role='tab' aria-controls='icon-home' aria-selected='true')
+                    i.fa-solid.fa-house.fa-fw
+                    | Home
+            li.nav-item
+                a#profile-icon-tabs.nav-link.font-info(data-bs-toggle='tab' href='#profile-icon' role='tab' aria-controls='profile-icon' aria-selected='false')
+                    i.fa-solid.fa-user.fa-fw
+                    | Profile
+            li.nav-item
+                a#contact-icon-tab.nav-link.font-info(data-bs-toggle='tab' href='#contact-icon' role='tab' aria-controls='contact-icon' aria-selected='false')
+                    i.fa-solid.fa-phone.fa-fw
+                    | Contact
+        #icon-tabContent.tab-content
+            #icon-home.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='icon-home-tab')
+                p.pt-3
+                    | Not limited to any states, boundaries. All over India providing cutting-edge design and website development services for over 12 years. We provide end to end digital solutions, right from designing your website/application development: Domain, Web Hosting, Email Hosting Registration, Search Engine Optimization and other Internet Marketing, Renewal of Services timely and effectively.
+            #profile-icon.tab-pane.fade(role='tabpanel' aria-labelledby='profile-icon-tabs')
+                .pt-3.mb-0
+                    .flex-space.flex-wrap.align-items-center
+                        img.tab-img(src='../assets/images/avatar/2.jpg' alt='profile')
+                        ul.d-flex.flex-column.gap-1
+                            li
+                                strong Visit Us:  
+                                |  278 Green Avenue Oakland, CA 94612
+                            li
+                                strong Mail Us:
+                                |  MichaelMMcGowan@teleworm.us
+                            li
+                                strong Contact Number: 
+                                |  510-767-0025
+            #contact-icon.tab-pane.fade(role='tabpanel' aria-labelledby='contact-icon-tab')
+                p.pt-3.mb-2
+                    | Us Technology offers web &amp; mobile development solutions for all industry verticals.Include a short form using fields that&apos;ll help your business understand who&apos;s contacting them.
+                label.form-label(for='exampleFormControlone') Email address
+                input#exampleFormControlone.form-control(type='email' placeholder='youremail@gmail.com')

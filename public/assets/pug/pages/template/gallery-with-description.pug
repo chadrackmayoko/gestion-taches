@@ -1,0 +1,27 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+-var photoswipe = true;
+-var photoswipe_caption = true;
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    include ../../components/loader
+    main#pageWrapper.page-wrapper.compact-wrapper
+        include ../../components/header/header
+        .page-body-wrapper
+          include ../../components/sidebar
+          .page-body
+            .container-fluid
+              +breadcrumb(['Gallery','Gallery Grid With Description'],'Gallery Grid With Description')
+            // Container-fluid starts
+            .container-fluid
+                 .row 
+                    .col-sm-12
+                        include ../../components/gallery/gallery_with_desription/img_gallery_description
+            // Container-fluid ends
+          include ../../components/footer
+    include ../../components/footer-files

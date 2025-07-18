@@ -1,0 +1,41 @@
+// Heading dropdown
+.card
+    .card-header.pb-0
+        +card-header('With Input Type', 'dote','','Use the checkbox using dropdown type', 'checkbox , radio')
+    .card-body
+        .common-flex
+            btn-group
+                button.btn.btn-warning(type='button' data-bs-toggle='dropdown' aria-expanded='true') Inputs 
+                ul.dropdown-menu.dropdown-block.dropdown-wrapper(style='position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(30px, 185px);' data-popper-placement='bottom-start')
+                    li
+                        .input-group.rounded-0.border-0.shadow-none
+                            .input-group-text
+                                input.form-check-input.mt-0(type='checkbox' value='' aria-label='Checkbox for following text input')
+                            span Default checkbox
+                        .input-group.rounded-0.border-0.shadow-none
+                            .input-group-text
+                                input.form-check-input.mt-0(type='radio' value='' aria-label='Radio button for following text input')
+                            span Default radio
+        .code-box-copy
+            button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#tooltip', title='Copy')
+              i.icofont.icofont-copy
+            pre
+              code.language-html#input-type-dropdown
+                | &lt;!--You can use .dropdown-menu and inside added .dropdown-item.*(dropdown list)--&gt;  
+                | &lt;btn-group&gt;
+                | &lt;button class="btn btn-warning" type="button" data-bs-toggle="dropdown" aria-expanded="false"&gt;Inputs &lt;/button&gt;
+                | &lt;ul class="dropdown-menu dropdown-block p-3"&gt;
+                | &lt;li&gt;
+                | &lt;div class="input-group mb-2 rounded-0 border-0 shadow-none"&gt;
+                | &lt;div class="input-group-text"&gt;
+                | &lt;input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input"&gt;
+                | &lt;/div&gt;&lt;span&gt;Default checkbox&lt;/span&gt;
+                | &lt;/div&gt;
+                | &lt;div class="input-group rounded-0 border-0 shadow-none"&gt;
+                | &lt;div class="input-group-text"&gt;
+                | &lt;input class="form-check-input mt-0" type="radio" value="" aria-label="Radio button for following text input"&gt;
+                | &lt;/div&gt;&lt;span&gt;Default radio&lt;/span&gt;
+                | &lt;/div&gt;
+                | &lt;/li&gt;
+                | &lt;/ul&gt;
+                | &lt;/btn-group&gt;

@@ -1,0 +1,67 @@
+.card
+    .card-header.pb-0
+        +card-header('Variation checkbox', '','', 'We can create any creative design by using', '(type=checkbox)', 'attribute.')
+    .card-body 
+        .row.g-3
+            .col-xl-4.col-md-5
+                .card-wrapper.default-border.rounded-3.h-100.checkbox-checked
+                    h6.sub-title Which of the following activities do you enjoy doing in your free time?
+                    .payment-wrapper
+                        .payment-first
+                            label.d-block
+                                input#check-a.checkbox.checkbox-primary(type='checkbox')
+                                | Reading 
+                    .payment-wrapper
+                        .payment-first
+                            label.d-block
+                                input#check-b.checkbox.checkbox-primary(type='checkbox' checked='')
+                                | Watching TV
+                    .payment-wrapper
+                        .payment-first
+                            label.d-block
+                                input#check-c.checkbox.checkbox-danger(type='checkbox')
+                                | Listening to music
+                    .payment-wrapper
+                        .payment-first
+                            label.d-block
+                                input#check-d.checkbox.checkbox-danger(type='checkbox')
+                                | Playing video games
+                    .payment-wrapper
+                        .payment-first
+                            label.d-block
+                                input#check-e.checkbox.checkbox-primary(type='checkbox')
+                                | Painting/Drawing
+            .col-xl-8.col-md-7
+                .card-wrapper.default-border.rounded-3.h-100.checkbox-checked
+                    section.main-upgrade
+                        div 
+                            i.fa.fa-rocket
+                            h5.mb-2
+                                | It&apos;s time to 
+                                span.font-primary upgrade
+                            p.text-muted.mb-2 Select the Template that best suits your requirements, and you're ready to go!
+                        .variation-box
+                            .selection-box
+                                input#feature1(type='checkbox')
+                                div.custom--mega-checkbox.bg-light-primary
+                                    ul.d-flex.flex-column
+                                        li Voxo
+                                        li.font-primary 270 Sales
+                            .selection-box
+                                input#feature2(type='checkbox')
+                                div.custom--mega-checkbox.bg-light-primary
+                                    ul.d-flex.flex-column
+                                        li Edmin
+                                        li.font-primary 4.8K Sales
+                            .selection-box
+                                input#feature3(type='checkbox')
+                                div.custom--mega-checkbox.bg-light-primary
+                                    ul.d-flex.flex-column
+                                        li Multikart 
+                                        li.font-primary 2.6k Sales
+                            .selection-box
+                                input#feature4(type='checkbox' checked='')
+                                div.custom--mega-checkbox.bg-light-primary
+                                    ul.d-flex.flex-column
+                                        li Viho
+                                        li.font-primary 2k Sales

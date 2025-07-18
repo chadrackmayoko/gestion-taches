@@ -1,0 +1,79 @@
+//-// Task items 
+-
+    var TODO_TASK =[
+        {
+            bgClass: 'line-primary',
+            taskName: 'Task With dropdown menu',
+            subName: 'By Johnny',
+            checked: false,
+            id: "dorpdown44",
+            checkid: "solid5"
+        },
+        {
+            bgClass: 'line-secondary',
+            taskName: 'Badge on the right task',
+            subName: 'This task has show on hover actions!',
+            checked: false,
+            id: "dorpdown55",
+            checkid: "solid4"
+        },
+        {
+            bgClass: 'line-tertiary',
+            taskName: 'Wash the car',
+            subName: 'Written by bob',
+            checked: true,
+            id: "dorpdown66",
+            checkid: "solid3"
+        },
+        {
+            bgClass: 'line-primary',
+            taskName: 'Go grocery shopping',
+            subName: 'A short description for this todo item',
+            checked: false,
+            id: "dorpdown77",
+            checkid: "solid2"
+        },
+        {
+            bgClass: 'line-secondary',
+            taskName: 'Development Task',
+            subName: 'Finish react todo list app',
+            checked: false,
+            id: "dropdown88",
+            checkid: "solid1"
+        }
+    ]
+//-// Mixin
+mixin TodoContent(items)
+    each item in items
+        li.d-flex(class=item.bgClass)
+            .flex-shrink-0
+                .form-check.checkbox.checkbox-solid-primary
+                  input.form-check-input(type='checkbox' checked=item.checked id=item.checkid)
+                  label.form-check-label(for=`${item.checkid}`)
+            .flex-grow-1 
+                a(href="task.html")
+                    h5.f-w-500=item.taskName
+                h6=item.subName
+            //- +FeatherSprite('more-horizontal', 'feather')
+            .dropdown.task-dropdown
+              button.btn.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false' id=item.id)
+                +FeatherSprite('more-horizontal', 'feather')
+              .dropdown-menu.dropdown-menu-end(aria-labelledby=`${item.id}`)
+                a.dropdown-item(href='#') Weekly
+                a.dropdown-item(href='#') Monthly
+                a.dropdown-item(href='#') Yearly
+            
+// Task menu
+.card.task-card
+  .card-header.pb-0
+    h4 Task list
+    .dropdown.icon-dropdown
+      button#userdropdown.btn.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+        i.icon-more-alt
+      .dropdown-menu.dropdown-menu-end(aria-labelledby='userdropdown')
+        a.dropdown-item(href='#') Weekly
+        a.dropdown-item(href='#') Monthly
+        a.dropdown-item(href='#') Yearly
+  .card-body.filled-checkbox
+    ul 
+        +TodoContent(TODO_TASK)

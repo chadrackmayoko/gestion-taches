@@ -1,0 +1,34 @@
+// Heading dropdown
+.card
+    .card-header.pb-0
+        +card-header('Heading dropdown', 'dote','','Main heading and any sub-content in dropdown.')
+    .card-body.rtl-dropdown.heading-dropdown
+        .common-flex
+            .btn-group
+                button.btn.btn-success.rounded-pill.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='true') Party
+                ul.dropdown-menu.dropdown-block.p-0(style='position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(0px, 37px);' data-popper-placement='bottom-start')
+                    li
+                        a.dropdown-item.f-w-500.fs-6(href='#') Party List 
+                        ul
+                            li
+                                a.dropdown-item(href='javascript:void(0)') Balloons
+                            li
+                                a.dropdown-item(href='javascript:void(0)') Cake 
+                            li
+                                a.dropdown-item(href='javascript:void(0)') Ribbons 
+        .code-box-copy
+            button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#tooltip', title='Copy')
+              i.icofont.icofont-copy
+            pre
+              code.language-html#heading-dropdown
+                | &lt;!--You can use .dropdown-menu and inside added .dropdown-item.*(dropdown list)--&gt;  
+                | &lt;div class="btn-group"&gt;
+                | &lt;button class="btn btn-success rounded-pill dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"&gt;Party&lt;/button&gt;
+                | &lt;ul class="dropdown-menu dropdown-block"&gt;
+                | &lt;li"&gt;&lt;a class="dropdown-item fw-bold fs-6"&gt;Party List &lt;/a&gt;&lt;/li&gt;
+                | &lt;ul&gt;
+                | &lt;li&gt; &lt;a class="dropdown-item"&gt;Balloons&lt;/a&gt;&lt;/li&gt;
+                | &lt;li&gt; &lt;a class="dropdown-item"&gt;Cake &lt;/a&gt;&lt;/li&gt;
+                | &lt;/ul&gt;
+                | &lt;/ul&gt;
+                | &lt;/div&gt;

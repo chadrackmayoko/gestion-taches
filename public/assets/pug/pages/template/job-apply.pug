@@ -1,0 +1,31 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+-var pikaday                = true;
+-var choice                 = true;
+-var md_sidebar             = true;
+-var job_apply              = true;
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    include ../../components/loader
+    main#pageWrapper.page-wrapper.compact-wrapper
+        include ../../components/header/header
+        .page-body-wrapper
+          include ../../components/sidebar
+          .page-body
+            .container-fluid
+              +breadcrumb(['Job Search','Apply'],'Apply')
+            // Container-fluid starts
+            .container-fluid.job-cards-view
+              .row 
+                .col-xl-3.xl-40.box-col-12
+                  include ../../components/Job-search/job-apply/job-apply-components
+                .col-xl-9.xl-60.box-col-12
+                  include ../../components/Job-search/job-apply/job-apply-card-components
+            // Container-fluid ends
+          include ../../components/footer
+    include ../../components/footer-files

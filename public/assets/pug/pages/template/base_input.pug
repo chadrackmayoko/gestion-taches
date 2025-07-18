@@ -1,0 +1,35 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    include ../../components/loader
+    main#pageWrapper.page-wrapper.compact-wrapper
+        include ../../components/header/header
+        .page-body-wrapper
+          include ../../components/sidebar
+          .page-body
+            .container-fluid
+              +breadcrumb(['Form Controls','Base Input'],'Base Input')
+            // Container-fluid starts
+            .container-fluid
+              .row 
+                .col-md-6
+                  include ../../components/forms/base_input/form_example
+                .col-md-6
+                  include ../../components/forms/base_input/size
+                .col-md-6
+                  include ../../components/forms/base_input/input_type
+                .col-md-6
+                  include ../../components/forms/base_input/flat_form
+                .col-md-6
+                  include ../../components/forms/base_input/edges_form
+                .col-md-6
+                  include ../../components/forms/base_input/raise_form
+            // Container-fluid starts
+          include ../../components/footer
+    include ../../components/footer-files

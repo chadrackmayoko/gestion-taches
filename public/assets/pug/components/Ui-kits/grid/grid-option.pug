@@ -1,0 +1,76 @@
+// Grid Option Card
+.card
+    .card-header.pb-0
+        +card-header('Grid Option', '','','Bootstrap grid system allow all six breakpoints, and any breakpoints you can customize.' , '', '')
+    .card-body
+        .table-responsive
+            table.table.table-bordered.table-striped
+                thead
+                    tr
+                        th
+                        th.text-center
+                            | Extra small
+                            br
+                            small &lt;576px
+                        th.text-center
+                            | Small
+                            br
+                            small &ge;576px
+                        th.text-center
+                            | Medium
+                            br
+                            small &ge;768px
+                        th.text-center
+                            | Large
+                            br
+                            small &ge;992px
+                        th.text-center
+                            | Extra large
+                            br
+                            small &ge;1200px
+                        th.text-center
+                            | Extra extra large
+                            br
+                            small.digits &ge;1400px
+                tbody
+                    tr
+                        th.text-nowrap(scope='row') Grid behavior
+                        td Horizontal at all times
+                        td(colspan='5') Collapsed to start, horizontal above breakpoints
+                    tr
+                        th.text-nowrap(scope='row') Max container width
+                        td None (auto)
+                        td 540px
+                        td 720px
+                        td 960px
+                        td 1140px
+                        td 1320px
+                    tr
+                        th.text-nowrap(scope='row') Class prefix
+                        td
+                            code .col-
+                        td
+                            code .col-sm-
+                        td
+                            code .col-md-
+                        td
+                            code .col-lg-
+                        td
+                            code .col-xl-
+                        td
+                            code .col-xxl-
+                    tr
+                        th.text-nowrap(scope='row') # of columns
+                        td(colspan='6') 12
+                    tr
+                        th.text-nowrap(scope='row') Gutter width
+                        td(colspan='6') 1.5rem (.75rem on left and right)
+                    tr
+                        th.text-nowrap(scope='row') Nestable
+                        td(colspan='6') Yes
+                    tr
+                        th.text-nowrap(scope='row') Offsets
+                        td(colspan='6') Yes
+                    tr
+                        th.text-nowrap(scope='row') Column ordering
+                        td(colspan='6') Yes

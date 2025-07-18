@@ -1,0 +1,19 @@
+.card
+  .card-header.pb-0 
+    +card-header('Centered modal ','','', 'Use the ','.modal-dialog-centered , data-bs-target ','through centered modal.')
+  .card-body 
+    //Centered modal
+    button.btn.btn-success(type='button', data-bs-toggle='modal', data-bs-target='#exampleModalCenter1')
+      | Vertically centered
+    #exampleModalCenter1.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenter1', aria-hidden='true')
+      .modal-dialog.modal-dialog-centered(role='document')
+        .modal-content
+          .modal-body 
+            .modal-toggle-wrapper   
+              ul.modal-img
+                li 
+                  img(src="../assets/images/gif/danger.gif", alt="error")
+              h4.text-center.pb-2 Ohh! Something went wrong!
+              p.text-center
+                | Attackers on malicious activity may trick you into doing something dangrous like installing software or revealing your personal informations.
+              button.btn.btn-secondary.d-flex.m-auto(type='button', data-bs-dismiss='modal') Close

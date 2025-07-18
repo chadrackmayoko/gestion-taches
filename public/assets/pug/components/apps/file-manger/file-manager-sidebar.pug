@@ -1,0 +1,51 @@
+.card
+    .card-body
+        ul 
+            li     
+                .btn.btn-primary
+                    +FeatherSprite('home', 'feather')                       
+                    | Home 
+            li
+                .btn.bg-light.font-light
+                    +FeatherSprite('folder', 'feather')
+                    | All    
+            li
+                .btn.bg-light.font-light
+                    +FeatherSprite('clock', 'feather')
+                    | Recent    
+            li
+                .btn.bg-light.font-light
+                    +FeatherSprite('star', 'feather')
+                    | Starred      
+            li
+                .btn.bg-light.font-light
+                    +FeatherSprite('alert-circle', 'feather')
+                    | Recovery
+            li
+                .btn.bg-light.font-light
+                    +FeatherSprite('trash-2', 'feather')
+                    | Deleted 
+        hr
+        ul
+            li 
+                button.btn.btn-outline-primary
+                    +FeatherSprite('database', 'feather')
+                    | Storage
+            li.m-t-15  
+                .progress.sm-progress-bar.mb-3 
+                    .progress-bar.bg-primary(role='progressbar' style='width: 25%' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100')
+                h6.f-w-500 25 GB of 100 GB used
+        hr
+        ul
+            li
+                button.btn.btn-outline-primary
+                    +FeatherSprite('grid', 'feather') 
+                    | Pricing plan
+            li 
+                .pricing-plan
+                    h6 Trial Version 
+                    h5 FREE
+                    p 100 GB Space 
+                    .btn.btn-outline-primary.btn-xs
+                        | Selected
+                    img.bg-img(src='../assets/images/file-manager/folder.png', alt='') 

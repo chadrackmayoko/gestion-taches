@@ -1,0 +1,28 @@
+-var sidebar                = true;
+-var theme_customizer       = true;
+-var scrollbar              = true;
+-var dropzone = true;
+
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    include ../../components/tap-top
+    include ../../components/loader
+    main#pageWrapper.page-wrapper.compact-wrapper
+        include ../../components/header/header
+        .page-body-wrapper
+          include ../../components/sidebar
+          .page-body
+            .container-fluid
+              +breadcrumb(['Project','Project Create'],'Project Create')
+            // Container-fluid starts
+            .container-fluid
+              .row  
+                .col-sm-12  
+                  include ../../components/apps/project-form.pug
+
+            // Container-fluid starts 
+          include ../../components/footer
+    include ../../components/footer-files 

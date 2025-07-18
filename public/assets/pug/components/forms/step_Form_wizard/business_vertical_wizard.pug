@@ -1,0 +1,212 @@
+.card
+  .card-header
+    +card-header('Business vertical wizard', '','', '', '', '')
+  .card-body
+    .horizontal-wizard-wrapper.vertical-options.vertical-variations
+      .row.g-3
+        .col-xl-3.main-horizontal-header
+          #vertical-n-wizard-tab.nav.nav-pills.horizontal-options(role='tablist' aria-orientation='vertical')
+              a#wizard-n-info-tab.nav-link.active(data-bs-toggle='pill' href='#wizard-n-info' role='tab' aria-controls='wizard-n-info' aria-selected='true') 
+                .horizontal-wizard
+                  .stroke-icon-wizard.bg-light-primary
+                    span 1
+                  .horizontal-wizard-content 
+                    h6 Choose account
+              a#bank-n-wizard-tab.nav-link(data-bs-toggle='pill' href='#bank-n-wizard' role='tab' aria-controls='bank-n-wizard' aria-selected='false') 
+                .horizontal-wizard
+                  .stroke-icon-wizard.bg-light-primary
+                    span 2
+                  .horizontal-wizard-content 
+                    h6 Business settings
+              a#inquiry-n-wizard-tab.nav-link(data-bs-toggle='pill' href='#inquiry-n-wizard' role='tab' aria-controls='inquiry-n-wizard' aria-selected='false') 
+                .horizontal-wizard
+                  .stroke-icon-wizard.bg-light-primary
+                    span 3
+                  .horizontal-wizard-content 
+                    h6 Contact details
+              a#pay-n-wizard-tab.nav-link(data-bs-toggle='pill' href='#pay-n-wizard' role='tab' aria-controls='pay-n-wizard' aria-selected='false') 
+                .horizontal-wizard
+                  .stroke-icon-wizard.bg-light-primary
+                    span 4
+                  .horizontal-wizard-content 
+                    h6 Pay details
+              a#successful-n-wizard-tab.nav-link(data-bs-toggle='pill' href='#successful-n-wizard' role='tab' aria-controls='successful-n-wizard' aria-selected='false') 
+                .horizontal-wizard
+                  .stroke-icon-wizard.bg-light-primary
+                    span 5
+                  .horizontal-wizard-content 
+                    h6 Completed
+        .col-xl-9
+          #vertical-n-wizard-tabContent.tab-content.dark-field
+            #wizard-n-info.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='wizard-n-info-tab')
+              form.row.g-3.needs-validation(novalidate='')
+                .col-12
+                  h4 Select the type of account
+                  p It has long been known that distracting information on a page will lose a reader's attention.
+                .col-12 
+                  .form-check.radio.ps-0.select-account
+                    ul.radio-wrapper
+                      li 
+                        input#radioOptionWizard1.form-check-input(type='radio', name='radio2', value='option2')
+                        label.form-check-label.mb-0(for='radioOptionWizard1')
+                          i.fa.fa-university
+                          span.d-flex.flex-column
+                            span Business 
+                            span Search your business information please check it
+                      li 
+                        input#radioOptionWizard2.form-check-input(type='radio', name='radio2', value='option2' checked='')
+                        label.form-check-label.mb-0(for='radioOptionWizard2')
+                          i.fa.fa-user
+                          span.d-flex.flex-column
+                            span Personal 
+                            span Search your personal information please check it
+                .col-12.text-end
+                  button.btn.btn-primary Continue
+            #bank-n-wizard.tab-pane.fade(role='tabpanel' aria-labelledby='bank-n-wizard-tab')
+              form.row.g-3.needs-validation(novalidate='')
+                .col-md-6
+                  label.form-label(for='AccountName') Account Name
+                    span.font-danger *
+                  input#AccountName.form-control(type='text' required='')
+                  .valid-feedback
+                    | Looks good!
+                .col-md-6
+                    label.form-label Email
+                      span.font-danger *
+                    input.form-control(type='text', placeholder='org@superrito.com', required='required')
+                .col-12 
+                  label.form-label(for='example-description') Select a project and write a description for it
+                  textarea#example-description.form-control(rows='3')
+                .col-12 
+                  section.main-upgrade
+                    div
+                      i.fa.fa-rocket
+                      h4.mb-2
+                        | Select team size with 
+                        span.font-primary projects
+                      p.text-muted.mb-2 Agile teams are cross-functional and made up of 5-11 on a regular basis team member.
+                    .variation-box
+                      .selection-box
+                        input(type='checkbox')
+                        div.custom--mega-checkbox
+                          ul.flex-column
+                            li Tivo 
+                            li.font-primary 2-3 Members 
+                      .selection-box
+                        input(type='checkbox')
+                        div.custom--mega-checkbox
+                          ul.flex-column
+                            li Edmin
+                            li.font-primary 4-5 Members 
+                      .selection-box
+                        input(type='checkbox')
+                        div.custom--mega-checkbox
+                          ul.flex-column
+                            li Multikart
+                            li.font-primary 2 Members 
+                      .selection-box
+                        input(type='checkbox' checked='')
+                        div.custom--mega-checkbox
+                          ul.flex-column
+                            li Roxo
+                            li.font-primary 1 Members 
+                .col-12.text-end 
+                  button.btn.btn-primary Previous
+                  button.btn.btn-primary Continue
+            #inquiry-n-wizard.tab-pane.fade(role='tabpanel' aria-labelledby='inquiry-n-wizard-tab')
+              form.row.g-3.needs-validation(novalidate='')
+                .col-12
+                  h6 Contact details
+                  p Please visit the documentation page if you require further information.
+                .col-sm-6
+                  label.form-label(for='validationCustom-select') Organization Name
+                    span.font-danger *
+                  input#validationCustom-select.form-control(type='text' placeholder='Gekko & Co.' required='')
+                  .valid-feedback
+                    | Looks good!
+                .col-sm-6
+                    label.form-label Email
+                      span.font-danger *
+                    input.form-control(type='text', placeholder='org@support.com', required='required')
+                .col-12
+                  label.form-label(for='validationCustom-select') Join organization type
+                    span.font-danger *
+                  select.form-select.f-w-400.f-14.text-gray(aria-label='Default select example') 
+                    option(selected='' disabled) Join organization type
+                    option(value='1') Technology
+                    option(value='2') Culture
+                    option(value='3') NGO 
+                    option(value='3') Environment
+                    option(value='3') Life cycle
+                .col-12 
+                  label.form-label(for='organizationDescription') Organization description
+                  textarea#organizationDescription.form-control(placeholder='Share your problems and another issues' required='')
+                  .invalid-feedback
+                    | Please enter a message in the box.
+                .col-12.text-end 
+                  button.btn.btn-primary Previous
+                  button.btn.btn-primary Continue 
+            #pay-n-wizard.tab-pane.fade(role='tabpanel' aria-labelledby='pay-n-wizard-tab')
+              form.row.g-3.needs-validation(novalidate='')
+                .col-md-6
+                  label.form-label(for='cardHolder') Card Holder
+                  input#cardHolder.form-control(type='text' required='')
+                  .invalid-feedback
+                    | Please enter your valid name
+                  .valid-feedback 
+                    | Looks's Good!
+                .col-md-6
+                  label.form-label(for='cardNumber') Card Number
+                  input#cardNumber.form-control(type='text' required='' placeholder='xxxx xxxx xxxx xxxx')
+                  .invalid-feedback
+                    | Please enter your valid number
+                  .valid-feedback 
+                    | Looks's Good!
+                .col-12 
+                  .row.g-3
+                    .col-md-6
+                      label.form-label(for='expiration') Expiration(MM/YY)
+                      .row.g-3
+                        .col-md-6
+                          input#expiration.form-control(type='number' required='' placeholder='xx/xx')
+                          .invalid-feedback
+                            | Please enter your valid number
+                          .valid-feedback 
+                            | Looks's Good!
+                        .col-md-6.form
+                          select.form-select.f-w-400.f-14.text-gray(aria-label='Default select example') 
+                            option(selected='' disabled) Year
+                            option(value='1') 2024
+                            option(value='2') 2024
+                            option(value='3') 2025
+                            option(value='3') 2026
+                            option(value='3') 2027
+                            option(value='3') 2028
+                            option(value='3') 2029
+                            option(value='3') 2030
+                            option(value='3') 2031
+                            option(value='3') 2032
+                            option(value='3') 2033
+                            option(value='3') 2034
+                            option(value='3') 2035
+                    .col-md-6
+                      label.form-label(for='cvvNumber-1') CVV Number
+                      input#cvvNumber-1.form-control(type='text' required='')
+                      .invalid-feedback
+                        | Please enter your valid number
+                      .valid-feedback 
+                        | Looks's Good!
+                .col-12
+                  .form-check.mb-0
+                    input#invalidCheckboxWizard.form-check-input(type='checkbox' value='' required='')
+                    label.form-check-label.mb-0(for='invalidCheckboxWizard')
+                      | Agree to terms and conditions
+                    .invalid-feedback
+                      | You must agree before submitting.
+                .col-12.text-end 
+                  button.btn.btn-primary Previous
+                  button.btn.btn-primary Continue 
+            #successful-n-wizard.tab-pane.fade(role='tabpanel' aria-labelledby='successful-n-wizard-tab')
+              .form-completed
+                img(src="../assets/images/gif/successful.gif", alt="successful")
+                h6 Successfully Completed    

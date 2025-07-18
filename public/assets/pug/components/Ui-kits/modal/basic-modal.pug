@@ -1,0 +1,138 @@
+// Basic modal
+.card
+    .card-header.pb-0
+        +card-header('Basic modal', '','','Different types of basic modals using like', 'simple/scrolling/tooltips/grid/varying modal','')
+    .card-body.badge-spacing
+        // Simple demo
+        button.btn.btn-secondary.px-xl-2.px-xxl-3(type='button', data-bs-toggle='modal', data-original-title='test', data-bs-target='#exampleModal') Simple
+        #exampleModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModal', aria-hidden='true')
+            .modal-dialog(role='document')
+                .modal-content
+                    .modal-body
+                        .modal-toggle-wrapper 
+                            h4
+                                | Up to 
+                                strong.font-danger 85% OFF
+                                | , Hurry Up Online Shopping
+                            .modal-img 
+                                img(src="../assets/images/gif/online-shopping.gif", alt="online-shopping")
+                            p.text-sm-center Our difficulty in finding regular clothes that was of great quality, comfortable, and didn't impact the environment given way to Creatures of Habit.
+                            button.btn.bg-primary.d-flex.align-items-center.gap-2.text-light.ms-auto(type='button', data-bs-dismiss='modal') Explore More
+                                +FeatherSprite('arrow-right', 'feather') 
+        // Scrolling long content
+        button.btn.btn-success.px-xl-2.px-xxl-3(type='button', data-bs-toggle='modal', data-bs-target='#exampleModalLong')
+            | Scrolling content
+        #exampleModalLong.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLongTitle', aria-hidden='true')
+            .modal-dialog(role='document')
+                .modal-content
+                    .modal-header
+                        h5#exampleModalLongTitle.modal-title Scrolling modal
+                        button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close')
+                    .modal-body
+                        h6 Wed designer
+                        .d-flex.mt-3
+                            .flex-shrink-0
+                                +FeatherSprite('arrow-right-circle', 'feather svg-modal')
+                            .flex-grow-1.ms-2
+                                p
+                                    | For a site to be successful, a designer must be able to communicate their ideas, chat with a firm about what they want, and inquire about the target audience.
+                        .d-flex.mt-2
+                            .flex-shrink-0
+                                +FeatherSprite('arrow-right-circle', 'feather svg-modal')
+                            .flex-grow-1.ms-2
+                                p
+                                    | As a web designer, you either prefer to work freelance for several different businesses at once or you may choose to work for just one. In either case, you'll need good time management skills to keep several projects moving forward.
+                        .d-flex.mt-2
+                            .flex-shrink-0
+                                +FeatherSprite('arrow-right-circle', 'feather svg-modal')
+                            .flex-grow-1.ms-2
+                                p
+                                    | Although a designer doesn't write the code that makes a site work, it doesn't hurt to have a basic understanding of HTML or CSS to make minor adjustments to a site. You'll find it simpler to edit templates, improve typefaces, or change item placements if you have a basic understanding of how things work.
+                        .d-flex.my-2
+                            .flex-shrink-0
+                                +FeatherSprite('arrow-right-circle', 'feather svg-modal')
+                            .flex-grow-1.ms-2
+                                p.pb-4
+                                    | Most businesses employ a certain font or typography so that clients can quickly distinguish them from their rivals. Since designers now have access to a wider variety of fonts, firms may more easily and precisely communicate their brands through typography.
+                        h6 UX designer 
+                        .d-flex.mt-3
+                            .flex-shrink-0
+                                +FeatherSprite('arrow-right-circle', 'feather svg-modal') 
+                            .flex-grow-1.ms-2
+                                p
+                                    | User research, persona creation, building wireframes and interactive prototypes, and testing ideas are among the common tasks of a UX designer. These duties can differ greatly between organizations.
+                        .d-flex.mt-3
+                            .flex-shrink-0
+                                +FeatherSprite('arrow-right-circle', 'feather svg-modal') 
+                            .flex-grow-1.ms-2
+                                p
+                                    | Create solutions that will be helpful for the issues and situations that exist right now, not for those that will. With the right materials, assist people in organizing their time, completing things more quickly, and optimizing it.
+                        .d-flex.mt-3
+                            .flex-shrink-0
+                                +FeatherSprite('arrow-right-circle', 'feather svg-modal') 
+                            .flex-grow-1.ms-2
+                                p
+                                    | Based on the data received from users, improve them. Adapt existing solutions to the requirements, hopes, difficulties, and expectations of users.
+                        .d-flex.mt-3
+                            .flex-shrink-0
+                                +FeatherSprite('arrow-right-circle', 'feather svg-modal') 
+                            .flex-grow-1.ms-2
+                                p
+                                    | Keep in mind that you are creating solutions to particular challenges for a particular population living in a particular habitat. Always remember to correctly contextualise your thoughts and determine whether they are actually appropriate for the situation. It's sometimes necessary to concede that a digital solution is not the most appropriate choice in a certain circumstance.
+                    .modal-footer
+                        button.btn.btn-secondary(type='button', data-bs-dismiss='modal') Close
+                        button.btn.btn-primary(type='button') Save changes
+        // Tooltips and popovers modal
+        button.btn.btn-info.px-xl-2.px-xxl-3(type='button', data-bs-toggle='modal', data-bs-target='#tooltipmodal')
+            | Tooltips and popovers
+        #tooltipmodal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='tooltipmodal', aria-hidden='true')
+            .modal-dialog.modal-dialog-centered(role='document')
+                .modal-content
+                    .modal-header
+                        h5.modal-title Tooltip and popover modal
+                        button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close')
+                    .modal-body
+                        h5 Popover in a modal
+                        p.mt-2
+                            | This 
+                            a.btn.btn-success.popover-test.btn-sm(href='#', role='button', title='this is amazing content', data-bs-toggle="popover") button
+                            |  triggers a popover on click.
+                        hr
+                        h5 Tooltips in a modal
+                        p.mt-2
+                            a.tooltip-test.font-primary(href='#', title='Tooltip', data-bs-toggle="tooltip") This link
+                            |  and 
+                            a.tooltip-test.font-primary(href='#', title='Tooltip', data-bs-toggle="tooltip") that link
+                            |  have tooltips on hover.
+                    .modal-footer
+                        button.btn.btn-secondary(type='button', data-bs-dismiss='modal') Close
+                        button.btn.btn-primary(type='button') Save changes
+        //varying modal content
+        button.btn.btn-primary.px-xl-2.px-xxl-3(type='button', data-bs-toggle='modal', data-bs-target='#exampleModalgetbootstrap', data-whatever='@getbootstrap') Open modal for Edmin
+        #exampleModalgetbootstrap.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalgetbootstrap', aria-hidden='true')
+            .modal-dialog(role='document')
+                .modal-content
+                    .modal-toggle-wrapper.social-profile.text-start.dark-sign-up
+                        h3.modal-header.justify-content-center.border-0 EDMIN SIGN-UP
+                        .modal-body
+                            form.row.g-3.needs-validation(novalidate='')
+                                .col-md-6
+                                    label.form-label(for='validationCustom01') First name
+                                    input#validationCustom01.form-control(type='text' placeholder='Enter your name' required='')
+                                    .valid-feedback
+                                        | Looks good!
+                                .col-md-6
+                                    label.form-label(for='validationCustom02') Last name
+                                    input#validationCustom02.form-control(type='text' placeholder='Enter your surname' required='')
+                                    .valid-feedback
+                                        | Looks good!
+                                .col-md-12
+                                    .mb-3
+                                        label.form-label(for='exampleFormControlInput1') Email address
+                                        input#exampleFormControlInput1.form-control(type='email' placeholder='Edmintheme@gmail.com')
+                                .col-md-12 
+                                    .form-check.mb-3
+                                        input#flexCheckDefault.form-check-input(type='checkbox' value='')
+                                        label.form-check-label.d-block.mb-0(for='flexCheckDefault')
+                                            | You accept our Terms and Privacy Policy by clicking Submit below.
+                                    button.btn.btn-primary(type='submit') Sign Up

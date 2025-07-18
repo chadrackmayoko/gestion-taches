@@ -1,0 +1,18 @@
+// Lists with checkbox
+.card
+    .card-header.pb-0
+        +card-header('Lists with checkbox', '','','Use the', '.form-check-input','to check your checkbox.')
+    .card-body.dark-list
+        ul.list-group
+            li.list-group-item
+                input#firstCheckbox.me-3.checkbox-primary.active(type='checkbox' value='')
+                label.form-check-label.font-primary.mb-0(for='firstCheckbox') Auto Start
+            li.list-group-item
+                input#secondCheckbox.me-3.checkbox-secondary(type='checkbox' value='')
+                label.form-check-label.font-secondary.mb-0(for='secondCheckbox') Auto Update
+            li.list-group-item
+                input#thirdCheckbox.me-3.checkbox-success(type='checkbox' value='')
+                label.form-check-.font-success.mb-0(for='thirdCheckbox') Don&apos;t check auth key
+            li.list-group-item
+                input#fourCheckbox.me-3.checkbox-warning(type='checkbox' value='')
+                label.form-check-label.font-warning.mb-0(for='fourCheckbox') Success all

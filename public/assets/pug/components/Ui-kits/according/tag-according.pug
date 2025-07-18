@@ -1,0 +1,20 @@
+// Horizontal accordion
+.card
+    .card-header.pb-0
+        +card-header('Different tag accordion', 'dote','','you can also use a link with the href attribute', '(role="button"), data-bs-toggle="collapse"','is required.')
+    .card-body
+        p.mb-2.common-flex
+            a.btn.btn-info(data-bs-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+                | Link with href
+            button.btn.btn-info(type='button' data-bs-toggle='collapse' data-bs-target='#collapseExample' aria-expanded='false' aria-controls='collapseExample')
+                | Button with data-bs-target
+        #collapseExample.collapse
+            .card.card-body.default-border.mb-0
+                | Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+        .code-box-copy
+            button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#tooltip', title='Copy')
+              i.icofont.icofont-copy
+            pre
+              code.language-html#tag-according
+                | &lt;a class="btn btn-info" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"&gt;Link with href&lt;/a&gt;
+                | &lt;button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"&gt;Button with data-bs-target&lt;/button&gt;
