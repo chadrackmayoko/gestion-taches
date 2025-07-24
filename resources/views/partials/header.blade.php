@@ -252,7 +252,7 @@
               <li class="profile-dropdown custom-dropdown">
                 <div class="d-flex align-items-center"><img src="{{asset('assets/images/profile.png')}}" alt="">
                   <div class="flex-grow-1"> 
-                    <h5>Wade Warren</h5><span>UI Designer</span>
+                    <h5>{{$user->name}}</h5><span>UI Designer</span>
                   </div>
                 </div>
                 <div class="custom-menu overflow-hidden">
@@ -260,7 +260,7 @@
                     <li class="d-flex"> 
                       <svg class="svg-color">
                         <use href="{{asset('assets/svg/iconly-sprite.svg')}}#Profile"></use>
-                      </svg><a class="ms-2" href="user-profile.html">Account</a>
+                      </svg><a class="ms-2" href="{{route('profile.index')}}">Account</a>
                     </li>
                     <li class="d-flex"> 
                       <svg class="svg-color">
@@ -273,10 +273,16 @@
                       </svg><a class="ms-2" href="to-do.html">Task</a>
                     </li>
                     <li class="d-flex"> 
-                      <svg class="svg-color">
-                        <use href="{{asset('assets/svg/iconly-sprite.svg')}}#Login"></use>
-                      </svg><a class="ms-2" href="login.html">Log Out</a>
-                    </li>
+  <form method="POST" action="{{ route('logout') }}">
+    @csrf
+    <button type="submit" class="d-flex align-items-center border-0 bg-transparent p-0">
+      <svg class="svg-color">
+        <use href="{{ asset('assets/svg/iconly-sprite.svg') }}#Login"></use>
+      </svg>
+      <span class="ms-2">Log Out</span>
+    </button>
+  </form>
+</li>
                   </ul>
                 </div>
               </li>

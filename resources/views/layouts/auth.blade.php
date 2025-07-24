@@ -7,7 +7,7 @@
     <meta name="description" content="Edmin admin is super flexible, powerful, clean &amp; modern responsive bootstrap admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Edmin admin template, best javascript admin, dashboard template, bootstrap admin template, responsive admin template, web app">
     <meta name="author" content="pixelstrap">
-    <title>@yield('title', 'App task')</title>
+    <title>@yield('title', 'login')</title>
     <!-- Favicon icon-->
     <link rel="icon" href="{{asset('assets/images/favicon/favicon.png')}}" type="image/x-icon">
     <link rel="shortcut icon" href="{{asset('assets/images/favicon/favicon.png')}}" type="image/x-icon">
@@ -28,55 +28,29 @@
     <!-- Themify Icon css -->
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/vendors/themify-icons/themify-icons/css/themify.css')}}">
     <!-- Animation css -->
-    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/vendors/animate.css/animate.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/vendors/animate.css')}}/animate.css')}}">
     <!-- Whether Icon css-->
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/vendors/weather-icons/css/weather-icons.min.css')}}">
-    <!-- Apex Chart css-->
-    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/vendors/apexcharts/dist/apexcharts.css')}}">
-    <!-- Data Table css-->
-    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/vendors/simple-datatables/dist/style.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/vendors/scrollbar.css')}}">
     <!-- App css-->
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
     <link id="color" rel="stylesheet" href="{{asset('assets/css/color-1.css')}}" media="screen">
   </head>
   <body>
 
-    @include('partials.taptop')
-    @include('partials.loader')
-    <main class="page-wrapper compact-wrapper" id="pageWrapper">
-    @include('partials.header' , ['user' => $user])
-    <div class="page-body-wrapper">
-     <!-- Page sidebar start-->
-        <div class="overlay"></div>
-    @include('partials.aside')
-    @yield('content')
-     @include('partials.footer')
-    </div>
-    </main>
 
-<!-- jquery-->
-    <script src="{{asset('assets/js/vendors/jquery/dist/jquery.min.js')}}"></script>
-    <!-- bootstrap js-->
-    <script src="{{asset('assets/js/vendors/bootstrap/dist/js/bootstrap.bundle.min.js')}}"></script>
-    <script src="{{asset('assets/js/config.js')}}"></script>
-    <!-- Sidebar js-->
-    <script src="{{asset('assets/js/sidebar.js')}}"></script>
-    <!-- Apexchart js-->
-    <script src="{{asset('assets/js/vendors/apexcharts/dist/apexcharts.min.js')}}"></script>
-    <!-- Chart js-->
-    <script src="{{asset('assets/js/vendors/chart.js/dist/chart.umd.js')}}"></script>
-    <!-- Datatable js-->
-    <script src="{{asset('assets/js/vendors/simple-datatables/dist/umd/simple-datatables.js')}}"></script>
-    <!-- default dashboard js-->
-    <script src="{{asset('assets/js/dashboard/default.js')}}"></script>
-    <!-- scrollbar js-->
-    <script src="{{asset('assets/js/scrollbar/simplebar.js')}}"></script>
-    <script src="{{asset('assets/js/scrollbar/custom.js')}}"></script>
-    <!-- scrollable-->
-    <!-- customizer-->
-    <script src="{{asset('assets/js/theme-customizer/customizer.js')}}"></script>
-    <!-- custom script -->
-    <script src="{{asset('assets/js/script.js')}}"></script>
+    @yield('content')
+
+
+ <script src="{{asset('assets/js/vendors/jquery/dist/jquery.min.js')}}"></script>
+      <!-- bootstrap js-->
+      <script src="{{asset('assets/js/vendors/bootstrap/dist/js/bootstrap.bundle.min.js')}}"></script>
+      <script src="{{asset('assets/js/config.js')}}"></script>
+      <!-- scrollbar js-->
+      <!-- scrollable-->
+      <script src="{{asset('assets/js/password.js')}}"></script>
+      <!-- customizer-->
+      <!-- custom script -->
+      <script src="{{asset('assets/js/script.js')}}"></script>
+    </div>
   </body>
 </html>

@@ -14,7 +14,7 @@
               <li class="sidebar-list"> 
                 <svg class="pinned-icon">
                   <use href="{{asset('assets/svg/iconly-sprite.svg')}}#Pin"></use>
-                </svg><a class="sidebar-link" href="javascript:void(0)">
+                </svg><a class="sidebar-link" href="{{route('dashboard')}}">
                   <svg class="stroke-icon">
                     <use href="{{asset('assets/svg/iconly-sprite.svg')}}#Home"></use>
                   </svg><span>Dashboard</span>
@@ -36,35 +36,14 @@
                     <use href="{{asset('assets/svg/feather-icons/dist/feather-sprite.svg')}}#chevron-right"></use>
                   </svg></a>
                 <ul class="sidebar-submenu"> 
-                  <li><a href="project-list.html"> 
+                  <li><a href="{{route('projects.index')}}"> 
                       <svg class="svg-menu">
                         <use href="{{asset('assets/svg/iconly-sprite.svg')}}#right-3"></use>
                       </svg>Project List</a></li>
-                  <li> <a href="projectcreate.html"> 
+                  <li> <a href="{{route('projects.create')}}"> 
                       <svg class="svg-menu">
                         <use href="{{asset('assets/svg/iconly-sprite.svg')}}#right-3"></use>
                       </svg>Create New</a></li>
-                </ul>
-              </li>
-              <li class="sidebar-list"> 
-                <svg class="pinned-icon">
-                  <use href="{{asset('assets/svg/iconly-sprite.svg')}}#Pin"></use>
-                </svg><a class="sidebar-link" href="javascript:void(0)">
-                  <svg class="stroke-icon">
-                    <use href="{{asset('assets/svg/iconly-sprite.svg')}}#Chat"></use>
-                  </svg><span>Chat</span>
-                  <svg class="feather">
-                    <use href="{{asset('assets/svg/feather-icons/dist/feather-sprite.svg')}}#chevron-right"></use>
-                  </svg></a>
-                <ul class="sidebar-submenu"> 
-                  <li><a href="private-chat.html"> 
-                      <svg class="svg-menu">
-                        <use href="{{asset('assets/svg/iconly-sprite.svg')}}#right-3"></use>
-                      </svg>Private Chat</a></li>
-                  <li><a href="group-chat.html"> 
-                      <svg class="svg-menu">
-                        <use href="{{asset('assets/svg/iconly-sprite.svg')}}#right-3"></use>
-                      </svg>Group Chat</a></li>
                 </ul>
               </li>
               <li class="sidebar-list"> 
@@ -78,27 +57,15 @@
                     <use href="{{asset('assets/svg/feather-icons/dist/feather-sprite.svg')}}#chevron-right"></use>
                   </svg></a>
                 <ul class="sidebar-submenu"> 
-                  <li><a href="user-profile.html"> 
+                  <li><a href="{{route('profile.index')}}"> 
                       <svg class="svg-menu">
                         <use href="{{asset('assets/svg/iconly-sprite.svg')}}#right-3"></use>
                       </svg>User Profile</a></li>
-                  <li><a href="edit-profile.html"> 
+                  <li><a href="{{route('profile.edit')}}"> 
                       <svg class="svg-menu">
                         <use href="{{asset('assets/svg/iconly-sprite.svg')}}#right-3"></use>
                       </svg>User Edit</a></li>
-                  <li><a href="user-cards.html"> 
-                      <svg class="svg-menu">
-                        <use href="{{asset('assets/svg/iconly-sprite.svg')}}#right-3"></use>
-                      </svg>User Cards</a></li>
                 </ul>
-              </li>
-              <li class="sidebar-list"> 
-                <svg class="pinned-icon">
-                  <use href="{{asset('assets/svg/iconly-sprite.svg')}}#Pin"></use>
-                </svg><a class="sidebar-link" href="contacts.html">
-                  <svg class="stroke-icon">
-                    <use href="{{asset('assets/svg/iconly-sprite.svg')}}#Contacts"></use>
-                  </svg><span>Contacts</span></a>
               </li>
               <li class="sidebar-list"> 
                 <svg class="pinned-icon">
