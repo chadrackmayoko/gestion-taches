@@ -70,7 +70,7 @@
               <li class="sidebar-list"> 
                 <svg class="pinned-icon">
                   <use href="{{asset('assets/svg/iconly-sprite.svg')}}#Pin"></use>
-                </svg><a class="sidebar-link" href="task.html">
+                </svg><a class="sidebar-link" href="{{route('tasks.index')}}">
                   <svg class="stroke-icon">
                     <use href="{{asset('assets/svg/iconly-sprite.svg')}}#Tick-square"></use>
                   </svg><span>Tasks </span></a>

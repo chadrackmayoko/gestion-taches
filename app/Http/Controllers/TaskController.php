@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Project;
 use App\Models\Task;
 use App\Models\User;
+use Auth;
 use Illuminate\Http\Request;
 
 class TaskController extends Controller
@@ -14,7 +15,11 @@ class TaskController extends Controller
      */
     public function index()
     {
-        //
+       
+        $users = User::all();
+        $projects = Auth::user()->projects()->get();
+         $tasks = Auth::user()->assignedTasks()->latest()->get();
+        return view('tasks.index', compact('tasks','users'));
     }
 
     /**
@@ -28,22 +33,25 @@ class TaskController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request, Project $project)
+    public function store(Request $request)
     {
-        //
-        
+
         $validate = $request->validate([
             'title' => 'string|required|max:255',
             'description' => 'nullable|string',
              'assigned_to' => 'nullable|exists:users,id',
+             'completed' => 'required|boolean',
+             'project_id' => 'required|exists:projects,id',
         ]);
-
+        $project = Project::findOrFail($validate['project_id']);
         $project->tasks()->create([
             'title' => $validate['title'],
             'description' => $validate['description'],
-            'assigned_to' => auth()->id()
+            'assigned_to' => auth()->id(),
+            'completed' => $validate['completed'],
+            'project_id' => $validate['project_id']
         ]);
-        return redirect()->route('projects.show', $project)->with('success', 'ok');
+        return redirect()->route('projects.index')->with('success', 'ok');
     }
 
     /**

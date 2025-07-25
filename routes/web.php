@@ -27,6 +27,8 @@ Route::middleware(['auth'])->get('/users', [UserController::class, 'index'])->na
 Route::middleware(['auth'])->group(function () {
     Route::resource('projects', ProjectController::class);
     Route::resource('projects.tasks', TaskController::class)->shallow();
+    Route::get('/tasks', [TaskController::class, 'index'])->name('tasks.index');
+    Route::post('/task/store', [TaskController::class, 'store'])->name('tasks.store');
     Route::patch('/tasks/{task}/toggle', [TaskController::class, 'toggle'])->name('tasks.toggle');
 });
 require __DIR__.'/auth.php';
